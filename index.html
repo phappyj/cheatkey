@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>직장인 치트키 | 야근·지출 줄여주는 AI 꿀팁 &amp; 검증된 핫딜</title>
+<meta name="description" content="야근·지출 줄여주는 AI 꿀팁 &amp; 검증된 핫딜. 매일 업데이트되는 직장인 치트키 모음.">
+<meta name="theme-color" content="#0B1120">
+<meta property="og:type" content="website">
+<meta property="og:title" content="⚡ 직장인 치트키">
+<meta property="og:description" content="야근·지출 줄여주는 AI 꿀팁 &amp; 검증된 핫딜">
+<meta property="og:url" content="https://phappyj.github.io/cheatkey/">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%230B1120'/><text x='50' y='72' font-size='60' text-anchor='middle'>⚡</text></svg>">
+<style>
+  :root{
+    --bg:#0B1120;
+    --bg-soft:#111A2E;
+    --mint:#34F5C5;
+    --mint-dim:rgba(52,245,197,.14);
+    --ink:#F2F6FF;
+    --ink-dim:#9AA9C2;
+    --line:rgba(255,255,255,.08);
+    --line-mint:rgba(52,245,197,.28);
+    --radius:16px;
+    --max:480px;
+  }
+  *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+  html,body{margin:0;padding:0}
+  body{
+    background:var(--bg);
+    color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Pretendard","Malgun Gothic","Noto Sans KR",Roboto,sans-serif;
+    font-size:16px;
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+    letter-spacing:-0.01em;
+    min-height:100dvh;
+    padding:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+  }
+  body::before{
+    content:"";
+    position:fixed;inset:0;z-index:-1;pointer-events:none;
+    background:
+      radial-gradient(90% 55% at 100% 0%, rgba(52,245,197,.13), transparent 60%),
+      radial-gradient(80% 45% at 0% 8%, rgba(52,245,197,.06), transparent 65%);
+  }
+  .wrap{max-width:var(--max);margin:0 auto;padding:28px 20px 40px}
+
+  /* ── header ── */
+  .eyebrow{
+    display:flex;align-items:center;justify-content:space-between;
+    font-size:12px;letter-spacing:.08em;color:var(--ink-dim);
+    text-transform:uppercase;margin-bottom:18px;
+  }
+  .eyebrow b{color:var(--mint);font-weight:700;letter-spacing:.02em}
+  .stamp{font-weight:700;letter-spacing:.18em;font-size:11px;color:rgba(255,255,255,.32)}
+  h1{
+    font-size:31px;line-height:1.22;font-weight:800;margin:0 0 10px;
+    letter-spacing:-0.035em;
+  }
+  h1 .accent{color:var(--mint)}
+  .lede{margin:0 0 6px;color:var(--ink-dim);font-size:15px}
+  .handle{
+    display:inline-flex;align-items:center;gap:6px;margin-top:12px;
+    font-size:13px;font-weight:700;color:var(--mint);
+    background:var(--mint-dim);border:1px solid var(--line-mint);
+    padding:6px 12px;border-radius:999px;text-decoration:none;
+  }
+  .handle svg{width:14px;height:14px}
+
+  /* ── section ── */
+  section{margin-top:34px}
+  .sec-head{display:flex;align-items:baseline;gap:8px;margin-bottom:14px}
+  .sec-head h2{font-size:17px;font-weight:800;margin:0;letter-spacing:-0.02em}
+  .sec-head .count{font-size:12px;color:var(--ink-dim)}
+
+  /* ── card base ── */
+  .card{
+    background:linear-gradient(180deg,#121C31 0%, #0E1728 100%);
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    padding:20px;
+    box-shadow:0 10px 30px -18px rgba(0,0,0,.9);
+  }
+  .card + .card{margin-top:14px}
+  .card .tag{
+    display:inline-block;font-size:11px;font-weight:700;letter-spacing:.06em;
+    color:var(--mint);background:var(--mint-dim);border-radius:999px;
+    padding:4px 10px;margin-bottom:12px;
+  }
+  .card h3{font-size:21px;line-height:1.3;font-weight:800;margin:0 0 8px;letter-spacing:-0.03em}
+  .card h3 .accent{color:var(--mint)}
+  .card p.sub{margin:0 0 16px;color:var(--ink-dim);font-size:14px}
+
+  /* ── step list ── */
+  .steps{list-style:none;margin:0 0 16px;padding:0;display:grid;gap:8px}
+  .steps li{
+    display:flex;align-items:flex-start;gap:11px;
+    background:rgba(255,255,255,.035);
+    border:1px solid var(--line);
+    border-radius:12px;padding:11px 13px;
+  }
+  .steps .num{
+    flex:0 0 26px;height:26px;border-radius:8px;
+    background:var(--mint);color:#062019;
+    font-weight:800;font-size:13px;
+    display:grid;place-items:center;margin-top:1px;
+  }
+  .steps .body{min-width:0}
+  .steps .k{display:block;font-size:11px;font-weight:700;color:var(--mint);letter-spacing:.06em;margin-bottom:2px}
+  .steps .v{font-size:14px;font-weight:600;word-break:keep-all}
+
+  /* ── buttons ── */
+  .btn-row{display:flex;flex-wrap:wrap;gap:8px}
+  .btn{
+    appearance:none;border:1px solid var(--line-mint);
+    background:var(--mint-dim);color:var(--mint);
+    font:inherit;font-size:14px;font-weight:700;
+    padding:11px 16px;border-radius:12px;cursor:pointer;
+    display:inline-flex;align-items:center;gap:7px;text-decoration:none;
+    transition:transform .12s ease, background .15s ease;
+  }
+  .btn:active{transform:scale(.97)}
+  .btn.primary{background:var(--mint);color:#052018;border-color:var(--mint)}
+  .btn.ghost{background:transparent;color:var(--ink-dim);border-color:var(--line)}
+  .btn svg{width:15px;height:15px;flex:0 0 auto}
+  .btn.wide{flex:1 1 100%;justify-content:center}
+
+  /* ── deal card ── */
+  .deal{display:flex;gap:14px;align-items:stretch;text-decoration:none;color:inherit}
+  .deal .thumb{
+    flex:0 0 88px;height:88px;border-radius:12px;overflow:hidden;
+    background:#0A1322;border:1px solid var(--line);display:grid;place-items:center;
+    font-size:26px;
+  }
+  .deal .thumb img{width:100%;height:100%;object-fit:cover;display:block}
+  .deal .info{min-width:0;flex:1}
+  .deal .seller{font-size:11px;font-weight:700;color:var(--mint);letter-spacing:.05em;margin-bottom:4px}
+  .deal .name{
+    font-size:15px;font-weight:700;line-height:1.35;margin:0 0 7px;
+    display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
+  }
+  .price{display:flex;align-items:baseline;gap:7px;flex-wrap:wrap}
+  .price .now{font-size:19px;font-weight:800;color:var(--ink);letter-spacing:-0.02em}
+  .price .was{font-size:12px;color:#61708C;text-decoration:line-through}
+  .price .off{font-size:12px;font-weight:800;color:#FF7A8A}
+  .deal .note{font-size:12px;color:var(--ink-dim);margin-top:6px}
+
+  /* ── placeholder / empty ── */
+  .soon{
+    border:1px dashed var(--line-mint);
+    background:linear-gradient(180deg, rgba(52,245,197,.07), rgba(52,245,197,.02));
+    text-align:center;padding:26px 20px;
+  }
+  .soon .clock{
+    display:inline-flex;align-items:center;gap:7px;
+    font-size:12px;font-weight:800;letter-spacing:.1em;color:var(--mint);
+    background:rgba(52,245,197,.13);border:1px solid var(--line-mint);
+    border-radius:999px;padding:5px 12px;margin-bottom:12px;
+  }
+  .soon .dot{width:6px;height:6px;border-radius:50%;background:var(--mint);animation:pulse 1.8s ease-in-out infinite}
+  @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.35;transform:scale(.8)}}
+  .soon strong{display:block;font-size:16px;font-weight:800;margin-bottom:6px}
+  .soon span.s{font-size:13px;color:var(--ink-dim)}
+
+  /* ── follow ── */
+  .follow{display:grid;gap:10px}
+  .follow a{
+    display:flex;align-items:center;justify-content:space-between;gap:12px;
+    padding:15px 17px;border-radius:14px;text-decoration:none;color:var(--ink);
+    background:rgba(255,255,255,.035);border:1px solid var(--line);
+    transition:border-color .15s ease, background .15s ease;
+  }
+  .follow a:active{background:rgba(52,245,197,.08)}
+  .follow .lbl{display:flex;flex-direction:column;gap:1px;min-width:0}
+  .follow .lbl b{font-size:14px;font-weight:700}
+  .follow .lbl small{font-size:12px;color:var(--ink-dim)}
+  .follow .arrow{color:var(--mint);font-weight:800}
+
+  /* ── footer ── */
+  footer{margin-top:38px;padding-top:20px;border-top:1px solid var(--line)}
+  .disclosure{
+    font-size:11.5px;line-height:1.7;color:#6E7E9A;
+    background:rgba(255,255,255,.025);border:1px solid var(--line);
+    border-radius:12px;padding:13px 15px;
+  }
+  .colophon{
+    display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;
+    margin-top:16px;font-size:11.5px;color:#4E5C75;
+  }
+
+  /* ── toast ── */
+  .toast{
+    position:fixed;left:50%;bottom:calc(22px + env(safe-area-inset-bottom));
+    transform:translate(-50%,20px);
+    background:var(--mint);color:#052018;
+    font-size:13.5px;font-weight:800;
+    padding:11px 18px;border-radius:999px;
+    opacity:0;pointer-events:none;transition:opacity .2s ease, transform .2s ease;
+    z-index:50;box-shadow:0 12px 28px -10px rgba(0,0,0,.85);
+  }
+  .toast.on{opacity:1;transform:translate(-50%,0)}
+
+  @media (prefers-reduced-motion:reduce){
+    *{animation:none!important;transition:none!important}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="eyebrow">
+      <span><b>⚡ 직장인 치트키</b> / AI · 핫딜</span>
+      <span class="stamp">CHEATKEY</span>
+    </div>
+    <h1>남들 <span class="accent">2시간</span> 걸릴 일,<br><span class="accent">10분</span> 만에 끝내는 치트키</h1>
+    <p class="lede">야근·지출 줄여주는 AI 꿀팁 &amp; 검증된 핫딜</p>
+    <a class="handle" href="https://www.instagram.com/cheatkey.work/" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+      @cheatkey.work
+    </a>
+  </header>
+
+  <section id="tips-section">
+    <div class="sec-head">
+      <h2>⚡ 오늘의 AI 치트키</h2>
+      <span class="count" id="tips-count"></span>
+    </div>
+    <div id="tips"></div>
+  </section>
+
+  <section id="deals-section">
+    <div class="sec-head">
+      <h2>💸 검증된 핫딜</h2>
+      <span class="count" id="deals-count"></span>
+    </div>
+    <div id="deals"></div>
+  </section>
+
+  <section>
+    <div class="sec-head"><h2>🔔 놓치지 않으려면</h2></div>
+    <div class="follow">
+      <a href="https://www.instagram.com/cheatkey.work/" target="_blank" rel="noopener">
+        <span class="lbl"><b>인스타그램 팔로우</b><small>매일 아침·점심 AI 치트키</small></span>
+        <span class="arrow">↗</span>
+      </a>
+      <a href="https://www.threads.net/@cheatkey.work" target="_blank" rel="noopener">
+        <span class="lbl"><b>스레드 팔로우</b><small>짧고 굵은 하루 한 줄</small></span>
+        <span class="arrow">↗</span>
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <p class="disclosure">
+      이 페이지의 일부 링크는 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.
+    </p>
+    <div class="colophon">
+      <span>© <span id="year">2026</span> 직장인 치트키 · @cheatkey.work</span>
+      <span id="updated"></span>
+    </div>
+  </footer>
+
+</div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(function () {
+  "use strict";
+
+  // ── Fallback: deals.json 로딩 실패(오프라인·캐시 등) 시에도 화면이 비지 않도록 ──
+  var FALLBACK = {
+    updated: "",
+    tips: [{
+      id: "tip-001",
+      no: "01",
+      tag: "AI · 회의록",
+      title: "회의록 <span class=\"accent\">30분</span> → <span class=\"accent\">30초</span> 프롬프트 3줄",
+      sub: "복붙만 하면 끝. 오늘 회의부터 바로.",
+      steps: [
+        { k: "1 역할", v: "\u201C너는 10년차 PM이야. 요점만.\u201D" },
+        { k: "2 재료", v: "회의 메모는 요약 말고 그대로 붙여넣기" },
+        { k: "3 형식", v: "결정 / 할 일(담당·기한) / 다음 안건" }
+      ],
+      note: "보고서도 똑같아요 — 결론 · 근거 · 요청 순서로 시키면 끝.",
+      prompt: "너는 10년차 PM이야. 아래 회의 메모를 읽고 ① 결정된 것 ② 할 일(담당·기한) ③ 다음에 논의할 안건, 이 세 가지로만 표를 만들어줘. 메모에 없는 건 추측하지 말고 '확인 필요'로 표시해.",
+      link: "https://www.instagram.com/p/Df3V4-Zn4D1/",
+      linkLabel: "인스타 원문 보기"
+    }],
+    deals: []
+  };
+
+  var toastEl = document.getElementById("toast");
+  var toastTimer = null;
+  function toast(msg) {
+    toastEl.textContent = msg;
+    toastEl.classList.add("on");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function () { toastEl.classList.remove("on"); }, 1900);
+  }
+
+  function esc(s) {
+    return String(s == null ? "" : s)
+      .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+  }
+
+  function formatWon(n) {
+    if (n == null || n === "" || isNaN(n)) return "";
+    return Number(n).toLocaleString("ko-KR") + "원";
+  }
+
+  // 프롬프트 복사
+  function copyText(text, okMsg) {
+    function fallback() {
+      var ta = document.createElement("textarea");
+      ta.value = text;
+      ta.setAttribute("readonly", "");
+      ta.style.position = "fixed";
+      ta.style.top = "-1000px";
+      document.body.appendChild(ta);
+      ta.select();
+      var ok = false;
+      try { ok = document.execCommand("copy"); } catch (e) { ok = false; }
+      document.body.removeChild(ta);
+      toast(ok ? okMsg : "복사가 안 되면 길게 눌러 직접 복사해 주세요");
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(function () { toast(okMsg); }, fallback);
+    } else {
+      fallback();
+    }
+  }
+
+  // ── 렌더: AI 치트키 ──
+  function renderTips(list) {
+    var host = document.getElementById("tips");
+    var count = document.getElementById("tips-count");
+    host.innerHTML = "";
+    if (!list || !list.length) {
+      count.textContent = "";
+      return;
+    }
+    count.textContent = list.length + "개";
+
+    list.forEach(function (t) {
+      var el = document.createElement("article");
+      el.className = "card";
+
+      var steps = (t.steps || []).map(function (s, i) {
+        return '<li><span class="num">' + (i + 1) + '</span>' +
+               '<span class="body"><span class="k">' + esc(s.k) + '</span>' +
+               '<span class="v">' + esc(s.v) + '</span></span></li>';
+      }).join("");
+
+      var buttons = "";
+      if (t.prompt) {
+        buttons += '<button class="btn primary" type="button" data-copy="' + esc(t.prompt) + '">' +
+                   '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="12" height="12" rx="2.5"/><path d="M5 15V5a2 2 0 0 1 2-2h8"/></svg>' +
+                   '프롬프트 복사</button>';
+      }
+      if (t.link) {
+        buttons += '<a class="btn ghost" href="' + esc(t.link) + '" target="_blank" rel="noopener">' +
+                   esc(t.linkLabel || "원문 보기") + ' ↗</a>';
+      }
+
+      el.innerHTML =
+        (t.tag ? '<span class="tag">' + esc(t.tag) + (t.no ? " · " + esc(t.no) : "") + '</span>' : "") +
+        "<h3>" + (t.title || "") + "</h3>" +
+        (t.sub ? '<p class="sub">' + esc(t.sub) + "</p>" : "") +
+        (steps ? '<ul class="steps">' + steps + "</ul>" : "") +
+        (t.note ? '<p class="sub" style="margin:-4px 0 16px">' + esc(t.note) + "</p>" : "") +
+        (buttons ? '<div class="btn-row">' + buttons + "</div>" : "");
+
+      host.appendChild(el);
+    });
+  }
+
+  // ── 렌더: 핫딜 ──
+  function renderDeals(list) {
+    var host = document.getElementById("deals");
+    var count = document.getElementById("deals-count");
+    host.innerHTML = "";
+
+    if (!list || !list.length) {
+      count.textContent = "";
+      var soon = document.createElement("div");
+      soon.className = "card soon";
+      soon.innerHTML =
+        '<span class="clock"><span class="dot"></span>16:00 UPDATE</span>' +
+        "<strong>오늘 16:00 첫 검증 핫딜이 업데이트됩니다</strong>" +
+        '<span class="s">직접 사서 써본 IT·가전·생활템만 올립니다.<br>가격이 바뀌면 바로 내립니다.</span>';
+      host.appendChild(soon);
+      return;
+    }
+
+    count.textContent = list.length + "개";
+
+    list.forEach(function (d) {
+      var a = document.createElement("a");
+      a.className = "card deal";
+      a.href = d.link || "#";
+      a.target = "_blank";
+      a.rel = "noopener sponsored";
+
+      var priceBits = "";
+      if (d.price != null && d.price !== "") {
+        priceBits += '<span class="now">' + formatWon(d.price) + "</span>";
+      }
+      if (d.wasPrice != null && d.wasPrice !== "") {
+        priceBits += '<span class="was">' + formatWon(d.wasPrice) + "</span>";
+      }
+      if (d.discount != null && d.discount !== "") {
+        priceBits += '<span class="off">' + esc(d.discount) + "</span>";
+      }
+
+      a.innerHTML =
+        '<span class="thumb">' + (d.image ? '<img src="' + esc(d.image) + '" alt="" loading="lazy">' : "💸") + "</span>" +
+        '<span class="info">' +
+          '<span class="seller">' + esc(d.seller || "쿠팡 파트너스") + "</span>" +
+          '<span class="name">' + esc(d.title) + "</span>" +
+          (priceBits ? '<span class="price">' + priceBits + "</span>" : "") +
+          (d.note ? '<span class="note">' + esc(d.note) + "</span>" : "") +
+        "</span>";
+
+      host.appendChild(a);
+    });
+  }
+
+  function render(data) {
+    renderTips(data.tips || []);
+    renderDeals(data.deals || []);
+    if (data.updated) {
+      var d = new Date(data.updated);
+      if (!isNaN(d)) {
+        document.getElementById("updated").textContent =
+          "업데이트 " + (d.getMonth() + 1) + "." + d.getDate() + " " +
+          String(d.getHours()).padStart(2, "0") + ":" + String(d.getMinutes()).padStart(2, "0");
+      }
+    }
+  }
+
+  // 복사 버튼 위임
+  document.addEventListener("click", function (e) {
+    var btn = e.target.closest ? e.target.closest("[data-copy]") : null;
+    if (!btn) return;
+    e.preventDefault();
+    copyText(btn.getAttribute("data-copy"), "프롬프트 복사 완료 ⚡");
+  });
+
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  // 데이터 로드 (deals.json → 실패 시 FALLBACK)
+  fetch("deals.json?t=" + Date.now(), { cache: "no-store" })
+    .then(function (r) { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
+    .then(render)
+    .catch(function () { render(FALLBACK); });
+})();
+</script>
+</body>
+</html>
