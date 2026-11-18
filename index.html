@@ -135,6 +135,7 @@
     font-size:12.5px;font-weight:600;color:var(--ink-mid);line-height:1.45;
   }
   .hero-specs li svg{flex:0 0 12px;width:12px;height:12px;margin-top:3px;color:var(--mint)}
+  .hero-specs li svg.mute{color:#5C6B85}
   .hero-specs li .nm{color:var(--ink);font-weight:700}
   .hero-specs li .pr{color:var(--mint);font-weight:800;font-variant-numeric:tabular-nums}
   .hero-specs li.win{color:var(--ink)}
@@ -699,6 +700,7 @@
   }
 
   var CHECK = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>';
+  var DOT = '<svg class="mute" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="12" cy="12" r="3.4"/></svg>';
   var ARROW = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>';
   var TAG_ICON = '<svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="#34F5C5" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
     '<path d="M20.6 13.4 13.4 20.6a2 2 0 0 1-2.8 0l-7.2-7.2A2 2 0 0 1 2.8 12V4.8A2 2 0 0 1 4.8 2.8H12a2 2 0 0 1 1.4.6l7.2 7.2a2 2 0 0 1 0 2.8Z"/>' +
@@ -739,7 +741,7 @@
           }
         }
         return '<li class="' + (r.win ? "win" : "") + '">' +
-          (r.win ? '<span class="pick">원픽</span>' : CHECK) +
+          (r.win ? '<span class="pick">원픽</span>' : DOT) +
           '<span><span class="nm">' + esc(nm) + '</span>' +
           (pr ? ' <span class="pr">' + esc(pr) + '</span>' : (extra ? ' <span style="color:var(--ink-dim);font-weight:600">· ' + esc(extra) + '</span>' : "")) +
           '</span></li>';
@@ -827,16 +829,11 @@
         '<caption style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">비교표</caption>' +
         thead + tbody + '</table></div>';
 
-      var winRow = null;
-      cmp.rows.forEach(function (r) { if (r.win && !winRow) winRow = r; });
       var verdictText = "";
-      if (winRow) {
-        var vIdx = -1;
-        cmp.cols.forEach(function (c, i) { if (c.label === "결론") vIdx = i; });
-        if (vIdx >= 0 && winRow.cells[vIdx]) verdictText = winRow.cells[vIdx];
-      }
+      if (typeof d.verdict === "string") verdictText = d.verdict;
+      else if (typeof d.summary === "string") verdictText = d.summary;
       if (verdictText) {
-        body += '<p class="verdict"><b>결론</b> · ' + esc(verdictText) + '</p>';
+        body += '<p class="verdict"><b>한 줄 결론</b> · ' + esc(verdictText) + '</p>';
       }
       body += '<p class="cmp-note">' + CHECK + ' 가격은 확인 시점 기준 · 결제 전 쿠팡에서 최종 확인</p>';
     } else {
@@ -848,6 +845,7 @@
         rowsData.push({ k: "가격", v: pv, html: true });
       }
       var sp = specLines(d);
+      var fromNote = !(Array.isArray(d.specs) && d.specs.length);
       if (sp.length) rowsData.push({ k: "핵심 스펙", v: sp.join(" / ") });
       if (d.seller) rowsData.push({ k: "판매·배송", v: d.seller });
       var stampRow = timeLabel(d.published || "");
@@ -859,7 +857,7 @@
                  '<span class="v">' + (r.html ? r.v : esc(r.v)) + '</span></div>';
         }).join("") + '</div>';
       }
-      if (d.note) {
+      if (d.note && !fromNote) {
         body += '<p class="verdict"><b>검증 메모</b> · ' + esc(d.note) + '</p>';
       }
     }

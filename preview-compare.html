@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>직장인 치트키 | 오늘의 원픽 최저가 · AI 꿀팁</title>
+<meta name="description" content="직접 비교해 고른 오늘의 원픽 최저가와 야근을 줄여주는 AI 치트키를 한 페이지에. 스크롤 없이 1탭으로 쿠팡 최저가 확인.">
+<meta name="theme-color" content="#0B1120">
+<meta property="og:type" content="website">
+<meta property="og:title" content="⚡ 직장인 치트키 — 오늘의 원픽 최저가">
+<meta property="og:description" content="비교해 고른 오늘의 원픽 + 바로 쓰는 AI 치트키. 1탭으로 쿠팡 최저가 확인.">
+<meta property="og:url" content="https://phappyj.github.io/cheatkey/">
+<meta property="og:image" content="https://phappyj.github.io/cheatkey/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="직장인 치트키 — 오늘의 원픽 최저가와 AI 꿀팁">
+<meta property="og:site_name" content="직장인 치트키">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://phappyj.github.io/cheatkey/og.png">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%230B1120'/><text x='50' y='72' font-size='60' text-anchor='middle'>⚡</text></svg>">
+<style>
+  :root{
+    --bg:#0B1120;
+    --bg-soft:#111A2E;
+    --mint:#34F5C5;
+    --mint-2:#1FE0B0;
+    --mint-dim:rgba(52,245,197,.14);
+    --gold:#FFC94A;
+    --ink:#F2F6FF;
+    --ink-mid:#C6D2E6;
+    --ink-dim:#8F9EB8;
+    --ink-faint:#61708C;
+    --line:rgba(255,255,255,.08);
+    --line-2:rgba(255,255,255,.05);
+    --line-mint:rgba(52,245,197,.28);
+    --radius:18px;
+    --max:480px;
+  }
+  *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+  html,body{margin:0;padding:0}
+  body{
+    background:var(--bg);
+    color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo","Pretendard","Malgun Gothic","Noto Sans KR",Roboto,sans-serif;
+    font-size:16px;
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+    letter-spacing:-0.01em;
+    min-height:100dvh;
+    padding:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+  }
+  body::before{
+    content:"";
+    position:fixed;inset:0;z-index:-1;pointer-events:none;
+    background:
+      radial-gradient(85% 45% at 100% -4%, rgba(52,245,197,.15), transparent 62%),
+      radial-gradient(70% 38% at 0% 4%, rgba(52,245,197,.06), transparent 68%);
+  }
+  .shell{max-width:var(--max);margin:0 auto;padding:14px 18px 96px}
+  .num, .price, .mono{font-variant-numeric:tabular-nums}
+
+  /* ── top bar ── */
+  .topbar{
+    display:flex;align-items:center;justify-content:space-between;gap:10px;
+    padding:2px 2px 12px;
+  }
+  .brand{
+    display:inline-flex;align-items:center;gap:7px;
+    font-size:13px;font-weight:800;letter-spacing:-0.01em;
+  }
+  .brand .bolt{font-size:14px;line-height:1}
+  .brand em{font-style:normal;color:var(--ink-dim);font-weight:600;font-size:11.5px;letter-spacing:.02em}
+  .live{
+    display:inline-flex;align-items:center;gap:6px;
+    font-size:10px;font-weight:800;letter-spacing:.14em;color:var(--mint);
+    background:rgba(52,245,197,.1);border:1px solid var(--line-mint);
+    padding:4px 9px;border-radius:999px;
+  }
+  .live .dot{width:5px;height:5px;border-radius:50%;background:var(--mint);animation:pulse 2s ease-in-out infinite}
+  @keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.3;transform:scale(.75)}}
+
+  /* ── hero ── */
+  .hero{
+    position:relative;
+    background:
+      radial-gradient(120% 90% at 100% 0%, rgba(52,245,197,.16), transparent 58%),
+      linear-gradient(180deg,#141F37 0%, #0D1728 100%);
+    border:1px solid rgba(52,245,197,.3);
+    border-radius:22px;
+    padding:16px 16px 14px;
+    box-shadow:0 24px 50px -30px rgba(0,0,0,.95), 0 0 0 1px rgba(255,255,255,.02) inset;
+    overflow:hidden;
+  }
+  .hero::after{
+    content:"";position:absolute;inset:0;pointer-events:none;
+    background:linear-gradient(180deg,rgba(255,255,255,.05),transparent 26%);
+    border-radius:22px;
+  }
+  .hero-top{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:10px;position:relative;z-index:1}
+  .hero-badge{
+    display:inline-flex;align-items:center;gap:6px;
+    font-size:10.5px;font-weight:800;letter-spacing:.02em;color:#062019;
+    background:linear-gradient(180deg,#5CFFD6,#2AE5B6);
+    padding:4px 10px;border-radius:999px;
+  }
+  .hero-badge .dot{width:5px;height:5px;border-radius:50%;background:#062019}
+  .hero-rank{
+    font-size:10px;font-weight:800;letter-spacing:.16em;color:var(--gold);
+    border:1px solid rgba(255,201,74,.35);background:rgba(255,201,74,.08);
+    padding:3px 8px;border-radius:6px;white-space:nowrap;
+  }
+  .hero-title{
+    position:relative;z-index:1;
+    font-size:16.5px;line-height:1.34;font-weight:800;margin:0 0 9px;
+    letter-spacing:-0.03em;word-break:keep-all;overflow-wrap:break-word;
+    display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;
+  }
+  .hero-price{
+    position:relative;z-index:1;
+    display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;margin-bottom:12px;
+  }
+  .hero-price .now{font-size:27px;font-weight:900;letter-spacing:-0.04em;line-height:1.1;color:#fff}
+  .hero-price .now small{font-size:15px;font-weight:800;margin-left:1px}
+  .hero-price .was{font-size:12px;color:var(--ink-faint);text-decoration:line-through}
+  .hero-price .off{
+    font-size:11px;font-weight:900;letter-spacing:.02em;color:#2A1A00;
+    background:linear-gradient(180deg,#FFD873,#FFBE2E);
+    padding:3px 7px;border-radius:6px;
+  }
+  .hero-specs{
+    list-style:none;margin:0 0 14px;padding:0;display:grid;gap:5px;position:relative;z-index:1;
+  }
+  .hero-specs li{
+    display:flex;align-items:flex-start;gap:7px;
+    font-size:12.5px;font-weight:600;color:var(--ink-mid);line-height:1.45;
+  }
+  .hero-specs li svg{flex:0 0 12px;width:12px;height:12px;margin-top:3px;color:var(--mint)}
+  .hero-specs li svg.mute{color:#5C6B85}
+  .hero-specs li .nm{color:var(--ink);font-weight:700}
+  .hero-specs li .pr{color:var(--mint);font-weight:800;font-variant-numeric:tabular-nums}
+  .hero-specs li.win{color:var(--ink)}
+  .hero-specs li.win .nm{color:#fff}
+  .hero-specs .pick{
+    font-size:9px;font-weight:900;letter-spacing:.02em;color:#062019;background:var(--mint);
+    padding:2px 5px;border-radius:4px;flex:0 0 auto;margin-top:1px;
+  }
+
+  .cta{
+    position:relative;z-index:1;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1px;
+    width:100%;min-height:64px;padding:12px 14px;
+    border-radius:16px;text-decoration:none;color:#04231B;
+    background:linear-gradient(180deg,#5CFFD6 0%, #26E3B2 100%);
+    border:1px solid rgba(255,255,255,.35);
+    box-shadow:0 12px 26px -12px rgba(52,245,197,.75), 0 2px 0 rgba(255,255,255,.35) inset;
+    transition:transform .12s ease, box-shadow .15s ease;
+  }
+  .cta:active{transform:scale(.985);box-shadow:0 6px 16px -10px rgba(52,245,197,.6)}
+  .cta-main{
+    display:inline-flex;align-items:center;gap:7px;
+    font-size:16.5px;font-weight:900;letter-spacing:-0.02em;
+  }
+  .cta-main svg{width:17px;height:17px}
+  .cta-sub{font-size:11px;font-weight:700;color:rgba(4,35,27,.66);letter-spacing:-0.01em}
+  .hero-foot{
+    position:relative;z-index:1;
+    display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;
+    margin-top:9px;font-size:10.5px;color:var(--ink-faint);
+  }
+
+  /* ── section ── */
+  section{margin-top:30px}
+  .sec-head{display:flex;align-items:center;gap:8px;margin-bottom:12px}
+  .sec-head .num{
+    font-size:10px;font-weight:900;letter-spacing:.1em;color:var(--mint);
+    border:1px solid var(--line-mint);background:rgba(52,245,197,.08);
+    border-radius:5px;padding:2px 5px;line-height:1.4;
+  }
+  .sec-head h2{font-size:16px;font-weight:800;margin:0;letter-spacing:-0.03em}
+  .sec-head .count{margin-left:auto;font-size:11.5px;color:var(--ink-dim)}
+
+  /* ── card base ── */
+  .card{
+    background:linear-gradient(180deg,#121C31 0%, #0E1728 100%);
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    padding:18px;
+    box-shadow:0 12px 30px -24px rgba(0,0,0,.9);
+  }
+  .card + .card{margin-top:12px}
+
+  /* ── comparison table ── */
+  .report .r-title{font-size:14px;font-weight:800;margin:0 0 4px;letter-spacing:-0.02em;word-break:keep-all}
+  .report .r-sub{font-size:11.5px;color:var(--ink-dim);margin:0 0 14px}
+  .cmp-wrap{border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#0C1524}
+  table.cmp{width:100%;border-collapse:collapse;font-size:11.8px;line-height:1.45}
+  table.cmp thead th{
+    background:rgba(52,245,197,.09);color:#8FE9D3;
+    font-size:10px;font-weight:800;letter-spacing:.06em;text-align:left;
+    padding:8px 9px;border-bottom:1px solid var(--line-mint);white-space:nowrap;
+  }
+  table.cmp td{
+    padding:9px;border-bottom:1px solid var(--line-2);
+    color:var(--ink-mid);vertical-align:top;word-break:keep-all;overflow-wrap:break-word;
+  }
+  table.cmp tbody tr:last-child td{border-bottom:0}
+  table.cmp td:first-child{color:var(--ink);font-weight:700}
+  table.cmp td.p{color:var(--ink);font-weight:800;font-variant-numeric:tabular-nums;white-space:nowrap}
+  table.cmp tr.win td{background:rgba(52,245,197,.055)}
+  table.cmp tr.win td:first-child{box-shadow:inset 2px 0 0 var(--mint)}
+  .win-badge{
+    display:inline-block;font-size:9px;font-weight:900;color:#062019;background:var(--mint);
+    padding:1px 4px;border-radius:4px;margin-right:4px;vertical-align:1px;
+  }
+  .cmp-note{
+    display:flex;align-items:center;gap:6px;margin-top:9px;
+    font-size:10.5px;color:var(--ink-faint);
+  }
+  .verdict{
+    margin-top:12px;padding:11px 13px;border-radius:12px;
+    background:rgba(52,245,197,.07);border:1px solid var(--line-mint);
+    font-size:12.5px;color:var(--ink-mid);line-height:1.55;word-break:keep-all;
+  }
+  .verdict b{color:var(--mint)}
+
+  /* spec rows (비교 데이터 없을 때) */
+  .spec-table{display:grid;gap:1px;background:var(--line-2);border:1px solid var(--line);border-radius:14px;overflow:hidden}
+  .spec-row{display:flex;gap:10px;background:#0C1524;padding:10px 12px;font-size:12.5px}
+  .spec-row .k{flex:0 0 84px;color:var(--ink-dim);font-weight:700;font-size:11.5px;letter-spacing:.02em}
+  .spec-row .v{flex:1;color:var(--ink-mid);word-break:keep-all;font-weight:600}
+  .spec-row .v b{color:#fff}
+
+  /* ── deal list ── */
+  .deal{display:flex;gap:13px;align-items:flex-start;text-decoration:none;color:inherit}
+  .deal .thumb{
+    flex:0 0 76px;height:76px;border-radius:12px;overflow:hidden;
+    background:#0A1322;border:1px solid var(--line);display:grid;place-items:center;
+  }
+  .deal .thumb img{width:100%;height:100%;object-fit:cover;display:block}
+  .deal .info{min-width:0;flex:1}
+  .deal .seller{font-size:10px;font-weight:800;color:var(--mint);letter-spacing:.06em;margin-bottom:3px}
+  .deal .name{
+    font-size:13.5px;font-weight:700;line-height:1.38;margin:0 0 6px;
+    word-break:keep-all;overflow-wrap:break-word;
+    display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
+  }
+  .price{display:flex;align-items:baseline;gap:6px;flex-wrap:wrap}
+  .price .now{font-size:17px;font-weight:900;color:#fff;letter-spacing:-0.03em}
+  .price .was{font-size:11.5px;color:var(--ink-faint);text-decoration:line-through}
+  .price .off{font-size:11px;font-weight:900;color:var(--gold)}
+  .deal .note{font-size:11.5px;color:var(--ink-dim);margin-top:5px;word-break:keep-all}
+
+  /* ── tip card ── */
+  .tip .tag{
+    display:inline-block;font-size:10px;font-weight:800;letter-spacing:.06em;
+    color:var(--mint);background:var(--mint-dim);border-radius:999px;
+    padding:3px 9px;margin-bottom:10px;
+  }
+  .tip h3{font-size:19px;line-height:1.32;font-weight:800;margin:0 0 7px;letter-spacing:-0.035em;word-break:keep-all;overflow-wrap:break-word}
+  .tip h3 .accent{color:var(--mint)}
+  .tip p.sub{margin:0 0 14px;color:var(--ink-dim);font-size:13px;word-break:keep-all}
+  .steps{list-style:none;margin:0 0 14px;padding:0;display:grid;gap:7px}
+  .steps li{
+    display:flex;align-items:flex-start;gap:10px;
+    background:rgba(255,255,255,.035);
+    border:1px solid var(--line);
+    border-radius:12px;padding:10px 12px;
+  }
+  .steps .num{
+    flex:0 0 24px;height:24px;border-radius:7px;
+    background:var(--mint);color:#062019;
+    font-weight:900;font-size:12px;
+    display:grid;place-items:center;margin-top:1px;
+  }
+  .steps .body{min-width:0}
+  .steps .k{display:block;font-size:10px;font-weight:800;color:var(--mint);letter-spacing:.06em;margin-bottom:2px}
+  .steps .v{font-size:13.5px;font-weight:600;word-break:keep-all}
+
+  /* ── buttons ── */
+  .btn-row{display:flex;flex-wrap:wrap;gap:7px}
+  .btn{
+    appearance:none;border:1px solid var(--line-mint);
+    background:var(--mint-dim);color:var(--mint);
+    font:inherit;font-size:13px;font-weight:800;
+    padding:10px 14px;border-radius:11px;cursor:pointer;
+    display:inline-flex;align-items:center;gap:6px;text-decoration:none;
+    transition:transform .12s ease, background .15s ease;
+  }
+  .btn:active{transform:scale(.97)}
+  .btn.primary{background:var(--mint);color:#052018;border-color:var(--mint)}
+  .btn.ghost{background:transparent;color:var(--ink-dim);border-color:var(--line);font-weight:700}
+  .btn svg{width:14px;height:14px;flex:0 0 auto}
+
+  /* ── soon / empty ── */
+  .soon{
+    border:1px dashed var(--line-mint);
+    background:linear-gradient(180deg, rgba(52,245,197,.07), rgba(52,245,197,.02));
+    text-align:center;padding:24px 18px;
+  }
+  .soon .clock{
+    display:inline-flex;align-items:center;gap:7px;
+    font-size:10.5px;font-weight:900;letter-spacing:.1em;color:var(--mint);
+    background:rgba(52,245,197,.13);border:1px solid var(--line-mint);
+    border-radius:999px;padding:4px 11px;margin-bottom:11px;
+  }
+  .soon .dot{width:5px;height:5px;border-radius:50%;background:var(--mint);animation:pulse 1.8s ease-in-out infinite}
+  .soon strong{display:block;font-size:15px;font-weight:800;margin-bottom:5px}
+  .soon span.s{font-size:12.5px;color:var(--ink-dim)}
+
+  /* ── follow ── */
+  .follow{display:grid;gap:8px}
+  .follow a{
+    display:flex;align-items:center;justify-content:space-between;gap:12px;
+    padding:14px 16px;border-radius:14px;text-decoration:none;color:var(--ink);
+    background:rgba(255,255,255,.035);border:1px solid var(--line);
+    transition:border-color .15s ease, background .15s ease;
+  }
+  .follow a:active{background:rgba(52,245,197,.08)}
+  .follow .lbl{display:flex;flex-direction:column;gap:1px;min-width:0}
+  .follow .lbl b{font-size:13.5px;font-weight:700}
+  .follow .lbl small{font-size:11.5px;color:var(--ink-dim)}
+  .follow .arrow{color:var(--mint);font-weight:800}
+
+  /* ── footer ── */
+  footer{margin-top:32px;padding-top:18px;border-top:1px solid var(--line)}
+  .disclosure{
+    font-size:11px;line-height:1.7;color:#6E7E9A;
+    background:rgba(255,255,255,.025);border:1px solid var(--line);
+    border-radius:12px;padding:12px 14px;
+  }
+  .colophon{
+    display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;
+    margin-top:14px;font-size:11px;color:#4E5C75;
+  }
+
+  /* ── sticky CTA ── */
+  .sticky{
+    position:fixed;left:0;right:0;bottom:0;z-index:40;
+    padding:9px 14px calc(9px + env(safe-area-inset-bottom));
+    background:rgba(9,15,27,.82);
+    -webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);
+    border-top:1px solid rgba(52,245,197,.22);
+    transform:translateY(120%);transition:transform .22s ease;
+  }
+  .sticky.on{transform:translateY(0)}
+  .sticky .in{max-width:var(--max);margin:0 auto;display:flex;align-items:center;gap:10px}
+  .sticky .pr{min-width:0;flex:1}
+  .sticky .pr b{display:block;font-size:16px;font-weight:900;letter-spacing:-0.03em;line-height:1.2;font-variant-numeric:tabular-nums}
+  .sticky .pr small{display:block;font-size:10px;color:var(--ink-dim);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:150px}
+  .sticky a.go{
+    flex:0 0 auto;display:inline-flex;align-items:center;gap:6px;
+    background:linear-gradient(180deg,#5CFFD6,#26E3B2);color:#04231B;
+    font-size:13.5px;font-weight:900;text-decoration:none;
+    padding:12px 16px;border-radius:12px;
+    box-shadow:0 10px 22px -12px rgba(52,245,197,.8);
+  }
+  .sticky a.go svg{width:15px;height:15px}
+
+  /* ── toast ── */
+  .toast{
+    position:fixed;left:50%;bottom:calc(88px + env(safe-area-inset-bottom));
+    transform:translate(-50%,16px);
+    background:var(--mint);color:#052018;
+    font-size:13px;font-weight:800;
+    padding:10px 17px;border-radius:999px;
+    opacity:0;pointer-events:none;transition:opacity .2s ease, transform .2s ease;
+    z-index:60;box-shadow:0 12px 28px -10px rgba(0,0,0,.85);
+    white-space:nowrap;
+  }
+  .toast.on{opacity:1;transform:translate(-50%,0)}
+
+  @media (max-width:430px){
+    /* 비교표 → 카드형 스택 */
+    table.cmp thead{display:none}
+    table.cmp, table.cmp tbody, table.cmp tr, table.cmp td{display:block;width:100%}
+    table.cmp tr{
+      padding:10px 12px;border-bottom:1px solid var(--line);
+      position:relative;
+    }
+    table.cmp tbody tr:last-child{border-bottom:0}
+    table.cmp td{
+      padding:0 0 3px;border:0;display:flex;gap:10px;font-size:12px;
+    }
+    table.cmp td::before{
+      content:attr(data-label);
+      flex:0 0 62px;color:var(--ink-faint);font-weight:700;font-size:10.5px;
+      letter-spacing:.02em;padding-top:1px;
+    }
+    table.cmp td:first-child{font-size:13.5px;margin-bottom:3px}
+    table.cmp td:first-child::before{flex:0 0 0;content:"";display:none}
+    table.cmp tr.win{background:rgba(52,245,197,.07);box-shadow:inset 2px 0 0 var(--mint)}
+    table.cmp tr.win td{background:transparent;box-shadow:none}
+    table.cmp td.p::after{content:"";}
+  }
+
+  @media (prefers-reduced-motion:reduce){
+    *{animation:none!important;transition:none!important}
+  }
+</style>
+</head>
+<body>
+<div class="shell">
+
+  <div class="topbar">
+    <span class="brand"><span class="bolt">⚡</span>직장인 치트키 <em>@cheatkey.work</em></span>
+    <span class="live"><span class="dot"></span>LIVE</span>
+  </div>
+
+  <main>
+    <!-- 01 오늘의 원픽 (Above the fold) -->
+    <section class="hero" id="hero" aria-labelledby="hero-title"></section>
+
+    <!-- 02 비교 리포트 -->
+    <section id="report-section">
+      <div class="sec-head"><span class="num">02</span><h2>비교 리포트</h2><span class="count" id="report-count"></span></div>
+      <div id="report"></div>
+    </section>
+
+    <!-- 03 핫딜 전체 -->
+    <section id="deals-section">
+      <div class="sec-head"><span class="num">03</span><h2>오늘의 핫딜</h2><span class="count" id="deals-count"></span></div>
+      <div id="deals"></div>
+    </section>
+
+    <!-- 04 AI 치트키 -->
+    <section id="tips-section">
+      <div class="sec-head"><span class="num">04</span><h2>AI 치트키</h2><span class="count" id="tips-count"></span></div>
+      <div id="tips"></div>
+    </section>
+
+    <section>
+      <div class="sec-head"><span class="num">05</span><h2>놓치지 않으려면</h2></div>
+      <div class="follow">
+        <a href="https://www.instagram.com/cheatkey.work/" target="_blank" rel="noopener">
+          <span class="lbl"><b>인스타그램 팔로우</b><small>매일 4번, AI 치트키 · 검증 핫딜</small></span>
+          <span class="arrow">↗</span>
+        </a>
+        <a href="https://www.youtube.com/@cheatkeywork" target="_blank" rel="noopener">
+          <span class="lbl"><b>유튜브 쇼츠</b><small>1탭으로 쿠팡 최저가 확인</small></span>
+          <span class="arrow">↗</span>
+        </a>
+        <a href="https://www.threads.net/@cheatkey.work" target="_blank" rel="noopener">
+          <span class="lbl"><b>스레드 팔로우</b><small>짧고 굵은 하루 한 줄</small></span>
+          <span class="arrow">↗</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p class="disclosure">
+      이 페이지의 일부 링크는 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다. 가격·재고는 실시간으로 바뀔 수 있어 결제 직전 쿠팡에서 최종 확인해 주세요.
+    </p>
+    <div class="colophon">
+      <span>© <span id="year">2026</span> 직장인 치트키 · @cheatkey.work</span>
+      <span id="updated"></span>
+    </div>
+  </footer>
+
+</div>
+
+<div class="sticky" id="sticky" aria-hidden="true">
+  <div class="in">
+    <span class="pr"><b id="sticky-price"></b><small id="sticky-name"></small></span>
+    <a class="go" id="sticky-go" href="#" target="_blank" rel="noopener sponsored">
+      쿠팡 최저가 바로 보기
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+    </a>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(function () {
+  "use strict";
+
+  /* ─────────────────────────────────────────────────────────────
+     deals.json 지원 스키마
+     deals[i] : { id, title, seller, price, wasPrice, discount, image,
+                  link, note, published,
+                  specs: ["스펙1","스펙2"],            // (선택) 히어로 요약 3줄
+                  comparison: [                      // (선택) 3종 비교표
+                    { name, price, spec, cons, verdict, best:true }
+                    //  또는  [["제품","가격","핵심"],["A","1만원","..."], ...]
+                    //  또는  { columns:[...], rows:[[...]] }
+                  ] }
+     comparison 이 있으면 히어로에 '3종 비교 요약', 본문에 비교표를 그리고,
+     없으면 note/specs 를 핵심 스펙 리포트로 표시합니다. (기존 데이터 그대로 동작)
+     ───────────────────────────────────────────────────────────── */
+
+  var FALLBACK = {
+    updated: "2026-11-18T16:00:00+09:00",
+    tips: [{
+      id: "tip-001",
+      no: "01",
+      tag: "AI · 회의록",
+      title: "회의록 <span class=\"accent\">30분</span> → <span class=\"accent\">30초</span> 프롬프트 3줄",
+      sub: "복붙만 하면 끝. 오늘 회의부터 바로.",
+      steps: [
+        { k: "1 역할", v: "“너는 10년차 PM이야. 요점만.”" },
+        { k: "2 재료", v: "회의 메모는 요약 말고 그대로 붙여넣기" },
+        { k: "3 형식", v: "결정 / 할 일(담당·기한) / 다음 안건" }
+      ],
+      note: "보고서도 똑같아요 — 결론 · 근거 · 요청 순서로 시키면 끝.",
+      prompt: "너는 10년차 PM이야. 아래 회의 메모를 읽고 ① 결정된 것 ② 할 일(담당·기한) ③ 다음에 논의할 안건, 이 세 가지로만 표를 만들어줘. 메모에 없는 건 추측하지 말고 '확인 필요'로 표시해.",
+      link: "https://www.instagram.com/p/Df3V4-Zn4D1/",
+      linkLabel: "인스타 원문 보기"
+    }],
+    deals: [{
+      id: "deal-001",
+      title: "신지모루 O PD 65W GaN 3포트 초고속 접지 충전기, 블랙, 1개",
+      seller: "쿠팡 · 로켓배송",
+      price: 22900,
+      wasPrice: 54900,
+      discount: "58%",
+      image: "img/deal-001.jpg",
+      link: "https://link.coupang.com/a/iL3q0gLlxk",
+      note: "노트북·폰·이어폰 3개 동시 충전 / 상품평 10,117개 / 내일 새벽 도착",
+      published: "2026-11-18 16:00"
+    }]
+  };
+
+  var toastEl = document.getElementById("toast");
+  var toastTimer = null;
+  function toast(msg) {
+    toastEl.textContent = msg;
+    toastEl.classList.add("on");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function () { toastEl.classList.remove("on"); }, 1900);
+  }
+
+  function esc(s) {
+    return String(s == null ? "" : s)
+      .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+  }
+
+  function formatWon(n) {
+    if (n == null || n === "" || isNaN(n)) return "";
+    return Number(n).toLocaleString("ko-KR") + "원";
+  }
+
+  function priceText(v) {
+    if (v == null || v === "") return "";
+    if (!isNaN(v)) return formatWon(v);
+    return String(v);
+  }
+
+  function copyText(text, okMsg) {
+    function fallback() {
+      var ta = document.createElement("textarea");
+      ta.value = text;
+      ta.setAttribute("readonly", "");
+      ta.style.position = "fixed";
+      ta.style.top = "-1000px";
+      document.body.appendChild(ta);
+      ta.select();
+      var ok = false;
+      try { ok = document.execCommand("copy"); } catch (e) { ok = false; }
+      document.body.removeChild(ta);
+      toast(ok ? okMsg : "복사가 안 되면 길게 눌러 직접 복사해 주세요");
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(function () { toast(okMsg); }, fallback);
+    } else {
+      fallback();
+    }
+  }
+
+  function timeLabel(s) {
+    if (!s) return "";
+    var d = new Date(String(s).replace(" ", "T"));
+    if (isNaN(d)) return String(s);
+    return (d.getMonth() + 1) + "." + d.getDate() + " " +
+      String(d.getHours()).padStart(2, "0") + ":" + String(d.getMinutes()).padStart(2, "0");
+  }
+
+  /* ── 비교 데이터 정규화 ── */
+  var KNOWN = [
+    { key: "name",    label: "제품",      alts: ["name", "product", "model", "title", "item", "brand"] },
+    { key: "price",   label: "가격",      alts: ["price", "saleprice", "cost", "amount", "pricing"], price: true },
+    { key: "spec",    label: "핵심 스펙", alts: ["spec", "specs", "features", "pros", "merit", "merits", "key", "strength"] },
+    { key: "cons",    label: "아쉬운 점", alts: ["cons", "con", "weak", "weakness", "downside", "demerit", "drawback", "minus"] },
+    { key: "verdict", label: "결론",      alts: ["verdict", "conclusion", "result", "comment", "review", "reason", "note"] }
+  ];
+  var SKIP_KEY = /^(id|image|img|photo|thumb|link|url|href|published|date|rank|badge|win|best|pick|winner|recommended|highlight|accent)$/i;
+
+  function cmpPrice(v) {
+    if (v == null || v === "") return "";
+    if (typeof v === "number" || (!isNaN(v) && String(v).trim() !== "")) {
+      return Number(v).toLocaleString("ko-KR") + "원";
+    }
+    var s = String(v).trim();
+    if (/^[\d,]+$/.test(s)) return Number(s.replace(/,/g, "")).toLocaleString("ko-KR") + "원";
+    return s;
+  }
+
+  function isWin(o) {
+    if (!o || typeof o !== "object") return false;
+    if (o.best === true || o.winner === true || o.pick === true || o.recommended === true) return true;
+    if (String(o.rank) === "1") return true;
+    var b = String(o.badge || o.tag || o.label || "");
+    return /원픽|1위|best/i.test(b);
+  }
+
+  // 반환: { cols:[{label,price}], rows:[{cells:[string], win:bool}] } 또는 null
+  function normalizeComparison(c) {
+    if (!c) return null;
+
+    // { columns:[...], rows:[[...]] }
+    if (!Array.isArray(c) && typeof c === "object") {
+      var colsObj = c.columns || c.headers;
+      var rowsObj = c.rows || c.data;
+      if (Array.isArray(colsObj) && Array.isArray(rowsObj)) {
+        return buildColumns(colsObj, rowsObj);
+      }
+      return null;
+    }
+    if (!Array.isArray(c) || !c.length) return null;
+
+    // [["제품","가격"],["A","1만원"],...]
+    if (Array.isArray(c[0])) {
+      var head = c[0].map(function (h) { return String(h == null ? "" : h); });
+      var body = c.slice(1).map(function (r) {
+        return (Array.isArray(r) ? r : [r]).map(function (v) { return v == null ? "" : String(v); });
+      });
+      return buildColumns(head, body);
+    }
+
+    // [{ name, price, spec, cons, verdict, best }]
+    if (typeof c[0] === "object") {
+      var allKeys = [];
+      c.forEach(function (o) {
+        if (!o || typeof o !== "object") return;
+        Object.keys(o).forEach(function (k) {
+          if (allKeys.indexOf(k) < 0 && typeof o[k] !== "object") allKeys.push(k);
+        });
+      });
+      var used = {}, cols = [];
+      KNOWN.forEach(function (def) {
+        for (var i = 0; i < allKeys.length; i++) {
+          var k = allKeys[i];
+          if (used[k]) continue;
+          if (def.alts.indexOf(k.toLowerCase()) >= 0) {
+            used[k] = 1;
+            cols.push({ key: k, label: def.label, price: !!def.price });
+            return;
+          }
+        }
+      });
+      allKeys.forEach(function (k) {
+        if (used[k] || SKIP_KEY.test(k)) return;
+        cols.push({ key: k, label: k });
+      });
+      if (!cols.length) return null;
+
+      var rows = c.map(function (o) {
+        return {
+          win: isWin(o),
+          cells: cols.map(function (col) {
+            var v = o ? o[col.key] : "";
+            if (Array.isArray(v)) v = v.join(" · ");
+            v = v == null ? "" : String(v);
+            return col.price ? cmpPrice(v) : v;
+          })
+        };
+      });
+      return { cols: cols, rows: rows };
+    }
+    return null;
+  }
+
+  function buildColumns(head, body) {
+    var cols = head.map(function (h, i) {
+      var label = String(h == null ? "" : h);
+      return { label: label || ("항목 " + (i + 1)), price: /가격|price|금액/i.test(label) };
+    });
+    var rows = body.map(function (r) {
+      var cells = cols.map(function (col, i) {
+        var v = r[i] == null ? "" : String(r[i]);
+        return col.price ? cmpPrice(v) : v;
+      });
+      var joined = cells.join(" ");
+      var win = /원픽|1위|추천|best|★/i.test(cells[0] || "") || /^1\s*$/.test(String(r[0] || ""));
+      return { win: win, cells: cells };
+    });
+    return { cols: cols, rows: rows };
+  }
+
+  // 핵심 스펙 3줄 (comparison 없을 때)
+  function specLines(d) {
+    if (Array.isArray(d.specs) && d.specs.length) {
+      return d.specs.slice(0, 3).map(function (s) { return String(s); });
+    }
+    if (d.note) {
+      return String(d.note).split(/\s*[\/|]\s*/).filter(Boolean).slice(0, 3);
+    }
+    return [];
+  }
+
+  var CHECK = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>';
+  var DOT = '<svg class="mute" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="12" cy="12" r="3.4"/></svg>';
+  var ARROW = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>';
+  var TAG_ICON = '<svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="#34F5C5" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
+    '<path d="M20.6 13.4 13.4 20.6a2 2 0 0 1-2.8 0l-7.2-7.2A2 2 0 0 1 2.8 12V4.8A2 2 0 0 1 4.8 2.8H12a2 2 0 0 1 1.4.6l7.2 7.2a2 2 0 0 1 0 2.8Z"/>' +
+    '<circle cx="7.6" cy="7.6" r="1.4" fill="#34F5C5" stroke="none"/></svg>';
+
+  /* ── 01 히어로 ── */
+  var heroCta = null;
+
+  function renderHero(deals, data) {
+    var host = document.getElementById("hero");
+    var d = (deals && deals[0]) || null;
+
+    if (!d) {
+      host.innerHTML =
+        '<div class="hero-top"><span class="hero-badge"><span class="dot"></span>다음 업데이트 준비 중</span></div>' +
+        '<h1 class="hero-title" id="hero-title">오늘의 원픽 핫딜을 검증하고 있어요</h1>' +
+        '<p class="lede" style="font-size:12.5px;color:var(--ink-dim);margin:0 0 14px">16:00 · 19:30 새 원픽이 올라옵니다. 인스타에서 가장 먼저 받아보세요.</p>' +
+        '<a class="cta" href="https://www.instagram.com/cheatkey.work/" target="_blank" rel="noopener">' +
+          '<span class="cta-main">인스타에서 먼저 받기 ' + ARROW + '</span>' +
+          '<span class="cta-sub">@cheatkey.work</span></a>';
+      return;
+    }
+
+    var cmp = normalizeComparison(d.comparison || d.compare || d.compareTable);
+    var lines = "";
+
+    if (cmp && cmp.rows.length >= 2) {
+      var rows = cmp.rows.slice(0, 3);
+      lines = rows.map(function (r) {
+        var nameIdx = 0, priceIdx = -1;
+        cmp.cols.forEach(function (c, i) { if (c.price) priceIdx = i; });
+        var nm = r.cells[nameIdx] || "";
+        var pr = priceIdx >= 0 ? r.cells[priceIdx] : "";
+        var extra = "";
+        if (!pr) {
+          for (var i = 0; i < r.cells.length; i++) {
+            if (i !== nameIdx && r.cells[i]) { extra = r.cells[i]; break; }
+          }
+        }
+        return '<li class="' + (r.win ? "win" : "") + '">' +
+          (r.win ? '<span class="pick">원픽</span>' : DOT) +
+          '<span><span class="nm">' + esc(nm) + '</span>' +
+          (pr ? ' <span class="pr">' + esc(pr) + '</span>' : (extra ? ' <span style="color:var(--ink-dim);font-weight:600">· ' + esc(extra) + '</span>' : "")) +
+          '</span></li>';
+      }).join("");
+    } else {
+      var sp = specLines(d);
+      lines = sp.map(function (s, i) {
+        return '<li>' + (i === 0 ? CHECK : CHECK) + '<span>' + esc(s) + '</span></li>';
+      }).join("");
+    }
+
+    var priceHtml = "";
+    if (d.price != null && d.price !== "") {
+      priceHtml += '<span class="now">' + esc(formatWon(d.price).replace(/원$/, "")) + '<small>원</small></span>';
+    }
+    if (d.wasPrice != null && d.wasPrice !== "") {
+      priceHtml += '<span class="was">' + esc(formatWon(d.wasPrice)) + '</span>';
+    }
+    if (d.discount) {
+      priceHtml += '<span class="off">' + esc(d.discount) + ' 할인</span>';
+    }
+
+    var badgeLabel = cmp ? "3종 비교 · 오늘의 원픽" : "검증 완료 · 오늘의 원픽";
+    var stamp = timeLabel(d.published || data.updated);
+
+    host.innerHTML =
+      '<div class="hero-top">' +
+        '<span class="hero-badge"><span class="dot"></span>' + esc(badgeLabel) + '</span>' +
+        '<span class="hero-rank">BEST 1</span>' +
+      '</div>' +
+      '<h1 class="hero-title" id="hero-title">' + esc(d.title || "오늘의 원픽") + '</h1>' +
+      (priceHtml ? '<div class="hero-price">' + priceHtml + '</div>' : "") +
+      (lines ? '<ul class="hero-specs">' + lines + '</ul>' : "") +
+      '<a class="cta" id="hero-cta" href="' + esc(d.link || "#") + '" target="_blank" rel="noopener sponsored" aria-label="쿠팡 최저가 바로 보기">' +
+        '<span class="cta-main">쿠팡 최저가 바로 보기 ' + ARROW + '</span>' +
+        '<span class="cta-sub">' + esc(d.seller || "쿠팡") + ' · 실시간 최저가 확인</span>' +
+      '</a>' +
+      '<div class="hero-foot">' +
+        '<span>쿠팡 파트너스 링크</span>' +
+        (stamp ? '<span>업데이트 ' + esc(stamp) + '</span>' : "") +
+      '</div>';
+
+    heroCta = document.getElementById("hero-cta");
+    renderSticky(d);
+    observeHero();
+  }
+
+  /* ── 02 비교 리포트 ── */
+  function renderReport(deals) {
+    var host = document.getElementById("report");
+    var countEl = document.getElementById("report-count");
+    var d = (deals && deals[0]) || null;
+    host.innerHTML = "";
+
+    if (!d) { countEl.textContent = ""; return; }
+
+    var cmp = normalizeComparison(d.comparison || d.compare || d.compareTable);
+    var el = document.createElement("article");
+    el.className = "card report";
+
+    var head = '<h3 class="r-title">' + esc(d.title || "") + '</h3>' +
+      '<p class="r-sub">' + (cmp ? "인기 후보를 같은 기준으로 나란히 놓고 골랐습니다." : "직접 써보고 남긴 검증 포인트입니다.") + '</p>';
+
+    var body = "";
+
+    if (cmp) {
+      var thead = '<thead><tr>' + cmp.cols.map(function (c) {
+        return '<th scope="col">' + esc(c.label) + '</th>';
+      }).join("") + '</tr></thead>';
+
+      var tbody = '<tbody>' + cmp.rows.map(function (r) {
+        var tds = cmp.cols.map(function (c, i) {
+          var v = r.cells[i] || "";
+          var label = esc(c.label);
+          if (i === 0) {
+            return '<td data-label="' + label + '">' +
+              (r.win ? '<span class="win-badge">원픽</span>' : "") + esc(v) + '</td>';
+          }
+          return '<td class="' + (c.price ? "p" : "") + '" data-label="' + label + '">' + esc(v) + '</td>';
+        }).join("");
+        return '<tr class="' + (r.win ? "win" : "") + '">' + tds + '</tr>';
+      }).join("") + '</tbody>';
+
+      body = '<div class="cmp-wrap"><table class="cmp">' +
+        '<caption style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">비교표</caption>' +
+        thead + tbody + '</table></div>';
+
+      var verdictText = "";
+      if (typeof d.verdict === "string") verdictText = d.verdict;
+      else if (typeof d.summary === "string") verdictText = d.summary;
+      if (verdictText) {
+        body += '<p class="verdict"><b>한 줄 결론</b> · ' + esc(verdictText) + '</p>';
+      }
+      body += '<p class="cmp-note">' + CHECK + ' 가격은 확인 시점 기준 · 결제 전 쿠팡에서 최종 확인</p>';
+    } else {
+      var rowsData = [];
+      if (d.price != null && d.price !== "") {
+        var pv = esc(formatWon(d.price));
+        if (d.wasPrice) pv += " <s style=\"color:var(--ink-faint);font-weight:600\">" + esc(formatWon(d.wasPrice)) + "</s>";
+        if (d.discount) pv += " <b style=\"color:var(--gold)\">" + esc(d.discount) + " 할인</b>";
+        rowsData.push({ k: "가격", v: pv, html: true });
+      }
+      var sp = specLines(d);
+      var fromNote = !(Array.isArray(d.specs) && d.specs.length);
+      if (sp.length) rowsData.push({ k: "핵심 스펙", v: sp.join(" / ") });
+      if (d.seller) rowsData.push({ k: "판매·배송", v: d.seller });
+      var stampRow = timeLabel(d.published || "");
+      if (stampRow) rowsData.push({ k: "확인 시점", v: stampRow });
+
+      if (rowsData.length) {
+        body = '<div class="spec-table">' + rowsData.map(function (r) {
+          return '<div class="spec-row"><span class="k">' + esc(r.k) + '</span>' +
+                 '<span class="v">' + (r.html ? r.v : esc(r.v)) + '</span></div>';
+        }).join("") + '</div>';
+      }
+      if (d.note && !fromNote) {
+        body += '<p class="verdict"><b>검증 메모</b> · ' + esc(d.note) + '</p>';
+      }
+    }
+
+    body += '<div class="btn-row" style="margin-top:12px">' +
+      '<a class="btn primary" href="' + esc(d.link || "#") + '" target="_blank" rel="noopener sponsored">쿠팡에서 최저가 보기 ' + ARROW + '</a>' +
+      '</div>';
+
+    el.innerHTML = head + body;
+    host.appendChild(el);
+    countEl.textContent = cmp ? cmp.rows.length + "종 비교" : "검증 리포트";
+  }
+
+  /* ── 03 핫딜 목록 ── */
+  function renderDeals(list) {
+    var host = document.getElementById("deals");
+    var count = document.getElementById("deals-count");
+    host.innerHTML = "";
+
+    if (!list || !list.length) {
+      count.textContent = "";
+      var soon = document.createElement("div");
+      soon.className = "card soon";
+      soon.innerHTML =
+        '<span class="clock"><span class="dot"></span>NEXT UPDATE</span>' +
+        "<strong>다음 검증 핫딜을 준비 중입니다</strong>" +
+        '<span class="s">직접 비교해 고른 IT·가전·생활템만 올립니다.<br>가격이 바뀌면 바로 내립니다.</span>';
+      host.appendChild(soon);
+      return;
+    }
+
+    count.textContent = list.length + "개";
+
+    list.forEach(function (d, idx) {
+      var a = document.createElement("a");
+      a.className = "card deal";
+      a.href = d.link || "#";
+      a.target = "_blank";
+      a.rel = "noopener sponsored";
+
+      var priceBits = "";
+      if (d.price != null && d.price !== "") {
+        priceBits += '<span class="now">' + formatWon(d.price) + "</span>";
+      }
+      if (d.wasPrice != null && d.wasPrice !== "") {
+        priceBits += '<span class="was">' + formatWon(d.wasPrice) + "</span>";
+      }
+      if (d.discount != null && d.discount !== "") {
+        priceBits += '<span class="off">' + esc(d.discount) + "</span>";
+      }
+
+      a.innerHTML =
+        '<span class="thumb">' + (d.image ? '<img src="' + esc(d.image) + '" alt="" loading="' + (idx === 0 ? "eager" : "lazy") + '">' : TAG_ICON) + "</span>" +
+        '<span class="info">' +
+          '<span class="seller">' + esc(d.seller || "쿠팡 파트너스") + "</span>" +
+          '<span class="name">' + esc(d.title) + "</span>" +
+          (priceBits ? '<span class="price">' + priceBits + "</span>" : "") +
+          (d.note ? '<span class="note">' + esc(d.note) + "</span>" : "") +
+        "</span>";
+
+      host.appendChild(a);
+    });
+  }
+
+  /* ── 04 AI 치트키 ── */
+  function renderTips(list) {
+    var host = document.getElementById("tips");
+    var count = document.getElementById("tips-count");
+    host.innerHTML = "";
+    if (!list || !list.length) {
+      count.textContent = "";
+      return;
+    }
+    count.textContent = list.length + "개";
+
+    list.forEach(function (t) {
+      var el = document.createElement("article");
+      el.className = "card tip";
+
+      var steps = (t.steps || []).map(function (s, i) {
+        return '<li><span class="num">' + (i + 1) + '</span>' +
+               '<span class="body"><span class="k">' + esc(s.k) + '</span>' +
+               '<span class="v">' + esc(s.v) + '</span></span></li>';
+      }).join("");
+
+      var buttons = "";
+      if (t.prompt) {
+        buttons += '<button class="btn primary" type="button" data-copy="' + esc(t.prompt) + '">' +
+                   '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="12" height="12" rx="2.5"/><path d="M5 15V5a2 2 0 0 1 2-2h8"/></svg>' +
+                   '프롬프트 복사</button>';
+        buttons += '<a class="btn ghost" href="https://chatgpt.com/" target="_blank" rel="noopener">ChatGPT 열기 ↗</a>';
+      }
+      if (t.link) {
+        buttons += '<a class="btn ghost" href="' + esc(t.link) + '" target="_blank" rel="noopener">' +
+                   esc(t.linkLabel || "원문 보기") + ' ↗</a>';
+      }
+
+      el.innerHTML =
+        (t.tag ? '<span class="tag">' + esc(t.tag) + (t.no ? " · " + esc(t.no) : "") + '</span>' : "") +
+        "<h3>" + (t.title || "") + "</h3>" +
+        (t.sub ? '<p class="sub">' + esc(t.sub) + "</p>" : "") +
+        (steps ? '<ul class="steps">' + steps + "</ul>" : "") +
+        (t.note ? '<p class="sub" style="margin:-2px 0 14px">' + esc(t.note) + "</p>" : "") +
+        (buttons ? '<div class="btn-row">' + buttons + "</div>" : "");
+
+      host.appendChild(el);
+    });
+  }
+
+  /* ── 스티키 CTA ── */
+  var sticky = document.getElementById("sticky");
+  var stickyOn = false;
+  function renderSticky(d) {
+    if (!d) return;
+    document.getElementById("sticky-price").textContent = formatWon(d.price) || "최저가";
+    document.getElementById("sticky-name").textContent = d.title || "";
+    var go = document.getElementById("sticky-go");
+    go.href = d.link || "#";
+  }
+  var heroIO = null;
+  function observeHero() {
+    if (!heroCta || !("IntersectionObserver" in window)) return;
+    if (heroIO) heroIO.disconnect();
+    var io = heroIO = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        var shouldShow = !e.isIntersecting && e.boundingClientRect.top < 0;
+        if (shouldShow !== stickyOn) {
+          stickyOn = shouldShow;
+          sticky.classList.toggle("on", shouldShow);
+          sticky.setAttribute("aria-hidden", shouldShow ? "false" : "true");
+        }
+      });
+    }, { threshold: 0 });
+    io.observe(heroCta);
+  }
+
+  function render(data) {
+    var deals = data.deals || [];
+    renderHero(deals, data);
+    renderReport(deals);
+    renderDeals(deals);
+    renderTips(data.tips || []);
+    if (data.updated) {
+      var lab = timeLabel(data.updated);
+      if (lab) document.getElementById("updated").textContent = "업데이트 " + lab;
+    }
+  }
+
+  // 복사 버튼 위임
+  document.addEventListener("click", function (e) {
+    var btn = e.target.closest ? e.target.closest("[data-copy]") : null;
+    if (!btn) return;
+    e.preventDefault();
+    copyText(btn.getAttribute("data-copy"), "프롬프트 복사 완료 ⚡");
+  });
+
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  // 첫 화면을 비우지 않도록 폴백을 먼저 그리고, 실제 데이터로 교체
+  render(FALLBACK);
+
+  fetch("preview-deals.json?t=" + Date.now(), { cache: "no-store" })
+    .then(function (r) { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
+    .then(render)
+    .catch(function () { /* 폴백 유지 */ });
+})();
+</script>
+</body>
+</html>
