@@ -282,46 +282,8 @@
   }
   .verdict b{color:var(--ink);font-weight:700}
 
-  /* ───────────── 핫딜 리스트 ───────────── */
-  .deal{
-    display:flex;gap:13px;align-items:center;
-    padding:13px;text-decoration:none;color:inherit;
-  }
-  .deal + .deal{margin-top:10px}
-  .deal .thumb{
-    flex:0 0 74px;height:74px;border-radius:12px;overflow:hidden;
-    background:#F4F5F7;border:1px solid var(--line-2);
-    display:grid;place-items:center;padding:5px;
-  }
-  .deal .thumb img{width:100%;height:100%;object-fit:contain;display:block;mix-blend-mode:multiply}
-  .deal .info{min-width:0;flex:1}
-  .deal .seller{
-    font-size:9.5px;font-weight:800;letter-spacing:.06em;color:var(--mint);
-    margin-bottom:3px;
-  }
-  .deal .name{
-    font-size:13px;font-weight:700;line-height:1.4;color:var(--ink);
-    margin:0 0 5px;letter-spacing:-0.02em;
-    display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
-  }
-  .price{display:flex;align-items:baseline;gap:5px;flex-wrap:wrap}
-  .price .now{font-size:16px;font-weight:800;color:var(--ink);letter-spacing:-0.03em}
-  .price .was{font-size:11px;color:var(--ink-3);text-decoration:line-through}
-  .price .off{font-size:11px;font-weight:800;color:var(--coral)}
-  .deal .note{font-size:11px;color:var(--ink-2);margin-top:4px;line-height:1.45}
-
-  /* 빈 상태 */
-  .soon{text-align:center;padding:26px 20px;border-style:dashed}
-  .soon .clock{
-    display:inline-flex;align-items:center;gap:6px;
-    font-size:10px;font-weight:800;letter-spacing:.1em;color:var(--ink-3);
-    background:#F7F8FA;border:1px solid var(--line);
-    border-radius:999px;padding:4px 10px;margin-bottom:11px;
-  }
-  .soon .clock .dot{width:5px;height:5px;border-radius:50%;background:var(--mint);animation:pulse 2s ease-in-out infinite}
-  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.25}}
-  .soon strong{display:block;font-size:14.5px;font-weight:800;margin-bottom:5px;color:var(--ink)}
-  .soon span.s{font-size:12px;color:var(--ink-2);line-height:1.6}
+  /* ───────────── 섹션 설명 ───────────── */
+  .sec-note{margin:-3px 1px 12px;font-size:11.8px;line-height:1.55;color:var(--ink-2);font-weight:500}
 
   /* ───────────── AI 치트키 ───────────── */
   .tip{padding:16px 15px 15px}
@@ -383,6 +345,32 @@
   .btn.ghost{color:var(--ink-2);font-weight:700}
   .btn.ghost svg{color:var(--ink-3)}
 
+  /* ───────────── Make 카드 ───────────── */
+  .make{padding:16px 15px 15px;margin-top:12px;background:linear-gradient(180deg,#FFFFFF 0%,#FBFFFD 100%)}
+  .make .tag{
+    display:inline-block;font-size:9.5px;font-weight:800;letter-spacing:.05em;
+    color:var(--mint);background:var(--mint-soft);border:1px solid var(--mint-line);
+    border-radius:999px;padding:3px 9px;margin-bottom:10px;
+  }
+  .make h3{
+    font-size:18px;line-height:1.35;font-weight:800;margin:0 0 6px;
+    letter-spacing:-0.04em;color:var(--ink);
+  }
+  .make h3 .accent{color:var(--mint)}
+  .make-sub{margin:0 0 12px;font-size:12.3px;line-height:1.6;color:var(--ink-2);font-weight:500}
+  .make-sub b{color:var(--ink);font-weight:800}
+  .make-list{
+    list-style:none;margin:0 0 13px;padding:0;display:grid;gap:1px;
+    background:var(--line-2);border:1px solid var(--line);border-radius:12px;overflow:hidden;
+  }
+  .make-list li{
+    background:#fff;padding:9px 12px;font-size:12.2px;font-weight:600;
+    color:#374151;line-height:1.45;display:flex;gap:7px;
+  }
+  .make-list li::before{content:"→";color:var(--mint);font-weight:800;flex:0 0 auto}
+  .make-cta{width:100%;justify-content:center;min-height:48px;font-size:13.5px;letter-spacing:-0.02em}
+  .make-cta svg{width:15px;height:15px}
+
   /* ───────────── 팔로우 ───────────── */
   .follow{display:grid;gap:8px}
   .follow a{
@@ -410,6 +398,7 @@
   }
   .privacy-line{margin:8px 0 0;font-size:10.5px;font-weight:600;letter-spacing:-0.01em}
   .privacy-line a{color:var(--ink-2);text-decoration:none;border-bottom:1px solid var(--line)}
+  .dot-sep{margin:0 4px;color:var(--ink-3)}
 
   /* ───────────── sticky ───────────── */
   .sticky{
@@ -476,8 +465,8 @@
   <div class="nav-in">
     <a class="brand" href="#top"><span class="bolt">⚡</span>직장인 치트키</a>
     <nav class="chips" aria-label="빠른 이동">
-      <a class="chip hero-chip" href="#deals-section">오늘의 핫딜</a>
-      <a class="chip" href="#tips-section">AI 치트키</a>
+      <a class="chip hero-chip" href="#tips-section">AI 치트키</a>
+      <a class="chip" href="#make">Make 무료</a>
     </nav>
   </div>
 </div>
@@ -498,30 +487,37 @@
       <div id="report"></div>
     </section>
 
-    <!-- 03 핫딜 -->
-    <section id="deals-section">
-      <div class="sec-head">
-        <span class="kicker">02</span>
-        <h2>오늘의 핫딜</h2>
-        <span class="count" id="deals-count"></span>
-      </div>
-      <div id="deals"></div>
-    </section>
-
-    <!-- 04 AI 치트키 -->
+    <!-- 02 AI 치트키 (핫딜 목록 제거 — 프롬프트를 위로) -->
     <section id="tips-section">
       <div class="sec-head">
-        <span class="kicker">03</span>
+        <span class="kicker">02</span>
         <h2>바로 쓰는 AI 치트키</h2>
         <span class="count" id="tips-count"></span>
       </div>
+      <p class="sec-note">복붙하면 끝나는 프롬프트 · 반복 업무는 자동화로 넘기세요.</p>
       <div id="tips"></div>
+
+      <!-- Make.com 1개월 무료 -->
+      <div class="card make" id="make">
+        <span class="tag">자동화 · MAKE.COM</span>
+        <h3>반복 업무는 <span class="accent">Make</span>에 맡기기</h3>
+        <p class="make-sub">메일·슬랙·노션·시트를 손대지 않고 이어붙입니다. 신규 가입이면 <b>Core 플랜 1개월 무료</b>.</p>
+        <ul class="make-list">
+          <li>회의 녹음 → AI 요약 → 노션 표로 자동 저장</li>
+          <li>고객 메일 → 내 톤으로 답장 초안 → 임시보관함 대기</li>
+          <li>주간 보고서: 시트 취합 → 요약 → 슬랙 게시</li>
+        </ul>
+        <a class="btn primary make-cta" href="https://www.make.com/en/register?pc=cheatkey" target="_blank" rel="noopener sponsored">
+          Make 1개월 Core 플랜 무료로 시작
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
     </section>
 
-    <!-- 05 팔로우 -->
+    <!-- 03 팔로우 -->
     <section id="follow-section">
       <div class="sec-head">
-        <span class="kicker">04</span>
+        <span class="kicker">03</span>
         <h2>놓치지 않으려면</h2>
       </div>
       <div class="follow">
@@ -543,13 +539,17 @@
 
   <footer>
     <p class="disclosure">
-      이 포스팅은 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다. 가격·재고는 실시간으로 바뀔 수 있어 결제 직전 쿠팡에서 최종 확인해 주세요.
+      이 포스팅은 쿠팡 파트너스·Make.com 제휴 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다. 가격·재고·요금제는 실시간으로 바뀔 수 있어 결제 직전 판매처에서 최종 확인해 주세요.
     </p>
     <div class="colophon">
       <span>© <span id="year">2026</span> 직장인 치트키 · @cheatkey.work</span>
       <span id="updated"></span>
     </div>
-    <p class="privacy-line"><a href="/cheatkey/privacy.html">Privacy Policy · 개인정보처리방침</a></p>
+    <p class="privacy-line">
+      <a href="/cheatkey/privacy.html">Privacy Policy · 개인정보처리방침</a>
+      <span class="dot-sep">·</span>
+      <a href="/cheatkey/en/">English</a>
+    </p>
   </footer>
 
 </div>
@@ -895,58 +895,7 @@
     host.appendChild(el);
   }
 
-  /* ── 03 핫딜 ── */
-  function renderDeals(list) {
-    var host = document.getElementById("deals");
-    var count = document.getElementById("deals-count");
-    host.innerHTML = "";
-
-    if (!list || !list.length) {
-      count.textContent = "";
-      var soon = document.createElement("div");
-      soon.className = "card soon";
-      soon.innerHTML =
-        '<span class="clock"><span class="dot"></span>NEXT UPDATE</span>' +
-        "<strong>다음 검증 핫딜을 준비 중입니다</strong>" +
-        '<span class="s">직접 비교해 고른 IT·가전·생활템만 올립니다.<br>가격이 바뀌면 바로 내립니다.</span>';
-      host.appendChild(soon);
-      return;
-    }
-
-    count.textContent = list.length + "개";
-
-    list.forEach(function (d, idx) {
-      var a = document.createElement("a");
-      a.className = "card deal";
-      a.href = d.link || "#";
-      a.target = "_blank";
-      a.rel = "noopener sponsored";
-
-      var priceBits = "";
-      if (d.price != null && d.price !== "") {
-        priceBits += '<span class="now">' + formatWon(d.price) + "</span>";
-      }
-      if (d.wasPrice != null && d.wasPrice !== "") {
-        priceBits += '<span class="was">' + formatWon(d.wasPrice) + "</span>";
-      }
-      if (d.discount != null && d.discount !== "") {
-        priceBits += '<span class="off">' + esc(d.discount) + "</span>";
-      }
-
-      a.innerHTML =
-        '<span class="thumb">' + (d.image ? '<img src="' + esc(d.image) + '" alt="" loading="' + (idx === 0 ? "eager" : "lazy") + '">' : TAG_ICON) + "</span>" +
-        '<span class="info">' +
-          '<span class="seller">' + esc(d.seller || "쿠팡 파트너스") + "</span>" +
-          '<span class="name">' + esc(d.title) + "</span>" +
-          (priceBits ? '<span class="price">' + priceBits + "</span>" : "") +
-          (d.note ? '<span class="note">' + esc(d.note) + "</span>" : "") +
-        "</span>";
-
-      host.appendChild(a);
-    });
-  }
-
-  /* ── 04 AI 치트키 ── */
+  /* ── 03 AI 치트키 ── */
   function renderTips(list) {
     var host = document.getElementById("tips");
     var count = document.getElementById("tips-count");
@@ -1021,7 +970,6 @@
     var deals = data.deals || [];
     renderHero(deals, data);
     renderReport(deals);
-    renderDeals(deals);
     renderTips(data.tips || []);
     if (data.updated) {
       var lab = timeLabel(data.updated);
