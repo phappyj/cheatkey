@@ -58,6 +58,7 @@
     {
       "id": "deal-001",
       "title": "신지모루 O PD 65W GaN 3포트 초고속 접지 충전기, 블랙, 1개",
+      "shortTitle": "신지모루 O-PD 65W GaN 3포트 접지 충전기",
       "seller": "쿠팡 · 로켓배송",
       "price": 22900,
       "wasPrice": 54900,
@@ -65,7 +66,48 @@
       "image": "img/deal-001.jpg",
       "link": "https://link.coupang.com/a/iL3q0gLlxk",
       "note": "노트북·폰·이어폰 3개 동시 충전 / 상품평 10,117개 / 내일 새벽 도착",
-      "published": "2026-11-18 16:00"
+      "published": "2026-11-18 16:00",
+      "specs": [
+        "노트북·폰·이어폰 3개 동시 충전",
+        "PPS·PD 3.0·SFC 2.0 지원",
+        "GaN + 접지형 · 150g"
+      ],
+      "verdict": "같은 65W 3포트 3종 중 최저가이면서, GaN 소재·접지형·PPS까지 갖춘 건 이 제품뿐입니다. 아트뮤는 C타입만 3개라 USB-A 기기가 빠지고, 삼성 트리오는 정품 보증이 강점이지만 GaN이 아니고 1만 원 이상 비쌉니다.",
+      "comparison": [
+        {
+          "name": "신지모루 오피디 PD PPS 65W 3포트 GaN 접지형 충전기",
+          "short": "신지모루 O-PD",
+          "price": 22900,
+          "priceNote": "쿠팡",
+          "port": "C 2 + A 1",
+          "feats": "GaN · 접지 · PPS",
+          "weight": "150g",
+          "cons": "케이블 미포함",
+          "best": true
+        },
+        {
+          "name": "아트뮤 PD3.2 65W AVS GaN 접지 멀티 충전기 GB653",
+          "short": "아트뮤 GB653",
+          "price": 25700,
+          "priceNote": "다나와 최저가",
+          "port": "C 3",
+          "feats": "GaN · 접지 · PD 3.2",
+          "weight": "—",
+          "cons": "USB-A 포트 없음",
+          "best": false
+        },
+        {
+          "name": "삼성전자 PD PPS 65W 3포트 충전기 EP-T6530",
+          "short": "삼성 트리오",
+          "price": 34110,
+          "priceNote": "다나와 최저가",
+          "port": "C 2 + A 1",
+          "feats": "SFC 2.0 · GaN 아님",
+          "weight": "155g",
+          "cons": "GaN 아님 · 셋 중 가장 비쌈",
+          "best": false
+        }
+      ]
     }
   ]
 }
