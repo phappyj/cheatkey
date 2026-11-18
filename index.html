@@ -224,9 +224,12 @@
   }
   table.cmp thead th:first-child{background:transparent}
   table.cmp thead th.best{
-    background:var(--mint-soft);
+    background:#ECFDF5;
     border-top:2px solid var(--mint);
-    border-radius:0;
+    border-left:1px solid var(--mint-line);
+    border-right:1px solid var(--mint-line);
+    border-radius:10px 10px 0 0;
+    box-shadow:inset 0 0 0 1px rgba(14,159,110,.04);
   }
   table.cmp tbody tr:last-child td{border-bottom:0}
   table.cmp thead th:first-child{width:50px;padding:0}
@@ -234,7 +237,12 @@
     width:50px;text-align:left;font-size:10px;font-weight:700;color:var(--ink-3);
     letter-spacing:-0.01em;padding:8px 4px 8px 2px;line-height:1.35;
   }
-  table.cmp tbody td.best{background:#F7FEFB}
+  table.cmp tbody td.best{
+    background:#F3FCF8;
+    border-left:1px solid var(--mint-line);
+    border-right:1px solid var(--mint-line);
+  }
+  table.cmp tbody tr:last-child td.best{border-bottom:1px solid var(--mint-line)}
   table.cmp .pick{
     display:inline-block;font-size:8.5px;font-weight:800;letter-spacing:.04em;
     color:#fff;background:var(--mint);border-radius:4px;
@@ -256,7 +264,7 @@
   table.cmp td.v{color:#374151;font-weight:600;font-size:10.8px}
   table.cmp td.v b{color:var(--ink);font-weight:800}
   table.cmp td.cons{color:#9A3412;font-weight:600;background:#FFFBF7}
-  table.cmp tbody td.cons.best{background:#FFFDF9}
+  table.cmp tbody td.cons.best{background:#F3FCF8;color:#9A3412}
   .cmp-legend{
     display:flex;align-items:flex-start;gap:5px;
     margin:10px 2px 0;font-size:10px;line-height:1.5;color:var(--ink-3);font-weight:500;
@@ -350,8 +358,8 @@
     border-radius:12px;padding:11px 12px;margin-bottom:11px;
     font-size:11.5px;line-height:1.62;color:#4B5563;
     max-height:104px;overflow:hidden;
-    -webkit-mask-image:linear-gradient(180deg,#000 62%,rgba(0,0,0,.15));
-    mask-image:linear-gradient(180deg,#000 62%,rgba(0,0,0,.15));
+    -webkit-mask-image:linear-gradient(180deg,#000 74%,rgba(0,0,0,.42));
+    mask-image:linear-gradient(180deg,#000 74%,rgba(0,0,0,.42));
     white-space:pre-wrap;word-break:break-word;
   }
   .promptbox .plabel{
@@ -392,7 +400,7 @@
   /* ───────────── footer ───────────── */
   footer{margin-top:34px;padding-top:18px;border-top:1px solid var(--line)}
   .disclosure{
-    font-size:10.5px;line-height:1.75;color:var(--ink-2);font-weight:500;
+    font-size:11px;line-height:1.75;color:#6B7280;font-weight:500;
     background:#F3F4F6;border-radius:12px;padding:12px 14px;margin:0;
   }
   .colophon{
