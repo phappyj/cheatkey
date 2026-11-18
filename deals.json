@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-18T12:41:00+09:00",
+  "updated": "2026-11-18T16:00:00+09:00",
   "tips": [
     {
       "id": "tip-002",
@@ -54,5 +54,18 @@
       "published": "2026-11-18T10:45:00+09:00"
     }
   ],
-  "deals": []
+  "deals": [
+    {
+      "id": "deal-001",
+      "title": "신지모루 O PD 65W GaN 3포트 초고속 접지 충전기, 블랙, 1개",
+      "seller": "쿠팡 · 로켓배송",
+      "price": 22900,
+      "wasPrice": 54900,
+      "discount": "58%",
+      "image": "img/deal-001.jpg",
+      "link": "https://link.coupang.com/a/iL3q0gLlxk",
+      "note": "노트북·폰·이어폰 3개 동시 충전 / 상품평 10,117개 / 내일 새벽 도착",
+      "published": "2026-11-18 16:00"
+    }
+  ]
 }
