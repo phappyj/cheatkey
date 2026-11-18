@@ -384,6 +384,11 @@
     });
   }
 
+  // 핫딜 썸네일 대체 아이콘 (이미지가 없을 때) — 이모지 대신 인라인 SVG
+  var TAG_ICON = '<svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="#34F5C5" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
+    '<path d="M20.6 13.4 13.4 20.6a2 2 0 0 1-2.8 0l-7.2-7.2A2 2 0 0 1 2.8 12V4.8A2 2 0 0 1 4.8 2.8H12a2 2 0 0 1 1.4.6l7.2 7.2a2 2 0 0 1 0 2.8Z"/>' +
+    '<circle cx="7.6" cy="7.6" r="1.4" fill="#34F5C5" stroke="none"/></svg>';
+
   // ── 렌더: 핫딜 ──
   function renderDeals(list) {
     var host = document.getElementById("deals");
@@ -423,7 +428,7 @@
       }
 
       a.innerHTML =
-        '<span class="thumb">' + (d.image ? '<img src="' + esc(d.image) + '" alt="" loading="lazy">' : "💸") + "</span>" +
+        '<span class="thumb">' + (d.image ? '<img src="' + esc(d.image) + '" alt="" loading="lazy">' : TAG_ICON) + "</span>" +
         '<span class="info">' +
           '<span class="seller">' + esc(d.seller || "쿠팡 파트너스") + "</span>" +
           '<span class="name">' + esc(d.title) + "</span>" +
