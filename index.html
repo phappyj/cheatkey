@@ -708,7 +708,8 @@
     return "";
   }
 
-  function normalizeComparison(c) {
+  function normalizeComparison(c, rowDef) {
+    var ROWSX = (Array.isArray(rowDef) && rowDef.length) ? rowDef : ROWS;
     if (!c || !Array.isArray(c) || !c.length) return null;
     var items = c.filter(function (o) { return o && typeof o === "object" && !Array.isArray(o); });
     if (items.length < 2) return null;
@@ -724,7 +725,7 @@
         full: String(o.name || o.title || o.short || "제품"),
         price: cmpPrice(firstOf(o, ["price", "salePrice", "cost", "amount"])),
         priceNote: String(o.priceNote || ""),
-        cells: ROWS.map(function (r) { return String(map[r.key] || ""); }),
+        cells: ROWSX.map(function (r) { return String(map[r.key] || ""); }),
         verdict: String(firstOf(o, ["verdict", "conclusion", "reason", "comment"])),
         win: isWin(o)
       };
@@ -813,7 +814,8 @@
     host.innerHTML = "";
     if (!d) { countEl.textContent = ""; return; }
 
-    var cmp = normalizeComparison(d.comparison);
+    var rowDef = (Array.isArray(d.cmpRows) && d.cmpRows.length) ? d.cmpRows : ROWS;
+    var cmp = normalizeComparison(d.comparison, rowDef);
     var el = document.createElement("article");
     el.className = "card report";
     var body = "";
@@ -828,7 +830,7 @@
         '</th>';
       }).join("") + '</tr></thead>';
 
-      var rows = ROWS.map(function (r, ri) {
+      var rows = rowDef.map(function (r, ri) {
         var filled = cmp.some(function (p) { return p.cells[ri] !== ""; });
         if (!filled) return "";
         return '<tr>' +
@@ -841,11 +843,11 @@
       }).join("");
 
       body =
-        '<p class="r-lead"><b>같은 65W 3포트</b>를 같은 기준으로 나란히 놓았습니다. 가격은 11월 18일 확인 기준입니다.</p>' +
+        '<p class="r-lead">' + (d.cmpLead ? String(d.cmpLead) : '<b>같은 카테고리 3종</b>을 같은 기준으로 나란히 놓았습니다.') + ' 가격은 ' + esc(timeLabel(d.published) || '오늘') + ' 확인 기준입니다.</p>' +
         '<div class="cmp-scroll"><table class="cmp">' +
-          '<caption style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">65W 3포트 충전기 3종 비교</caption>' +
+          '<caption style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">' + esc(d.shortTitle || d.title || '오늘의 원픽') + ' 비교</caption>' +
           head + '<tbody>' + rows + '</tbody></table></div>' +
-        '<div class="cmp-legend">' + CHECK + '<span>BEST PICK = 3종 중 최저가 + GaN·접지·PPS 모두 충족. 가격·재고는 결제 전 쿠팡에서 최종 확인하세요.</span></div>';
+        '<div class="cmp-legend">' + CHECK + '<span>' + esc(d.cmpLegend || 'BEST PICK = 3종 중 가장 메리트 있는 1개. 가격·재고는 결제 전 쿠팡에서 최종 확인하세요.') + '</span></div>';
 
       var verdictText = (typeof d.verdict === "string" && d.verdict) ? d.verdict : "";
       if (!verdictText) {
