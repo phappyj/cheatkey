@@ -13,6 +13,7 @@ GitHub Pages로 서빙됩니다: **https://phappyj.github.io/cheatkey/**
 |---|---|
 | `index.html` | 페이지 전체(디자인·렌더링). **평소엔 건드릴 일 없음** |
 | `deals.json` | 카드 데이터. 08:30·12:30 AI 치트키 / 16:00·19:30 핫딜 자동화가 **여기만 추가**하면 됨 |
+| `og.png` | 링크 공유 미리보기 이미지(1200×630). 바꿀 때는 `index.html`의 `og:image` 태그와 함께 교체 |
 | `README.md` | 이 문서 |
 
 ## deals.json 구조
