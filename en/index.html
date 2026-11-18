@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Work Cheatkey — Free AI Prompts &amp; Automation Workflows for Office Work</title>
+<meta name="description" content="Two copy-paste AI prompts and the Make.com automations that cut my daily admin work. Meeting notes in 30 seconds, polite decline emails in 3 lines. Free Core plan for 1 month.">
+<meta name="theme-color" content="#F8F9FA">
+<link rel="canonical" href="https://phappyj.github.io/cheatkey/en/">
+<link rel="alternate" hreflang="en" href="https://phappyj.github.io/cheatkey/en/">
+<link rel="alternate" hreflang="ko" href="https://phappyj.github.io/cheatkey/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="⚡ Work Cheatkey — AI prompts &amp; automations for office work">
+<meta property="og:description" content="Meeting notes: 30 min → 30 sec. Decline email: 20 min → 20 sec. Copy the prompts, steal the workflows.">
+<meta property="og:url" content="https://phappyj.github.io/cheatkey/en/">
+<meta property="og:image" content="https://phappyj.github.io/cheatkey/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Work Cheatkey — AI prompts and automation workflows">
+<meta property="og:site_name" content="Work Cheatkey">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://phappyj.github.io/cheatkey/og.png">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%23FFFFFF'/><text x='50' y='73' font-size='58' text-anchor='middle'>⚡</text></svg>">
+<style>
+  :root{
+    --bg:#F8F9FA;
+    --card:#FFFFFF;
+    --line:#EAECEF;
+    --line-2:#F1F2F4;
+    --ink:#111827;
+    --ink-2:#6B7280;
+    --ink-3:#9CA3AF;
+    --navy:#0F172A;
+    --navy-2:#1E293B;
+    --mint:#0E9F6E;
+    --mint-soft:#ECFDF5;
+    --mint-line:#BBF0DD;
+    --coral:#F04438;
+    --radius:18px;
+    --max:480px;
+    --shadow:0 1px 2px rgba(17,24,39,.04), 0 10px 28px -20px rgba(17,24,39,.18);
+  }
+  *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+  html,body{margin:0;padding:0}
+  html{background:var(--bg);scroll-behavior:smooth}
+  body{
+    background:var(--bg);
+    color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-size:16px;
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+    letter-spacing:-0.011em;
+    min-height:100dvh;
+    word-break:normal;
+    overflow-wrap:break-word;
+  }
+  .shell{max-width:var(--max);margin:0 auto;padding:0 18px 64px}
+
+  /* ───────────── nav ───────────── */
+  .nav{
+    position:sticky;top:0;z-index:30;
+    background:rgba(248,249,250,.86);
+    -webkit-backdrop-filter:saturate(160%) blur(14px);
+    backdrop-filter:saturate(160%) blur(14px);
+    border-bottom:1px solid rgba(17,24,39,.06);
+  }
+  .nav-in{
+    max-width:var(--max);margin:0 auto;
+    display:flex;align-items:center;gap:10px;
+    padding:calc(9px + env(safe-area-inset-top)) 18px 9px 18px;
+  }
+  .brand{
+    display:inline-flex;align-items:center;gap:6px;
+    font-size:13.5px;font-weight:800;letter-spacing:-0.02em;color:var(--ink);
+    text-decoration:none;white-space:nowrap;flex:0 0 auto;
+  }
+  .brand .bolt{font-size:13px;line-height:1;color:var(--ink)}
+  .chips{display:flex;gap:6px;margin-left:auto;min-width:0}
+  .chip{
+    display:inline-flex;align-items:center;
+    font-size:11.5px;font-weight:700;letter-spacing:-0.01em;
+    color:var(--ink-2);background:#fff;
+    border:1px solid var(--line);border-radius:999px;
+    padding:5px 10px;text-decoration:none;white-space:nowrap;
+    transition:color .15s ease, border-color .15s ease, background .15s ease;
+  }
+  .chip:active{background:#F3F4F6}
+  .chip.hero-chip{color:var(--navy);border-color:#DDE0E5;font-weight:800}
+
+  /* ───────────── hero ───────────── */
+  .hero{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:22px;
+    box-shadow:0 1px 2px rgba(17,24,39,.04), 0 18px 40px -30px rgba(17,24,39,.28);
+    padding:16px 15px 15px;
+    margin-top:12px;
+  }
+  .hero-eyebrow{display:flex;align-items:center;gap:6px;flex-wrap:wrap;padding:0 2px 11px}
+  .badge-best{
+    display:inline-flex;align-items:center;gap:5px;
+    font-size:10.5px;font-weight:800;letter-spacing:.02em;
+    color:#fff;background:var(--navy);
+    border-radius:7px;padding:4px 8px;
+  }
+  .badge-best .spark{color:#6EE7B7;font-size:9px}
+  .badge-quiet{
+    display:inline-flex;align-items:center;gap:4px;
+    font-size:10.5px;font-weight:700;color:var(--mint);
+    background:var(--mint-soft);border:1px solid var(--mint-line);
+    border-radius:7px;padding:3px 7px;
+  }
+  h1.hero-title{
+    font-size:26px;line-height:1.18;font-weight:800;
+    letter-spacing:-0.035em;margin:2px 2px 10px;color:var(--ink);
+  }
+  h1.hero-title .accent{color:var(--mint)}
+  .hero-lede{
+    margin:0 2px 15px;font-size:13.5px;line-height:1.6;
+    color:var(--ink-2);font-weight:500;
+  }
+  .cta{
+    display:flex;align-items:center;justify-content:center;gap:8px;
+    width:100%;min-height:56px;padding:13px 15px;
+    background:var(--navy);color:#fff;text-align:center;
+    font-size:15px;line-height:1.3;font-weight:800;letter-spacing:-0.02em;
+    border-radius:15px;text-decoration:none;
+    box-shadow:0 10px 22px -14px rgba(15,23,42,.75);
+    transition:transform .12s ease, background .15s ease;
+  }
+  .cta:active{transform:scale(.986);background:#0B1220}
+  .cta svg{width:16px;height:16px;flex:0 0 auto;color:#6EE7B7}
+  .hero-foot{
+    display:flex;align-items:center;justify-content:space-between;gap:8px;
+    margin:9px 3px 0;font-size:10.5px;color:var(--ink-3);font-weight:500;
+  }
+
+  /* ───────────── section ───────────── */
+  section{margin-top:34px;scroll-margin-top:64px}
+  .sec-head{display:flex;align-items:baseline;gap:8px;margin-bottom:13px;padding:0 1px}
+  .sec-head .kicker{
+    font-size:10px;font-weight:800;letter-spacing:.14em;color:var(--ink-3);
+    text-transform:uppercase;flex:0 0 auto;
+  }
+  .sec-head h2{
+    font-size:17px;font-weight:800;letter-spacing:-0.03em;margin:0;color:var(--ink);
+  }
+  .sec-head .count{
+    margin-left:auto;font-size:11.5px;color:var(--ink-3);font-weight:600;white-space:nowrap;
+  }
+  .sec-note{margin:-4px 1px 13px;font-size:12.5px;line-height:1.6;color:var(--ink-2);font-weight:500}
+
+  .card{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    box-shadow:var(--shadow);
+  }
+
+  /* ───────────── prompts ───────────── */
+  .tip{padding:16px 15px 15px}
+  .tip + .tip{margin-top:12px}
+  .tip .tag{
+    display:inline-block;font-size:9.5px;font-weight:800;letter-spacing:.06em;
+    color:var(--mint);background:var(--mint-soft);border:1px solid var(--mint-line);
+    border-radius:999px;padding:3px 9px;margin-bottom:10px;
+  }
+  .tip h3{
+    font-size:19px;line-height:1.3;font-weight:800;margin:0 0 6px;
+    letter-spacing:-0.035em;color:var(--ink);
+  }
+  .tip h3 .accent{color:var(--mint)}
+  .tip p.sub{margin:0 0 13px;color:var(--ink-2);font-size:12.5px;font-weight:500;line-height:1.55}
+  .steps{list-style:none;margin:0 0 13px;padding:0;display:grid;gap:6px}
+  .steps li{
+    display:flex;align-items:flex-start;gap:9px;
+    background:#FAFBFC;border:1px solid var(--line-2);
+    border-radius:11px;padding:9px 11px;
+  }
+  .steps .num{
+    flex:0 0 20px;height:20px;border-radius:6px;
+    background:#EEF0F3;color:var(--navy);
+    font-weight:800;font-size:11px;
+    display:grid;place-items:center;margin-top:1px;
+  }
+  .steps .body{min-width:0}
+  .steps .k{display:block;font-size:9.5px;font-weight:800;color:var(--mint);letter-spacing:.05em;margin-bottom:2px;text-transform:uppercase}
+  .steps .v{font-size:12.8px;font-weight:600;color:#374151;line-height:1.45}
+
+  .promptbox{
+    position:relative;
+    background:#F7F8FA;border:1px solid var(--line);
+    border-radius:12px;padding:11px 12px;margin-bottom:11px;
+    font-size:11.8px;line-height:1.62;color:#4B5563;
+    max-height:118px;overflow:hidden;
+    -webkit-mask-image:linear-gradient(180deg,#000 76%,rgba(0,0,0,.35));
+    mask-image:linear-gradient(180deg,#000 76%,rgba(0,0,0,.35));
+    white-space:pre-wrap;
+  }
+  .promptbox .plabel{
+    display:block;font-size:9px;font-weight:800;letter-spacing:.1em;
+    color:var(--ink-3);margin-bottom:5px;text-transform:uppercase;
+  }
+  .btn-row{display:flex;gap:7px;flex-wrap:wrap}
+  .btn{
+    appearance:none;border:1px solid var(--line);
+    background:#fff;color:var(--ink);
+    font:inherit;font-size:12.5px;font-weight:700;letter-spacing:-0.01em;
+    padding:10px 14px;border-radius:11px;cursor:pointer;
+    display:inline-flex;align-items:center;gap:6px;text-decoration:none;
+    transition:transform .12s ease, background .15s ease;
+  }
+  .btn:active{transform:scale(.975)}
+  .btn svg{width:13px;height:13px;flex:0 0 auto}
+  .btn.primary{background:var(--navy);border-color:var(--navy);color:#fff;flex:1 1 auto;justify-content:center}
+  .btn.primary svg{color:#6EE7B7}
+  .btn.ghost{color:var(--ink-2);font-weight:700}
+  .btn.done{background:var(--mint-soft);border-color:var(--mint-line);color:#0B7A55}
+
+  .tip .takeaway{
+    margin:12px 0 0;padding:11px 12px;border-radius:12px;
+    background:#F7F8FA;border:1px solid var(--line);
+    font-size:11.5px;line-height:1.6;color:#4B5563;font-weight:500;
+  }
+  .tip .takeaway b{display:block;font-size:9.5px;font-weight:800;letter-spacing:.1em;color:var(--mint);text-transform:uppercase;margin-bottom:4px}
+
+  /* ───────────── workflows ───────────── */
+  .wf{padding:16px 15px 15px}
+  .wf .tag{
+    display:inline-block;font-size:9.5px;font-weight:800;letter-spacing:.06em;
+    color:var(--mint);background:var(--mint-soft);border:1px solid var(--mint-line);
+    border-radius:999px;padding:3px 9px;margin-bottom:10px;
+  }
+  .wf h3{font-size:16px;font-weight:800;letter-spacing:-0.03em;margin:0 0 6px;line-height:1.35}
+  .wf .sub{margin:0 0 12px;font-size:12.5px;color:var(--ink-2);font-weight:500;line-height:1.55}
+  .wf ol{list-style:none;margin:0;padding:0;display:grid;gap:1px;background:var(--line-2);border:1px solid var(--line);border-radius:13px;overflow:hidden}
+  .wf li{background:#fff;padding:11px 12px;display:flex;gap:10px;align-items:flex-start}
+  .wf .n{
+    flex:0 0 18px;height:18px;border-radius:5px;background:#EEF0F3;color:var(--navy);
+    font-size:10px;font-weight:800;display:grid;place-items:center;margin-top:1px;
+  }
+  .wf .t{min-width:0}
+  .wf .t b{display:block;font-size:12.5px;font-weight:800;color:var(--ink);letter-spacing:-0.01em;margin-bottom:2px}
+  .wf .t span{font-size:11.5px;color:var(--ink-2);line-height:1.5;font-weight:500}
+  .wf .t code{
+    font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
+    font-size:10.5px;background:#F3F4F6;border-radius:4px;padding:1px 4px;
+  }
+
+  /* ───────────── make card ───────────── */
+  .make-card{padding:17px 15px 15px;background:linear-gradient(180deg,#FFFFFF 0%,#FBFFFD 100%)}
+  .make-card h2{font-size:18.5px;font-weight:800;letter-spacing:-0.03em;margin:0 0 7px;line-height:1.3}
+  .make-card p{margin:0 0 13px;font-size:12.8px;line-height:1.6;color:var(--ink-2);font-weight:500}
+  .make-card ul{list-style:none;margin:0 0 14px;padding:0;display:grid;gap:7px}
+  .make-card li{display:flex;gap:8px;align-items:flex-start;font-size:12.3px;color:#374151;font-weight:600;line-height:1.5}
+  .make-card li svg{flex:0 0 13px;width:13px;height:13px;margin-top:2px;color:var(--mint)}
+
+  /* ───────────── footer ───────────── */
+  footer{margin-top:34px;padding-top:18px;border-top:1px solid var(--line)}
+  .disclosure{
+    font-size:11px;line-height:1.75;color:#6B7280;font-weight:500;
+    background:#F3F4F6;border-radius:12px;padding:12px 14px;margin:0;
+  }
+  .disclosure b{color:var(--ink-2);font-weight:800}
+  .foot-links{
+    display:flex;flex-wrap:wrap;gap:6px 14px;margin:14px 1px 0;
+    font-size:11.5px;font-weight:700;
+  }
+  .foot-links a{color:var(--ink-2);text-decoration:none;border-bottom:1px solid var(--line)}
+  .foot-links a:active{color:var(--ink)}
+  .colophon{
+    display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;
+    margin-top:12px;font-size:10.5px;color:var(--ink-3);font-weight:500;
+  }
+
+  /* ───────────── toast ───────────── */
+  .toast{
+    position:fixed;left:50%;bottom:calc(22px + env(safe-area-inset-bottom));
+    transform:translate(-50%,14px);
+    background:var(--navy);color:#fff;
+    font-size:12.5px;font-weight:700;letter-spacing:-0.01em;
+    padding:10px 17px;border-radius:999px;
+    opacity:0;pointer-events:none;transition:opacity .2s ease, transform .2s ease;
+    z-index:60;box-shadow:0 14px 30px -12px rgba(15,23,42,.7);
+    white-space:nowrap;
+  }
+  .toast.on{opacity:1;transform:translate(-50%,0)}
+
+  @media (max-width:359px){
+    h1.hero-title{font-size:23px}
+    .cta{font-size:13.5px}
+    .tip h3{font-size:17.5px}
+  }
+  @media (min-width:431px){
+    h1.hero-title{font-size:29px}
+  }
+  @media (prefers-reduced-motion:reduce){
+    *{animation:none!important;transition:none!important}
+    html{scroll-behavior:auto}
+  }
+</style>
+</head>
+<body>
+
+<div class="nav">
+  <div class="nav-in">
+    <a class="brand" href="#top"><span class="bolt">⚡</span>Work Cheatkey</a>
+    <nav class="chips" aria-label="Quick links">
+      <a class="chip hero-chip" href="#make">Free Core plan</a>
+      <a class="chip" href="#prompts">Prompts</a>
+    </nav>
+  </div>
+</div>
+
+<div class="shell" id="top">
+
+  <main>
+
+    <!-- hero -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-eyebrow">
+        <span class="badge-best"><span class="spark">✦</span>FOR OFFICE WORK</span>
+        <span class="badge-quiet">Copy &amp; paste</span>
+      </div>
+      <h1 class="hero-title" id="hero-title">Meeting notes in <span class="accent">30 seconds</span>. Decline emails in <span class="accent">3 lines</span>.</h1>
+      <p class="hero-lede">I plan partner services at a telecom company and run my own store on the side. These are the exact AI prompts and Make.com workflows I use to get the admin work off my desk — free, no sign-up here.</p>
+      <a class="cta" href="https://www.make.com/en/register?pc=cheatkey" target="_blank" rel="noopener sponsored">
+        Make.com — Automate your daily work &amp; get 1 Month Core Plan Free
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <div class="hero-foot">
+        <span>New Make accounts · 1 month Core plan</span>
+        <span>Sponsored link</span>
+      </div>
+    </section>
+
+    <!-- prompts -->
+    <section id="prompts">
+      <div class="sec-head">
+        <span class="kicker">01</span>
+        <h2>AI Prompts &amp; Automation Workflows</h2>
+        <span class="count">2 prompts</span>
+      </div>
+      <p class="sec-note">Paste into ChatGPT, Claude, Gemini — anything. Fill the brackets, keep the rules. Both prompts work better when you give raw notes instead of tidy summaries.</p>
+
+      <article class="card tip">
+        <span class="tag">AI · MEETING NOTES</span>
+        <h3>Meeting notes <span class="accent">30 min</span> → <span class="accent">30 sec</span></h3>
+        <p class="sub">Three lines of setup and you never write minutes again. Works in any language — the output follows your notes.</p>
+        <ul class="steps">
+          <li><span class="num">1</span><span class="body"><span class="k">Role</span><span class="v">"You are a senior PM. No fluff, no small talk."</span></span></li>
+          <li><span class="num">2</span><span class="body"><span class="k">Material</span><span class="v">Paste the notes as they are — don't summarise first.</span></span></li>
+          <li><span class="num">3</span><span class="body"><span class="k">Format</span><span class="v">Decisions / Action items (owner + due) / Next agenda.</span></span></li>
+        </ul>
+        <div class="promptbox"><span class="plabel">Prompt</span>You are a senior project manager with 10 years of experience. Read the meeting notes below and build one table with only these three columns:
+
+1) Decisions made
+2) Action items — owner and due date
+3) Topics to discuss next
+
+Rules: do not guess anything that is not in the notes — mark it "Needs confirmation". Keep each cell under 15 words. No intro, no summary paragraph.
+
+Meeting notes:
+[paste raw notes here]</div>
+        <div class="btn-row">
+          <button class="btn primary" type="button" data-copy-target="1">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="12" height="12" rx="2.5"/><path d="M5 15V5a2 2 0 0 1 2-2h8"/></svg>
+            Copy prompt
+          </button>
+          <a class="btn ghost" href="https://chatgpt.com/" target="_blank" rel="noopener">Open ChatGPT ↗</a>
+        </div>
+        <p class="takeaway"><b>Why it works</b>Most bad AI minutes come from a vague ask, not a weak model. "Decisions / owners / next" forces the model to throw away the 80% of a meeting that was just thinking out loud.</p>
+      </article>
+
+      <article class="card tip">
+        <span class="tag">AI · EMAIL</span>
+        <h3>Polite decline email <span class="accent">20 min</span> → <span class="accent">20 sec</span></h3>
+        <p class="sub">Say no without burning the relationship — and without rewriting it five times.</p>
+        <ul class="steps">
+          <li><span class="num">1</span><span class="body"><span class="k">Audience</span><span class="v">Who they are and how senior — one line.</span></span></li>
+          <li><span class="num">2</span><span class="body"><span class="k">Reason + alternative</span><span class="v">Why it's hard, and what you can do instead.</span></span></li>
+          <li><span class="num">3</span><span class="body"><span class="k">Tone lock</span><span class="v">"Polite but firm, max 3 sentences."</span></span></li>
+        </ul>
+        <div class="promptbox"><span class="plabel">Prompt</span>You are a 15-year office veteran writing an email for me. Use the four points below to write an email declining a request.
+
+1) Recipient: [e.g. a team lead from another department, one level above me]
+2) Request to decline: [e.g. they asked for a report by this Friday]
+3) One-line reason it's hard: [e.g. my own deadline is already slipping this week]
+4) What I can offer instead: [e.g. deliver it by Tuesday morning next week]
+
+Rules: polite but firm, three sentences maximum. Apologise once, never twice. No excuses, no emoji. End on the alternative. Also give me a one-line subject.</div>
+        <div class="btn-row">
+          <button class="btn primary" type="button" data-copy-target="2">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="12" height="12" rx="2.5"/><path d="M5 15V5a2 2 0 0 1 2-2h8"/></svg>
+            Copy prompt
+          </button>
+          <a class="btn ghost" href="https://chatgpt.com/" target="_blank" rel="noopener">Open ChatGPT ↗</a>
+        </div>
+        <p class="sub" style="margin:10px 0 0;font-size:11.5px;line-height:1.6">Scheduling? Put "two times that work for me" in slot 4 and it becomes a reschedule email instead.</p>
+        <p class="takeaway"><b>Why it works</b>The limit is the trick. Three sentences and one apology leaves no room for the rambling over-explanation that makes a "no" sound like a negotiation.</p>
+      </article>
+
+      <div class="card wf" style="margin-top:12px">
+        <span class="tag">AUTOMATION · MAKE.COM</span>
+        <h3>Three workflows worth stealing</h3>
+        <p class="sub">Each one is a 5-minute build: trigger → AI step → destination. A free plan is enough to try all three.</p>
+        <ol>
+          <li><span class="n">1</span><span class="t"><b>Voice memo → action items</b><span>Record the meeting on your phone, and have the transcript land in Notion as a table with owners and dates.</span></span></li>
+          <li><span class="n">2</span><span class="t"><b>Inbox triage, twice a day</b><span>New email from a client → AI drafts a reply in your tone → it waits in Drafts for you to hit send.</span></span></li>
+          <li><span class="n">3</span><span class="t"><b>Friday report, zero effort</b><span>Google Sheets rows collected all week → summarised into a status update → posted to Slack at 17:00.</span></span></li>
+        </ol>
+        <div class="btn-row" style="margin-top:12px">
+          <a class="btn" href="https://www.make.com/en/register?pc=cheatkey" target="_blank" rel="noopener sponsored">Build one free ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- make -->
+    <section id="make">
+      <div class="sec-head">
+        <span class="kicker">02</span>
+        <h2>Start with the free month</h2>
+      </div>
+      <div class="card make-card">
+        <h2>Automate your daily work &amp; get 1 Month Core Plan Free</h2>
+        <p>Make connects the tools you already use — Gmail, Slack, Notion, Sheets, ChatGPT — so the copy-paste you just did above runs itself on a schedule.</p>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg><span>1 month of Core plan, free for new accounts</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg><span>1,000+ app connectors, visual builder, no code</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Cancel anytime — the free plan stays available</span></li>
+        </ul>
+        <a class="cta" href="https://www.make.com/en/register?pc=cheatkey" target="_blank" rel="noopener sponsored">
+          Make.com — Automate your daily work &amp; get 1 Month Core Plan Free
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <div class="hero-foot">
+          <span>Registration, billing and plan terms are handled on make.com</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p class="disclosure">
+      <b>Affiliate disclosure.</b> Some links on this page are affiliate links. If you sign up for Make.com through them, I may earn a commission at no extra cost to you. I only link to tools I actually use, and the free Core month is the same offer you would get directly from Make.com. Prices, plans and availability can change — always check the final terms on the provider's site before you subscribe.
+    </p>
+    <div class="foot-links">
+      <a href="/cheatkey/privacy.html">Privacy Policy</a>
+      <a href="https://www.youtube.com/@workcheatkeyai" target="_blank" rel="noopener">YouTube</a>
+      <a href="../">한국어 페이지</a>
+    </div>
+    <div class="colophon">
+      <span>© <span id="year">2026</span> Work Cheatkey · @workcheatkeyai</span>
+      <span>Seoul, Korea</span>
+    </div>
+  </footer>
+
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(function () {
+  "use strict";
+
+  var toastEl = document.getElementById("toast");
+  var toastTimer = null;
+  function toast(msg) {
+    toastEl.textContent = msg;
+    toastEl.classList.add("on");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function () { toastEl.classList.remove("on"); }, 1900);
+  }
+
+  function copyText(text, btn) {
+    function ok() {
+      toast("Prompt copied");
+      if (btn) {
+        btn.classList.add("done");
+        setTimeout(function () { btn.classList.remove("done"); }, 1400);
+      }
+    }
+    function fallback() {
+      var ta = document.createElement("textarea");
+      ta.value = text;
+      ta.setAttribute("readonly", "");
+      ta.style.position = "fixed";
+      ta.style.top = "-1000px";
+      document.body.appendChild(ta);
+      ta.select();
+      var good = false;
+      try { good = document.execCommand("copy"); } catch (e) { good = false; }
+      document.body.removeChild(ta);
+      if (good) { ok(); } else { toast("Select the text and copy manually"); }
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(ok, fallback);
+    } else {
+      fallback();
+    }
+  }
+
+  document.addEventListener("click", function (e) {
+    var btn = e.target.closest ? e.target.closest("[data-copy-target]") : null;
+    if (!btn) return;
+    e.preventDefault();
+    var box = document.querySelectorAll(".promptbox")[Number(btn.getAttribute("data-copy-target")) - 1];
+    if (!box) return;
+    var label = box.querySelector(".plabel");
+    var text = box.textContent;
+    if (label) text = text.slice(label.textContent.length);
+    copyText(text.trim(), btn);
+  });
+
+  document.getElementById("year").textContent = new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
