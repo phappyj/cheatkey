@@ -901,6 +901,11 @@
     var count = document.getElementById("tips-count");
     host.innerHTML = "";
     if (!list || !list.length) { count.textContent = ""; return; }
+    /* 번호(01·02) 순으로 정렬 — 데이터 순서와 무관하게 일관된 순서 */
+    list = list.slice().sort(function (a, b) {
+      var na = parseInt(String(a.no || "99"), 10), nb = parseInt(String(b.no || "99"), 10);
+      return (isNaN(na) ? 99 : na) - (isNaN(nb) ? 99 : nb);
+    });
     count.textContent = list.length + "개";
 
     list.forEach(function (t) {
