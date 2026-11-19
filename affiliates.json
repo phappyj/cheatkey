@@ -1,0 +1,86 @@
+{
+  "_note": "자체(PartnerStack 미경유) 제휴 링크 — 2026-11-19 발급. 비밀번호는 포함하지 않음.",
+  "_account": { "name": "Park HeeJae", "email": "phappyj@gmail.com" },
+  "_disclosure": "Some links on this page are affiliate links. If you sign up through them, I may earn a commission at no extra cost to you.",
+  "tools": [
+    {
+      "id": "make",
+      "name": "Make.com",
+      "url": "https://www.make.com/en/register?pc=cheatkey",
+      "offer": "1 month Core plan free for new accounts",
+      "status": "active",
+      "source": "PartnerStack (approved before network decline)",
+      "placed_on": ["en/index.html (hero, workflow card, #make section)"]
+    },
+    {
+      "id": "quso",
+      "name": "quso.ai (formerly vidyo.ai)",
+      "url": "https://quso.ai?via=2xv5cz",
+      "what": "Turns long videos and podcasts into short captioned clips",
+      "commission": "30% recurring, for the life of the subscription",
+      "cookie_days": 30,
+      "payout": "PayPal on the 15th, $20 minimum; PayPal email + W-8BEN required before first payout",
+      "dashboard": "https://quso.firstpromoter.com/home",
+      "status": "link issued",
+      "placed_on": ["en/index.html (tools section, 2026-11-19)"]
+    },
+    {
+      "id": "decktopus",
+      "name": "Decktopus",
+      "url": "https://www.decktopus.com?via=heejae",
+      "what": "Generates a full slide deck from a prompt",
+      "commission": "50% of the first 3 payments within the first 12 months",
+      "cookie_days": 60,
+      "payout": "PayPal, payout email phappyj@gmail.com; verification form after first commission",
+      "dashboard": "https://affiliate.decktopus.com",
+      "status": "link issued",
+      "placed_on": ["en/index.html (tools section, 2026-11-19)"]
+    },
+    {
+      "id": "submagic",
+      "name": "Submagic",
+      "url": "https://submagic.co/?via=heejae-e35f5b",
+      "alt_urls": ["https://www.submagic.co/auto-subtitle-generator?via=heejae-e35f5b"],
+      "what": "AI editor for short-form video: captions, cuts, zooms",
+      "commission": "30% recurring lifetime + 10% second-tier",
+      "cookie_days": 30,
+      "payout": "$50 minimum, PayPal (FAQ says the 7th, dashboard says the 15th — confirm); dashboard currency shown as EUR",
+      "dashboard": "https://affiliate.submagic.co/home",
+      "status": "link issued",
+      "placed_on": ["en/index.html (tools section, 2026-11-19)"]
+    },
+    {
+      "id": "pixa",
+      "name": "Pixa",
+      "url": "https://getpixa.link/park-hee-jae",
+      "what": "AI creative agent for images, video edits and 3D scenes (linked from the Pixelcut affiliate page)",
+      "commission": "30% per sale for 1 year",
+      "payout": "Via Dub: local bank account or USDC; payout method not connected yet",
+      "dashboard": "https://partners.dub.co/programs/pixa",
+      "status": "link issued (program active)",
+      "caveat": "Link destination is pixa.com, not pixelcut.ai — confirm the brand relationship before promoting as Pixelcut",
+      "placed_on": ["en/index.html (tools section, 2026-11-19)"]
+    },
+    {
+      "id": "fliki",
+      "name": "Fliki",
+      "url": null,
+      "what": "Text to AI video with AI voiceover",
+      "commission": "30% recurring lifetime",
+      "cookie_days": 30,
+      "payout": "$50 minimum, Wise on the 1st (PayPal on request above $50)",
+      "dashboard": "https://affiliates.fliki.ai",
+      "status": "signup done, email unconfirmed — confirmation mail never arrived, no link yet",
+      "placed_on": []
+    },
+    {
+      "id": "rytr",
+      "name": "Rytr",
+      "url": null,
+      "what": "AI writing assistant (short-form copy, emails, posts)",
+      "commission": "unknown — program terms to be checked once the link is issued",
+      "status": "signup done, email unconfirmed — confirmation mail never arrived, no link yet",
+      "placed_on": []
+    }
+  ]
+}
