@@ -116,7 +116,8 @@
         },
         {
           "key": "cons",
-          "label": "아쉬운 점"
+          "label": "아쉬운 점",
+          "cls": "cons"
         }
       ],
       "comparison": [
