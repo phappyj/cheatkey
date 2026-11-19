@@ -161,6 +161,33 @@
       "placed_on": ["en/index.html (tools section, 2026-11-19)"]
     },
     {
+      "id": "loopcv",
+      "name": "LoopCV",
+      "url": "https://loopcv.pro?via=heejae",
+      "what": "AI job-hunt automation: profile once, then matched/applied to jobs across 30+ boards and recruiter follow-ups",
+      "commission": "25% commission on all payments (Rewardful dashboard wording)",
+      "payout": "PayPal, payout email phappyj@gmail.com registered 2026-11-19",
+      "dashboard": "https://loopcv.getrewardful.com",
+      "platform": "Rewardful (instant, no manual review)",
+      "partner_since": "2026-11-19",
+      "status": "active — email confirmed, link issued",
+      "placed_on": ["en/index.html (verified stack #3, 2026-11-19)"]
+    },
+    {
+      "id": "granola",
+      "name": "Granola",
+      "url": null,
+      "what": "AI meeting notes: joins nothing, records the call locally and returns structured notes and action items",
+      "commission": "$20 bounty for every lead that completes a valid meeting (Dub)",
+      "payout": "Via Dub: local bank account or USDC; payout method not connected yet",
+      "dashboard": "https://partners.dub.co/programs/granola",
+      "platform": "Dub Partners (application review)",
+      "applied": "2026-11-19",
+      "application_ids": ["pga_1M7S4ABF0RZG31ZJFJTTG49TS", "pge_1M7S4ABF0J7SMATHZAC4Z0KN7"],
+      "status": "application submitted — pending review (Dub shows 'Application in review', Links tab disabled), no link yet",
+      "placed_on": []
+    },
+    {
       "id": "writesonic",
       "name": "Writesonic",
       "url": null,
