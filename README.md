@@ -100,6 +100,14 @@ GitHub Pages로 서빙됩니다: **https://phappyj.github.io/cheatkey/**
 - `en/index.html`은 `deals.json`을 읽지 않는 **독립 정적 페이지**입니다(수동 편집).
 - 개인정보처리방침: **https://phappyj.github.io/cheatkey/privacy.html** (국·영문). 제휴 링크 추가 시 이 문서의 "제휴 링크" 표도 갱신하세요.
 
+## GA4 (Work Cheatkey)
+
+- 속성: **Work Cheatkey** (phappyj@gmail.com GA 계정 `a398168083`), 데이터 스트림 `https://phappyj.github.io/cheatkey/` (스트림 ID 16371466781)
+- **측정 ID `G-E23M7R0R8N`** — `index.html`, `en/index.html` `<head>`에 gtag.js로 직접 설치(2026-11-19)
+- 커스텀 이벤트: `affiliate_click`(tool_name, category, location, link_url), `filter_tools`(category, results), `prompt_copy`(prompt_name)
+- 영문 툴 카드 CTA에는 `data-aff` / `data-cat` / `data-loc` 속성을 달아야 집계됩니다. 툴을 추가하면 카테고리 칩 개수(All·video·slides·writing·auto)도 함께 갱신하세요.
+- 정책 변경 시 `privacy.html` 03·05절의 GA4 고지도 같이 갱신합니다.
+
 ## 수동 업데이트 방법
 
 ```bash

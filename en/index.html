@@ -21,6 +21,16 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://phappyj.github.io/cheatkey/og.png">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%23FFFFFF'/><text x='50' y='73' font-size='58' text-anchor='middle'>⚡</text></svg>">
+
+<!-- Google Analytics 4 (Work Cheatkey · G-E23M7R0R8N) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-E23M7R0R8N"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-E23M7R0R8N');
+</script>
+
 <style>
   :root{
     --bg:#F8F9FA;
@@ -33,11 +43,13 @@
     --navy:#0F172A;
     --navy-2:#1E293B;
     --mint:#0E9F6E;
+    --mint-deep:#0B7A55;
     --mint-soft:#ECFDF5;
     --mint-line:#BBF0DD;
     --coral:#F04438;
     --radius:18px;
     --max:480px;
+    --pad:18px;
     --shadow:0 1px 2px rgba(17,24,39,.04), 0 10px 28px -20px rgba(17,24,39,.18);
   }
   *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
@@ -55,7 +67,7 @@
     word-break:normal;
     overflow-wrap:break-word;
   }
-  .shell{max-width:var(--max);margin:0 auto;padding:0 18px 64px}
+  .shell{max-width:var(--max);margin:0 auto;padding:0 var(--pad) 64px}
 
   /* ───────────── nav ───────────── */
   .nav{
@@ -68,7 +80,7 @@
   .nav-in{
     max-width:var(--max);margin:0 auto;
     display:flex;align-items:center;gap:10px;
-    padding:calc(9px + env(safe-area-inset-top)) 18px 9px 18px;
+    padding:calc(9px + env(safe-area-inset-top)) var(--pad) 9px var(--pad);
   }
   .brand{
     display:inline-flex;align-items:center;gap:6px;
@@ -136,6 +148,62 @@
     display:flex;align-items:center;justify-content:space-between;gap:8px;
     margin:9px 3px 0;font-size:10.5px;color:var(--ink-3);font-weight:500;
   }
+
+  /* ───────────── featured (today's short) ───────────── */
+  .featured{
+    position:relative;
+    margin-top:12px;
+    background:linear-gradient(135deg,#FFFEFB 0%,#FFFFFF 46%,#F7FFFC 100%);
+    border:1px solid var(--line);
+    border-radius:20px;
+    box-shadow:0 2px 4px rgba(17,24,39,.03), 0 20px 44px -34px rgba(14,159,110,.55);
+    padding:14px 14px 13px 17px;
+    overflow:hidden;
+  }
+  .featured::before{
+    content:"";position:absolute;left:0;top:0;bottom:0;width:3px;
+    background:linear-gradient(180deg,var(--mint) 0%,#6EE7B7 55%,var(--coral) 100%);
+  }
+  .f-top{display:flex;align-items:center;gap:7px;flex-wrap:wrap;margin-bottom:8px}
+  .f-kicker{
+    display:inline-flex;align-items:center;gap:5px;
+    font-size:9.5px;font-weight:800;letter-spacing:.11em;text-transform:uppercase;
+    color:var(--coral);
+  }
+  .f-kicker .flame{font-size:11px;letter-spacing:0}
+  .f-when{
+    font-size:9.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+    color:var(--ink-3);border-left:1px solid var(--line);padding-left:7px;
+  }
+  .f-name{
+    font-size:19px;line-height:1.25;font-weight:800;letter-spacing:-0.035em;
+    margin:0 0 4px;color:var(--ink);
+  }
+  .f-name .tagpick{
+    display:inline-block;vertical-align:middle;
+    font-size:9px;font-weight:800;letter-spacing:.09em;text-transform:uppercase;
+    color:var(--mint-deep);background:var(--mint-soft);border:1px solid var(--mint-line);
+    border-radius:5px;padding:2px 5px;margin-left:6px;
+  }
+  .f-sub{margin:0 0 11px;font-size:12.5px;line-height:1.55;color:var(--ink-2);font-weight:500}
+  .f-badges{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:11px}
+  .f-badge{
+    display:inline-flex;align-items:center;gap:4px;
+    font-size:10px;font-weight:800;letter-spacing:-0.01em;
+    color:var(--navy);background:#fff;border:1px solid var(--line);
+    border-radius:999px;padding:3px 8px;
+  }
+  .f-cta{
+    display:flex;align-items:center;justify-content:center;gap:7px;
+    width:100%;min-height:48px;padding:11px 14px;
+    background:var(--mint-deep);color:#fff;text-decoration:none;
+    font-size:14.5px;font-weight:800;letter-spacing:-0.02em;
+    border-radius:13px;
+    box-shadow:0 12px 24px -16px rgba(11,122,85,.9);
+    transition:transform .12s ease, background .15s ease;
+  }
+  .f-cta:active{transform:scale(.986);background:#086646}
+  .f-cta svg{width:14px;height:14px;flex:0 0 auto;color:#A7F3D0}
 
   /* ───────────── section ───────────── */
   section{margin-top:34px;scroll-margin-top:64px}
@@ -226,6 +294,85 @@
   }
   .tip .takeaway b{display:block;font-size:9.5px;font-weight:800;letter-spacing:.1em;color:var(--mint);text-transform:uppercase;margin-bottom:4px}
 
+  /* ───────────── tools + filter ───────────── */
+  .filters{
+    display:flex;gap:7px;overflow-x:auto;scrollbar-width:none;-ms-overflow-style:none;
+    -webkit-overflow-scrolling:touch;
+    margin:0 -2px 13px;padding:2px 2px 3px;
+  }
+  .filters::-webkit-scrollbar{display:none}
+  .fchip{
+    appearance:none;font:inherit;cursor:pointer;
+    display:inline-flex;align-items:center;gap:5px;flex:0 0 auto;
+    font-size:12px;font-weight:750;letter-spacing:-0.015em;
+    color:var(--ink-2);background:#fff;
+    border:1px solid var(--line);border-radius:999px;
+    padding:7px 12px;white-space:nowrap;
+    transition:background .15s ease, color .15s ease, border-color .15s ease, box-shadow .15s ease;
+  }
+  .fchip .n{font-size:10px;font-weight:800;color:var(--ink-3)}
+  .fchip:active{transform:scale(.98)}
+  .fchip[aria-pressed="true"]{
+    background:var(--navy);color:#fff;border-color:var(--navy);
+    box-shadow:0 8px 18px -12px rgba(15,23,42,.9);
+  }
+  .fchip[aria-pressed="true"] .n{color:#9FB3C8}
+
+  .tool-grid{display:grid;grid-template-columns:1fr;gap:9px}
+  .tool{
+    display:flex;align-items:center;gap:10px;
+    background:var(--card);border:1px solid var(--line);
+    border-radius:14px;box-shadow:var(--shadow);
+    padding:11px 12px;text-decoration:none;color:inherit;
+    transition:transform .14s ease, border-color .15s ease, box-shadow .15s ease;
+  }
+  .tool:hover{border-color:#DDE3E8;box-shadow:0 2px 4px rgba(17,24,39,.05),0 18px 36px -26px rgba(17,24,39,.42);transform:translateY(-1px)}
+  .tool:active{transform:scale(.992)}
+  .tool[hidden]{display:none}
+  .tool .ic{
+    flex:0 0 38px;width:38px;height:38px;border-radius:11px;
+    display:grid;place-items:center;font-size:18px;line-height:1;
+    background:#F3F4F6;border:1px solid var(--line-2);
+  }
+  .tool[data-cat="video"] .ic{background:#EFF6FF;border-color:#DCE9FB}
+  .tool[data-cat="slides"] .ic{background:#F5F3FF;border-color:#E7E2FB}
+  .tool[data-cat="writing"] .ic{background:#ECFDF5;border-color:var(--mint-line)}
+  .tool[data-cat="auto"] .ic{background:#FFF7ED;border-color:#FBE7CB}
+  .tool .td{min-width:0;flex:1 1 auto;display:flex;flex-direction:column;gap:2px}
+  .tool .nm{
+    display:flex;align-items:center;gap:6px;flex-wrap:wrap;
+    font-size:14px;font-weight:800;letter-spacing:-0.025em;color:var(--ink);line-height:1.3;
+  }
+  .tool .bh{
+    font-size:9.5px;font-weight:800;letter-spacing:.01em;
+    color:var(--mint-deep);background:var(--mint-soft);
+    border:1px solid var(--mint-line);border-radius:5px;padding:1px 5px;
+    white-space:nowrap;
+  }
+  .tool[data-cat="auto"] .bh{color:#B45309;background:#FFF7ED;border-color:#FBE7CB}
+  .tool .ds{
+    font-size:11.8px;line-height:1.45;color:var(--ink-2);font-weight:500;margin:0;
+    display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
+  }
+  .tool .go{
+    flex:0 0 26px;width:26px;height:26px;border-radius:50%;
+    background:var(--navy);color:#fff;display:grid;place-items:center;
+    font-size:12px;font-weight:700;line-height:1;
+    transition:background .15s ease, transform .15s ease;
+  }
+  .tool:hover .go{background:var(--mint-deep);transform:translateX(1px)}
+  .tool[data-cat="auto"] .go{background:var(--mint-deep)}
+  .tools-note{
+    margin:13px 1px 0;font-size:11.2px;line-height:1.6;color:var(--ink-3);font-weight:500;
+  }
+  .tools-note b{color:var(--ink-2);font-weight:800}
+  .empty{
+    display:none;padding:18px 14px;text-align:center;
+    font-size:12.5px;font-weight:600;color:var(--ink-3);
+    background:#fff;border:1px dashed var(--line);border-radius:14px;
+  }
+  .empty.on{display:block}
+
   /* ───────────── workflows ───────────── */
   .wf{padding:16px 15px 15px}
   .wf .tag{
@@ -292,6 +439,7 @@
     h1.hero-title{font-size:23px}
     .cta{font-size:13.5px}
     .tip h3{font-size:17.5px}
+    .f-name{font-size:17px}
   }
   @media (max-width:389px){
     .chip.c-prompts{display:none}
@@ -299,6 +447,55 @@
   @media (min-width:431px){
     h1.hero-title{font-size:29px}
   }
+
+  /* ───────────── tablet ───────────── */
+  @media (min-width:560px){
+    :root{--max:720px;--pad:22px}
+    h1.hero-title{font-size:31px}
+    .hero{padding:20px 19px 18px}
+    .featured{padding:16px 18px 15px 21px}
+    .f-cta{width:auto;flex:1 1 auto}
+    .f-row{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+    .f-badges{margin-bottom:0}
+    .tool-grid{grid-template-columns:1fr 1fr;gap:11px}
+    .tool{padding:13px 13px;align-items:flex-start}
+    .tool .go{margin-top:2px}
+    .prompt-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:start}
+    .prompt-grid .tip + .tip{margin-top:0}
+  }
+
+  /* ───────────── desktop ───────────── */
+  @media (min-width:900px){
+    :root{--max:980px;--pad:26px}
+    .shell{padding-bottom:88px}
+    .nav-in{padding-top:calc(11px + env(safe-area-inset-top));padding-bottom:11px}
+    .brand{font-size:14.5px}
+    .hero{margin-top:18px;padding:26px 26px 22px;border-radius:26px}
+    h1.hero-title{font-size:40px;letter-spacing:-0.04em;max-width:16em}
+    .hero-lede{font-size:15px;max-width:620px}
+    .cta{min-height:58px;font-size:16px}
+    .featured{margin-top:14px;padding:18px 22px 17px 26px;border-radius:22px}
+    .f-name{font-size:23px}
+    .f-sub{font-size:13.5px;max-width:620px}
+    .f-row{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .f-cta{width:auto;min-height:50px;padding:12px 22px;flex:0 0 auto}
+    section{margin-top:44px}
+    .sec-head h2{font-size:21px}
+    .sec-note{font-size:13.5px;max-width:760px}
+    .prompt-grid{gap:14px}
+    .tip{padding:20px 18px 18px}
+    .tool-grid{grid-template-columns:1fr 1fr;gap:13px}
+    .tool{padding:15px 15px;border-radius:16px}
+    .tool .ic{flex-basis:42px;width:42px;height:42px;font-size:19px;border-radius:12px}
+    .tool .nm{font-size:15px}
+    .tool .ds{font-size:12.2px}
+    .wf{padding:20px 18px 18px}
+    .wf ol{grid-template-columns:repeat(3,1fr);gap:10px;background:none;border:0;overflow:visible;border-radius:0}
+    .wf li{border:1px solid var(--line);border-radius:13px;padding:12px 13px}
+    .make-card{padding:22px 20px 20px}
+    .make-card h2{font-size:21px}
+  }
+
   @media (prefers-reduced-motion:reduce){
     *{animation:none!important;transition:none!important}
     html{scroll-behavior:auto}
@@ -330,13 +527,33 @@
       </div>
       <h1 class="hero-title" id="hero-title">Meeting notes in <span class="accent">30 seconds</span>. Decline emails in <span class="accent">3 lines</span>.</h1>
       <p class="hero-lede">I plan partner services at a telecom company and run my own store on the side. These are the exact AI prompts and Make.com workflows I use to get the admin work off my desk — free, no sign-up here.</p>
-      <a class="cta" href="https://www.make.com/en/register?pc=cheatkey" target="_blank" rel="noopener sponsored">
+      <a class="cta" href="https://www.make.com/en/register?pc=cheatkey" target="_blank" rel="noopener sponsored" data-aff="Make.com" data-cat="Automation" data-loc="hero">
         Make.com — Automate your daily work &amp; get 1 Month Core Plan Free
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
       </a>
       <div class="hero-foot">
         <span>New Make accounts · 1 month Core plan</span>
         <span>Sponsored link</span>
+      </div>
+    </section>
+
+    <!-- featured: today's short -->
+    <section class="featured" id="featured" aria-labelledby="featured-name">
+      <div class="f-top">
+        <span class="f-kicker"><span class="flame" aria-hidden="true">🔥</span>Featured from Today's Short</span>
+        <span class="f-when">10:30 · Nov 19</span>
+      </div>
+      <h2 class="f-name" id="featured-name">Decktopus<span class="tagpick">Today's pick</span></h2>
+      <p class="f-sub">Type the topic, get a structured slide deck with speaker notes. The weekly report you keep rebuilding from scratch — in one pass.</p>
+      <div class="f-badges">
+        <span class="f-badge">One prompt → full deck</span>
+        <span class="f-badge">Speaker notes included</span>
+      </div>
+      <div class="f-row">
+        <a class="f-cta" href="https://www.decktopus.com?via=heejae" target="_blank" rel="noopener sponsored" data-aff="Decktopus" data-cat="Slides &amp; Meetings" data-loc="featured">
+          Try Decktopus
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>
+        </a>
       </div>
     </section>
 
@@ -349,6 +566,7 @@
       </div>
       <p class="sec-note">Paste into ChatGPT, Claude, Gemini — anything. Fill the brackets, keep the rules. Both prompts work better when you give raw notes instead of tidy summaries.</p>
 
+      <div class="prompt-grid">
       <article class="card tip">
         <span class="tag">AI · MEETING NOTES</span>
         <h3>Meeting notes <span class="accent">30 min</span> → <span class="accent">30 sec</span></h3>
@@ -369,7 +587,7 @@ Rules: do not guess anything that is not in the notes — mark it "Needs confirm
 Meeting notes:
 [paste raw notes here]</div>
         <div class="btn-row">
-          <button class="btn primary" type="button" data-copy-target="1">
+          <button class="btn primary" type="button" data-copy-target="1" data-prompt-name="Meeting notes">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="12" height="12" rx="2.5"/><path d="M5 15V5a2 2 0 0 1 2-2h8"/></svg>
             Copy prompt
           </button>
@@ -396,7 +614,7 @@ Meeting notes:
 
 Rules: polite but firm, three sentences maximum. Apologise once, never twice. No excuses, no emoji. End on the alternative. Also give me a one-line subject.</div>
         <div class="btn-row">
-          <button class="btn primary" type="button" data-copy-target="2">
+          <button class="btn primary" type="button" data-copy-target="2" data-prompt-name="Polite decline email">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="12" height="12" rx="2.5"/><path d="M5 15V5a2 2 0 0 1 2-2h8"/></svg>
             Copy prompt
           </button>
@@ -405,6 +623,7 @@ Rules: polite but firm, three sentences maximum. Apologise once, never twice. No
         <p class="sub" style="margin:10px 0 0;font-size:11.5px;line-height:1.6">Scheduling? Put "two times that work for me" in slot 4 and it becomes a reschedule email instead.</p>
         <p class="takeaway"><b>Why it works</b>The limit is the trick. Three sentences and one apology leaves no room for the rambling over-explanation that makes a "no" sound like a negotiation.</p>
       </article>
+      </div>
 
       <div class="card wf" style="margin-top:12px">
         <span class="tag">AUTOMATION · MAKE.COM</span>
@@ -416,7 +635,7 @@ Rules: polite but firm, three sentences maximum. Apologise once, never twice. No
           <li><span class="n">3</span><span class="t"><b>Friday report, zero effort</b><span>Google Sheets rows collected all week → summarised into a status update → posted to Slack at 17:00.</span></span></li>
         </ol>
         <div class="btn-row" style="margin-top:12px">
-          <a class="btn" href="https://www.make.com/en/register?pc=cheatkey" target="_blank" rel="noopener sponsored">Build one free ↗</a>
+          <a class="btn" href="https://www.make.com/en/register?pc=cheatkey" target="_blank" rel="noopener sponsored" data-aff="Make.com" data-cat="Automation" data-loc="workflows">Build one free ↗</a>
         </div>
       </div>
     </section>
@@ -426,110 +645,132 @@ Rules: polite but firm, three sentences maximum. Apologise once, never twice. No
       <div class="sec-head">
         <span class="kicker">02</span>
         <h2>Tools I'd pay for myself</h2>
-        <span class="count">11 tools</span>
+        <span class="count" id="tools-count">12 tools</span>
       </div>
-      <p class="sec-note">One tool per job — no directories, no "top 50" lists. Every link goes to the tool's own site, and pricing is theirs to set.</p>
+      <p class="sec-note">One tool per job — no directories, no "top 50" lists. Filter by what you need, and every link goes straight to the tool's own site.</p>
 
-      <article class="card tip">
-        <span class="tag">PRESENTATIONS</span>
-        <h3>A full slide deck from <span class="accent">one prompt</span> — Decktopus</h3>
-        <p class="sub">Type the topic, get a structured deck with speaker notes. Fastest for the weekly report you keep rebuilding from scratch.</p>
-        <div class="btn-row">
-          <a class="btn primary" href="https://www.decktopus.com?via=heejae" target="_blank" rel="noopener sponsored">Try Decktopus ↗</a>
-        </div>
-      </article>
+      <div class="filters" role="group" aria-label="Filter tools by category">
+        <button class="fchip" type="button" data-filter="all" aria-pressed="true">All <span class="n">12</span></button>
+        <button class="fchip" type="button" data-filter="video" aria-pressed="false">Video &amp; Shorts <span class="n">6</span></button>
+        <button class="fchip" type="button" data-filter="slides" aria-pressed="false">Slides &amp; Meetings <span class="n">3</span></button>
+        <button class="fchip" type="button" data-filter="writing" aria-pressed="false">Writing <span class="n">2</span></button>
+        <button class="fchip" type="button" data-filter="auto" aria-pressed="false">Automation <span class="n">1</span></button>
+      </div>
 
-      <article class="card tip">
-        <span class="tag">VIDEO · CLIPS</span>
-        <h3>One long video → <span class="accent">a week of shorts</span> — quso.ai</h3>
-        <p class="sub">Drop in a webinar or meeting recording and get captioned vertical clips. Turns work you already did into something you can post.</p>
-        <div class="btn-row">
-          <a class="btn primary" href="https://quso.ai?via=2xv5cz" target="_blank" rel="noopener sponsored">Try quso.ai ↗</a>
-        </div>
-      </article>
+      <div class="tool-grid" id="tool-grid">
 
-      <article class="card tip">
-        <span class="tag">VIDEO · EDITING</span>
-        <h3>Captions and cuts, <span class="accent">automatic</span> — Submagic</h3>
-        <p class="sub">Upload a short and get captions, filler-word removal and punch-ins. The part of short-form editing that is pure typing, done for you.</p>
-        <div class="btn-row">
-          <a class="btn primary" href="https://submagic.co/?via=heejae-e35f5b" target="_blank" rel="noopener sponsored">Try Submagic ↗</a>
-        </div>
-      </article>
+        <a class="tool" href="https://www.decktopus.com?via=heejae" target="_blank" rel="noopener sponsored" data-cat="slides" data-aff="Decktopus" data-loc="tools">
+          <span class="ic" aria-hidden="true">📊</span>
+          <span class="td">
+            <span class="nm">Decktopus<span class="bh">One prompt → full deck</span></span>
+            <span class="ds">Type the topic, get a structured deck with speaker notes. Fastest for the report you keep rebuilding.</span>
+          </span>
+          <span class="go" aria-hidden="true">↗</span>
+        </a>
 
-      <article class="card tip">
-        <span class="tag">IMAGES · 3D</span>
-        <h3>Thumbnails and product shots — <span class="accent">Pixa</span></h3>
-        <p class="sub">An AI creative agent for images, video edits and 3D scenes. Good enough for a thumbnail or a mockup without opening a design suite.</p>
-        <div class="btn-row">
-          <a class="btn primary" href="https://getpixa.link/park-hee-jae" target="_blank" rel="noopener sponsored">Try Pixa ↗</a>
-        </div>
-      </article>
+        <a class="tool" href="https://www.make.com/en/register?pc=cheatkey" target="_blank" rel="noopener sponsored" data-cat="auto" data-aff="Make.com" data-loc="tools">
+          <span class="ic" aria-hidden="true">⚙️</span>
+          <span class="td">
+            <span class="nm">Make.com<span class="bh">1-month free</span></span>
+            <span class="ds">Connects Gmail, Slack, Notion, Sheets and ChatGPT so the copy-paste you just did runs on a schedule.</span>
+          </span>
+          <span class="go" aria-hidden="true">↗</span>
+        </a>
 
-      <article class="card tip">
-        <span class="tag">VIDEO · VOICEOVER</span>
-        <h3>A script → <span class="accent">a narrated video</span> — Fliki</h3>
-        <p class="sub">Paste the report or a blog post and get a video with an AI voice on top. What you need when the deck has to become a 60-second explainer.</p>
-        <div class="btn-row">
-          <a class="btn primary" href="https://fliki.ai?via=heejae" target="_blank" rel="noopener sponsored">Try Fliki ↗</a>
-        </div>
-      </article>
+        <a class="tool" href="https://quso.ai?via=2xv5cz" target="_blank" rel="noopener sponsored" data-cat="video" data-aff="quso.ai" data-loc="tools">
+          <span class="ic" aria-hidden="true">🎬</span>
+          <span class="td">
+            <span class="nm">quso.ai<span class="bh">1 video → 1 week of clips</span></span>
+            <span class="ds">Drop in a webinar or meeting recording and get captioned vertical clips you can post.</span>
+          </span>
+          <span class="go" aria-hidden="true">↗</span>
+        </a>
 
-      <article class="card tip">
-        <span class="tag">VIDEO · REPURPOSE</span>
-        <h3>One recording → <span class="accent">a week of posts</span> — Taja AI</h3>
-        <p class="sub">Drop in a webinar or a long video and get shorts, clips and captions back. The part of posting that is pure cutting, done for you.</p>
-        <div class="btn-row">
-          <a class="btn primary" href="https://www.taja.ai/?via=heejae" target="_blank" rel="noopener sponsored">Try Taja AI ↗</a>
-        </div>
-      </article>
+        <a class="tool" href="https://submagic.co/?via=heejae-e35f5b" target="_blank" rel="noopener sponsored" data-cat="video" data-aff="Submagic" data-loc="tools">
+          <span class="ic" aria-hidden="true">🔤</span>
+          <span class="td">
+            <span class="nm">Submagic<span class="bh">Auto captions</span></span>
+            <span class="ds">Captions, filler-word removal and punch-ins on every upload. The pure-typing part of short-form editing.</span>
+          </span>
+          <span class="go" aria-hidden="true">↗</span>
+        </a>
 
-      <article class="card tip">
-        <span class="tag">VIDEO · PROMPT</span>
-        <h3>A sentence → <span class="accent">a finished clip</span> — Revid</h3>
-        <p class="sub">Prompt-to-video and remixes that publish straight to TikTok, YouTube and Instagram. For the weeks when there is nothing to film.</p>
-        <div class="btn-row">
-          <a class="btn primary" href="https://www.revid.ai/?via=workcheatkey" target="_blank" rel="noopener sponsored">Try Revid ↗</a>
-        </div>
-      </article>
+        <a class="tool" href="https://getpixa.link/park-hee-jae" target="_blank" rel="noopener sponsored" data-cat="video" data-aff="Pixa" data-loc="tools">
+          <span class="ic" aria-hidden="true">🎨</span>
+          <span class="td">
+            <span class="nm">Pixa<span class="bh">Thumbnail in one prompt</span></span>
+            <span class="ds">An AI creative agent for images, video edits and 3D scenes — enough for a thumbnail or mockup.</span>
+          </span>
+          <span class="go" aria-hidden="true">↗</span>
+        </a>
 
-      <article class="card tip">
-        <span class="tag">WRITING</span>
-        <h3>The email you <span class="accent">keep rewriting</span> — Rytr</h3>
-        <p class="sub">Short copy with a tone you set: replies, follow-ups, post text. Cheaper than a full AI suite when writing is the only job you need done.</p>
-        <div class="btn-row">
-          <a class="btn primary" href="https://rytr.me?via=heejae" target="_blank" rel="noopener sponsored">Try Rytr ↗</a>
-        </div>
-      </article>
+        <a class="tool" href="https://fliki.ai?via=heejae" target="_blank" rel="noopener sponsored" data-cat="video" data-aff="Fliki" data-loc="tools">
+          <span class="ic" aria-hidden="true">🎙️</span>
+          <span class="td">
+            <span class="nm">Fliki<span class="bh">Script → voiced video</span></span>
+            <span class="ds">Paste a report or blog post and get a video with an AI voice on top — the 60-second explainer.</span>
+          </span>
+          <span class="go" aria-hidden="true">↗</span>
+        </a>
 
-      <article class="card tip">
-        <span class="tag">WRITING · CHECK</span>
-        <h3>Before it goes out, <span class="accent">check who wrote it</span> — Originality.ai</h3>
-        <p class="sub">Scans text for AI-generated content and plagiarism. One pass on anything that leaves under your name, or a client's.</p>
-        <div class="btn-row">
-          <a class="btn primary" href="https://originality.ai/?via=heejae" target="_blank" rel="noopener sponsored">Try Originality.ai ↗</a>
-        </div>
-      </article>
+        <a class="tool" href="https://www.taja.ai/?via=heejae" target="_blank" rel="noopener sponsored" data-cat="video" data-aff="Taja AI" data-loc="tools">
+          <span class="ic" aria-hidden="true">📱</span>
+          <span class="td">
+            <span class="nm">Taja AI<span class="bh">Long video → shorts</span></span>
+            <span class="ds">Drop in a webinar or long video and get shorts, clips and captions back without editing.</span>
+          </span>
+          <span class="go" aria-hidden="true">↗</span>
+        </a>
 
-      <article class="card tip">
-        <span class="tag">MEETINGS</span>
-        <h3>Meetings → <span class="accent">notes you can search</span> — Speak AI</h3>
-        <p class="sub">Records and transcribes in 100+ languages, then answers questions about the transcript. The follow-up email almost writes itself.</p>
-        <div class="btn-row">
-          <a class="btn primary" href="https://speakai.co/?via=heejae" target="_blank" rel="noopener sponsored">Try Speak AI ↗</a>
-        </div>
-      </article>
+        <a class="tool" href="https://www.revid.ai/?via=workcheatkey" target="_blank" rel="noopener sponsored" data-cat="video" data-aff="Revid" data-loc="tools">
+          <span class="ic" aria-hidden="true">✂️</span>
+          <span class="td">
+            <span class="nm">Revid<span class="bh">Prompt → finished clip</span></span>
+            <span class="ds">Prompt-to-video and remixes that publish straight to TikTok, YouTube and Instagram.</span>
+          </span>
+          <span class="go" aria-hidden="true">↗</span>
+        </a>
 
-      <article class="card tip">
-        <span class="tag">SCHEDULING</span>
-        <h3>A booking link without <span class="accent">the email ping-pong</span> — Lunacal</h3>
-        <p class="sub">A branded scheduling page that can take payment. For when you are the person everyone asks "when are you free?".</p>
-        <div class="btn-row">
-          <a class="btn primary" href="https://lunacal.ai/?ref=heejae" target="_blank" rel="noopener sponsored">Try Lunacal ↗</a>
-        </div>
-      </article>
+        <a class="tool" href="https://rytr.me?via=heejae" target="_blank" rel="noopener sponsored" data-cat="writing" data-aff="Rytr" data-loc="tools">
+          <span class="ic" aria-hidden="true">✍️</span>
+          <span class="td">
+            <span class="nm">Rytr<span class="bh">Short copy, your tone</span></span>
+            <span class="ds">Replies, follow-ups and post text with a tone you set — cheaper than a full AI suite.</span>
+          </span>
+          <span class="go" aria-hidden="true">↗</span>
+        </a>
 
-      <p class="sub" style="margin:12px 1px 0;font-size:11.5px;line-height:1.6">These are affiliate links — I may earn a commission if you subscribe, at no extra cost to you. Plans and prices are set by each provider; check their page before paying.</p>
+        <a class="tool" href="https://originality.ai/?via=heejae" target="_blank" rel="noopener sponsored" data-cat="writing" data-aff="Originality.ai" data-loc="tools">
+          <span class="ic" aria-hidden="true">🛡️</span>
+          <span class="td">
+            <span class="nm">Originality.ai<span class="bh">AI &amp; plagiarism check</span></span>
+            <span class="ds">Scans text for AI-generated content and plagiarism — one pass on anything that leaves under your name.</span>
+          </span>
+          <span class="go" aria-hidden="true">↗</span>
+        </a>
+
+        <a class="tool" href="https://speakai.co/?via=heejae" target="_blank" rel="noopener sponsored" data-cat="slides" data-aff="Speak AI" data-loc="tools">
+          <span class="ic" aria-hidden="true">🎧</span>
+          <span class="td">
+            <span class="nm">Speak AI<span class="bh">100+ languages</span></span>
+            <span class="ds">Records and transcribes meetings, then answers questions about the transcript. The follow-up writes itself.</span>
+          </span>
+          <span class="go" aria-hidden="true">↗</span>
+        </a>
+
+        <a class="tool" href="https://lunacal.ai/?ref=heejae" target="_blank" rel="noopener sponsored" data-cat="slides" data-aff="Lunacal" data-loc="tools">
+          <span class="ic" aria-hidden="true">📅</span>
+          <span class="td">
+            <span class="nm">Lunacal<span class="bh">No booking ping-pong</span></span>
+            <span class="ds">A branded scheduling page that can take payment — for when everyone asks "when are you free?".</span>
+          </span>
+          <span class="go" aria-hidden="true">↗</span>
+        </a>
+
+      </div>
+      <p class="empty" id="tools-empty">No tools in this category yet — try another filter.</p>
+
+      <p class="tools-note"><b>These are affiliate links</b> — I may earn a commission if you subscribe, at no extra cost to you. Plans and prices are set by each provider; check their page before paying.</p>
     </section>
 
     <!-- make -->
@@ -546,7 +787,7 @@ Rules: polite but firm, three sentences maximum. Apologise once, never twice. No
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg><span>1,000+ app connectors, visual builder, no code</span></li>
           <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5 5L20 6.5"/></svg><span>Cancel anytime — the free plan stays available</span></li>
         </ul>
-        <a class="cta" href="https://www.make.com/en/register?pc=cheatkey" target="_blank" rel="noopener sponsored">
+        <a class="cta" href="https://www.make.com/en/register?pc=cheatkey" target="_blank" rel="noopener sponsored" data-aff="Make.com" data-cat="Automation" data-loc="make_card">
           Make.com — Automate your daily work &amp; get 1 Month Core Plan Free
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
         </a>
@@ -583,6 +824,12 @@ Rules: polite but firm, three sentences maximum. Apologise once, never twice. No
 (function () {
   "use strict";
 
+  /* ── analytics helper ── */
+  function track(event, params) {
+    try { if (typeof gtag === "function") gtag("event", event, params || {}); } catch (e) {}
+  }
+
+  /* ── toast ── */
   var toastEl = document.getElementById("toast");
   var toastTimer = null;
   function toast(msg) {
@@ -592,6 +839,7 @@ Rules: polite but firm, three sentences maximum. Apologise once, never twice. No
     toastTimer = setTimeout(function () { toastEl.classList.remove("on"); }, 1900);
   }
 
+  /* ── copy prompt ── */
   function copyText(text, btn) {
     function ok() {
       toast("Prompt copied");
@@ -630,6 +878,44 @@ Rules: polite but firm, three sentences maximum. Apologise once, never twice. No
     var text = box.textContent;
     if (label) text = text.slice(label.textContent.length);
     copyText(text.trim(), btn);
+    track("prompt_copy", { prompt_name: btn.getAttribute("data-prompt-name") || "prompt", location: "prompts" });
+  });
+
+  /* ── affiliate click tracking ── */
+  document.addEventListener("click", function (e) {
+    var link = e.target.closest ? e.target.closest("a[data-aff]") : null;
+    if (!link) return;
+    track("affiliate_click", {
+      tool_name: link.getAttribute("data-aff") || "",
+      category: link.getAttribute("data-cat") || "",
+      location: link.getAttribute("data-loc") || "",
+      link_url: link.href
+    });
+  });
+
+  /* ── category filter ── */
+  var chips = Array.prototype.slice.call(document.querySelectorAll(".fchip"));
+  var cards = Array.prototype.slice.call(document.querySelectorAll("#tool-grid .tool"));
+  var countEl = document.getElementById("tools-count");
+  var emptyEl = document.getElementById("tools-empty");
+
+  chips.forEach(function (chip) {
+    chip.addEventListener("click", function () {
+      var cat = chip.getAttribute("data-filter");
+      chips.forEach(function (c) {
+        var on = c === chip;
+        c.setAttribute("aria-pressed", on ? "true" : "false");
+      });
+      var shown = 0;
+      cards.forEach(function (card) {
+        var show = cat === "all" || card.getAttribute("data-cat") === cat;
+        if (show) { card.removeAttribute("hidden"); shown++; }
+        else { card.setAttribute("hidden", ""); }
+      });
+      if (countEl) countEl.textContent = shown + (shown === 1 ? " tool" : " tools");
+      if (emptyEl) emptyEl.classList.toggle("on", shown === 0);
+      track("filter_tools", { category: cat, results: shown });
+    });
   });
 
   document.getElementById("year").textContent = new Date().getFullYear();
