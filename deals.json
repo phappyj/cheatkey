@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-19T08:30:00+09:00",
+  "updated": "2026-11-19T12:30:00+09:00",
   "tips": [
     {
       "id": "tip-003",
@@ -81,6 +81,80 @@
     }
   ],
   "deals": [
+    {
+      "id": "deal-003",
+      "title": "홈플래닛 8포트 USB3.0 유선랜 멀티허브 HUB8C-Y, 스페이스 그레이, 1개",
+      "shortTitle": "홈플래닛 8포트 USB-C 멀티허브 HUB8C-Y",
+      "seller": "쿠팡 · 로켓배송",
+      "price": 16990,
+      "wasPrice": 24300,
+      "discount": "30%",
+      "image": "img/deal-003.jpg",
+      "link": "https://link.coupang.com/a/iNs7fOvF36",
+      "note": "포트 8개(USB-A 2 · C타입 2 · 기가 유선랜 · HDMI · SD) / 상품평 3,772개 · 만족도 84% / 내일(금) 11/20 새벽 도착 보장",
+      "published": "2026-11-19 12:30",
+      "specs": [
+        "포트 8개 · 기가 유선랜 포함",
+        "HDMI 4K 30Hz · PD 충전 지원",
+        "무전원 · 70g대 슬림 바디"
+      ],
+      "verdict": "같은 1만 7천 원대에서 포트가 8개, 그것도 기가 유선랜까지 들어간 건 이 제품뿐입니다. 애이서는 3,000원 더 주고 랜이 빠지고, 유그린은 4K 60Hz를 주는 대신 두 배 값에 랜이 없습니다. 4K 모니터를 60Hz로 띄우지 않는다면 이게 정답입니다.",
+      "cmpLead": "<b>노트북 허브</b> 3종을 같은 기준(포트·화질·배송·아쉬운 점)으로 나란히 놓았습니다.",
+      "cmpLegend": "BEST PICK = 3종 중 오늘 값·구성 대비 가장 남는 1개. 가격·재고는 결제 전 쿠팡에서 최종 확인하세요.",
+      "cmpRows": [
+        {
+          "key": "port",
+          "label": "포트 구성"
+        },
+        {
+          "key": "feats",
+          "label": "화질·전송"
+        },
+        {
+          "key": "weight",
+          "label": "배송"
+        },
+        {
+          "key": "cons",
+          "label": "아쉬운 점"
+        }
+      ],
+      "comparison": [
+        {
+          "name": "홈플래닛 8포트 USB3.0 유선랜 멀티허브 DEX미러링 HUB8C-Y, 스페이스 그레이, 1개",
+          "short": "홈플래닛 8포트",
+          "price": 16990,
+          "priceNote": "정가 24,300 · 30%",
+          "port": "USB-A 2 · C 2 · 랜 · HDMI · SD",
+          "feats": "HDMI 4K 30Hz · PD 충전",
+          "weight": "내일 새벽 도착",
+          "cons": "4K 60Hz 미지원 · 케이블 짧음",
+          "best": true
+        },
+        {
+          "name": "에이서 7-in-1 USB-C 허브 4K@30Hz HDMI 100W PD 충전 USB 3.0/Type-C 5Gbps SD/TF 카드 리더 멀티포트 익스텐더, 1개, 회색",
+          "short": "에이서 7in1",
+          "price": 19900,
+          "priceNote": "정가 42,980 · 53%",
+          "port": "7포트 · USB-A·C·SD/TF",
+          "feats": "HDMI 4K 30Hz · PD 100W",
+          "weight": "내일 새벽 도착",
+          "cons": "유선랜 없음 · 재고 임박",
+          "best": false
+        },
+        {
+          "name": "UGREEN 유그린 Uno 6포트 USB 3.2 C타입 멀티 허브 HDMI2.0 4K60Hz PD100W",
+          "short": "유그린 Uno 6",
+          "price": 35900,
+          "priceNote": "정가 43,990 · 18%",
+          "port": "6포트 · USB-A·C·HDMI",
+          "feats": "HDMI 4K 60Hz · 10Gbps",
+          "weight": "내일 새벽 도착",
+          "cons": "유선랜 없음 · 두 배 가격",
+          "best": false
+        }
+      ]
+    },
     {
       "id": "deal-002",
       "title": "앤커 인체공학 버티컬 무선 마우스 A7852, A7852Q11, 블랙",
