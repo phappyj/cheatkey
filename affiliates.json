@@ -11,10 +11,10 @@
       "name": "Make.com",
       "url": "https://www.make.com/en/register?pc=cheatkey",
       "offer": "1 month Core plan free for new accounts",
-      "status": "active",
-      "source": "PartnerStack (approved before network decline)",
+      "status": "active (link live, PartnerStack dashboard inaccessible after network decline until 2026-12-02)",
+      "source": "PartnerStack (approved before network decline; dash.partnerstack.com shows '참여 중인 프로그램 없음' until 2026-12-02 reapply)",
       "placed_on": [
-        "en/index.html (hero pick, 2026-11-19 22:30)",
+        "en/index.html (verified stack #1 — automate, 2026-11-20 07:30)",
         "en/index.html (workflows card, #make section, 2026-11-19)"
       ]
     },
@@ -154,7 +154,7 @@
       "partner_since": "2026-11-19",
       "status": "active — link issued",
       "placed_on": [
-        "en/index.html (collapsed 'View all tested tools' list, 2026-11-19)"
+        "en/index.html (hero pick, 2026-11-20 07:30)"
       ]
     },
     {
@@ -203,7 +203,7 @@
       "partner_since": "2026-11-19",
       "status": "active — email confirmed, link issued",
       "placed_on": [
-        "en/index.html (verified stack #1, 2026-11-19 22:30)"
+        "en/index.html (collapsed 'View all tested tools' list, 2026-11-20 07:30)"
       ]
     },
     {
@@ -245,7 +245,7 @@
       "dashboard": "https://partners.pictory.ai",
       "platform": "FirstPromoter",
       "applied": "2026-11-19",
-      "status": "application submitted — account created and email confirmed, application pending review, no link yet",
+      "status": "rejected 2026-11-20 01:55 (re-review possible by replying with marketing plan/audience/channel links)",
       "placed_on": []
     }
   ]
