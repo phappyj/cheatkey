@@ -96,16 +96,22 @@ GitHub Pages로 서빙됩니다: **https://phappyj.github.io/cheatkey/**
 
 글로벌 영어 채널 `Work Cheatkey (@workcheatkeyai)`용 별도 페이지: **https://phappyj.github.io/cheatkey/en/**
 
-- 쿠팡·핫딜 섹션은 넣지 않고, 영문 프롬프트 2종(회의록·거절 메일) + Make.com 1개월 무료 CTA만 둡니다.
+- 쿠팡·핫딜 섹션은 넣지 않고, 영문 프롬프트 2종(회의록·거절 메일) + 제휴 툴 섹션을 둡니다.
 - `en/index.html`은 `deals.json`을 읽지 않는 **독립 정적 페이지**입니다(수동 편집).
+- 구조(2026-11-19 개편): **히어로 픽 1개 → Verified Stack 3개 → `View all tested tools (N)` 접힘 목록**
+  - 히어로 픽: 그 주 쇼츠에서 소개한 툴(현재 Decktopus). 데스크톱에서는 히어로 카드가 2단(좌: 카피 / 우: 픽 카드)입니다.
+  - Verified Stack: 잡 하나당 하나 — 현재 Make.com(자동화) · Speak AI(회의) · LoopCV(구직). `#stack` 안의 `.scard` 3개를 고치면 됩니다. Granola는 Dub 파트너 심사가 끝나면 Speak AI 자리를 대체할 후보(링크 발급 전).
+  - 접힘 목록: 나머지 툴 전체. `.allbody`는 기본 `hidden`, `#alltoggle` 클릭으로 펼칩니다. 툴을 추가·삭제하면 `#allcount`와 카테고리 칩 개수는 **스크립트가 DOM에서 자동 계산**하므로 손대지 않아도 됩니다(칩도 실제로 툴이 있는 카테고리만 표시).
+  - 스택으로 툴을 올리면 접힘 목록에서는 빼고, 반대도 마찬가지로 맞춰 주세요.
+- 제휴 링크·수수료·정산 상태는 `affiliates.json`에 툴별로 기록합니다(`status`, `placed_on`).
 - 개인정보처리방침: **https://phappyj.github.io/cheatkey/privacy.html** (국·영문). 제휴 링크 추가 시 이 문서의 "제휴 링크" 표도 갱신하세요.
 
 ## GA4 (Work Cheatkey)
 
 - 속성: **Work Cheatkey** (phappyj@gmail.com GA 계정 `a398168083`), 데이터 스트림 `https://phappyj.github.io/cheatkey/` (스트림 ID 16371466781)
 - **측정 ID `G-E23M7R0R8N`** — `index.html`, `en/index.html` `<head>`에 gtag.js로 직접 설치(2026-11-19)
-- 커스텀 이벤트: `affiliate_click`(tool_name, category, location, link_url), `filter_tools`(category, results), `prompt_copy`(prompt_name)
-- 영문 툴 카드 CTA에는 `data-aff` / `data-cat` / `data-loc` 속성을 달아야 집계됩니다. 툴을 추가하면 카테고리 칩 개수(All·video·slides·writing·auto)도 함께 갱신하세요.
+- 커스텀 이벤트: `affiliate_click`(tool_name, category, location, link_url), `filter_tools`(category, results), `prompt_copy`(prompt_name), `open_all_tools` / `close_all_tools`(영문 허브 접힘 목록)
+- 영문 툴 카드 CTA에는 `data-aff` / `data-cat` / `data-loc` 속성을 달아야 집계됩니다. `data-loc` 값: `hero_pick` · `stack` · `tools` · `workflows` · `make_card`
 - 정책 변경 시 `privacy.html` 03·05절의 GA4 고지도 같이 갱신합니다.
 
 ## 수동 업데이트 방법
