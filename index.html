@@ -765,9 +765,9 @@
     if (items.length < 2) return null;
     return items.map(function (o) {
       var map = {
-        port:   firstOf(o, ["port", "ports", "portSpec"]),
-        feats:  firstOf(o, ["feats", "feature", "features", "spec", "specs", "key", "strength"]),
-        weight: firstOf(o, ["weight", "mass"]),
+        port:   firstOf(o, ["port", "ports", "portSpec", "build", "structure", "type"]),
+        feats:  firstOf(o, ["feats", "feature", "features", "spec", "specs", "key", "strength", "height", "elevation"]),
+        weight: firstOf(o, ["weight", "mass", "reviews", "review"]),
         cons:   firstOf(o, ["cons", "con", "weak", "weakness", "downside", "demerit", "drawback"])
       };
       return {
