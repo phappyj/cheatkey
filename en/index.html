@@ -552,10 +552,9 @@
     .nav-in{padding-top:calc(11px + env(safe-area-inset-top));padding-bottom:11px}
     .brand{font-size:14.5px}
     .hero{margin-top:18px;padding:24px 26px 22px;border-radius:26px;display:grid;grid-template-columns:1.12fr .88fr;column-gap:28px;align-items:start}
-    .hero-eyebrow{grid-column:1}
-    h1.hero-title{grid-column:1;font-size:34px;letter-spacing:-0.04em;max-width:14em;margin-bottom:12px}
-    .hero-lede{grid-column:1;font-size:14.5px;max-width:34em}
-    .pick{grid-column:2;grid-row:1/4;margin-top:0;padding:16px 20px 15px 24px;border-radius:20px;align-self:stretch;display:flex;flex-direction:column;justify-content:center}
+    h1.hero-title{font-size:34px;letter-spacing:-0.04em;max-width:14em;margin-bottom:14px}
+    .hero-lede{font-size:14.5px;max-width:34em}
+    .pick{margin-top:0;padding:16px 20px 15px 24px;border-radius:20px;display:flex;flex-direction:column;justify-content:center}
     .pick .f-row{display:flex;flex-direction:column;align-items:stretch;gap:10px}
     .pick .f-cta{width:100%;flex:1 0 auto}
     .f-name{font-size:23px}
@@ -611,12 +610,14 @@
 
     <!-- hero + hero pick -->
     <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
       <div class="hero-eyebrow">
         <span class="badge-best"><span class="spark">✦</span>FOR OFFICE WORK</span>
         <span class="badge-quiet">Copy &amp; paste</span>
       </div>
       <h1 class="hero-title" id="hero-title">Meeting notes in <span class="accent">30 seconds</span>. Decline emails in <span class="accent">3 lines</span>.</h1>
       <p class="hero-lede">I plan partner services at a telecom company and run my own store on the side. These are the exact AI prompts and tools I use to get the admin work off my desk — free, no sign-up here.</p>
+      </div>
 
       <div class="pick" id="featured" aria-labelledby="featured-name">
         <div class="f-top">
