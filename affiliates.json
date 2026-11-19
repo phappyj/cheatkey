@@ -1,6 +1,9 @@
 {
   "_note": "자체(Rewardful/FirstPromoter/tolt/직접) 제휴 링크 — 2026-11-19 발급분 포함. 비밀번호는 포함하지 않음.",
-  "_account": { "name": "Park HeeJae", "email": "phappyj@gmail.com" },
+  "_account": {
+    "name": "Park HeeJae",
+    "email": "phappyj@gmail.com"
+  },
   "_disclosure": "Some links on this page are affiliate links. If you sign up through them, I may earn a commission at no extra cost to you.",
   "tools": [
     {
@@ -10,7 +13,9 @@
       "offer": "1 month Core plan free for new accounts",
       "status": "active",
       "source": "PartnerStack (approved before network decline)",
-      "placed_on": ["en/index.html (hero, workflow card, #make section)"]
+      "placed_on": [
+        "en/index.html (verified stack #1, workflows card, #make section, 2026-11-19)"
+      ]
     },
     {
       "id": "quso",
@@ -22,7 +27,9 @@
       "payout": "PayPal on the 15th, $20 minimum; PayPal email + W-8BEN required before first payout",
       "dashboard": "https://quso.firstpromoter.com/home",
       "status": "link issued",
-      "placed_on": ["en/index.html (tools section, 2026-11-19)"]
+      "placed_on": [
+        "en/index.html (collapsed 'View all tested tools' list, 2026-11-19)"
+      ]
     },
     {
       "id": "decktopus",
@@ -34,20 +41,26 @@
       "payout": "PayPal, payout email phappyj@gmail.com; verification form after first commission",
       "dashboard": "https://affiliate.decktopus.com",
       "status": "link issued",
-      "placed_on": ["en/index.html (tools section, 2026-11-19)"]
+      "placed_on": [
+        "en/index.html (hero pick, 2026-11-19)"
+      ]
     },
     {
       "id": "submagic",
       "name": "Submagic",
       "url": "https://submagic.co/?via=heejae-e35f5b",
-      "alt_urls": ["https://www.submagic.co/auto-subtitle-generator?via=heejae-e35f5b"],
+      "alt_urls": [
+        "https://www.submagic.co/auto-subtitle-generator?via=heejae-e35f5b"
+      ],
       "what": "AI editor for short-form video: captions, cuts, zooms",
       "commission": "30% recurring lifetime + 10% second-tier",
       "cookie_days": 30,
       "payout": "$50 minimum, PayPal (FAQ says the 7th, dashboard says the 15th — confirm); dashboard currency shown as EUR",
       "dashboard": "https://affiliate.submagic.co/home",
       "status": "link issued",
-      "placed_on": ["en/index.html (tools section, 2026-11-19)"]
+      "placed_on": [
+        "en/index.html (collapsed 'View all tested tools' list, 2026-11-19)"
+      ]
     },
     {
       "id": "pixa",
@@ -59,7 +72,9 @@
       "dashboard": "https://partners.dub.co/programs/pixa",
       "status": "link issued (program active)",
       "caveat": "Link destination is pixa.com, not pixelcut.ai — confirm the brand relationship before promoting as Pixelcut",
-      "placed_on": ["en/index.html (tools section, 2026-11-19)"]
+      "placed_on": [
+        "en/index.html (collapsed 'View all tested tools' list, 2026-11-19)"
+      ]
     },
     {
       "id": "fliki",
@@ -73,7 +88,9 @@
       "partner_since": "2026-11-18",
       "status": "active — email confirmed 2026-11-19 (confirmation mail from 11-18 was found and used)",
       "rules": "No ads or promo/discount sites",
-      "placed_on": ["en/index.html (tools section, 2026-11-19)"]
+      "placed_on": [
+        "en/index.html (collapsed 'View all tested tools' list, 2026-11-19)"
+      ]
     },
     {
       "id": "rytr",
@@ -86,7 +103,9 @@
       "partner_since": "2026-11-19",
       "status": "active — email confirmed 2026-11-19",
       "rules": "No self-referrals; no Google/other platform ads that break their policy",
-      "placed_on": ["en/index.html (tools section, 2026-11-19)"]
+      "placed_on": [
+        "en/index.html (collapsed 'View all tested tools' list, 2026-11-19)"
+      ]
     },
     {
       "id": "originality",
@@ -100,7 +119,9 @@
       "platform": "Rewardful (instant approval)",
       "partner_since": "2026-11-19",
       "status": "active — link issued",
-      "placed_on": ["en/index.html (tools section, 2026-11-19)"]
+      "placed_on": [
+        "en/index.html (collapsed 'View all tested tools' list, 2026-11-19)"
+      ]
     },
     {
       "id": "speakai",
@@ -115,7 +136,10 @@
       "partner_since": "2026-11-19",
       "status": "active — link issued",
       "rules": "No brand-term bidding, no self-referral, no coupon sites without written agreement",
-      "placed_on": ["en/index.html (tools section, 2026-11-19)"]
+      "placed_on": [
+        "en/index.html (verified stack #2, 2026-11-19)"
+      ],
+      "note": "Stack #2 fills the meetings slot while the Granola (Dub) application is in review; swap to Granola once its link is issued."
     },
     {
       "id": "taja",
@@ -128,7 +152,9 @@
       "platform": "Rewardful (instant approval)",
       "partner_since": "2026-11-19",
       "status": "active — link issued",
-      "placed_on": ["en/index.html (tools section, 2026-11-19)"]
+      "placed_on": [
+        "en/index.html (collapsed 'View all tested tools' list, 2026-11-19)"
+      ]
     },
     {
       "id": "lunacal",
@@ -143,7 +169,9 @@
       "partner_since": "2026-11-19",
       "status": "active — link issued",
       "rules": "Coupon code must not be posted on coupon sites",
-      "placed_on": ["en/index.html (tools section, 2026-11-19)"]
+      "placed_on": [
+        "en/index.html (collapsed 'View all tested tools' list, 2026-11-19)"
+      ]
     },
     {
       "id": "revid",
@@ -158,7 +186,9 @@
       "partner_since": "2026-11-19",
       "status": "active — link issued",
       "rules": "No coupon/deal sites, no brand-keyword ads, no self-referral, no ads-driven commissions",
-      "placed_on": ["en/index.html (tools section, 2026-11-19)"]
+      "placed_on": [
+        "en/index.html (collapsed 'View all tested tools' list, 2026-11-19)"
+      ]
     },
     {
       "id": "loopcv",
@@ -171,7 +201,9 @@
       "platform": "Rewardful (instant, no manual review)",
       "partner_since": "2026-11-19",
       "status": "active — email confirmed, link issued",
-      "placed_on": ["en/index.html (verified stack #3, 2026-11-19)"]
+      "placed_on": [
+        "en/index.html (collapsed 'View all tested tools' list, 2026-11-19)"
+      ]
     },
     {
       "id": "granola",
@@ -183,7 +215,10 @@
       "dashboard": "https://partners.dub.co/programs/granola",
       "platform": "Dub Partners (application review)",
       "applied": "2026-11-19",
-      "application_ids": ["pga_1M7S4ABF0RZG31ZJFJTTG49TS", "pge_1M7S4ABF0J7SMATHZAC4Z0KN7"],
+      "application_ids": [
+        "pga_1M7S4ABF0RZG31ZJFJTTG49TS",
+        "pge_1M7S4ABF0J7SMATHZAC4Z0KN7"
+      ],
       "status": "application submitted — pending review (Dub shows 'Application in review', Links tab disabled), no link yet",
       "placed_on": []
     },
