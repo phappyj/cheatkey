@@ -1099,11 +1099,21 @@
 
   /* ── 이전 핫딜 모아보기 ── */
   function dealSummary(d) {
-    var segs = String(d.note || "").split(/\s*[\/|]\s*/).filter(Boolean);
+    /* note 는 "A / B / C" 구분 — "11/21" 같은 날짜 표기는 자르지 않는다 */
+    var segs = String(d.note || "").split(/\s+\/\s+|\s*\|\s*/).filter(Boolean);
     if (!segs.length) return "";
-    var picked = segs.filter(function (s) { return /상품평|리뷰|도착|배송|구매|별점|만족/.test(s); });
-    if (!picked.length) picked = segs;
-    return picked.slice(0, 2).join(" · ");
+    var parts = [];
+    var rev = segs.filter(function (s) { return /상품평|리뷰|별점|만족/.test(s); })[0];
+    if (rev) parts.push(rev);
+    var ship = "";
+    segs.some(function (s) {
+      if (!/도착|배송/.test(s)) return false;
+      ship = s.split(/\s*·\s*/).filter(function (b) { return /도착|배송/.test(b); })[0] || "";
+      return true;
+    });
+    if (ship && parts.indexOf(ship) < 0) parts.push(ship);
+    if (!parts.length) parts = segs.slice(0, 2);
+    return parts.join(" · ");
   }
 
   function renderPrev(deals, idx) {
