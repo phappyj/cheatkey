@@ -94,6 +94,7 @@
     background:var(--card);
     border:1px solid var(--line);
     border-radius:22px;
+    scroll-margin-top:70px;
     box-shadow:0 1px 2px rgba(17,24,39,.04), 0 18px 40px -30px rgba(17,24,39,.28);
     padding:13px 13px 14px;
     margin-top:12px;
@@ -282,6 +283,62 @@
   }
   .verdict b{color:var(--ink);font-weight:700}
 
+  /* ───────────── 이전 핫딜 모아보기 ───────────── */
+  .deals-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(146px,1fr));gap:10px}
+  .deal-card{
+    display:flex;flex-direction:column;min-width:0;
+    background:var(--card);border:1px solid var(--line);border-radius:14px;
+    overflow:hidden;box-shadow:0 1px 2px rgba(17,24,39,.03);
+    transition:border-color .15s ease, box-shadow .15s ease;
+  }
+  .deal-card.is-current{border-color:var(--mint-line);box-shadow:0 0 0 2px rgba(14,159,110,.09)}
+  .dc-media{
+    display:block;background:#F4F5F7;border-bottom:1px solid var(--line-2);
+    aspect-ratio:4/3;overflow:hidden;
+  }
+  .dc-media img{
+    display:block;width:100%;height:100%;object-fit:contain;padding:8px;
+    mix-blend-mode:multiply;
+  }
+  .dc-body{display:flex;flex-direction:column;gap:3px;flex:1;padding:9px 10px 10px}
+  .dc-time{font-size:9.5px;font-weight:700;letter-spacing:.01em;color:var(--ink-3)}
+  .dc-name{
+    margin:0;font-size:12px;font-weight:700;line-height:1.34;letter-spacing:-0.02em;color:var(--ink);
+    display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
+  }
+  .dc-price{display:flex;align-items:baseline;gap:4px;flex-wrap:wrap;margin-top:1px}
+  .dc-price b{font-size:14px;font-weight:800;letter-spacing:-0.035em;color:var(--ink)}
+  .dc-price s{font-size:9.5px;font-weight:600;color:var(--ink-3);text-decoration-thickness:1px}
+  .dc-off{
+    font-size:9px;font-weight:800;letter-spacing:-0.01em;color:var(--coral);
+    background:var(--coral-soft);border-radius:4px;padding:1px 4px;
+  }
+  .dc-note{
+    margin:1px 0 0;font-size:10px;line-height:1.45;font-weight:500;color:var(--ink-2);
+    display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
+  }
+  .dc-actions{display:flex;gap:5px;margin-top:auto;padding-top:8px}
+  .dc-buy{
+    flex:1 1 auto;min-width:0;
+    display:inline-flex;align-items:center;justify-content:center;gap:4px;
+    background:var(--navy);color:#fff;text-decoration:none;
+    font-size:11.5px;font-weight:800;letter-spacing:-0.02em;
+    padding:9px 6px;border-radius:9px;
+    transition:transform .12s ease, background .15s ease;
+  }
+  .dc-buy:active{transform:scale(.975);background:#0B1220}
+  .dc-buy svg{width:11px;height:11px;flex:0 0 auto;color:#6EE7B7}
+  .dc-cmp{
+    flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;
+    background:#fff;border:1px solid var(--line);color:var(--ink-2);text-decoration:none;
+    font-size:11px;font-weight:700;letter-spacing:-0.01em;padding:9px 9px;border-radius:9px;
+  }
+  .dc-cmp:active{background:#F3F4F6}
+  .badge-quiet.reset{appearance:none;font:inherit;font-size:10.5px;font-weight:700;cursor:pointer}
+  @media (max-width:359px){
+    .deals-grid{grid-template-columns:1fr}
+    .dc-media{aspect-ratio:16/9}
+  }
   /* ───────────── 섹션 설명 ───────────── */
   .sec-note{margin:-3px 1px 12px;font-size:11.8px;line-height:1.55;color:var(--ink-2);font-weight:500}
 
@@ -486,7 +543,7 @@
     <!-- 01 오늘의 원픽 -->
     <section class="hero" id="hero" aria-labelledby="hero-title"></section>
 
-    <!-- 02 3종 비교 -->
+    <!-- 01 3종 비교 리포트 -->
     <section id="report-section">
       <div class="sec-head">
         <span class="kicker">01</span>
@@ -496,10 +553,21 @@
       <div id="report"></div>
     </section>
 
-    <!-- 02 AI 치트키 (핫딜 목록 제거 — 프롬프트를 위로) -->
-    <section id="tips-section">
+    <!-- 02 이전 핫딜 모아보기 -->
+    <section id="deals-section">
       <div class="sec-head">
         <span class="kicker">02</span>
+        <h2>이전 핫딜 모아보기</h2>
+        <span class="count" id="deals-count"></span>
+      </div>
+      <p class="sec-note">새 원픽이 올라와도 지난 검증 핫딜은 여기 남겨둡니다. 카드를 누르면 위 비교표가 그 상품으로 바뀝니다.</p>
+      <div class="deals-grid" id="deals"></div>
+    </section>
+
+    <!-- 03 AI 치트키 (핫딜 목록 제거 — 프롬프트를 위로) -->
+    <section id="tips-section">
+      <div class="sec-head">
+        <span class="kicker">03</span>
         <h2>바로 쓰는 AI 치트키</h2>
         <span class="count" id="tips-count"></span>
       </div>
@@ -523,10 +591,10 @@
       </div>
     </section>
 
-    <!-- 03 팔로우 -->
+    <!-- 04 팔로우 -->
     <section id="follow-section">
       <div class="sec-head">
-        <span class="kicker">03</span>
+        <span class="kicker">04</span>
         <h2>놓치지 않으려면</h2>
       </div>
       <div class="follow">
@@ -679,6 +747,10 @@
     toastTimer = setTimeout(function () { toastEl.classList.remove("on"); }, 1900);
   }
 
+  function trackEvent(name, params) {
+    try { if (typeof gtag === "function") gtag("event", name, params || {}); } catch (e) {}
+  }
+
   function esc(s) {
     return String(s == null ? "" : s)
       .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
@@ -804,9 +876,11 @@
   /* ── 01 히어로 ── */
   var heroCta = null;
 
-  function renderHero(deals, data) {
+  function renderHero(deals, data, idx) {
     var host = document.getElementById("hero");
-    var d = (deals && deals[0]) || null;
+    var cur = (typeof idx === "number" && idx > 0) ? idx : 0;
+    var isPast = cur > 0;
+    var d = (deals && deals[cur]) || null;
 
     if (!d) {
       host.innerHTML =
@@ -837,8 +911,9 @@
 
     host.innerHTML =
       '<div class="hero-eyebrow">' +
-        '<span class="badge-best"><span class="spark">✦</span>' + esc(badge) + ' · 오늘의 원픽</span>' +
-        (stamp ? '<span class="badge-quiet">' + esc(stamp) + ' 업데이트</span>' : "") +
+        '<span class="badge-best"><span class="spark">✦</span>' + esc(badge) + (isPast ? ' · 지난 핫딜' : ' · 오늘의 원픽') + '</span>' +
+        (stamp ? '<span class="badge-quiet">' + esc(stamp) + (isPast ? ' 핫딜' : ' 업데이트') + '</span>' : "") +
+        (isPast ? '<button class="badge-quiet reset" type="button" data-reset="1">최신 핫딜로 ↑</button>' : "") +
       '</div>' +
       (d.image
         ? '<div class="hero-media"><img src="' + esc(d.image) + '" alt="' + esc(d.shortTitle || d.title || "오늘의 원픽 상품") + '" width="640" height="640" fetchpriority="high"></div>'
@@ -859,11 +934,12 @@
     observeHero();
   }
 
-  /* ── 02 3종 비교 ── */
-  function renderReport(deals) {
+  /* ── 3종 비교 (선택된 원픽 기준) ── */
+  function renderReport(deals, idx) {
     var host = document.getElementById("report");
     var countEl = document.getElementById("report-count");
-    var d = (deals && deals[0]) || null;
+    var cur = (typeof idx === "number" && idx > 0) ? idx : 0;
+    var d = (deals && deals[cur]) || null;
     host.innerHTML = "";
     if (!d) { countEl.textContent = ""; return; }
 
@@ -1021,10 +1097,109 @@
     io.observe(heroCta);
   }
 
+  /* ── 이전 핫딜 모아보기 ── */
+  function dealSummary(d) {
+    var segs = String(d.note || "").split(/\s*[\/|]\s*/).filter(Boolean);
+    if (!segs.length) return "";
+    var picked = segs.filter(function (s) { return /상품평|리뷰|도착|배송|구매|별점|만족/.test(s); });
+    if (!picked.length) picked = segs;
+    return picked.slice(0, 2).join(" · ");
+  }
+
+  function renderPrev(deals, idx) {
+    var section = document.getElementById("deals-section");
+    var host = document.getElementById("deals");
+    var countEl = document.getElementById("deals-count");
+    if (!section || !host) return;
+    host.innerHTML = "";
+    if (!deals || deals.length < 2) { section.hidden = true; return; }
+
+    var cur = (typeof idx === "number" && idx > 0) ? idx : 0;
+    var list = deals.filter(function (d, i) { return i !== cur; });
+    section.hidden = false;
+    if (countEl) countEl.textContent = list.length + "개";
+
+    list.forEach(function (d) {
+      var id = String(d.id || "");
+      if (!id) return;
+      var href = "?deal=" + encodeURIComponent(id);
+
+      var priceHtml = "";
+      if (d.price != null && d.price !== "") priceHtml += "<b>" + esc(formatWon(d.price)) + "</b>";
+      if (d.wasPrice != null && d.wasPrice !== "") priceHtml += "<s>" + esc(formatWon(d.wasPrice)) + "</s>";
+      if (d.discount) priceHtml += '<span class="dc-off">' + esc(String(d.discount).replace(/\s*할인$/, "")) + "</span>";
+
+      var name = d.shortTitle || d.title || "지난 핫딜";
+      var summary = dealSummary(d);
+      var stamp = timeLabel(d.published);
+
+      var el = document.createElement("article");
+      el.className = "deal-card";
+      el.innerHTML =
+        '<a class="dc-media" href="' + esc(href) + '" data-switch="' + esc(id) + '" aria-label="' + esc(name + " 비교표 보기") + '">' +
+          (d.image
+            ? '<img src="' + esc(d.image) + '" alt="' + esc(name) + '" width="320" height="240" loading="lazy" decoding="async">'
+            : TAG_ICON) +
+        '</a>' +
+        '<div class="dc-body">' +
+          (stamp ? '<span class="dc-time">' + esc(stamp) + '</span>' : "") +
+          '<h3 class="dc-name">' + esc(name) + '</h3>' +
+          (priceHtml ? '<div class="dc-price">' + priceHtml + '</div>' : "") +
+          (summary ? '<p class="dc-note">' + esc(summary) + '</p>' : "") +
+          '<div class="dc-actions">' +
+            '<a class="dc-buy" href="' + esc(d.link || "#") + '" target="_blank" rel="noopener noreferrer sponsored" data-cat="Deals" data-loc="prev_deals" aria-label="' + esc(name + " 쿠팡 최저가 바로 보기") + '">쿠팡 최저가' + ARROW + '</a>' +
+            '<a class="dc-cmp" href="' + esc(href) + '" data-switch="' + esc(id) + '">비교표</a>' +
+          '</div>' +
+        '</div>';
+      host.appendChild(el);
+    });
+  }
+
+  /* ── 선택 상태 · URL 파라미터(?deal=deal-006) ── */
+  var DATA = null;
+  var selectedId = "";
+  try { selectedId = new URLSearchParams(location.search).get("deal") || ""; } catch (e) { selectedId = ""; }
+
+  function indexOfDeal(deals, id) {
+    if (!id) return -1;
+    for (var i = 0; i < (deals || []).length; i++) {
+      if (deals[i] && String(deals[i].id) === String(id)) return i;
+    }
+    return -1;
+  }
+
+  function selectDeal(id, cleanUrl) {
+    var deals = (DATA && DATA.deals) || [];
+    var i = indexOfDeal(deals, id);
+    if (i < 0) return false;
+    selectedId = String(deals[i].id || "");
+    renderHero(deals, DATA, i);
+    renderReport(deals, i);
+    renderPrev(deals, i);
+    try {
+      var q = cleanUrl ? "" : "?deal=" + encodeURIComponent(selectedId);
+      history.replaceState(null, "", location.pathname + q + location.hash);
+    } catch (e) {}
+    trackEvent("deal_select", { deal_id: selectedId, location: "prev_deals" });
+    return true;
+  }
+
+  function scrollToHero() {
+    var hero = document.getElementById("hero");
+    if (!hero) return;
+    try { hero.scrollIntoView({ behavior: "smooth", block: "start" }); }
+    catch (e) { hero.scrollIntoView(); }
+  }
+
   function render(data) {
+    DATA = data;
     var deals = data.deals || [];
-    renderHero(deals, data);
-    renderReport(deals);
+    if (!deals.length) selectedId = "";
+    var idx = indexOfDeal(deals, selectedId);
+    if (idx < 0) idx = 0;
+    renderHero(deals, data, idx);
+    renderReport(deals, idx);
+    renderPrev(deals, idx);
     renderTips(data.tips || []);
     if (data.updated) {
       var lab = timeLabel(data.updated);
@@ -1034,9 +1209,33 @@
 
   document.addEventListener("click", function (e) {
     var btn = e.target.closest ? e.target.closest("[data-copy]") : null;
-    if (!btn) return;
-    e.preventDefault();
-    copyText(btn.getAttribute("data-copy"), "프롬프트 복사 완료");
+    if (btn) {
+      e.preventDefault();
+      copyText(btn.getAttribute("data-copy"), "프롬프트 복사 완료");
+      return;
+    }
+
+    var t = e.target;
+    if (!t || !t.closest) return;
+
+    /* 지난 핫딜 → 위 Hero·비교표를 그 상품으로 전환 */
+    var sw = t.closest("[data-switch]");
+    if (sw) {
+      e.preventDefault();
+      if (selectDeal(sw.getAttribute("data-switch"))) scrollToHero();
+      return;
+    }
+
+    /* 최신 핫딜로 되돌리기 */
+    var reset = t.closest("[data-reset]");
+    if (reset) {
+      var deals = (DATA && DATA.deals) || [];
+      e.preventDefault();
+      if (deals.length) {
+        selectDeal(String(deals[0].id || ""), true);
+        scrollToHero();
+      }
+    }
   });
 
   document.getElementById("year").textContent = new Date().getFullYear();
