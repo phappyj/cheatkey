@@ -142,9 +142,10 @@
    "status": "active — link issued",
    "rules": "No brand-term bidding, no self-referral, no coupon sites without written agreement",
    "placed_on": [
-    "en/index.html (verified stack #2, 2026-11-19)"
+    "en/index.html (hero pick, 2026-11-21 07:30 global short)",
+    "en/index.html (verified stack #2, 2026-11-19 → moved to hero 2026-11-21)"
    ],
-   "note": "Stack #2 fills the meetings slot while the Granola (Dub) application is in review; swap to Granola once its link is issued."
+   "note": "Hero tool 2026-11-21 07:30. Verified stack #2 (meetings) from 2026-11-19; Granola's Dub application was declined on 2026-11-20, so this stays the meetings slot."
   },
   {
    "id": "taja",
@@ -226,7 +227,7 @@
     "pga_1M7S4ABF0RZG31ZJFJTTG49TS",
     "pge_1M7S4ABF0J7SMATHZAC4Z0KN7"
    ],
-   "status": "application submitted — pending review (Dub shows 'Application in review', Links tab disabled), no link yet",
+   "status": "declined 2026-11-20 16:44 — Dub application rejected; no link. Meetings slot stays with Speak AI.",
    "placed_on": []
   },
   {
@@ -256,6 +257,7 @@
    "status": "active — approved 2026-11-20 17:09 after appeal reply, link issued; promo code CHEATKEY issued 2026-11-20 20:23 KST",
    "rules": "No PPC or paid ads targeting Pictory brand name/misspellings",
    "placed_on": [
+    "en/index.html (verified stack #2 — video, 2026-11-21 07:30, after Speak AI took the hero)",
     "en/index.html (hero pick, 2026-11-20 22:30 global short — Black Friday)"
    ],
    "promo_code": "CHEATKEY",
