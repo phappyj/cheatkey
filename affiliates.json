@@ -63,7 +63,8 @@
    "status": "link issued",
    "placed_on": [
     "en/index.html (collapsed 'View all tested tools' list, 2026-11-19)",
-    "en/index.html (Hero Pick — 2026-11-20 17:00 global short)"
+    "en/index.html (Hero Pick — 2026-11-20 17:00 global short)",
+    "en/index.html (Hero Pick → back to collapsed 'View all tested tools' list, 2026-11-20 22:30)"
    ]
   },
   {
@@ -244,14 +245,33 @@
   {
    "id": "pictory",
    "name": "Pictory",
-   "url": null,
+   "url": "https://pictory.ai?fpr=heejae-b015a9",
    "what": "Text, URL or PPT to video with AI avatars and voice",
-   "commission": "20-50% tiered, lifetime (per program listing)",
-   "dashboard": "https://partners.pictory.ai",
+   "commission": "40% on the first transaction from every new customer",
+   "payout": "PayPal (starts after 2nd paid subscriber, $10 minimum, 30-day clear, paid ~1st working day of month; 1 paid sale every 90 days to stay active)",
+   "dashboard": "https://partners.pictory.ai/login",
    "platform": "FirstPromoter",
    "applied": "2026-11-19",
-   "status": "rejected 2026-11-20 01:55 (re-review possible by replying with marketing plan/audience/channel links)",
-   "placed_on": []
+   "partner_since": "2026-11-20",
+   "status": "active — approved 2026-11-20 17:09 after appeal reply, link issued; promo code CHEATKEY issued 2026-11-20 20:23 KST",
+   "rules": "No PPC or paid ads targeting Pictory brand name/misspellings",
+   "placed_on": [
+    "en/index.html (hero pick, 2026-11-20 22:30 global short — Black Friday)"
+   ],
+   "promo_code": "CHEATKEY",
+   "promo_code_note": "Dedicated code active on the affiliate dashboard (Ash, 2026-11-20 16:53 IST). Does NOT stack with Black Friday offers — the Black Friday price needs no code, so use that instead until Dec 2.",
+   "black_friday": {
+    "offer": "Up to 70% off annual plans",
+    "no_code_needed": true,
+    "valid_until": "2026-12-02",
+    "verified_on": "2026-11-20 22:31 KST on pictory.ai/pricing (annually, Black Friday Offer cards)",
+    "prices": {
+     "starter": "$12.50/mo (was $29)",
+     "professional": "$17.50/mo (was $59)",
+     "teams": "$59.50/mo (was $199)"
+    },
+    "free_trial": "300 credits, up to 10 mins, 3 videos, 720p max, Pictory branding (watermark) — no credit card"
+   }
   }
  ]
 }
