@@ -13,12 +13,26 @@
 </head>
 <body>
   <figure>
-    <figcaption>Mobile 390 × 1200</figcaption>
-    <iframe src="/cheatkey/#deals-section" width="390" height="1200" title="mobile preview"></iframe>
+    <figcaption>Mobile 390 × 900</figcaption>
+    <iframe id="m" src="/cheatkey/" width="390" height="900" title="mobile preview"></iframe>
   </figure>
   <figure>
-    <figcaption>Desktop 1280 × 1200</figcaption>
-    <iframe src="/cheatkey/#deals-section" width="1280" height="1200" title="desktop preview"></iframe>
+    <figcaption>Desktop 1280 × 900</figcaption>
+    <iframe id="d" src="/cheatkey/" width="1280" height="900" title="desktop preview"></iframe>
   </figure>
+<script>
+  function jump(fr) {
+    try {
+      var doc = fr.contentDocument, w = fr.contentWindow;
+      var t = doc.getElementById("deals-section");
+      if (!t) return;
+      w.scrollTo(0, t.getBoundingClientRect().top + w.scrollY - 8);
+    } catch (e) {}
+  }
+  ["m", "d"].forEach(function (id) {
+    var fr = document.getElementById(id);
+    fr.addEventListener("load", function () { setTimeout(function () { jump(fr); }, 600); });
+  });
+</script>
 </body>
 </html>
