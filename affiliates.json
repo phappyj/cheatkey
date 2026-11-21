@@ -27,10 +27,24 @@
    "cookie_days": 30,
    "payout": "PayPal on the 15th, $20 minimum; PayPal email + W-8BEN required before first payout",
    "dashboard": "https://quso.firstpromoter.com/home",
-   "status": "link issued",
+   "status": "active — link issued; Black Friday kit received 2026-11-21 04:49 (yearly 50% off, renewals keep 50%)",
    "placed_on": [
+    "en/index.html (hero pick, 2026-11-21 11:30 global short)",
     "en/index.html (collapsed 'View all tested tools' list, 2026-11-19)"
-   ]
+   ],
+   "black_friday": {
+    "offer": "50% off yearly plans, discount kept at every renewal while subscribed",
+    "no_code_needed": true,
+    "valid_until": "2026-12-01 23:59 IST",
+    "verified_on": "2026-11-21 11:32 KST on quso.ai/pricing (US plan cards) + affiliate kit mail from vedant@news.quso.ai",
+    "prices_usd": {
+     "lite": "$174/yr (was $348), $29 monthly",
+     "essential": "$234/yr (was $468), $39 monthly",
+     "growth": "$294/yr (was $588), $49 monthly"
+    },
+    "free_plan": "75 credits/month (~75 min processed), 720p with quso.ai watermark, 7-day data retention, CutMagic on first 3 videos",
+    "note": "KR pricing shown to Korean IPs is credit packs only (100 credits ₩3,290); the subscription plans above are the US/global page."
+   }
   },
   {
    "id": "decktopus",
@@ -143,9 +157,10 @@
    "rules": "No brand-term bidding, no self-referral, no coupon sites without written agreement",
    "placed_on": [
     "en/index.html (hero pick, 2026-11-21 07:30 global short)",
-    "en/index.html (verified stack #2, 2026-11-19 → moved to hero 2026-11-21)"
+    "en/index.html (verified stack #2, 2026-11-19 → moved to hero 2026-11-21)",
+    "en/index.html (verified stack #2 — meetings, 2026-11-21 11:30, after quso.ai took the hero)"
    ],
-   "note": "Hero tool 2026-11-21 07:30. Verified stack #2 (meetings) from 2026-11-19; Granola's Dub application was declined on 2026-11-20, so this stays the meetings slot."
+   "note": "Verified stack #2 (meetings) from 2026-11-21 11:30. Hero 2026-11-21 07:30 → moved down 2026-11-21 11:30. Granola's Dub application was declined on 2026-11-20."
   },
   {
    "id": "taja",
@@ -258,7 +273,8 @@
    "rules": "No PPC or paid ads targeting Pictory brand name/misspellings",
    "placed_on": [
     "en/index.html (verified stack #2 — video, 2026-11-21 07:30, after Speak AI took the hero)",
-    "en/index.html (hero pick, 2026-11-20 22:30 global short — Black Friday)"
+    "en/index.html (hero pick, 2026-11-20 22:30 global short — Black Friday)",
+    "en/index.html (collapsed 'View all tested tools' list, 2026-11-21 11:30, after quso.ai took the hero)"
    ],
    "promo_code": "CHEATKEY",
    "promo_code_note": "Dedicated code active on the affiliate dashboard (Ash, 2026-11-20 16:53 IST). Does NOT stack with Black Friday offers — the Black Friday price needs no code, so use that instead until Dec 2.",
