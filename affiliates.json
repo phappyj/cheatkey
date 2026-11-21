@@ -105,11 +105,24 @@
    "payout": "$50 minimum, Wise on the 1st (payout email phappyj@gmail.com registered); PayPal on request above $50",
    "dashboard": "https://affiliates.fliki.ai",
    "partner_since": "2026-11-18",
-   "status": "active — email confirmed 2026-11-19 (confirmation mail from 11-18 was found and used)",
+   "status": "active — email confirmed 2026-11-19; featured as en hub Hero Pick 2026-11-21 22:30",
    "rules": "No ads or promo/discount sites",
    "placed_on": [
+    "en/index.html (hero pick, 2026-11-21 22:30 global short — replaced LoopCV; LoopCV kept in collapsed list)",
     "en/index.html (collapsed 'View all tested tools' list, 2026-11-19)"
-   ]
+   ],
+   "free_plan": {
+    "plan": "Free forever, no credit card",
+    "limits": "3 credits per month; 720p export with Fliki watermark; 5-minute max export length; 100 scenes; workflows marked 'Limited'; email-only support",
+    "faq_note": "Pricing FAQ also says '5 minutes of free audio and video content per month'; credits are consumed per minute generated/exported, so the 3-credit card is the number to quote.",
+    "checked_on": "2026-11-21 22:31 KST on fliki.ai/pricing (plan cards + compare table + pricing FAQ)"
+   },
+   "paid_plans": {
+    "standard": "USD 28/user/month (monthly billing) — 180 credits, 1080p, 15-minute videos, 1000 voices, no watermark, commercial rights",
+    "premium": "USD 88/user/month — 600 credits, 40-minute videos, 2000+ voices, AI video clips, brand kits",
+    "yearly": "Yearly toggle advertises 50% off Standard & Premium; a Black Friday banner (code FLIKIBFCM50) was showing on 2026-11-21 — deliberately NOT used in copy or the hub, per Fliki's no-promo/discount-site affiliate rule",
+    "checked_on": "2026-11-21 22:31 KST on fliki.ai/pricing (monthly prices shown)"
+   }
   },
   {
    "id": "rytr",
