@@ -29,7 +29,7 @@
    "dashboard": "https://quso.firstpromoter.com/home",
    "status": "active — link issued; Black Friday kit received 2026-11-21 04:49 (yearly 50% off, renewals keep 50%)",
    "placed_on": [
-    "en/index.html (hero pick, 2026-11-21 11:30 global short)",
+    "en/index.html (hero pick, 2026-11-21 11:30 global short - replaced by LoopCV at 17:00, kept in collapsed list)",
     "en/index.html (collapsed 'View all tested tools' list, 2026-11-19)"
    ],
    "black_friday": {
@@ -225,8 +225,21 @@
    "partner_since": "2026-11-19",
    "status": "active — email confirmed, link issued",
    "placed_on": [
+    "en/index.html (hero pick, 2026-11-21 17:00 global short)",
     "en/index.html (collapsed 'View all tested tools' list, 2026-11-20 07:30)"
-   ]
+   ],
+   "free_plan": {
+    "plan": "Basic Looper (free forever, no card)",
+    "limits": "1 job-title loop a month, up to 10 applications or recruiter emails a month, 3 job boards, low application priority, 2 AI CV checks",
+    "checked_on": "2026-11-21 17:03 KST on loopcv.pro/pricing (plan cards)"
+   },
+   "paid_plans": {
+    "standard": "EUR 8.99/mo - 20 loops, 100 applications/emails, 20 job boards, medium priority",
+    "premium": "EUR 29.99/mo - 50 loops, 300 applications/emails, 20 job boards, high priority, screening-question autofill",
+    "done_for_you": "EUR 87.99/mo",
+    "billing": "monthly; 3-month billing saves up to 25%",
+    "note": "Homepage FAQ says '30+ job boards'; the pricing table caps free at 3 and paid at 20 - use the table numbers in copy."
+   }
   },
   {
    "id": "granola",
