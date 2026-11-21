@@ -105,9 +105,10 @@
    "payout": "$50 minimum, Wise on the 1st (payout email phappyj@gmail.com registered); PayPal on request above $50",
    "dashboard": "https://affiliates.fliki.ai",
    "partner_since": "2026-11-18",
-   "status": "active — email confirmed 2026-11-19; featured as en hub Hero Pick 2026-11-21 22:30",
+   "status": "active — email confirmed 2026-11-19; en hub Hero Pick 2026-11-21 22:30, moved to collapsed list 2026-11-22 07:30",
    "rules": "No ads or promo/discount sites",
    "placed_on": [
+    "en/index.html (collapsed 'View all tested tools' list — demoted from hero 2026-11-22 07:30 when Rytr took the hero; kept with 'Yesterday's pick' badge)",
     "en/index.html (hero pick, 2026-11-21 22:30 global short — replaced LoopCV; LoopCV kept in collapsed list)",
     "en/index.html (collapsed 'View all tested tools' list, 2026-11-19)"
    ],
@@ -128,16 +129,30 @@
    "id": "rytr",
    "name": "Rytr",
    "url": "https://rytr.me?via=heejae",
-   "what": "AI writing assistant (short-form copy, emails, posts)",
+   "what": "AI writing assistant + relationship memory: emails, replies, posts, short copy (Create), plus Gmail/Slack follow-up drafts (Engage)",
    "commission": "30% of direct conversions",
    "payout": "$100 minimum; payments become due at T+30 and are attempted on the first business day of the following month",
    "dashboard": "https://affiliates.rytr.me",
    "partner_since": "2026-11-19",
-   "status": "active — email confirmed 2026-11-19",
+   "status": "active — email confirmed 2026-11-19; featured as en hub Hero Pick 2026-11-22 07:30",
    "rules": "No self-referrals; no Google/other platform ads that break their policy",
    "placed_on": [
+    "en/index.html (hero pick, 2026-11-22 07:30 global short — replaced Fliki; Fliki kept in collapsed list)",
     "en/index.html (collapsed 'View all tested tools' list, 2026-11-19)"
-   ]
+   ],
+   "free_plan": {
+    "plan": "Free forever",
+    "limits": "10,000 characters per month; 1 connected source; 25 active relationships; 25 Engage actions/month; 3 person research runs; daily briefing; 40+ writing use cases; 30+ languages",
+    "checked_on": "2026-11-22 07:32 KST on rytr.me (pricing section) and rytr.me/pricing (plan cards)"
+   },
+   "paid_plans": {
+    "lite": "USD 9/month — unlimited characters per month, everything in Free; yearly billing $7.50/mo",
+    "personal": "USD 19/month — everything in Lite, 2 connected sources, 250 active relationships, 250 Engage actions/month, 10 person research runs; yearly $15/mo",
+    "pro": "USD 49/month — everything in Personal, all connected sources, 1,000 active relationships, 2,000 Engage actions/month, 50 research runs, morning+evening briefings, custom use cases; yearly $39/mo",
+    "yearly_note": "Yearly billing is advertised as 'Save 20%'; the yearly toggle showed $7.50 / $15 / $39 per month, billed annually",
+    "checked_on": "2026-11-22 07:32 KST on rytr.me/pricing (Monthly and Yearly toggles both read)"
+   },
+   "positioning": "Pivoted from a pure writing tool: the site now leads with an AI relationship manager (Engage) and keeps Create (writing) — the video and hub copy point at the writing side plus the Gmail extension."
   },
   {
    "id": "originality",
