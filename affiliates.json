@@ -134,9 +134,10 @@
    "payout": "$100 minimum; payments become due at T+30 and are attempted on the first business day of the following month",
    "dashboard": "https://affiliates.rytr.me",
    "partner_since": "2026-11-19",
-   "status": "active — email confirmed 2026-11-19; featured as en hub Hero Pick 2026-11-22 07:30",
+   "status": "active — email confirmed 2026-11-19; en hub Hero Pick 2026-11-22 07:30, moved to collapsed list 2026-11-22 11:30",
    "rules": "No self-referrals; no Google/other platform ads that break their policy",
    "placed_on": [
+    "en/index.html (collapsed 'View all tested tools' list — demoted from hero 2026-11-22 11:30 when Originality.ai took the hero; kept with 'Yesterday's pick' badge)",
     "en/index.html (hero pick, 2026-11-22 07:30 global short — replaced Fliki; Fliki kept in collapsed list)",
     "en/index.html (collapsed 'View all tested tools' list, 2026-11-19)"
    ],
@@ -165,10 +166,24 @@
    "dashboard": "https://originality-ai-1.getrewardful.com",
    "platform": "Rewardful (instant approval)",
    "partner_since": "2026-11-19",
-   "status": "active — link issued",
+   "status": "active — link issued; live scan run 2026-11-22 11:36 KST; en hub Hero Pick 2026-11-22 11:30",
    "placed_on": [
+    "en/index.html (hero pick, 2026-11-22 11:30 global short — replaced Rytr; Rytr kept in collapsed list with 'Yesterday's pick' badge)",
     "en/index.html (collapsed 'View all tested tools' list, 2026-11-19)"
-   ]
+   ],
+   "free_plan": {
+    "plan": "Free — one-time allowance, not a monthly refill",
+    "limits": "100 credits, once (10,000 words total); 1 credit = 100 words. Plagiarism checking and longer documents consume credits, so a single long scan can use several.",
+    "observed_scan": "2026-11-22 11:36 KST: a 159-word sample cost 2 credits (98/100 left), returned 98% Likely AI / 2% Likely Original, AI score shown per sentence (detector version 5.0).",
+    "checked_on": "2026-11-22 11:37 KST on originality.ai/pricing (plan cards) and app.originality.ai (credit balance)"
+   },
+   "paid_plans": {
+    "pro": "USD 14.95/month — 200,000 words/month",
+    "enterprise": "USD 179/month — custom volume, team seats, API",
+    "yearly_note": "Pricing page also offers annual billing; only the monthly figures were read today and are the ones used in copy.",
+    "checked_on": "2026-11-22 11:37 KST on originality.ai/pricing (monthly toggle)"
+   },
+   "honest_limit": "Originality's own score guide: \"As AI detectors can make mistakes, the score should be considered as a signal for review, not proof of authorship or misconduct.\" — quoted in the hub copy and the 11:30 short."
   },
   {
    "id": "speakai",
