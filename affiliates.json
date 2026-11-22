@@ -234,11 +234,11 @@
    "dashboard": "https://lunacal.tolt.io",
    "platform": "tolt (instant approval)",
    "partner_since": "2026-11-19",
-   "status": "active — link issued; real pages read 2026-11-22 17:03 KST; en hub Hero Pick 2026-11-22 17:00",
+   "status": "active — link issued; real pages read 2026-11-22 17:03 KST; moved from en hub Hero to collapsed list 2026-11-22 22:30",
    "rules": "Coupon code must not be posted on coupon sites",
    "placed_on": [
-    "en/index.html (hero pick, 2026-11-22 17:00 global short — replaced Originality.ai; Originality kept in collapsed list with 'Yesterday's pick' badge)",
-    "en/index.html (collapsed 'View all tested tools' list, 2026-11-19; badge now 'Today's pick · 7-day trial')"
+    "en/index.html (collapsed 'View all tested tools' list — badge 'Yesterday's pick · 7-day trial'; demoted from hero 2026-11-22 22:30 when Revid took the hero)",
+    "en/index.html (hero pick, 2026-11-22 17:00 global short — replaced Originality.ai)"
    ],
    "free_plan": {
     "plan": "No free plan — 7-day free trial only (pricing page also lists Cancel Anytime, Free 1:1 Support)",
@@ -271,10 +271,32 @@
    "dashboard": "https://www.revid.ai/affiliate",
    "platform": "In-app affiliate page (one-click join, no approval)",
    "partner_since": "2026-11-19",
-   "status": "active — link issued",
+   "status": "active — link issued; real pages read 2026-11-22 22:32 KST; en hub Hero Pick 2026-11-22 22:30",
    "rules": "No coupon/deal sites, no brand-keyword ads, no self-referral, no ads-driven commissions",
    "placed_on": [
-    "en/index.html (collapsed 'View all tested tools' list, 2026-11-19)"
+    "en/index.html (hero pick, 2026-11-22 22:30 global short — replaced Lunacal; Lunacal kept in collapsed list with \"Yesterday's pick\" badge)",
+    "en/index.html (collapsed 'View all tested tools' list, 2026-11-19 — entry removed 2026-11-22 22:30 when Revid moved up to the hero)"
+   ],
+   "free_plan": {
+    "plan": "No free plan — sign up without a credit card and start with 400 FREE credits (pricing banner). A free account can also search viral videos.",
+    "limits": "Regular creation needs the monthly credits of a paid plan. Pricing FAQ (22 Nov 2026): 'You can sign up without a credit card, and new accounts get free credits to try video generation. A free account can also search viral videos. Regular creation uses the monthly credits that come with a paid plan.'",
+    "checked_on": "2026-11-22 22:32 KST on revid.ai and revid.ai/pricing (Monthly toggle)"
+   },
+   "paid_plans": {
+    "hobby": "USD 39 / month — create videos from text or links, 3M+ viral videos to remix, editable short-form videos, for occasional hands-on creation",
+    "growth": "USD 39 / month (list USD 99, 'Discount locked in forever', Best Value) — 2,000 AI credits / month, publish to TikTok/IG/YouTube/X, post stats & one-click remix, 5 channels watched, 100+ tools, 70+ language voiceovers, 3 Auto-Mode workers, API/MCP/CLI",
+    "ultra": "USD 199 / month (12,000 credits; scale 30k/$459, 50k/$749, 100k/$1,459, 200k/$2,799) — 10 Auto-Mode workers, clone your own voices, 50 channels",
+    "elite": "USD 89 / month or $74 yearly — 5,000 credits (listed in the pricing FAQ, not on the cards)",
+    "annual_note": "Annually toggle: Growth $32/mo, Ultra $166/mo. Only monthly figures were used in copy.",
+    "credits": "A typical 30-second video with Pro moving images + voiceover costs about 40-80 credits, so 2,000 credits cover roughly 25-50 a month; full AI video models cost more per second; the editor shows an estimate before every render. Credit Boost packs never expire (1,000/$49, 4,000/$99, 10,000/$199, 100,000/$1,900).",
+    "checked_on": "2026-11-22 22:32 KST on revid.ai/pricing"
+   },
+   "honest_limit": "Plan credits refill at renewal and do not stack, so unused credits are lost — said plainly in the 22:30 short and in the hub copy; a 30s video costs about 40-80 credits and regular creation needs a paid plan (from $39/mo).",
+   "features_seen": [
+    "Create your version screen (real UI): viral video on the left, 'Analysis - generated from the video' in the middle (visual hook gauge, scroll-stopper 0:04, structure with 0:00 Hook / 0:04 Payoff and why-it-works text), 'Your Version' phone on the right",
+    "Viral search (real UI): search any topic across YouTube, TikTok and Instagram, sort by engagement rate instead of raw plays, platform + duration filters, cards with views/likes/comments",
+    "Publishing to TikTok, IG, YouTube and X with post stats and one-click remix; Auto-Mode workers; API/MCP/CLI",
+    "Showcase claims: 30,000+ videos published a month, 100,000+ rendered, 14,258+ creators, 32 languages in 68 countries"
    ]
   },
   {
