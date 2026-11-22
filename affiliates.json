@@ -11,12 +11,24 @@
    "name": "Make.com",
    "url": "https://www.make.com/en/register?pc=cheatkey",
    "offer": "1 month Core plan free for new accounts",
-   "status": "active (link live, PartnerStack dashboard inaccessible after network decline until 2026-12-02)",
+   "status": "active (link live; hero pick 2026-11-23 07:30; PartnerStack dashboard inaccessible after network decline until 2026-12-02)",
    "source": "PartnerStack (approved before network decline; dash.partnerstack.com shows '참여 중인 프로그램 없음' until 2026-12-02 reapply)",
    "placed_on": [
     "en/index.html (verified stack #1 — automate, 2026-11-20 07:30)",
-    "en/index.html (workflows card, #make section, 2026-11-19)"
-   ]
+    "en/index.html (workflows card, #make section, 2026-11-19)",
+    "en/index.html (HERO PICK 2026-11-23 07:30 — free plan facts + Core $9/mo yearly, 1st month free, credits-do-not-roll-over catch)"
+   ],
+   "pricing_checked": "2026-11-23 07:31-07:39 KST — make.com/en/pricing, annual and monthly tabs read live",
+   "pricing": {
+    "free": "$0 — 1,000 credits/month, 2 active scenarios, 15-minute minimum interval between runs, 5-minute max execution, 512MB transfer, 7-day logs, 3,500+ apps",
+    "core": "$9/mo billed yearly (Save 15%, $0.90 per 1,000 credits) or $10.59/mo monthly — 10,000 credits, unlimited active scenarios, scheduled runs down to 1 minute, 40-minute max execution, 30-day logs",
+    "pro": "$16/mo yearly / $18.82 monthly — 1,600 per 1,000 credits",
+    "teams": "$29/mo yearly / $34.12 monthly",
+    "billing_unit": "credits (renamed from operations on 27 Aug 2025)"
+   },
+   "honest_limit": "Free caps you at 2 active scenarios and 1,000 credits/month, and runs no more often than every 15 minutes; unused credits expire at the end of the term (no rollover).",
+   "offer_terms": "1 month Core plan free for new accounts (affiliate-program offer; shown on the hub and in the video as '1 month Core free', register page itself was behind a Cloudflare check when re-read 2026-11-23 07:32 KST)",
+   "video": "downloads/cheatkey-global-short-2026-11-23-0730-make.mp4 (07:30 global short, 12.58s)"
   },
   {
    "id": "quso",
@@ -275,7 +287,8 @@
    "rules": "No coupon/deal sites, no brand-keyword ads, no self-referral, no ads-driven commissions",
    "placed_on": [
     "en/index.html (hero pick, 2026-11-22 22:30 global short — replaced Lunacal; Lunacal kept in collapsed list with \"Yesterday's pick\" badge)",
-    "en/index.html (collapsed 'View all tested tools' list, 2026-11-19 — entry removed 2026-11-22 22:30 when Revid moved up to the hero)"
+    "en/index.html (collapsed 'View all tested tools' list, 2026-11-19 — entry removed 2026-11-22 22:30 when Revid moved up to the hero)",
+    "en/index.html (collapsed 'View all tested tools' list — badge \"Yesterday's pick · 400 credits\", demoted from hero 2026-11-23 07:30)"
    ],
    "free_plan": {
     "plan": "No free plan — sign up without a credit card and start with 400 FREE credits (pricing banner). A free account can also search viral videos.",
@@ -313,7 +326,8 @@
    "placed_on": [
     "en/index.html (collapsed 'View all tested tools' list — also keeps the Hub's 'Related video' short link; moved down 2026-11-21 22:30 when Fliki took the hero)",
     "en/index.html (hero pick, 2026-11-21 17:00-22:30 global short)",
-    "en/index.html (collapsed 'View all tested tools' list, 2026-11-20 07:30)"
+    "en/index.html (collapsed 'View all tested tools' list, 2026-11-20 07:30)",
+    "en/index.html (verified stack #1 'Automate' 2026-11-23 07:30 — replaced Make.com when Make took the hero; removed from collapsed list)"
    ],
    "free_plan": {
     "plan": "Basic Looper (free forever, no card)",
