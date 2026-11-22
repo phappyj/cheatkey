@@ -166,9 +166,10 @@
    "dashboard": "https://originality-ai-1.getrewardful.com",
    "platform": "Rewardful (instant approval)",
    "partner_since": "2026-11-19",
-   "status": "active — link issued; live scan run 2026-11-22 11:36 KST; en hub Hero Pick 2026-11-22 11:30",
+   "status": "active — link issued; live scan run 2026-11-22 11:36 KST; moved from en hub Hero to collapsed list 2026-11-22 17:00",
    "placed_on": [
-    "en/index.html (hero pick, 2026-11-22 11:30 global short — replaced Rytr; Rytr kept in collapsed list with 'Yesterday's pick' badge)",
+    "en/index.html (collapsed 'View all tested tools' list — badge 'Yesterday's pick · 98% AI found'; demoted from hero 2026-11-22 17:00 when Lunacal took the hero)",
+    "en/index.html (hero pick, 2026-11-22 11:30 global short — replaced Rytr; Rytr kept in collapsed list)",
     "en/index.html (collapsed 'View all tested tools' list, 2026-11-19)"
    ],
    "free_plan": {
@@ -233,10 +234,30 @@
    "dashboard": "https://lunacal.tolt.io",
    "platform": "tolt (instant approval)",
    "partner_since": "2026-11-19",
-   "status": "active — link issued",
+   "status": "active — link issued; real pages read 2026-11-22 17:03 KST; en hub Hero Pick 2026-11-22 17:00",
    "rules": "Coupon code must not be posted on coupon sites",
    "placed_on": [
-    "en/index.html (collapsed 'View all tested tools' list, 2026-11-19)"
+    "en/index.html (hero pick, 2026-11-22 17:00 global short — replaced Originality.ai; Originality kept in collapsed list with 'Yesterday's pick' badge)",
+    "en/index.html (collapsed 'View all tested tools' list, 2026-11-19; badge now 'Today's pick · 7-day trial')"
+   ],
+   "free_plan": {
+    "plan": "No free plan — 7-day free trial only (pricing page also lists Cancel Anytime, Free 1:1 Support)",
+    "limits": "Trial is 7 days; after it a paid subscription is required. No free tier was listed on lunacal.ai/pricing on 2026-11-22.",
+    "checked_on": "2026-11-22 17:03 KST on lunacal.ai and lunacal.ai/pricing (monthly toggle)"
+   },
+   "paid_plans": {
+    "standard": "USD 9 / user / month — unlimited calendars & services, Stripe/PayPal payments, text/email reminders, custom booking page",
+    "teams": "USD 15 / user / month (list USD 20, 25% off) — team scheduling, multi-session packages, round-robin, webhooks",
+    "enterprise": "USD 25 / user / month — AI voice agent, account manager, complete branding, MCP server (beta), SSO",
+    "annual_note": "Annually toggle advertises Save 10%; only the monthly figures were read and are the ones used in copy.",
+    "extras": "Own domain for booking pages is a paid add-on (comparison table). SMTP from your own domain is Enterprise-only.",
+    "checked_on": "2026-11-22 17:03 KST on lunacal.ai/pricing"
+   },
+   "honest_limit": "No free plan: the site offers a 7-day free trial only, then from $9/user/month, and a custom domain is a paid add-on — said plainly in the 17:00 short and hub copy.",
+   "features_seen": [
+    "Branded booking page: profile photo, services, open slots, testimonials, video, FAQ (founder/doctor/sales/coaching templates on lunacal.ai)",
+    "Paid sessions: 'Charge for this event' toggle → guest pays before booking via Stripe or PayPal, price set in USD",
+    "0% booking commission (site claim), 12+ languages for guests, GDPR compliant, Google/Outlook/Apple 2-way sync"
    ]
   },
   {
