@@ -86,12 +86,36 @@
       "cookie_days": 30,
       "payout": "$50 minimum, PayPal (FAQ says the 7th, dashboard says the 15th — confirm); dashboard currency shown as EUR",
       "dashboard": "https://affiliate.submagic.co/home",
-      "status": "link issued",
+      "status": "active — link issued; live pages read 2026-11-24 07:31-07:36 KST (free plan 15 credits/mo = ~5 captioned videos, no card, watermark on exports; Starter $19/mo or $12/mo yearly, 2-min cap); en hub Hero Pick 2026-11-24 07:30",
       "placed_on": [
+        "en/index.html (hero pick, 2026-11-24 07:30 global short — replaced Taja AI; Taja kept in collapsed list)",
         "en/index.html (collapsed 'View all tested tools' list, 2026-11-19)",
         "en/index.html (Hero Pick — 2026-11-20 17:00 global short)",
         "en/index.html (Hero Pick → back to collapsed 'View all tested tools' list, 2026-11-20 22:30)"
-      ]
+      ],
+      "free_plan": {
+        "plan": "Free plan — 15 credits a month",
+        "limits": "15 credits/month = about 5 video uploads with captions (a captioned upload costs 3 credits; extras such as auto zooms or clean audio cost more, so fewer videos). Credits reset monthly; unused credits do not roll over. No credit card needed. Exports on the free plan carry a Submagic watermark.",
+        "card_required": "no — pricing page 'No credit card required' and signup 'Free trial. No credit card required'",
+        "faq_quote": "Help centre (updated 15/11/2026): 'Yes. Submagic has a free plan that gives you 15 credits a month, enough for 5 video uploads with captions. No credit card is needed to start. Videos exported on the free plan carry a Submagic watermark.'",
+        "checked_on": "2026-11-24 07:32-07:35 KST on submagic.co/pricing, app.submagic.co/signup and care.submagic.co/en/article/does-submagic-have-a-free-trial-7opyg3/"
+      },
+      "paid_plans": {
+        "starter": "USD 19/month, or $12/month billed yearly ($144 a year, save $84) — 45 credits/month: 15 captioned videos, 2 videos edited by Iris, 5 long videos clipped; 2-minute video duration; export 1080p & 30 FPS; no watermark; free b-rolls & audio; text-based trimming",
+        "pro": "USD 39/month, or $23/month billed yearly ($276 a year) — 120 credits: 40 captioned videos, 6 Iris edits, 15 long videos clipped; 5-minute duration; 2K export; AI remove bad takes & silences, clean audio, publish & analytics, Storyblocks b-rolls, brand kit",
+        "business": "USD 69/month, or $41/month billed yearly ($492 a year) — 300 credits: 100 captioned videos, 15 Iris edits, 37 long videos clipped; 30-minute duration; 4K 60fps; API 100 min/mo; 3 social accounts per platform",
+        "annual_note": "Pricing page opens on the Yearly toggle (cards show $12 / $23 / $41 a month, billed $144 / $276 / $492 a year); the Monthly toggle shows $19 / $39 / $69 a month. Custom plan on request.",
+        "checked_on": "2026-11-24 07:32-07:33 KST on submagic.co/pricing (plan cards + compare table, both toggles)"
+      },
+      "honest_limit": "The free plan's exports carry a Submagic watermark (removing it needs a paid plan), and 15 credits is only about 5 captioned videos a month — extras like auto zooms eat credits faster. Starter ($19/mo, $12/mo billed yearly) then caps each video at 2 minutes, so longer source clips need Pro.",
+      "claims_seen": [
+        "Homepage: 'Turn your raw videos into viral shorts' — 'Drop your files. AI agents edit them in proven viral styles and publish them for you. No editing skills needed.'",
+        "Homepage feature tour: '123+ languages', '99% accuracy', '30+ caption styles'",
+        "Homepage footer claims list: '10× faster editing speed', '+40% average views increase', '80% reduction in editing cost'",
+        "Homepage: 'Loved by 4M+ creators'; Trustpilot 4.5 (864 reviews) in the embedded widget",
+        "Magic Clips tab: one long video with 3 markers -> 3 vertical shorts"
+      ],
+      "video": "downloads/cheatkey-global-short-2026-11-24-0730-submagic.mp4 (07:30 global short, 12.77s)"
     },
     {
       "id": "pixa",
@@ -228,8 +252,9 @@
       "dashboard": "https://taja-ai.getrewardful.com",
       "platform": "Rewardful (instant approval)",
       "partner_since": "2026-11-19",
-      "status": "active — link issued; real pages read 2026-11-23 22:31-22:35 KST; en hub Hero Pick 2026-11-23 22:30",
+      "status": "active — link issued; real pages read 2026-11-23 22:31-22:35 KST; en hub Hero Pick 2026-11-23 22:30, moved to collapsed list 2026-11-24 07:30",
       "placed_on": [
+        "en/index.html (collapsed 'View all tested tools' list — badge '22:30 pick · 7-day trial', demoted from hero 2026-11-24 07:30 when Submagic took the hero)",
         "en/index.html (hero pick, 2026-11-23 22:30 global short — replaced Pictory; Pictory kept in collapsed list)",
         "en/index.html (verified stack #3, 2026-11-23 11:30 — moved up to the hero 2026-11-23 22:30)",
         "en/index.html (hero pick, 2026-11-20 07:30 global short)"
@@ -431,5 +456,5 @@
       }
     }
   ],
-  "_updated": "2026-11-23 22:40 KST — Taja AI hero pick (7-day trial / 4 videos / no downloads in trial), Decktopus to stack #3, Pictory to collapsed list"
+  "_updated": "2026-11-24 07:30 KST — Submagic hero pick (free plan 15 credits/mo = ~5 captioned videos, no card, watermark on exports; Starter $19/mo or $12 yearly, 2-min cap), Taja AI to collapsed list"
 }
