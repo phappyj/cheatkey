@@ -204,6 +204,7 @@
       "partner_since": "2026-11-19",
       "status": "active — link issued; live scan run 2026-11-22 11:36 KST; moved from en hub Hero to collapsed list 2026-11-22 17:00",
       "placed_on": [
+        "kr/index.html (phappyj.github.io/cheatkey) — tip-008 card, 2026-11-24 08:30",
         "en/index.html (collapsed 'View all tested tools' list — badge 'Yesterday's pick · 98% AI found'; demoted from hero 2026-11-22 17:00 when Lunacal took the hero)",
         "en/index.html (hero pick, 2026-11-22 11:30 global short — replaced Rytr; Rytr kept in collapsed list)",
         "en/index.html (collapsed 'View all tested tools' list, 2026-11-19)"
@@ -220,7 +221,16 @@
         "yearly_note": "Pricing page also offers annual billing; only the monthly figures were read today and are the ones used in copy.",
         "checked_on": "2026-11-22 11:37 KST on originality.ai/pricing (monthly toggle)"
       },
-      "honest_limit": "Originality's own score guide: \"As AI detectors can make mistakes, the score should be considered as a signal for review, not proof of authorship or misconduct.\" — quoted in the hub copy and the 11:30 short."
+      "honest_limit": "Originality's own score guide: \"As AI detectors can make mistakes, the score should be considered as a signal for review, not proof of authorship or misconduct.\" — quoted in the hub copy and the 11:30 short.",
+      "video_kr": "downloads/cheatkey-tip-reel-2026-11-24-0830.mp4 (08:30 KR short, 13.47s, https://youtube.com/shorts/w3N7-43ChYY)",
+      "korean_scan_2026_11_24": {
+        "ai_text": "104 Korean words, formal report style -> 97% Likely AI (2 credits)",
+        "memo_rewrite": "120 Korean words, same content as a work memo -> 95% Likely Original / 5% Likely AI (2 credits)",
+        "first_rewrite_try": "100 words, half-formal rewrite -> 86% Likely AI (1 credit) - the formal register, not the topic, is what the 5.0 model flags",
+        "credits_after": "93 / 100 free credits left",
+        "checked_on": "2026-11-24 08:37-08:42 KST on app.originality.ai (Free plan, AI Score only)"
+      },
+      "pricing_checked": "2026-11-24 08:36 KST — originality.ai/pricing (annual toggle default): Free card '10K words (100 credits one time)', Pro $14.95/mo monthly ($12.95/mo yearly, save $24) 200k words, Enterprise $179/mo ($136.58 yearly). The same page's compare table lists Free '60 credits (3 scans/day)' renewing daily — the two labels disagree, so copy says 'plan card 기준'."
     },
     {
       "id": "speakai",
