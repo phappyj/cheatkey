@@ -14,9 +14,8 @@
    "status": "active (link live; hero pick 2026-11-23 07:30; PartnerStack dashboard inaccessible after network decline until 2026-12-02)",
    "source": "PartnerStack (approved before network decline; dash.partnerstack.com shows '참여 중인 프로그램 없음' until 2026-12-02 reapply)",
    "placed_on": [
-    "en/index.html (verified stack #1 — automate, 2026-11-20 07:30)",
-    "en/index.html (workflows card, #make section, 2026-11-19)",
-    "en/index.html (HERO PICK 2026-11-23 07:30 — free plan facts + Core $9/mo yearly, 1st month free, credits-do-not-roll-over catch)"
+    "en/index.html (collapsed list, 2026-11-23 11:30 — moved down from hero pick)",
+    "en/index.html (hero pick, 2026-11-23 07:30 global short)"
    ],
    "pricing_checked": "2026-11-23 07:31-07:39 KST — make.com/en/pricing, annual and monthly tabs read live",
    "pricing": {
@@ -67,11 +66,10 @@
    "cookie_days": 60,
    "payout": "PayPal, payout email phappyj@gmail.com; verification form after first commission",
    "dashboard": "https://affiliate.decktopus.com",
-   "status": "link issued",
+   "status": "active — link issued; live pages read 2026-11-23 11:31 KST (Pro $9.99/mo yearly, Business $19.99/seat, no free plan, 3-slide signup credits, 5 credits/slide, BF26 66% off annual to 12-11)",
    "placed_on": [
-    "en/index.html (hero pick, 2026-11-20 11:30 global short)",
-    "en/index.html (verified stack #3, 2026-11-19 → moved to hero 2026-11-20)",
-    "en/index.html (verified stack #3 — 2026-11-20 17:00, after Submagic took the hero)"
+    "en/index.html (hero pick, 2026-11-23 11:30 global short)",
+    "en/index.html (verified stack #3, 2026-11-20 11:30 -> hero again 2026-11-23)"
    ]
   },
   {
@@ -230,9 +228,8 @@
    "partner_since": "2026-11-19",
    "status": "active — link issued",
    "placed_on": [
-    "en/index.html (verified stack #3, 2026-11-20 11:30 — moved down from hero pick)",
-    "en/index.html (hero pick, 2026-11-20 07:30 global short)",
-    "en/index.html (collapsed 'View all tested tools' list — 2026-11-20 17:00)"
+    "en/index.html (verified stack #3, 2026-11-23 11:30 — back up from collapsed list)",
+    "en/index.html (hero pick, 2026-11-20 07:30 global short)"
    ]
   },
   {
