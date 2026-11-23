@@ -66,8 +66,9 @@
       "cookie_days": 60,
       "payout": "PayPal, payout email phappyj@gmail.com; verification form after first commission",
       "dashboard": "https://affiliate.decktopus.com",
-      "status": "active — link issued; live pages read 2026-11-23 11:31 KST (Pro $9.99/mo yearly, Business $19.99/seat, no free plan, 3-slide signup credits, 5 credits/slide, BF26 66% off annual to 12-11)",
+      "status": "active — link issued; live pages read 2026-11-23 11:31 KST (Pro $9.99/mo yearly, Business $19.99/seat, no free plan, 3-slide signup credits, 5 credits/slide, BF26 66% off annual to 12-11); en hub verified stack #3 from 2026-11-23 22:30",
       "placed_on": [
+        "en/index.html (verified stack #3 'Slides' — 2026-11-23 22:30, replaced Taja AI when Taja took the hero; removed from collapsed list)",
         "en/index.html (hero pick, 2026-11-23 11:30 global short)",
         "en/index.html (verified stack #3, 2026-11-20 11:30 -> hero again 2026-11-23)",
         "en/index.html (collapsed 'View all tested tools' list, 2026-11-23 17:00, after Pictory took the hero)"
@@ -227,11 +228,35 @@
       "dashboard": "https://taja-ai.getrewardful.com",
       "platform": "Rewardful (instant approval)",
       "partner_since": "2026-11-19",
-      "status": "active — link issued",
+      "status": "active — link issued; real pages read 2026-11-23 22:31-22:35 KST; en hub Hero Pick 2026-11-23 22:30",
       "placed_on": [
-        "en/index.html (verified stack #3, 2026-11-23 11:30 — back up from collapsed list)",
+        "en/index.html (hero pick, 2026-11-23 22:30 global short — replaced Pictory; Pictory kept in collapsed list)",
+        "en/index.html (verified stack #3, 2026-11-23 11:30 — moved up to the hero 2026-11-23 22:30)",
         "en/index.html (hero pick, 2026-11-20 07:30 global short)"
-      ]
+      ],
+      "free_plan": {
+        "plan": "No free plan — 7-day free trial only",
+        "limits": "Trial optimises and repurposes up to 4 long-form videos (free-trial column: '4'), up to 2 hours each, video import up to 5 GB, up to 5 shorts per video. Watermark removal and Download Shorts are NOT included in the trial (pricing compare table shows '-' for both).",
+        "card_required": "no — homepage 'No credit card required' and 'Get Started Free'",
+        "faq_quote": "Pricing FAQ (23 Nov 2026): 'No—Taja AI offers a free 7 day trial. In the trial you can optimize and repurpose up to 4 long form videos.'",
+        "checked_on": "2026-11-23 22:31-22:35 KST on taja.ai and taja.ai/pricing (plan cards + full compare table + pricing FAQ)"
+      },
+      "paid_plans": {
+        "starter": "USD 19/month (or $15.99/month billed annually, 'save 20%') — 1 user, 1 social set, 4 videos a month, up to 10 shorts per video, watermark removal + short downloads, blog/LinkedIn/Threads posts, scheduling to all platforms, thumbnail generation, premium support",
+        "professional": "USD 49/month ($39.99/month billed annually) — 5 social sets, 10 videos a month, up to 20 shorts per video, Nitro processing",
+        "teams": "USD 99/month ($79.99/month billed annually) — 5 users, 10 social sets, unlimited videos and shorts, Rocket processing",
+        "annual_note": "Annual toggle is selected by default on the pricing page and shows $15.99 / $39.99 / $79.99 a month billed annually; monthly prices $19 / $49 / $99 were read from the compare table below the cards.",
+        "checked_on": "2026-11-23 22:31-22:35 KST on taja.ai/pricing"
+      },
+      "honest_limit": "No free plan: a 7-day trial that takes only 4 long-form videos, and the trial blocks watermark removal and short downloads — you have to pay (from $19/mo, $15.99/mo billed yearly) to export. Auto-written titles and captions also come back as drafts that need a human pass for your channel's tone.",
+      "claims_seen": [
+        "Homepage: 'Generates 27 shorts, clips, & text outputs for a typical video'",
+        "Homepage: '3.8 weeks of content on average generated in 1-click'",
+        "Homepage: 'saving up to 2.3 hours per video optimized and repurposed'",
+        "Homepage: '2,652,887+ total hours saved'",
+        "Homepage: auto-schedule to YouTube, X, Instagram & Facebook, TikTok and LinkedIn"
+      ],
+      "video": "downloads/cheatkey-global-short-2026-11-23-2230-taja.mp4 (22:30 global short, 13.75s)"
     },
     {
       "id": "lunacal",
@@ -381,13 +406,14 @@
       "platform": "FirstPromoter",
       "applied": "2026-11-19",
       "partner_since": "2026-11-20",
-      "status": "active — approved 2026-11-20 17:09 after appeal reply, link issued; promo code CHEATKEY issued 2026-11-20 20:23 KST",
+      "status": "active — approved 2026-11-20 17:09 after appeal reply, link issued; promo code CHEATKEY issued 2026-11-20 20:23 KST; moved to en hub collapsed list 2026-11-23 22:30",
       "rules": "No PPC or paid ads targeting Pictory brand name/misspellings",
       "placed_on": [
+        "en/index.html (collapsed 'View all tested tools' list — badge '17:00 pick · 14-day trial', demoted from hero 2026-11-23 22:30 when Taja AI took the hero)",
+        "en/index.html (hero pick, 2026-11-23 17:00 global short — 14-day trial + Black Friday annual pricing)",
         "en/index.html (verified stack #2 — video, 2026-11-21 07:30, after Speak AI took the hero)",
         "en/index.html (hero pick, 2026-11-20 22:30 global short — Black Friday)",
-        "en/index.html (collapsed 'View all tested tools' list, 2026-11-21 11:30, after quso.ai took the hero)",
-        "en/index.html (hero pick, 2026-11-23 17:00 global short — 14-day trial + Black Friday annual pricing)"
+        "en/index.html (collapsed 'View all tested tools' list, 2026-11-21 11:30, after quso.ai took the hero)"
       ],
       "promo_code": "CHEATKEY",
       "promo_code_note": "Dedicated code active on the affiliate dashboard (Ash, 2026-11-20 16:53 IST). Does NOT stack with Black Friday offers — the Black Friday price needs no code, so use that instead until Dec 2.",
@@ -404,5 +430,6 @@
         "free_trial": "14 days · 300 credits (up to 10 mins of generation) · 3 videos · 5 min max video length · 500 MB storage · 720p max export · Pictory watermark · no credit card required"
       }
     }
-  ]
+  ],
+  "_updated": "2026-11-23 22:40 KST — Taja AI hero pick (7-day trial / 4 videos / no downloads in trial), Decktopus to stack #3, Pictory to collapsed list"
 }
