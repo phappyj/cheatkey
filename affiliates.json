@@ -1,406 +1,408 @@
 {
- "_note": "자체(Rewardful/FirstPromoter/tolt/직접) 제휴 링크 — 2026-11-19 발급분 포함. 비밀번호는 포함하지 않음.",
- "_account": {
-  "name": "Park HeeJae",
-  "email": "phappyj@gmail.com"
- },
- "_disclosure": "Some links on this page are affiliate links. If you sign up through them, I may earn a commission at no extra cost to you.",
- "tools": [
-  {
-   "id": "make",
-   "name": "Make.com",
-   "url": "https://www.make.com/en/register?pc=cheatkey",
-   "offer": "1 month Core plan free for new accounts",
-   "status": "active (link live; hero pick 2026-11-23 07:30; PartnerStack dashboard inaccessible after network decline until 2026-12-02)",
-   "source": "PartnerStack (approved before network decline; dash.partnerstack.com shows '참여 중인 프로그램 없음' until 2026-12-02 reapply)",
-   "placed_on": [
-    "en/index.html (collapsed list, 2026-11-23 11:30 — moved down from hero pick)",
-    "en/index.html (hero pick, 2026-11-23 07:30 global short)"
-   ],
-   "pricing_checked": "2026-11-23 07:31-07:39 KST — make.com/en/pricing, annual and monthly tabs read live",
-   "pricing": {
-    "free": "$0 — 1,000 credits/month, 2 active scenarios, 15-minute minimum interval between runs, 5-minute max execution, 512MB transfer, 7-day logs, 3,500+ apps",
-    "core": "$9/mo billed yearly (Save 15%, $0.90 per 1,000 credits) or $10.59/mo monthly — 10,000 credits, unlimited active scenarios, scheduled runs down to 1 minute, 40-minute max execution, 30-day logs",
-    "pro": "$16/mo yearly / $18.82 monthly — 1,600 per 1,000 credits",
-    "teams": "$29/mo yearly / $34.12 monthly",
-    "billing_unit": "credits (renamed from operations on 27 Aug 2025)"
-   },
-   "honest_limit": "Free caps you at 2 active scenarios and 1,000 credits/month, and runs no more often than every 15 minutes; unused credits expire at the end of the term (no rollover).",
-   "offer_terms": "1 month Core plan free for new accounts (affiliate-program offer; shown on the hub and in the video as '1 month Core free', register page itself was behind a Cloudflare check when re-read 2026-11-23 07:32 KST)",
-   "video": "downloads/cheatkey-global-short-2026-11-23-0730-make.mp4 (07:30 global short, 12.58s)"
+  "_note": "자체(Rewardful/FirstPromoter/tolt/직접) 제휴 링크 — 2026-11-19 발급분 포함. 비밀번호는 포함하지 않음.",
+  "_account": {
+    "name": "Park HeeJae",
+    "email": "phappyj@gmail.com"
   },
-  {
-   "id": "quso",
-   "name": "quso.ai (formerly vidyo.ai)",
-   "url": "https://quso.ai?via=2xv5cz",
-   "what": "Turns long videos and podcasts into short captioned clips",
-   "commission": "30% recurring, for the life of the subscription",
-   "cookie_days": 30,
-   "payout": "PayPal on the 15th, $20 minimum; PayPal email + W-8BEN required before first payout",
-   "dashboard": "https://quso.firstpromoter.com/home",
-   "status": "active — link issued; Black Friday kit received 2026-11-21 04:49 (yearly 50% off, renewals keep 50%)",
-   "placed_on": [
-    "en/index.html (hero pick, 2026-11-21 11:30 global short - replaced by LoopCV at 17:00, kept in collapsed list)",
-    "en/index.html (collapsed 'View all tested tools' list, 2026-11-19)"
-   ],
-   "black_friday": {
-    "offer": "50% off yearly plans, discount kept at every renewal while subscribed",
-    "no_code_needed": true,
-    "valid_until": "2026-12-01 23:59 IST",
-    "verified_on": "2026-11-21 11:32 KST on quso.ai/pricing (US plan cards) + affiliate kit mail from vedant@news.quso.ai",
-    "prices_usd": {
-     "lite": "$174/yr (was $348), $29 monthly",
-     "essential": "$234/yr (was $468), $39 monthly",
-     "growth": "$294/yr (was $588), $49 monthly"
+  "_disclosure": "Some links on this page are affiliate links. If you sign up through them, I may earn a commission at no extra cost to you.",
+  "tools": [
+    {
+      "id": "make",
+      "name": "Make.com",
+      "url": "https://www.make.com/en/register?pc=cheatkey",
+      "offer": "1 month Core plan free for new accounts",
+      "status": "active (link live; hero pick 2026-11-23 07:30; PartnerStack dashboard inaccessible after network decline until 2026-12-02)",
+      "source": "PartnerStack (approved before network decline; dash.partnerstack.com shows '참여 중인 프로그램 없음' until 2026-12-02 reapply)",
+      "placed_on": [
+        "en/index.html (collapsed list, 2026-11-23 11:30 — moved down from hero pick)",
+        "en/index.html (hero pick, 2026-11-23 07:30 global short)"
+      ],
+      "pricing_checked": "2026-11-23 07:31-07:39 KST — make.com/en/pricing, annual and monthly tabs read live",
+      "pricing": {
+        "free": "$0 — 1,000 credits/month, 2 active scenarios, 15-minute minimum interval between runs, 5-minute max execution, 512MB transfer, 7-day logs, 3,500+ apps",
+        "core": "$9/mo billed yearly (Save 15%, $0.90 per 1,000 credits) or $10.59/mo monthly — 10,000 credits, unlimited active scenarios, scheduled runs down to 1 minute, 40-minute max execution, 30-day logs",
+        "pro": "$16/mo yearly / $18.82 monthly — 1,600 per 1,000 credits",
+        "teams": "$29/mo yearly / $34.12 monthly",
+        "billing_unit": "credits (renamed from operations on 27 Aug 2025)"
+      },
+      "honest_limit": "Free caps you at 2 active scenarios and 1,000 credits/month, and runs no more often than every 15 minutes; unused credits expire at the end of the term (no rollover).",
+      "offer_terms": "1 month Core plan free for new accounts (affiliate-program offer; shown on the hub and in the video as '1 month Core free', register page itself was behind a Cloudflare check when re-read 2026-11-23 07:32 KST)",
+      "video": "downloads/cheatkey-global-short-2026-11-23-0730-make.mp4 (07:30 global short, 12.58s)"
     },
-    "free_plan": "75 credits/month (~75 min processed), 720p with quso.ai watermark, 7-day data retention, CutMagic on first 3 videos",
-    "note": "KR pricing shown to Korean IPs is credit packs only (100 credits ₩3,290); the subscription plans above are the US/global page."
-   }
-  },
-  {
-   "id": "decktopus",
-   "name": "Decktopus",
-   "url": "https://www.decktopus.com?via=heejae",
-   "what": "Generates a full slide deck from a prompt",
-   "commission": "50% of the first 3 payments within the first 12 months",
-   "cookie_days": 60,
-   "payout": "PayPal, payout email phappyj@gmail.com; verification form after first commission",
-   "dashboard": "https://affiliate.decktopus.com",
-   "status": "active — link issued; live pages read 2026-11-23 11:31 KST (Pro $9.99/mo yearly, Business $19.99/seat, no free plan, 3-slide signup credits, 5 credits/slide, BF26 66% off annual to 12-11)",
-   "placed_on": [
-    "en/index.html (hero pick, 2026-11-23 11:30 global short)",
-    "en/index.html (verified stack #3, 2026-11-20 11:30 -> hero again 2026-11-23)"
-   ]
-  },
-  {
-   "id": "submagic",
-   "name": "Submagic",
-   "url": "https://submagic.co/?via=heejae-e35f5b",
-   "alt_urls": [
-    "https://www.submagic.co/auto-subtitle-generator?via=heejae-e35f5b"
-   ],
-   "what": "AI editor for short-form video: captions, cuts, zooms",
-   "commission": "30% recurring lifetime + 10% second-tier",
-   "cookie_days": 30,
-   "payout": "$50 minimum, PayPal (FAQ says the 7th, dashboard says the 15th — confirm); dashboard currency shown as EUR",
-   "dashboard": "https://affiliate.submagic.co/home",
-   "status": "link issued",
-   "placed_on": [
-    "en/index.html (collapsed 'View all tested tools' list, 2026-11-19)",
-    "en/index.html (Hero Pick — 2026-11-20 17:00 global short)",
-    "en/index.html (Hero Pick → back to collapsed 'View all tested tools' list, 2026-11-20 22:30)"
-   ]
-  },
-  {
-   "id": "pixa",
-   "name": "Pixa",
-   "url": "https://getpixa.link/park-hee-jae",
-   "what": "AI creative agent for images, video edits and 3D scenes (linked from the Pixelcut affiliate page)",
-   "commission": "30% per sale for 1 year",
-   "payout": "Via Dub: local bank account or USDC; payout method not connected yet",
-   "dashboard": "https://partners.dub.co/programs/pixa",
-   "status": "link issued (program active)",
-   "caveat": "Link destination is pixa.com, not pixelcut.ai — confirm the brand relationship before promoting as Pixelcut",
-   "placed_on": [
-    "en/index.html (collapsed 'View all tested tools' list, 2026-11-19)"
-   ]
-  },
-  {
-   "id": "fliki",
-   "name": "Fliki",
-   "url": "https://fliki.ai?via=heejae",
-   "what": "Text, script or blog post to AI video with AI voiceover",
-   "commission": "30% on all payments, for the life of the subscription",
-   "cookie_days": 30,
-   "payout": "$50 minimum, Wise on the 1st (payout email phappyj@gmail.com registered); PayPal on request above $50",
-   "dashboard": "https://affiliates.fliki.ai",
-   "partner_since": "2026-11-18",
-   "status": "active — email confirmed 2026-11-19; en hub Hero Pick 2026-11-21 22:30, moved to collapsed list 2026-11-22 07:30",
-   "rules": "No ads or promo/discount sites",
-   "placed_on": [
-    "en/index.html (collapsed 'View all tested tools' list — demoted from hero 2026-11-22 07:30 when Rytr took the hero; kept with 'Yesterday's pick' badge)",
-    "en/index.html (hero pick, 2026-11-21 22:30 global short — replaced LoopCV; LoopCV kept in collapsed list)",
-    "en/index.html (collapsed 'View all tested tools' list, 2026-11-19)"
-   ],
-   "free_plan": {
-    "plan": "Free forever, no credit card",
-    "limits": "3 credits per month; 720p export with Fliki watermark; 5-minute max export length; 100 scenes; workflows marked 'Limited'; email-only support",
-    "faq_note": "Pricing FAQ also says '5 minutes of free audio and video content per month'; credits are consumed per minute generated/exported, so the 3-credit card is the number to quote.",
-    "checked_on": "2026-11-21 22:31 KST on fliki.ai/pricing (plan cards + compare table + pricing FAQ)"
-   },
-   "paid_plans": {
-    "standard": "USD 28/user/month (monthly billing) — 180 credits, 1080p, 15-minute videos, 1000 voices, no watermark, commercial rights",
-    "premium": "USD 88/user/month — 600 credits, 40-minute videos, 2000+ voices, AI video clips, brand kits",
-    "yearly": "Yearly toggle advertises 50% off Standard & Premium; a Black Friday banner (code FLIKIBFCM50) was showing on 2026-11-21 — deliberately NOT used in copy or the hub, per Fliki's no-promo/discount-site affiliate rule",
-    "checked_on": "2026-11-21 22:31 KST on fliki.ai/pricing (monthly prices shown)"
-   }
-  },
-  {
-   "id": "rytr",
-   "name": "Rytr",
-   "url": "https://rytr.me?via=heejae",
-   "what": "AI writing assistant + relationship memory: emails, replies, posts, short copy (Create), plus Gmail/Slack follow-up drafts (Engage)",
-   "commission": "30% of direct conversions",
-   "payout": "$100 minimum; payments become due at T+30 and are attempted on the first business day of the following month",
-   "dashboard": "https://affiliates.rytr.me",
-   "partner_since": "2026-11-19",
-   "status": "active — email confirmed 2026-11-19; en hub Hero Pick 2026-11-22 07:30, moved to collapsed list 2026-11-22 11:30",
-   "rules": "No self-referrals; no Google/other platform ads that break their policy",
-   "placed_on": [
-    "en/index.html (collapsed 'View all tested tools' list — demoted from hero 2026-11-22 11:30 when Originality.ai took the hero; kept with 'Yesterday's pick' badge)",
-    "en/index.html (hero pick, 2026-11-22 07:30 global short — replaced Fliki; Fliki kept in collapsed list)",
-    "en/index.html (collapsed 'View all tested tools' list, 2026-11-19)"
-   ],
-   "free_plan": {
-    "plan": "Free forever",
-    "limits": "10,000 characters per month; 1 connected source; 25 active relationships; 25 Engage actions/month; 3 person research runs; daily briefing; 40+ writing use cases; 30+ languages",
-    "checked_on": "2026-11-22 07:32 KST on rytr.me (pricing section) and rytr.me/pricing (plan cards)"
-   },
-   "paid_plans": {
-    "lite": "USD 9/month — unlimited characters per month, everything in Free; yearly billing $7.50/mo",
-    "personal": "USD 19/month — everything in Lite, 2 connected sources, 250 active relationships, 250 Engage actions/month, 10 person research runs; yearly $15/mo",
-    "pro": "USD 49/month — everything in Personal, all connected sources, 1,000 active relationships, 2,000 Engage actions/month, 50 research runs, morning+evening briefings, custom use cases; yearly $39/mo",
-    "yearly_note": "Yearly billing is advertised as 'Save 20%'; the yearly toggle showed $7.50 / $15 / $39 per month, billed annually",
-    "checked_on": "2026-11-22 07:32 KST on rytr.me/pricing (Monthly and Yearly toggles both read)"
-   },
-   "positioning": "Pivoted from a pure writing tool: the site now leads with an AI relationship manager (Engage) and keeps Create (writing) — the video and hub copy point at the writing side plus the Gmail extension."
-  },
-  {
-   "id": "originality",
-   "name": "Originality.ai",
-   "url": "https://originality.ai/?via=heejae",
-   "what": "AI-content detector and plagiarism checker for anything you publish or receive",
-   "commission": "25% recurring commission on every referral for 12 months",
-   "cookie_days": 90,
-   "payout": "PayPal, monthly once the balance passes the program minimum; payout email phappyj@gmail.com registered",
-   "dashboard": "https://originality-ai-1.getrewardful.com",
-   "platform": "Rewardful (instant approval)",
-   "partner_since": "2026-11-19",
-   "status": "active — link issued; live scan run 2026-11-22 11:36 KST; moved from en hub Hero to collapsed list 2026-11-22 17:00",
-   "placed_on": [
-    "en/index.html (collapsed 'View all tested tools' list — badge 'Yesterday's pick · 98% AI found'; demoted from hero 2026-11-22 17:00 when Lunacal took the hero)",
-    "en/index.html (hero pick, 2026-11-22 11:30 global short — replaced Rytr; Rytr kept in collapsed list)",
-    "en/index.html (collapsed 'View all tested tools' list, 2026-11-19)"
-   ],
-   "free_plan": {
-    "plan": "Free — one-time allowance, not a monthly refill",
-    "limits": "100 credits, once (10,000 words total); 1 credit = 100 words. Plagiarism checking and longer documents consume credits, so a single long scan can use several.",
-    "observed_scan": "2026-11-22 11:36 KST: a 159-word sample cost 2 credits (98/100 left), returned 98% Likely AI / 2% Likely Original, AI score shown per sentence (detector version 5.0).",
-    "checked_on": "2026-11-22 11:37 KST on originality.ai/pricing (plan cards) and app.originality.ai (credit balance)"
-   },
-   "paid_plans": {
-    "pro": "USD 14.95/month — 200,000 words/month",
-    "enterprise": "USD 179/month — custom volume, team seats, API",
-    "yearly_note": "Pricing page also offers annual billing; only the monthly figures were read today and are the ones used in copy.",
-    "checked_on": "2026-11-22 11:37 KST on originality.ai/pricing (monthly toggle)"
-   },
-   "honest_limit": "Originality's own score guide: \"As AI detectors can make mistakes, the score should be considered as a signal for review, not proof of authorship or misconduct.\" — quoted in the hub copy and the 11:30 short."
-  },
-  {
-   "id": "speakai",
-   "name": "Speak AI",
-   "url": "https://speakai.co/?via=heejae",
-   "what": "Records, transcribes and summarises meetings in 100+ languages, with AI chat over the transcript",
-   "commission": "25% of every payment for the first 12 months",
-   "cookie_days": 90,
-   "payout": "PayPal monthly at month end once $50 CAD is reached; a commission becomes payable 31 days after it is earned",
-   "dashboard": "https://speak-ai-inc.getrewardful.com",
-   "platform": "Rewardful (instant approval)",
-   "partner_since": "2026-11-19",
-   "status": "active — link issued",
-   "rules": "No brand-term bidding, no self-referral, no coupon sites without written agreement",
-   "placed_on": [
-    "en/index.html (hero pick, 2026-11-21 07:30 global short)",
-    "en/index.html (verified stack #2, 2026-11-19 → moved to hero 2026-11-21)",
-    "en/index.html (verified stack #2 — meetings, 2026-11-21 11:30, after quso.ai took the hero)"
-   ],
-   "note": "Verified stack #2 (meetings) from 2026-11-21 11:30. Hero 2026-11-21 07:30 → moved down 2026-11-21 11:30. Granola's Dub application was declined on 2026-11-20."
-  },
-  {
-   "id": "taja",
-   "name": "Taja AI",
-   "url": "https://www.taja.ai/?via=heejae",
-   "what": "Turns one long video into shorts, clips, blogs, titles, tags and thumbnails",
-   "commission": "50% commission on all payments",
-   "payout": "PayPal, payout email phappyj@gmail.com registered; minimum and cadence not published on the program page",
-   "dashboard": "https://taja-ai.getrewardful.com",
-   "platform": "Rewardful (instant approval)",
-   "partner_since": "2026-11-19",
-   "status": "active — link issued",
-   "placed_on": [
-    "en/index.html (verified stack #3, 2026-11-23 11:30 — back up from collapsed list)",
-    "en/index.html (hero pick, 2026-11-20 07:30 global short)"
-   ]
-  },
-  {
-   "id": "lunacal",
-   "name": "Lunacal",
-   "url": "https://lunacal.ai/?ref=heejae",
-   "what": "Scheduling and booking pages (Calendly alternative) with branding and payments",
-   "commission": "30% recurring, no expiry",
-   "cookie_days": 90,
-   "payout": "Via tolt partner dashboard — payout details not set up yet",
-   "dashboard": "https://lunacal.tolt.io",
-   "platform": "tolt (instant approval)",
-   "partner_since": "2026-11-19",
-   "status": "active — link issued; real pages read 2026-11-22 17:03 KST; moved from en hub Hero to collapsed list 2026-11-22 22:30",
-   "rules": "Coupon code must not be posted on coupon sites",
-   "placed_on": [
-    "en/index.html (collapsed 'View all tested tools' list — badge 'Yesterday's pick · 7-day trial'; demoted from hero 2026-11-22 22:30 when Revid took the hero)",
-    "en/index.html (hero pick, 2026-11-22 17:00 global short — replaced Originality.ai)"
-   ],
-   "free_plan": {
-    "plan": "No free plan — 7-day free trial only (pricing page also lists Cancel Anytime, Free 1:1 Support)",
-    "limits": "Trial is 7 days; after it a paid subscription is required. No free tier was listed on lunacal.ai/pricing on 2026-11-22.",
-    "checked_on": "2026-11-22 17:03 KST on lunacal.ai and lunacal.ai/pricing (monthly toggle)"
-   },
-   "paid_plans": {
-    "standard": "USD 9 / user / month — unlimited calendars & services, Stripe/PayPal payments, text/email reminders, custom booking page",
-    "teams": "USD 15 / user / month (list USD 20, 25% off) — team scheduling, multi-session packages, round-robin, webhooks",
-    "enterprise": "USD 25 / user / month — AI voice agent, account manager, complete branding, MCP server (beta), SSO",
-    "annual_note": "Annually toggle advertises Save 10%; only the monthly figures were read and are the ones used in copy.",
-    "extras": "Own domain for booking pages is a paid add-on (comparison table). SMTP from your own domain is Enterprise-only.",
-    "checked_on": "2026-11-22 17:03 KST on lunacal.ai/pricing"
-   },
-   "honest_limit": "No free plan: the site offers a 7-day free trial only, then from $9/user/month, and a custom domain is a paid add-on — said plainly in the 17:00 short and hub copy.",
-   "features_seen": [
-    "Branded booking page: profile photo, services, open slots, testimonials, video, FAQ (founder/doctor/sales/coaching templates on lunacal.ai)",
-    "Paid sessions: 'Charge for this event' toggle → guest pays before booking via Stripe or PayPal, price set in USD",
-    "0% booking commission (site claim), 12+ languages for guests, GDPR compliant, Google/Outlook/Apple 2-way sync"
-   ]
-  },
-  {
-   "id": "revid",
-   "name": "Revid",
-   "url": "https://www.revid.ai/?via=workcheatkey",
-   "what": "Prompt-to-video, remix and UGC ad generator with auto-publishing to TikTok, YouTube, Instagram and X",
-   "commission": "20% of every payment, for the life of the subscription",
-   "cookie_days": 60,
-   "payout": "$100 minimum, monthly via Wise (or bank); payout details not set up yet",
-   "dashboard": "https://www.revid.ai/affiliate",
-   "platform": "In-app affiliate page (one-click join, no approval)",
-   "partner_since": "2026-11-19",
-   "status": "active — link issued; real pages read 2026-11-22 22:32 KST; en hub Hero Pick 2026-11-22 22:30",
-   "rules": "No coupon/deal sites, no brand-keyword ads, no self-referral, no ads-driven commissions",
-   "placed_on": [
-    "en/index.html (hero pick, 2026-11-22 22:30 global short — replaced Lunacal; Lunacal kept in collapsed list with \"Yesterday's pick\" badge)",
-    "en/index.html (collapsed 'View all tested tools' list, 2026-11-19 — entry removed 2026-11-22 22:30 when Revid moved up to the hero)",
-    "en/index.html (collapsed 'View all tested tools' list — badge \"Yesterday's pick · 400 credits\", demoted from hero 2026-11-23 07:30)"
-   ],
-   "free_plan": {
-    "plan": "No free plan — sign up without a credit card and start with 400 FREE credits (pricing banner). A free account can also search viral videos.",
-    "limits": "Regular creation needs the monthly credits of a paid plan. Pricing FAQ (22 Nov 2026): 'You can sign up without a credit card, and new accounts get free credits to try video generation. A free account can also search viral videos. Regular creation uses the monthly credits that come with a paid plan.'",
-    "checked_on": "2026-11-22 22:32 KST on revid.ai and revid.ai/pricing (Monthly toggle)"
-   },
-   "paid_plans": {
-    "hobby": "USD 39 / month — create videos from text or links, 3M+ viral videos to remix, editable short-form videos, for occasional hands-on creation",
-    "growth": "USD 39 / month (list USD 99, 'Discount locked in forever', Best Value) — 2,000 AI credits / month, publish to TikTok/IG/YouTube/X, post stats & one-click remix, 5 channels watched, 100+ tools, 70+ language voiceovers, 3 Auto-Mode workers, API/MCP/CLI",
-    "ultra": "USD 199 / month (12,000 credits; scale 30k/$459, 50k/$749, 100k/$1,459, 200k/$2,799) — 10 Auto-Mode workers, clone your own voices, 50 channels",
-    "elite": "USD 89 / month or $74 yearly — 5,000 credits (listed in the pricing FAQ, not on the cards)",
-    "annual_note": "Annually toggle: Growth $32/mo, Ultra $166/mo. Only monthly figures were used in copy.",
-    "credits": "A typical 30-second video with Pro moving images + voiceover costs about 40-80 credits, so 2,000 credits cover roughly 25-50 a month; full AI video models cost more per second; the editor shows an estimate before every render. Credit Boost packs never expire (1,000/$49, 4,000/$99, 10,000/$199, 100,000/$1,900).",
-    "checked_on": "2026-11-22 22:32 KST on revid.ai/pricing"
-   },
-   "honest_limit": "Plan credits refill at renewal and do not stack, so unused credits are lost — said plainly in the 22:30 short and in the hub copy; a 30s video costs about 40-80 credits and regular creation needs a paid plan (from $39/mo).",
-   "features_seen": [
-    "Create your version screen (real UI): viral video on the left, 'Analysis - generated from the video' in the middle (visual hook gauge, scroll-stopper 0:04, structure with 0:00 Hook / 0:04 Payoff and why-it-works text), 'Your Version' phone on the right",
-    "Viral search (real UI): search any topic across YouTube, TikTok and Instagram, sort by engagement rate instead of raw plays, platform + duration filters, cards with views/likes/comments",
-    "Publishing to TikTok, IG, YouTube and X with post stats and one-click remix; Auto-Mode workers; API/MCP/CLI",
-    "Showcase claims: 30,000+ videos published a month, 100,000+ rendered, 14,258+ creators, 32 languages in 68 countries"
-   ]
-  },
-  {
-   "id": "loopcv",
-   "name": "LoopCV",
-   "url": "https://loopcv.pro?via=heejae",
-   "what": "AI job-hunt automation: profile once, then matched/applied to jobs across 30+ boards and recruiter follow-ups",
-   "commission": "25% commission on all payments (Rewardful dashboard wording)",
-   "payout": "PayPal, payout email phappyj@gmail.com registered 2026-11-19",
-   "dashboard": "https://loopcv.getrewardful.com",
-   "platform": "Rewardful (instant, no manual review)",
-   "partner_since": "2026-11-19",
-   "status": "active — email confirmed, link issued",
-   "placed_on": [
-    "en/index.html (collapsed 'View all tested tools' list — also keeps the Hub's 'Related video' short link; moved down 2026-11-21 22:30 when Fliki took the hero)",
-    "en/index.html (hero pick, 2026-11-21 17:00-22:30 global short)",
-    "en/index.html (collapsed 'View all tested tools' list, 2026-11-20 07:30)",
-    "en/index.html (verified stack #1 'Automate' 2026-11-23 07:30 — replaced Make.com when Make took the hero; removed from collapsed list)"
-   ],
-   "free_plan": {
-    "plan": "Basic Looper (free forever, no card)",
-    "limits": "1 job-title loop a month, up to 10 applications or recruiter emails a month, 3 job boards, low application priority, 2 AI CV checks",
-    "checked_on": "2026-11-21 17:03 KST on loopcv.pro/pricing (plan cards)"
-   },
-   "paid_plans": {
-    "standard": "EUR 8.99/mo - 20 loops, 100 applications/emails, 20 job boards, medium priority",
-    "premium": "EUR 29.99/mo - 50 loops, 300 applications/emails, 20 job boards, high priority, screening-question autofill",
-    "done_for_you": "EUR 87.99/mo",
-    "billing": "monthly; 3-month billing saves up to 25%",
-    "note": "Homepage FAQ says '30+ job boards'; the pricing table caps free at 3 and paid at 20 - use the table numbers in copy."
-   }
-  },
-  {
-   "id": "granola",
-   "name": "Granola",
-   "url": null,
-   "what": "AI meeting notes: joins nothing, records the call locally and returns structured notes and action items",
-   "commission": "$20 bounty for every lead that completes a valid meeting (Dub)",
-   "payout": "Via Dub: local bank account or USDC; payout method not connected yet",
-   "dashboard": "https://partners.dub.co/programs/granola",
-   "platform": "Dub Partners (application review)",
-   "applied": "2026-11-19",
-   "application_ids": [
-    "pga_1M7S4ABF0RZG31ZJFJTTG49TS",
-    "pge_1M7S4ABF0J7SMATHZAC4Z0KN7"
-   ],
-   "status": "declined 2026-11-20 16:44 — Dub application rejected; no link. Meetings slot stays with Speak AI.",
-   "placed_on": []
-  },
-  {
-   "id": "writesonic",
-   "name": "Writesonic",
-   "url": null,
-   "what": "AI writing and AI-search visibility platform",
-   "commission": "20% of every payment for 12 months, 60-day cookie",
-   "payout": "Monthly via FirstPromoter; W-9/W-8BEN before first payout; 30-day hold",
-   "dashboard": "https://affiliates.writesonic.com",
-   "platform": "FirstPromoter",
-   "applied": "2026-11-19",
-   "status": "application submitted — pending approval (program says most are reviewed within 24 hours), no link yet",
-   "placed_on": []
-  },
-  {
-   "id": "pictory",
-   "name": "Pictory",
-   "url": "https://pictory.ai?fpr=heejae-b015a9",
-   "what": "Text, URL or PPT to video with AI avatars and voice",
-   "commission": "40% on the first transaction from every new customer",
-   "payout": "PayPal (starts after 2nd paid subscriber, $10 minimum, 30-day clear, paid ~1st working day of month; 1 paid sale every 90 days to stay active)",
-   "dashboard": "https://partners.pictory.ai/login",
-   "platform": "FirstPromoter",
-   "applied": "2026-11-19",
-   "partner_since": "2026-11-20",
-   "status": "active — approved 2026-11-20 17:09 after appeal reply, link issued; promo code CHEATKEY issued 2026-11-20 20:23 KST",
-   "rules": "No PPC or paid ads targeting Pictory brand name/misspellings",
-   "placed_on": [
-    "en/index.html (verified stack #2 — video, 2026-11-21 07:30, after Speak AI took the hero)",
-    "en/index.html (hero pick, 2026-11-20 22:30 global short — Black Friday)",
-    "en/index.html (collapsed 'View all tested tools' list, 2026-11-21 11:30, after quso.ai took the hero)"
-   ],
-   "promo_code": "CHEATKEY",
-   "promo_code_note": "Dedicated code active on the affiliate dashboard (Ash, 2026-11-20 16:53 IST). Does NOT stack with Black Friday offers — the Black Friday price needs no code, so use that instead until Dec 2.",
-   "black_friday": {
-    "offer": "Up to 70% off annual plans",
-    "no_code_needed": true,
-    "valid_until": "2026-12-02",
-    "verified_on": "2026-11-20 22:31 KST on pictory.ai/pricing (annually, Black Friday Offer cards)",
-    "prices": {
-     "starter": "$12.50/mo (was $29)",
-     "professional": "$17.50/mo (was $59)",
-     "teams": "$59.50/mo (was $199)"
+    {
+      "id": "quso",
+      "name": "quso.ai (formerly vidyo.ai)",
+      "url": "https://quso.ai?via=2xv5cz",
+      "what": "Turns long videos and podcasts into short captioned clips",
+      "commission": "30% recurring, for the life of the subscription",
+      "cookie_days": 30,
+      "payout": "PayPal on the 15th, $20 minimum; PayPal email + W-8BEN required before first payout",
+      "dashboard": "https://quso.firstpromoter.com/home",
+      "status": "active — link issued; Black Friday kit received 2026-11-21 04:49 (yearly 50% off, renewals keep 50%)",
+      "placed_on": [
+        "en/index.html (hero pick, 2026-11-21 11:30 global short - replaced by LoopCV at 17:00, kept in collapsed list)",
+        "en/index.html (collapsed 'View all tested tools' list, 2026-11-19)"
+      ],
+      "black_friday": {
+        "offer": "50% off yearly plans, discount kept at every renewal while subscribed",
+        "no_code_needed": true,
+        "valid_until": "2026-12-01 23:59 IST",
+        "verified_on": "2026-11-21 11:32 KST on quso.ai/pricing (US plan cards) + affiliate kit mail from vedant@news.quso.ai",
+        "prices_usd": {
+          "lite": "$174/yr (was $348), $29 monthly",
+          "essential": "$234/yr (was $468), $39 monthly",
+          "growth": "$294/yr (was $588), $49 monthly"
+        },
+        "free_plan": "75 credits/month (~75 min processed), 720p with quso.ai watermark, 7-day data retention, CutMagic on first 3 videos",
+        "note": "KR pricing shown to Korean IPs is credit packs only (100 credits ₩3,290); the subscription plans above are the US/global page."
+      }
     },
-    "free_trial": "300 credits, up to 10 mins, 3 videos, 720p max, Pictory branding (watermark) — no credit card"
-   }
-  }
- ]
+    {
+      "id": "decktopus",
+      "name": "Decktopus",
+      "url": "https://www.decktopus.com?via=heejae",
+      "what": "Generates a full slide deck from a prompt",
+      "commission": "50% of the first 3 payments within the first 12 months",
+      "cookie_days": 60,
+      "payout": "PayPal, payout email phappyj@gmail.com; verification form after first commission",
+      "dashboard": "https://affiliate.decktopus.com",
+      "status": "active — link issued; live pages read 2026-11-23 11:31 KST (Pro $9.99/mo yearly, Business $19.99/seat, no free plan, 3-slide signup credits, 5 credits/slide, BF26 66% off annual to 12-11)",
+      "placed_on": [
+        "en/index.html (hero pick, 2026-11-23 11:30 global short)",
+        "en/index.html (verified stack #3, 2026-11-20 11:30 -> hero again 2026-11-23)",
+        "en/index.html (collapsed 'View all tested tools' list, 2026-11-23 17:00, after Pictory took the hero)"
+      ]
+    },
+    {
+      "id": "submagic",
+      "name": "Submagic",
+      "url": "https://submagic.co/?via=heejae-e35f5b",
+      "alt_urls": [
+        "https://www.submagic.co/auto-subtitle-generator?via=heejae-e35f5b"
+      ],
+      "what": "AI editor for short-form video: captions, cuts, zooms",
+      "commission": "30% recurring lifetime + 10% second-tier",
+      "cookie_days": 30,
+      "payout": "$50 minimum, PayPal (FAQ says the 7th, dashboard says the 15th — confirm); dashboard currency shown as EUR",
+      "dashboard": "https://affiliate.submagic.co/home",
+      "status": "link issued",
+      "placed_on": [
+        "en/index.html (collapsed 'View all tested tools' list, 2026-11-19)",
+        "en/index.html (Hero Pick — 2026-11-20 17:00 global short)",
+        "en/index.html (Hero Pick → back to collapsed 'View all tested tools' list, 2026-11-20 22:30)"
+      ]
+    },
+    {
+      "id": "pixa",
+      "name": "Pixa",
+      "url": "https://getpixa.link/park-hee-jae",
+      "what": "AI creative agent for images, video edits and 3D scenes (linked from the Pixelcut affiliate page)",
+      "commission": "30% per sale for 1 year",
+      "payout": "Via Dub: local bank account or USDC; payout method not connected yet",
+      "dashboard": "https://partners.dub.co/programs/pixa",
+      "status": "link issued (program active)",
+      "caveat": "Link destination is pixa.com, not pixelcut.ai — confirm the brand relationship before promoting as Pixelcut",
+      "placed_on": [
+        "en/index.html (collapsed 'View all tested tools' list, 2026-11-19)"
+      ]
+    },
+    {
+      "id": "fliki",
+      "name": "Fliki",
+      "url": "https://fliki.ai?via=heejae",
+      "what": "Text, script or blog post to AI video with AI voiceover",
+      "commission": "30% on all payments, for the life of the subscription",
+      "cookie_days": 30,
+      "payout": "$50 minimum, Wise on the 1st (payout email phappyj@gmail.com registered); PayPal on request above $50",
+      "dashboard": "https://affiliates.fliki.ai",
+      "partner_since": "2026-11-18",
+      "status": "active — email confirmed 2026-11-19; en hub Hero Pick 2026-11-21 22:30, moved to collapsed list 2026-11-22 07:30",
+      "rules": "No ads or promo/discount sites",
+      "placed_on": [
+        "en/index.html (collapsed 'View all tested tools' list — demoted from hero 2026-11-22 07:30 when Rytr took the hero; kept with 'Yesterday's pick' badge)",
+        "en/index.html (hero pick, 2026-11-21 22:30 global short — replaced LoopCV; LoopCV kept in collapsed list)",
+        "en/index.html (collapsed 'View all tested tools' list, 2026-11-19)"
+      ],
+      "free_plan": {
+        "plan": "Free forever, no credit card",
+        "limits": "3 credits per month; 720p export with Fliki watermark; 5-minute max export length; 100 scenes; workflows marked 'Limited'; email-only support",
+        "faq_note": "Pricing FAQ also says '5 minutes of free audio and video content per month'; credits are consumed per minute generated/exported, so the 3-credit card is the number to quote.",
+        "checked_on": "2026-11-21 22:31 KST on fliki.ai/pricing (plan cards + compare table + pricing FAQ)"
+      },
+      "paid_plans": {
+        "standard": "USD 28/user/month (monthly billing) — 180 credits, 1080p, 15-minute videos, 1000 voices, no watermark, commercial rights",
+        "premium": "USD 88/user/month — 600 credits, 40-minute videos, 2000+ voices, AI video clips, brand kits",
+        "yearly": "Yearly toggle advertises 50% off Standard & Premium; a Black Friday banner (code FLIKIBFCM50) was showing on 2026-11-21 — deliberately NOT used in copy or the hub, per Fliki's no-promo/discount-site affiliate rule",
+        "checked_on": "2026-11-21 22:31 KST on fliki.ai/pricing (monthly prices shown)"
+      }
+    },
+    {
+      "id": "rytr",
+      "name": "Rytr",
+      "url": "https://rytr.me?via=heejae",
+      "what": "AI writing assistant + relationship memory: emails, replies, posts, short copy (Create), plus Gmail/Slack follow-up drafts (Engage)",
+      "commission": "30% of direct conversions",
+      "payout": "$100 minimum; payments become due at T+30 and are attempted on the first business day of the following month",
+      "dashboard": "https://affiliates.rytr.me",
+      "partner_since": "2026-11-19",
+      "status": "active — email confirmed 2026-11-19; en hub Hero Pick 2026-11-22 07:30, moved to collapsed list 2026-11-22 11:30",
+      "rules": "No self-referrals; no Google/other platform ads that break their policy",
+      "placed_on": [
+        "en/index.html (collapsed 'View all tested tools' list — demoted from hero 2026-11-22 11:30 when Originality.ai took the hero; kept with 'Yesterday's pick' badge)",
+        "en/index.html (hero pick, 2026-11-22 07:30 global short — replaced Fliki; Fliki kept in collapsed list)",
+        "en/index.html (collapsed 'View all tested tools' list, 2026-11-19)"
+      ],
+      "free_plan": {
+        "plan": "Free forever",
+        "limits": "10,000 characters per month; 1 connected source; 25 active relationships; 25 Engage actions/month; 3 person research runs; daily briefing; 40+ writing use cases; 30+ languages",
+        "checked_on": "2026-11-22 07:32 KST on rytr.me (pricing section) and rytr.me/pricing (plan cards)"
+      },
+      "paid_plans": {
+        "lite": "USD 9/month — unlimited characters per month, everything in Free; yearly billing $7.50/mo",
+        "personal": "USD 19/month — everything in Lite, 2 connected sources, 250 active relationships, 250 Engage actions/month, 10 person research runs; yearly $15/mo",
+        "pro": "USD 49/month — everything in Personal, all connected sources, 1,000 active relationships, 2,000 Engage actions/month, 50 research runs, morning+evening briefings, custom use cases; yearly $39/mo",
+        "yearly_note": "Yearly billing is advertised as 'Save 20%'; the yearly toggle showed $7.50 / $15 / $39 per month, billed annually",
+        "checked_on": "2026-11-22 07:32 KST on rytr.me/pricing (Monthly and Yearly toggles both read)"
+      },
+      "positioning": "Pivoted from a pure writing tool: the site now leads with an AI relationship manager (Engage) and keeps Create (writing) — the video and hub copy point at the writing side plus the Gmail extension."
+    },
+    {
+      "id": "originality",
+      "name": "Originality.ai",
+      "url": "https://originality.ai/?via=heejae",
+      "what": "AI-content detector and plagiarism checker for anything you publish or receive",
+      "commission": "25% recurring commission on every referral for 12 months",
+      "cookie_days": 90,
+      "payout": "PayPal, monthly once the balance passes the program minimum; payout email phappyj@gmail.com registered",
+      "dashboard": "https://originality-ai-1.getrewardful.com",
+      "platform": "Rewardful (instant approval)",
+      "partner_since": "2026-11-19",
+      "status": "active — link issued; live scan run 2026-11-22 11:36 KST; moved from en hub Hero to collapsed list 2026-11-22 17:00",
+      "placed_on": [
+        "en/index.html (collapsed 'View all tested tools' list — badge 'Yesterday's pick · 98% AI found'; demoted from hero 2026-11-22 17:00 when Lunacal took the hero)",
+        "en/index.html (hero pick, 2026-11-22 11:30 global short — replaced Rytr; Rytr kept in collapsed list)",
+        "en/index.html (collapsed 'View all tested tools' list, 2026-11-19)"
+      ],
+      "free_plan": {
+        "plan": "Free — one-time allowance, not a monthly refill",
+        "limits": "100 credits, once (10,000 words total); 1 credit = 100 words. Plagiarism checking and longer documents consume credits, so a single long scan can use several.",
+        "observed_scan": "2026-11-22 11:36 KST: a 159-word sample cost 2 credits (98/100 left), returned 98% Likely AI / 2% Likely Original, AI score shown per sentence (detector version 5.0).",
+        "checked_on": "2026-11-22 11:37 KST on originality.ai/pricing (plan cards) and app.originality.ai (credit balance)"
+      },
+      "paid_plans": {
+        "pro": "USD 14.95/month — 200,000 words/month",
+        "enterprise": "USD 179/month — custom volume, team seats, API",
+        "yearly_note": "Pricing page also offers annual billing; only the monthly figures were read today and are the ones used in copy.",
+        "checked_on": "2026-11-22 11:37 KST on originality.ai/pricing (monthly toggle)"
+      },
+      "honest_limit": "Originality's own score guide: \"As AI detectors can make mistakes, the score should be considered as a signal for review, not proof of authorship or misconduct.\" — quoted in the hub copy and the 11:30 short."
+    },
+    {
+      "id": "speakai",
+      "name": "Speak AI",
+      "url": "https://speakai.co/?via=heejae",
+      "what": "Records, transcribes and summarises meetings in 100+ languages, with AI chat over the transcript",
+      "commission": "25% of every payment for the first 12 months",
+      "cookie_days": 90,
+      "payout": "PayPal monthly at month end once $50 CAD is reached; a commission becomes payable 31 days after it is earned",
+      "dashboard": "https://speak-ai-inc.getrewardful.com",
+      "platform": "Rewardful (instant approval)",
+      "partner_since": "2026-11-19",
+      "status": "active — link issued",
+      "rules": "No brand-term bidding, no self-referral, no coupon sites without written agreement",
+      "placed_on": [
+        "en/index.html (hero pick, 2026-11-21 07:30 global short)",
+        "en/index.html (verified stack #2, 2026-11-19 → moved to hero 2026-11-21)",
+        "en/index.html (verified stack #2 — meetings, 2026-11-21 11:30, after quso.ai took the hero)"
+      ],
+      "note": "Verified stack #2 (meetings) from 2026-11-21 11:30. Hero 2026-11-21 07:30 → moved down 2026-11-21 11:30. Granola's Dub application was declined on 2026-11-20."
+    },
+    {
+      "id": "taja",
+      "name": "Taja AI",
+      "url": "https://www.taja.ai/?via=heejae",
+      "what": "Turns one long video into shorts, clips, blogs, titles, tags and thumbnails",
+      "commission": "50% commission on all payments",
+      "payout": "PayPal, payout email phappyj@gmail.com registered; minimum and cadence not published on the program page",
+      "dashboard": "https://taja-ai.getrewardful.com",
+      "platform": "Rewardful (instant approval)",
+      "partner_since": "2026-11-19",
+      "status": "active — link issued",
+      "placed_on": [
+        "en/index.html (verified stack #3, 2026-11-23 11:30 — back up from collapsed list)",
+        "en/index.html (hero pick, 2026-11-20 07:30 global short)"
+      ]
+    },
+    {
+      "id": "lunacal",
+      "name": "Lunacal",
+      "url": "https://lunacal.ai/?ref=heejae",
+      "what": "Scheduling and booking pages (Calendly alternative) with branding and payments",
+      "commission": "30% recurring, no expiry",
+      "cookie_days": 90,
+      "payout": "Via tolt partner dashboard — payout details not set up yet",
+      "dashboard": "https://lunacal.tolt.io",
+      "platform": "tolt (instant approval)",
+      "partner_since": "2026-11-19",
+      "status": "active — link issued; real pages read 2026-11-22 17:03 KST; moved from en hub Hero to collapsed list 2026-11-22 22:30",
+      "rules": "Coupon code must not be posted on coupon sites",
+      "placed_on": [
+        "en/index.html (collapsed 'View all tested tools' list — badge 'Yesterday's pick · 7-day trial'; demoted from hero 2026-11-22 22:30 when Revid took the hero)",
+        "en/index.html (hero pick, 2026-11-22 17:00 global short — replaced Originality.ai)"
+      ],
+      "free_plan": {
+        "plan": "No free plan — 7-day free trial only (pricing page also lists Cancel Anytime, Free 1:1 Support)",
+        "limits": "Trial is 7 days; after it a paid subscription is required. No free tier was listed on lunacal.ai/pricing on 2026-11-22.",
+        "checked_on": "2026-11-22 17:03 KST on lunacal.ai and lunacal.ai/pricing (monthly toggle)"
+      },
+      "paid_plans": {
+        "standard": "USD 9 / user / month — unlimited calendars & services, Stripe/PayPal payments, text/email reminders, custom booking page",
+        "teams": "USD 15 / user / month (list USD 20, 25% off) — team scheduling, multi-session packages, round-robin, webhooks",
+        "enterprise": "USD 25 / user / month — AI voice agent, account manager, complete branding, MCP server (beta), SSO",
+        "annual_note": "Annually toggle advertises Save 10%; only the monthly figures were read and are the ones used in copy.",
+        "extras": "Own domain for booking pages is a paid add-on (comparison table). SMTP from your own domain is Enterprise-only.",
+        "checked_on": "2026-11-22 17:03 KST on lunacal.ai/pricing"
+      },
+      "honest_limit": "No free plan: the site offers a 7-day free trial only, then from $9/user/month, and a custom domain is a paid add-on — said plainly in the 17:00 short and hub copy.",
+      "features_seen": [
+        "Branded booking page: profile photo, services, open slots, testimonials, video, FAQ (founder/doctor/sales/coaching templates on lunacal.ai)",
+        "Paid sessions: 'Charge for this event' toggle → guest pays before booking via Stripe or PayPal, price set in USD",
+        "0% booking commission (site claim), 12+ languages for guests, GDPR compliant, Google/Outlook/Apple 2-way sync"
+      ]
+    },
+    {
+      "id": "revid",
+      "name": "Revid",
+      "url": "https://www.revid.ai/?via=workcheatkey",
+      "what": "Prompt-to-video, remix and UGC ad generator with auto-publishing to TikTok, YouTube, Instagram and X",
+      "commission": "20% of every payment, for the life of the subscription",
+      "cookie_days": 60,
+      "payout": "$100 minimum, monthly via Wise (or bank); payout details not set up yet",
+      "dashboard": "https://www.revid.ai/affiliate",
+      "platform": "In-app affiliate page (one-click join, no approval)",
+      "partner_since": "2026-11-19",
+      "status": "active — link issued; real pages read 2026-11-22 22:32 KST; en hub Hero Pick 2026-11-22 22:30",
+      "rules": "No coupon/deal sites, no brand-keyword ads, no self-referral, no ads-driven commissions",
+      "placed_on": [
+        "en/index.html (hero pick, 2026-11-22 22:30 global short — replaced Lunacal; Lunacal kept in collapsed list with \"Yesterday's pick\" badge)",
+        "en/index.html (collapsed 'View all tested tools' list, 2026-11-19 — entry removed 2026-11-22 22:30 when Revid moved up to the hero)",
+        "en/index.html (collapsed 'View all tested tools' list — badge \"Yesterday's pick · 400 credits\", demoted from hero 2026-11-23 07:30)"
+      ],
+      "free_plan": {
+        "plan": "No free plan — sign up without a credit card and start with 400 FREE credits (pricing banner). A free account can also search viral videos.",
+        "limits": "Regular creation needs the monthly credits of a paid plan. Pricing FAQ (22 Nov 2026): 'You can sign up without a credit card, and new accounts get free credits to try video generation. A free account can also search viral videos. Regular creation uses the monthly credits that come with a paid plan.'",
+        "checked_on": "2026-11-22 22:32 KST on revid.ai and revid.ai/pricing (Monthly toggle)"
+      },
+      "paid_plans": {
+        "hobby": "USD 39 / month — create videos from text or links, 3M+ viral videos to remix, editable short-form videos, for occasional hands-on creation",
+        "growth": "USD 39 / month (list USD 99, 'Discount locked in forever', Best Value) — 2,000 AI credits / month, publish to TikTok/IG/YouTube/X, post stats & one-click remix, 5 channels watched, 100+ tools, 70+ language voiceovers, 3 Auto-Mode workers, API/MCP/CLI",
+        "ultra": "USD 199 / month (12,000 credits; scale 30k/$459, 50k/$749, 100k/$1,459, 200k/$2,799) — 10 Auto-Mode workers, clone your own voices, 50 channels",
+        "elite": "USD 89 / month or $74 yearly — 5,000 credits (listed in the pricing FAQ, not on the cards)",
+        "annual_note": "Annually toggle: Growth $32/mo, Ultra $166/mo. Only monthly figures were used in copy.",
+        "credits": "A typical 30-second video with Pro moving images + voiceover costs about 40-80 credits, so 2,000 credits cover roughly 25-50 a month; full AI video models cost more per second; the editor shows an estimate before every render. Credit Boost packs never expire (1,000/$49, 4,000/$99, 10,000/$199, 100,000/$1,900).",
+        "checked_on": "2026-11-22 22:32 KST on revid.ai/pricing"
+      },
+      "honest_limit": "Plan credits refill at renewal and do not stack, so unused credits are lost — said plainly in the 22:30 short and in the hub copy; a 30s video costs about 40-80 credits and regular creation needs a paid plan (from $39/mo).",
+      "features_seen": [
+        "Create your version screen (real UI): viral video on the left, 'Analysis - generated from the video' in the middle (visual hook gauge, scroll-stopper 0:04, structure with 0:00 Hook / 0:04 Payoff and why-it-works text), 'Your Version' phone on the right",
+        "Viral search (real UI): search any topic across YouTube, TikTok and Instagram, sort by engagement rate instead of raw plays, platform + duration filters, cards with views/likes/comments",
+        "Publishing to TikTok, IG, YouTube and X with post stats and one-click remix; Auto-Mode workers; API/MCP/CLI",
+        "Showcase claims: 30,000+ videos published a month, 100,000+ rendered, 14,258+ creators, 32 languages in 68 countries"
+      ]
+    },
+    {
+      "id": "loopcv",
+      "name": "LoopCV",
+      "url": "https://loopcv.pro?via=heejae",
+      "what": "AI job-hunt automation: profile once, then matched/applied to jobs across 30+ boards and recruiter follow-ups",
+      "commission": "25% commission on all payments (Rewardful dashboard wording)",
+      "payout": "PayPal, payout email phappyj@gmail.com registered 2026-11-19",
+      "dashboard": "https://loopcv.getrewardful.com",
+      "platform": "Rewardful (instant, no manual review)",
+      "partner_since": "2026-11-19",
+      "status": "active — email confirmed, link issued",
+      "placed_on": [
+        "en/index.html (collapsed 'View all tested tools' list — also keeps the Hub's 'Related video' short link; moved down 2026-11-21 22:30 when Fliki took the hero)",
+        "en/index.html (hero pick, 2026-11-21 17:00-22:30 global short)",
+        "en/index.html (collapsed 'View all tested tools' list, 2026-11-20 07:30)",
+        "en/index.html (verified stack #1 'Automate' 2026-11-23 07:30 — replaced Make.com when Make took the hero; removed from collapsed list)"
+      ],
+      "free_plan": {
+        "plan": "Basic Looper (free forever, no card)",
+        "limits": "1 job-title loop a month, up to 10 applications or recruiter emails a month, 3 job boards, low application priority, 2 AI CV checks",
+        "checked_on": "2026-11-21 17:03 KST on loopcv.pro/pricing (plan cards)"
+      },
+      "paid_plans": {
+        "standard": "EUR 8.99/mo - 20 loops, 100 applications/emails, 20 job boards, medium priority",
+        "premium": "EUR 29.99/mo - 50 loops, 300 applications/emails, 20 job boards, high priority, screening-question autofill",
+        "done_for_you": "EUR 87.99/mo",
+        "billing": "monthly; 3-month billing saves up to 25%",
+        "note": "Homepage FAQ says '30+ job boards'; the pricing table caps free at 3 and paid at 20 - use the table numbers in copy."
+      }
+    },
+    {
+      "id": "granola",
+      "name": "Granola",
+      "url": null,
+      "what": "AI meeting notes: joins nothing, records the call locally and returns structured notes and action items",
+      "commission": "$20 bounty for every lead that completes a valid meeting (Dub)",
+      "payout": "Via Dub: local bank account or USDC; payout method not connected yet",
+      "dashboard": "https://partners.dub.co/programs/granola",
+      "platform": "Dub Partners (application review)",
+      "applied": "2026-11-19",
+      "application_ids": [
+        "pga_1M7S4ABF0RZG31ZJFJTTG49TS",
+        "pge_1M7S4ABF0J7SMATHZAC4Z0KN7"
+      ],
+      "status": "declined 2026-11-20 16:44 — Dub application rejected; no link. Meetings slot stays with Speak AI.",
+      "placed_on": []
+    },
+    {
+      "id": "writesonic",
+      "name": "Writesonic",
+      "url": null,
+      "what": "AI writing and AI-search visibility platform",
+      "commission": "20% of every payment for 12 months, 60-day cookie",
+      "payout": "Monthly via FirstPromoter; W-9/W-8BEN before first payout; 30-day hold",
+      "dashboard": "https://affiliates.writesonic.com",
+      "platform": "FirstPromoter",
+      "applied": "2026-11-19",
+      "status": "application submitted — pending approval (program says most are reviewed within 24 hours), no link yet",
+      "placed_on": []
+    },
+    {
+      "id": "pictory",
+      "name": "Pictory",
+      "url": "https://pictory.ai?fpr=heejae-b015a9",
+      "what": "Text, URL or PPT to video with AI avatars and voice",
+      "commission": "40% on the first transaction from every new customer",
+      "payout": "PayPal (starts after 2nd paid subscriber, $10 minimum, 30-day clear, paid ~1st working day of month; 1 paid sale every 90 days to stay active)",
+      "dashboard": "https://partners.pictory.ai/login",
+      "platform": "FirstPromoter",
+      "applied": "2026-11-19",
+      "partner_since": "2026-11-20",
+      "status": "active — approved 2026-11-20 17:09 after appeal reply, link issued; promo code CHEATKEY issued 2026-11-20 20:23 KST",
+      "rules": "No PPC or paid ads targeting Pictory brand name/misspellings",
+      "placed_on": [
+        "en/index.html (verified stack #2 — video, 2026-11-21 07:30, after Speak AI took the hero)",
+        "en/index.html (hero pick, 2026-11-20 22:30 global short — Black Friday)",
+        "en/index.html (collapsed 'View all tested tools' list, 2026-11-21 11:30, after quso.ai took the hero)",
+        "en/index.html (hero pick, 2026-11-23 17:00 global short — 14-day trial + Black Friday annual pricing)"
+      ],
+      "promo_code": "CHEATKEY",
+      "promo_code_note": "Dedicated code active on the affiliate dashboard (Ash, 2026-11-20 16:53 IST). Does NOT stack with Black Friday offers — the Black Friday price needs no code, so use that instead until Dec 2.",
+      "black_friday": {
+        "offer": "Black Friday on annual plans — banner '50% Off ALL Plans Today'; cards 'Black Friday Offer'",
+        "no_code_needed": true,
+        "valid_until": "not shown on pictory.ai/pricing on 2026-11-23 (the 2026-12-02 date seen on 11-20 is no longer displayed)",
+        "verified_on": "2026-11-23 17:01 KST on pictory.ai/pricing (annually, Black Friday Offer cards)",
+        "prices": {
+          "starter": "$12.50/mo (was $29)",
+          "professional": "$17.50/mo (was $59)",
+          "teams": "$59.50/mo (was $199)"
+        },
+        "free_trial": "14 days · 300 credits (up to 10 mins of generation) · 3 videos · 5 min max video length · 500 MB storage · 720p max export · Pictory watermark · no credit card required"
+      }
+    }
+  ]
 }
