@@ -454,7 +454,24 @@
         },
         "free_trial": "14 days · 300 credits (up to 10 mins of generation) · 3 videos · 5 min max video length · 500 MB storage · 720p max export · Pictory watermark · no credit card required"
       }
+    },
+    {
+      "id": "klap",
+      "name": "Klap (klap.app)",
+      "url": null,
+      "what": "Turns long videos and podcasts into short vertical clips for TikTok, Reels and Shorts",
+      "commission": "30% of every subscription referred, paid every month for life (lifetime recurring)",
+      "status": "replied 2026-11-24 — awaiting test account & 30% lifetime recurring affiliate link",
+      "contact": "Louise Lansdell <louise@videoshortsklapp.com> — Partnerships, Klap",
+      "source": "Inbound partnership email 2026-11-23 14:16 UTC, sent after she saw the Work Cheatkey quso.ai Short 'I Stopped Cutting Podcasts By Hand'",
+      "gmail": {
+        "thread_id": "1a208c38e2e17c28",
+        "inbound_message_id": "1a208c38e2e17c28",
+        "reply_message_id": "1a20a95eb86495e6",
+        "replied_at": "2026-11-24 07:45 KST"
+      },
+      "next": "Test account on phappyj@gmail.com + affiliate sign-up link/dashboard; then a hands-on comparison/review Short on the en channel (@workcheatkeyai), 'same long video through 4-5 tools' angle"
     }
   ],
-  "_updated": "2026-11-24 07:30 KST — Submagic hero pick (free plan 15 credits/mo = ~5 captioned videos, no card, watermark on exports; Starter $19/mo or $12 yearly, 2-min cap), Taja AI to collapsed list"
+  "_updated": "2026-11-24 07:45 KST — klap added (replied, awaiting test account + 30% lifetime affiliate link) · earlier 07:30 KST — Submagic hero pick (free plan 15 credits/mo = ~5 captioned videos, no card, watermark on exports; Starter $19/mo or $12 yearly, 2-min cap), Taja AI to collapsed list"
 }
