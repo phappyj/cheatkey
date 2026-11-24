@@ -262,10 +262,9 @@
       "partner_since": "2026-11-19",
       "status": "active — link issued; real pages read 2026-11-23 22:31-22:35 KST; en hub Hero Pick 2026-11-23 22:30, moved to collapsed list 2026-11-24 07:30",
       "placed_on": [
-        "en/index.html (collapsed 'View all tested tools' list — badge '22:30 pick · 7-day trial', demoted from hero 2026-11-24 07:30 when Submagic took the hero)",
+        "en/index.html (collapsed 'View all tested tools' list — badge '7-day trial · 4 videos'; the stale '22:30 pick' badge cleared 2026-11-24 22:30 when Klap took the hero)",
         "en/index.html (hero pick, 2026-11-23 22:30 global short — replaced Pictory; Pictory kept in collapsed list)",
-        "en/index.html (verified stack #3, 2026-11-23 11:30 — moved up to the hero 2026-11-23 22:30)",
-        "en/index.html (hero pick, 2026-11-20 07:30 global short)"
+        "en/index.html (verified stack #3, 2026-11-23 11:30 — moved up to the hero 2026-11-23 22:30)"
       ],
       "free_plan": {
         "plan": "No free plan — 7-day free trial only",
@@ -442,11 +441,9 @@
       "status": "active — approved 2026-11-20 17:09 after appeal reply, link issued; promo code CHEATKEY issued 2026-11-20 20:23 KST; moved to en hub collapsed list 2026-11-23 22:30",
       "rules": "No PPC or paid ads targeting Pictory brand name/misspellings",
       "placed_on": [
-        "en/index.html (collapsed 'View all tested tools' list — badge '17:00 pick · 14-day trial', demoted from hero 2026-11-23 22:30 when Taja AI took the hero)",
+        "en/index.html (collapsed 'View all tested tools' list — badge '14-day trial · 300 credits'; the stale '17:00 pick' badge cleared 2026-11-24 22:30, the 17:00 slot was retired that day)",
         "en/index.html (hero pick, 2026-11-23 17:00 global short — 14-day trial + Black Friday annual pricing)",
-        "en/index.html (verified stack #2 — video, 2026-11-21 07:30, after Speak AI took the hero)",
-        "en/index.html (hero pick, 2026-11-20 22:30 global short — Black Friday)",
-        "en/index.html (collapsed 'View all tested tools' list, 2026-11-21 11:30, after quso.ai took the hero)"
+        "en/index.html (verified stack #2 — video, 2026-11-21 07:30, after Speak AI took the hero)"
       ],
       "promo_code": "CHEATKEY",
       "promo_code_note": "Dedicated code active on the affiliate dashboard (Ash, 2026-11-20 16:53 IST). Does NOT stack with Black Friday offers — the Black Friday price needs no code, so use that instead until Dec 2.",
