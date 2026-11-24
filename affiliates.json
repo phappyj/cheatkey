@@ -86,12 +86,10 @@
       "cookie_days": 30,
       "payout": "$50 minimum, PayPal (FAQ says the 7th, dashboard says the 15th — confirm); dashboard currency shown as EUR",
       "dashboard": "https://affiliate.submagic.co/home",
-      "status": "active — link issued; live pages read 2026-11-24 07:31-07:36 KST (free plan 15 credits/mo = ~5 captioned videos, no card, watermark on exports; Starter $19/mo or $12/mo yearly, 2-min cap); en hub Hero Pick 2026-11-24 07:30",
+      "status": "active — link issued; demoted from en-hub hero to the collapsed 'View all tested tools' list 2026-11-24 22:30 (Klap took the hero)",
       "placed_on": [
-        "en/index.html (hero pick, 2026-11-24 07:30 global short — replaced Taja AI; Taja kept in collapsed list)",
-        "en/index.html (collapsed 'View all tested tools' list, 2026-11-19)",
-        "en/index.html (Hero Pick — 2026-11-20 17:00 global short)",
-        "en/index.html (Hero Pick → back to collapsed 'View all tested tools' list, 2026-11-20 22:30)"
+        "en/index.html (collapsed 'View all tested tools' list — badge '07:30 pick · 15 free credits', 2026-11-24 22:30)",
+        "en/index.html (Hero Pick — 2026-11-20 17:00 global short)"
       ],
       "free_plan": {
         "plan": "Free plan — 15 credits a month",
@@ -474,7 +472,7 @@
       "promo_code": "HEEJAE",
       "promo_code_note": "30% off the first payment — issued by the affiliate dashboard on 2026-11-24 together with the link",
       "signup": "klap.app/affiliate sign-up completed 2026-11-24 with phappyj@gmail.com (Google sign-in); product account still on the free trial",
-      "status": "active — link and promo code issued 2026-11-24 (dashboard gave https://klap.app?via=heejae + code HEEJAE); reply sent to Louise 2026-11-24 14:00 KST asking her to confirm this is the link her affiliate-manager colleague will send, and asking for a Pro upgrade on phappyj@gmail.com",
+      "status": "active — link https://klap.app?via=heejae + code HEEJAE (30% off first payment); Pro plan live on phappyj@gmail.com ('Current Plan' on klap.app/pricing, 2026-11-24); en hub Hero Pick 2026-11-24 22:30",
       "contact": "Louise Lansdell <louise@videoshortsklapp.com> — Partnerships, Klap",
       "source": "Inbound partnership email 2026-11-23 14:16 UTC, sent after she saw the Work Cheatkey quso.ai Short 'I Stopped Cutting Podcasts By Hand'; affiliate kit + video brief followed 2026-11-23 22:50 / 23:10 UTC",
       "gmail": {
@@ -485,10 +483,30 @@
         "followup_message_id": "1a20bed1856e2c3b",
         "followup_sent_at": "2026-11-24 14:00 KST"
       },
-      "placed_on": [],
-      "next": "Wait for Louise's answer (which link to use) and the Pro upgrade; put a few own long videos through Klap, then the head-to-head long video (8-14 min, Klap vs OpusClip, Vizard optional) on the en channel (@workcheatkeyai) with the link in the first two description lines and a pinned comment"
-
+      "placed_on": [
+        "en/index.html (Hero Pick, 2026-11-24 22:30 global short — replaced Submagic; Submagic moved into the collapsed list)",
+        "en/index.html (section 03 'Try today's pick, free' card, 2026-11-24 22:30)"
+      ],
+      "next": "keep Klap as the en-hub hero while the 22:30 short runs; put the next long uploads through Klap; reply to Louise about the link she wants used (draft: downloads/klap-louise-reply-draft-2026-11-24.md, not sent)",
+      "pricing_checked": "2026-11-24 22:31 KST — klap.app/pricing read in the browser (Monthly toggle) and the 'Is Klap free?' FAQ expanded at 125% zoom",
+      "pricing": {
+        "free_plan": "One video, no credit card: create a free account and Klap turns that video into clips you can preview and edit. Downloading and posting clips needs a paid plan.",
+        "basic": "USD 29/month — 100 clips/month, 1 user",
+        "pro": "USD 79/month — 300 clips/month ('Current Plan' on the account)",
+        "pro_plus": "USD 189/month — 1,000 clips/month",
+        "yearly": "Yearly billing saves 50%: $14.50 / $39.50 / $94.50 per month ($174 / $474 / $1,134 a year)",
+        "billing_unit": "Priced per clip generated, not per minute; source videos up to 3 hours; paid exports carry no Klap branding",
+        "promo": "Code HEEJAE takes 30% off the first payment (creator codes apply to monthly checkout)",
+        "source_quote": "FAQ 'Is Klap free?': 'You can try Klap free on 1 video with no credit card: create a free account and Klap turns that video into clips you can preview and edit. Downloading and posting clips needs a paid plan. Paid exports carry no Klap branding. Paid plans: Basic is $14.50/month for 100 clips a month, Pro $39.50/month for 300 clips and Pro+ $94.50/month for 1,000 clips, all billed yearly ($29, $79 and $189 month to month).'"
+      },
+      "honest_limit": "The free plan is one video and it is view-only: you can preview and edit the clips, but downloading or posting them needs a paid plan. After that it is $29/month for 100 clips — and it is priced per clip generated, so a long source video that yields many clips burns the quota faster than a captioning tool would.",
+      "video": "downloads/cheatkey-global-short-2026-11-24-2230-klap.mp4 (22:30 global short, 13.75s) + https://youtu.be/fO5qMd91kik (9-min head-to-head long form)",
+      "head_to_head": {
+        "test": "Same 11:42 interview (Blender Foundation 'Interview: Ton Roosendaal introducing Project Gooseberry', CC BY 3.0) pasted as the same YouTube link into both tools, default settings, 2026-11-24 20:20-21:00 KST",
+        "klap": "6 clips, virality scores 82/80/78/75/70/68 with a stated reason per clip; cuts inside the clip (transcript gaps + waveform holes), captions burned in word by word, layout follows the speaker",
+        "opusclip": "18 clips, scores 84-73; 4 Blender Cloud clips on the same moment, 2 clips opening on a black frame; top clip 1:35 is one continuous take; 'Creative Commons' mis-transcribed as 'Graves Common'"
+      }
     }
   ],
-  "_updated": "2026-11-24 14:00 KST — klap now active: link https://klap.app?via=heejae + promo code HEEJAE (30% off first payment) issued via the klap.app/affiliate dashboard, follow-up reply sent to Louise asking which link her colleague will send; Pro upgrade requested · earlier 07:30 KST — Submagic hero pick (free plan 15 credits/mo = ~5 captioned videos, no card, watermark on exports; Starter $19/mo or $12 yearly, 2-min cap), Taja AI to collapsed list"
+  "_updated": "2026-11-24 22:30 KST — Klap hero pick for the 22:30 global short (free plan = 1 video, preview only; Basic $29/100 clips, Pro $79/300, Pro+ $189/1,000, yearly ~50% off; code HEEJAE 30% off first month), Submagic moved to the collapsed list"
 }
