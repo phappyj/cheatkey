@@ -468,20 +468,27 @@
     {
       "id": "klap",
       "name": "Klap (klap.app)",
-      "url": null,
+      "url": "https://klap.app?via=heejae",
       "what": "Turns long videos and podcasts into short vertical clips for TikTok, Reels and Shorts",
       "commission": "30% of every subscription referred, paid every month for life (lifetime recurring)",
-      "status": "replied 2026-11-24 — awaiting test account & 30% lifetime recurring affiliate link",
+      "promo_code": "HEEJAE",
+      "promo_code_note": "30% off the first payment — issued by the affiliate dashboard on 2026-11-24 together with the link",
+      "signup": "klap.app/affiliate sign-up completed 2026-11-24 with phappyj@gmail.com (Google sign-in); product account still on the free trial",
+      "status": "active — link and promo code issued 2026-11-24 (dashboard gave https://klap.app?via=heejae + code HEEJAE); reply sent to Louise 2026-11-24 14:00 KST asking her to confirm this is the link her affiliate-manager colleague will send, and asking for a Pro upgrade on phappyj@gmail.com",
       "contact": "Louise Lansdell <louise@videoshortsklapp.com> — Partnerships, Klap",
-      "source": "Inbound partnership email 2026-11-23 14:16 UTC, sent after she saw the Work Cheatkey quso.ai Short 'I Stopped Cutting Podcasts By Hand'",
+      "source": "Inbound partnership email 2026-11-23 14:16 UTC, sent after she saw the Work Cheatkey quso.ai Short 'I Stopped Cutting Podcasts By Hand'; affiliate kit + video brief followed 2026-11-23 22:50 / 23:10 UTC",
       "gmail": {
         "thread_id": "1a208c38e2e17c28",
         "inbound_message_id": "1a208c38e2e17c28",
         "reply_message_id": "1a20a95eb86495e6",
-        "replied_at": "2026-11-24 07:45 KST"
+        "replied_at": "2026-11-24 07:45 KST",
+        "followup_message_id": "1a20bed1856e2c3b",
+        "followup_sent_at": "2026-11-24 14:00 KST"
       },
-      "next": "Test account on phappyj@gmail.com + affiliate sign-up link/dashboard; then a hands-on comparison/review Short on the en channel (@workcheatkeyai), 'same long video through 4-5 tools' angle"
+      "placed_on": [],
+      "next": "Wait for Louise's answer (which link to use) and the Pro upgrade; put a few own long videos through Klap, then the head-to-head long video (8-14 min, Klap vs OpusClip, Vizard optional) on the en channel (@workcheatkeyai) with the link in the first two description lines and a pinned comment"
+
     }
   ],
-  "_updated": "2026-11-24 07:45 KST — klap added (replied, awaiting test account + 30% lifetime affiliate link) · earlier 07:30 KST — Submagic hero pick (free plan 15 credits/mo = ~5 captioned videos, no card, watermark on exports; Starter $19/mo or $12 yearly, 2-min cap), Taja AI to collapsed list"
+  "_updated": "2026-11-24 14:00 KST — klap now active: link https://klap.app?via=heejae + promo code HEEJAE (30% off first payment) issued via the klap.app/affiliate dashboard, follow-up reply sent to Louise asking which link her colleague will send; Pro upgrade requested · earlier 07:30 KST — Submagic hero pick (free plan 15 credits/mo = ~5 captioned videos, no card, watermark on exports; Starter $19/mo or $12 yearly, 2-min cap), Taja AI to collapsed list"
 }
