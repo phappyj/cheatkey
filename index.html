@@ -336,12 +336,62 @@
   }
   .dc-cmp:active{background:#F3F4F6}
   .badge-quiet.reset{appearance:none;font:inherit;font-size:10.5px;font-weight:700;cursor:pointer}
+  .deal-card[hidden]{display:none!important}
+  .dc-views{
+    display:inline-flex;align-items:center;
+    font-size:9.5px;font-weight:800;letter-spacing:-0.01em;color:var(--mint);
+    background:var(--mint-soft);border:1px solid var(--mint-line);
+    border-radius:999px;padding:1px 6px;
+  }
+  .dc-top{display:flex;align-items:center;gap:5px;flex-wrap:wrap}
+  .deals-more{
+    appearance:none;width:100%;margin-top:11px;
+    display:inline-flex;align-items:center;justify-content:center;gap:6px;
+    font:inherit;font-size:12.5px;font-weight:800;letter-spacing:-0.02em;
+    color:var(--navy);background:#fff;border:1px solid var(--line);
+    border-radius:13px;padding:13px 14px;cursor:pointer;
+    box-shadow:0 1px 2px rgba(17,24,39,.03);
+    transition:background .15s ease, transform .12s ease;
+  }
+  .deals-more[hidden]{display:none!important}
+  .deals-more:active{transform:scale(.99);background:#F9FAFB}
+  .deals-more svg{width:14px;height:14px;color:var(--ink-3);transition:transform .2s ease}
+  .deals-more[aria-expanded="true"] svg{transform:rotate(180deg)}
   @media (max-width:359px){
     .deals-grid{grid-template-columns:1fr}
     .dc-media{aspect-ratio:16/9}
   }
   /* ───────────── 섹션 설명 ───────────── */
   .sec-note{margin:-3px 1px 12px;font-size:11.8px;line-height:1.55;color:var(--ink-2);font-weight:500}
+  .sec-note b{color:var(--ink);font-weight:800}
+
+  /* ───────────── 인기 AI 프롬프트 퀵 점프 ───────────── */
+  .quickjump{
+    display:flex;align-items:center;gap:11px;
+    margin-top:12px;padding:12px 13px;
+    background:linear-gradient(120deg,#F0FDF7 0%,#FFFFFF 74%);
+    border:1px solid var(--mint-line);border-radius:16px;
+    text-decoration:none;color:var(--ink);
+    box-shadow:0 1px 2px rgba(17,24,39,.03), 0 14px 30px -28px rgba(14,159,110,.6);
+    transition:background .15s ease, transform .12s ease;
+  }
+  .quickjump:active{transform:scale(.994);background:#ECFDF5}
+  .qj-icon{
+    flex:0 0 34px;height:34px;border-radius:11px;
+    display:grid;place-items:center;font-size:15px;line-height:1;
+    background:var(--navy);color:#6EE7B7;
+  }
+  .qj-body{flex:1;min-width:0;display:flex;flex-direction:column;gap:2px}
+  .qj-body b{
+    font-size:13.5px;font-weight:800;letter-spacing:-0.03em;color:var(--ink);
+    white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+  }
+  .qj-body small{
+    font-size:10.8px;font-weight:600;letter-spacing:-0.01em;color:var(--ink-2);
+    white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+  }
+  .qj-go{flex:0 0 auto;display:grid;place-items:center;width:20px;height:20px;color:var(--mint)}
+  .qj-go svg{width:16px;height:16px}
 
   /* ───────────── AI 치트키 ───────────── */
   .tip{padding:16px 15px 15px}
@@ -350,6 +400,14 @@
     display:inline-block;font-size:9.5px;font-weight:800;letter-spacing:.05em;
     color:var(--mint);background:var(--mint-soft);border:1px solid var(--mint-line);
     border-radius:999px;padding:3px 9px;margin-bottom:10px;
+  }
+  .tip-meta{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-bottom:10px}
+  .tip-meta .tag{margin-bottom:0}
+  .tip .pop{
+    display:inline-flex;align-items:center;gap:4px;
+    font-size:9.5px;font-weight:800;letter-spacing:.02em;
+    color:#B42318;background:var(--coral-soft);border:1px solid #FBD5D0;
+    border-radius:999px;padding:3px 9px;
   }
   .tip h3{
     font-size:18.5px;line-height:1.35;font-weight:800;margin:0 0 6px;
@@ -532,7 +590,7 @@
   <div class="nav-in">
     <a class="brand" href="#top"><span class="bolt">⚡</span>직장인 치트키</a>
     <nav class="chips" aria-label="빠른 이동">
-      <a class="chip hero-chip" href="#tips-section">AI 치트키</a>
+      <a class="chip hero-chip" href="#tips-section" data-jump="nav">AI 프롬프트</a>
       <a class="chip" href="#make">Make 무료</a>
     </nav>
   </div>
@@ -544,6 +602,18 @@
     <!-- 01 오늘의 원픽 -->
     <section class="hero" id="hero" aria-labelledby="hero-title"></section>
 
+    <!-- 01-b 인기 AI 프롬프트 퀵 점프 -->
+    <a class="quickjump" id="quickjump-tips" href="#tips-section" data-jump="hero_quick">
+      <span class="qj-icon" aria-hidden="true">⚡</span>
+      <span class="qj-body">
+        <b>인기 AI 프롬프트 바로 쓰기</b>
+        <small>PPT 15장 · 보고서 AI 티 검사 → 복붙하면 끝</small>
+      </span>
+      <span class="qj-go" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 5v14M6 13l6 6 6-6"/></svg>
+      </span>
+    </a>
+
     <!-- 01 3종 비교 리포트 -->
     <section id="report-section">
       <div class="sec-head">
@@ -554,15 +624,17 @@
       <div id="report"></div>
     </section>
 
-    <!-- 02 이전 핫딜 모아보기 -->
+    <!-- 02 인기 핫딜 모아보기 (조회수 상위 4개 + 더보기) -->
     <section id="deals-section">
       <div class="sec-head">
         <span class="kicker">02</span>
-        <h2>이전 핫딜 모아보기</h2>
+        <h2>인기 핫딜 모아보기</h2>
         <span class="count" id="deals-count"></span>
       </div>
-      <p class="sec-note">새 원픽이 올라와도 지난 검증 핫딜은 여기 남겨둡니다. 카드를 누르면 위 비교표가 그 상품으로 바뀝니다.</p>
+      <p class="sec-note">조회수가 높았던 순서로 <b>4개만 먼저</b> 보여드립니다. 카드를 누르면 위 비교표가 그 상품으로 바뀝니다.</p>
       <div class="deals-grid" id="deals"></div>
+      <button class="deals-more" type="button" id="deals-more" aria-expanded="false" aria-controls="deals" hidden></button>
+      <p class="sec-note" id="deals-views-note" style="margin:9px 1px 0;font-size:10.5px;color:var(--ink-3)"></p>
     </section>
 
     <!-- 03 AI 치트키 (핫딜 목록 제거 — 프롬프트를 위로) -->
@@ -572,7 +644,7 @@
         <h2>바로 쓰는 AI 치트키</h2>
         <span class="count" id="tips-count"></span>
       </div>
-      <p class="sec-note">복붙하면 끝나는 프롬프트 · 반복 업무는 자동화로 넘기세요.</p>
+      <p class="sec-note">반응이 좋았던 프롬프트를 <b>위에</b>, 나머지는 최신순으로 정리했습니다. 복붙하면 끝.</p>
       <div id="tips"></div>
 
       <!-- Make.com 1개월 무료 -->
@@ -1023,15 +1095,19 @@
   }
 
   /* ── 03 AI 치트키 ── */
+  var POPULAR_TIP_MIN = 300;   /* 이 이상 조회되면 '인기 프롬프트' 배지 + 최상단 */
   function renderTips(list) {
     var host = document.getElementById("tips");
     var count = document.getElementById("tips-count");
     host.innerHTML = "";
     if (!list || !list.length) { count.textContent = ""; return; }
-    /* 번호(01·02) 순으로 정렬 — 데이터 순서와 무관하게 일관된 순서 */
+    /* 1군: 반응 좋았던 인기 프롬프트(최신순) → 2군: 나머지 최신순 */
     list = list.slice().sort(function (a, b) {
-      var na = parseInt(String(a.no || "99"), 10), nb = parseInt(String(b.no || "99"), 10);
-      return (isNaN(na) ? 99 : na) - (isNaN(nb) ? 99 : nb);
+      var pa = (Number(a.views) || 0) >= POPULAR_TIP_MIN ? 1 : 0;
+      var pb = (Number(b.views) || 0) >= POPULAR_TIP_MIN ? 1 : 0;
+      if (pb !== pa) return pb - pa;
+      var na = parseInt(String(a.no || "0"), 10), nb = parseInt(String(b.no || "0"), 10);
+      return (isNaN(nb) ? 0 : nb) - (isNaN(na) ? 0 : na);
     });
     count.textContent = list.length + "개";
 
@@ -1049,18 +1125,27 @@
       var buttons = "";
       if (t.prompt) {
         promptBox = '<div class="promptbox"><span class="plabel">Prompt</span>' + esc(t.prompt) + '</div>';
-        buttons += '<button class="btn primary" type="button" data-copy="' + esc(t.prompt) + '">' +
+        buttons += '<button class="btn primary" type="button" data-copy="' + esc(t.prompt) + '" data-tip="' + esc(t.id || t.no || "") + '">' +
                    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="12" height="12" rx="2.5"/><path d="M5 15V5a2 2 0 0 1 2-2h8"/></svg>' +
                    '복사하기</button>';
         buttons += '<a class="btn ghost" href="https://chatgpt.com/" target="_blank" rel="noopener">ChatGPT 열기 ↗</a>';
       }
       if (t.link) {
-        buttons += '<a class="btn ghost" href="' + esc(t.link) + '" target="_blank" rel="noopener">' +
+        var isAff = !!(t.tool && t.link && /^https?:\/\//.test(t.link) && !/instagram\.com/.test(t.link));
+        buttons += '<a class="btn ghost" href="' + esc(t.link) + '" target="_blank" rel="noopener' + (isAff ? ' sponsored' : '') + '"' +
+                   (isAff ? ' data-aff="' + esc(t.tool) + '" data-cat="AI Tips" data-loc="tips"' : '') + '>' +
                    esc(t.linkLabel || "원문 보기") + ' ↗</a>';
       }
 
+      var views = Number(t.views) || 0;
+      var popBadge = views >= POPULAR_TIP_MIN
+        ? '<span class="pop">🔥 인기 프롬프트' + (viewLabel(views) ? ' · 조회 ' + viewLabel(views) : '') + '</span>'
+        : "";
+      var tagBadge = t.tag ? '<span class="tag">' + esc(t.tag) + (t.no ? " · " + esc(t.no) : "") + '</span>' : "";
+      var metaRow = (popBadge || tagBadge) ? '<div class="tip-meta">' + popBadge + tagBadge + '</div>' : "";
+
       el.innerHTML =
-        (t.tag ? '<span class="tag">' + esc(t.tag) + (t.no ? " · " + esc(t.no) : "") + '</span>' : "") +
+        metaRow +
         "<h3>" + (t.title || "") + "</h3>" +
         (t.sub ? '<p class="sub">' + esc(t.sub) + "</p>" : "") +
         (steps ? '<ul class="steps">' + steps + "</ul>" : "") +
@@ -1098,7 +1183,49 @@
     io.observe(heroCta);
   }
 
-  /* ── 이전 핫딜 모아보기 ── */
+  /* ── 02 인기 핫딜 모아보기 — 조회수 상위 4개 기본 + '더보기' ── */
+  var DEALS_PREVIEW = 4;      /* 기본 노출 개수 (모바일 2×2) */
+  var dealsExpanded = false;
+
+  function viewLabel(v) {
+    var n = Number(v);
+    if (!n || isNaN(n) || n <= 0) return "";
+    if (n >= 10000) return (n / 10000).toFixed(1).replace(/\.0$/, "") + "만";
+    if (n >= 1000) return (n / 1000).toFixed(1).replace(/\.0$/, "") + "천";
+    return String(n);
+  }
+
+  function pubTime(s) {
+    var d = new Date(String(s || "").replace(" ", "T"));
+    return isNaN(d) ? 0 : d.getTime();
+  }
+
+  /* views 내림차순 · views 없거나 같으면 최신 발행 순
+     (새 19:30 핫딜은 deals[0] = Hero 로 올라가 이 목록에서 자동 제외됩니다) */
+  function byPopularity(a, b) {
+    var va = Number(a.views) || 0, vb = Number(b.views) || 0;
+    if (vb !== va) return vb - va;
+    return pubTime(b.published) - pubTime(a.published);
+  }
+
+  function applyDealFold() {
+    var host = document.getElementById("deals");
+    if (!host) return;
+    var cards = host.querySelectorAll(".deal-card");
+    for (var i = 0; i < cards.length; i++) {
+      cards[i].hidden = (!dealsExpanded && i >= DEALS_PREVIEW);
+    }
+    var btn = document.getElementById("deals-more");
+    if (!btn) return;
+    var more = cards.length - DEALS_PREVIEW;
+    if (more <= 0) { btn.hidden = true; return; }
+    btn.hidden = false;
+    btn.setAttribute("aria-expanded", dealsExpanded ? "true" : "false");
+    btn.innerHTML = dealsExpanded
+      ? '접기 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 15l6-6 6 6"/></svg>'
+      : '이전 핫딜 ' + more + '개 더보기 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>';
+  }
+
   function dealSummary(d) {
     /* note 는 "A / B / C" 구분 — "11/21" 같은 날짜 표기는 자르지 않는다 */
     var segs = String(d.note || "").split(/\s+\/\s+|\s*\|\s*/).filter(Boolean);
@@ -1121,16 +1248,21 @@
     var section = document.getElementById("deals-section");
     var host = document.getElementById("deals");
     var countEl = document.getElementById("deals-count");
+    var btn = document.getElementById("deals-more");
     if (!section || !host) return;
     host.innerHTML = "";
-    if (!deals || deals.length < 2) { section.hidden = true; return; }
+    if (!deals || deals.length < 2) {
+      section.hidden = true;
+      if (btn) btn.hidden = true;
+      return;
+    }
 
     var cur = (typeof idx === "number" && idx > 0) ? idx : 0;
-    var list = deals.filter(function (d, i) { return i !== cur; });
+    var list = deals.filter(function (d, i) { return i !== cur; }).slice().sort(byPopularity);
     section.hidden = false;
     if (countEl) countEl.textContent = list.length + "개";
 
-    list.forEach(function (d) {
+    list.forEach(function (d, order) {
       var id = String(d.id || "");
       if (!id) return;
       var href = "?deal=" + encodeURIComponent(id);
@@ -1143,9 +1275,12 @@
       var name = d.shortTitle || d.title || "지난 핫딜";
       var summary = dealSummary(d);
       var stamp = timeLabel(d.published);
+      var vlab = viewLabel(d.views);
 
       var el = document.createElement("article");
       el.className = "deal-card";
+      el.setAttribute("data-rank", String(order + 1));
+      el.hidden = (!dealsExpanded && order >= DEALS_PREVIEW);
       el.innerHTML =
         '<a class="dc-media" href="' + esc(href) + '" data-switch="' + esc(id) + '" aria-label="' + esc(name + " 비교표 보기") + '">' +
           (d.image
@@ -1153,7 +1288,10 @@
             : TAG_ICON) +
         '</a>' +
         '<div class="dc-body">' +
-          (stamp ? '<span class="dc-time">' + esc(stamp) + '</span>' : "") +
+          '<div class="dc-top">' +
+            (stamp ? '<span class="dc-time">' + esc(stamp) + '</span>' : "") +
+            (vlab ? '<span class="dc-views">조회 ' + esc(vlab) + '</span>' : "") +
+          '</div>' +
           '<h3 class="dc-name">' + esc(name) + '</h3>' +
           (priceHtml ? '<div class="dc-price">' + priceHtml + '</div>' : "") +
           (summary ? '<p class="dc-note">' + esc(summary) + '</p>' : "") +
@@ -1164,6 +1302,8 @@
         '</div>';
       host.appendChild(el);
     });
+
+    applyDealFold();
   }
 
   /* ── 선택 상태 · URL 파라미터(?deal=deal-006) ── */
@@ -1212,6 +1352,10 @@
     renderReport(deals, idx);
     renderPrev(deals, idx);
     renderTips(data.tips || []);
+    if (data.viewsAsOf) {
+      var vn = document.getElementById("deals-views-note");
+      if (vn) vn.textContent = "조회수 = 유튜브 쇼츠 누적 조회 (" + data.viewsAsOf + " 기준)";
+    }
     if (data.updated) {
       var lab = timeLabel(data.updated);
       if (lab) document.getElementById("updated").textContent = "업데이트 " + lab;
@@ -1223,11 +1367,36 @@
     if (btn) {
       e.preventDefault();
       copyText(btn.getAttribute("data-copy"), "프롬프트 복사 완료");
+      trackEvent("prompt_copy", { prompt_name: btn.getAttribute("data-tip") || "" });
       return;
     }
 
     var t = e.target;
     if (!t || !t.closest) return;
+
+    /* 인기 AI 프롬프트 퀵 점프 추적 (앵커 기본 동작은 그대로) */
+    var jump = t.closest("[data-jump]");
+    if (jump) {
+      trackEvent("tips_jump", { location: jump.getAttribute("data-jump") || "jump" });
+      return;
+    }
+
+    /* 이전 핫딜 더보기 / 접기 */
+    var moreBtn = t.closest("#deals-more");
+    if (moreBtn) {
+      e.preventDefault();
+      dealsExpanded = !dealsExpanded;
+      applyDealFold();
+      trackEvent("deals_more", {
+        expanded: dealsExpanded,
+        total: ((DATA && DATA.deals) || []).length
+      });
+      if (!dealsExpanded) {
+        var sec = document.getElementById("deals-section");
+        if (sec) { try { sec.scrollIntoView({ behavior: "smooth", block: "start" }); } catch (err) { sec.scrollIntoView(); } }
+      }
+      return;
+    }
 
     /* 지난 핫딜 → 위 Hero·비교표를 그 상품으로 전환 */
     var sw = t.closest("[data-switch]");

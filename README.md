@@ -22,6 +22,7 @@ GitHub Pages로 서빙됩니다: **https://phappyj.github.io/cheatkey/**
 ```json
 {
   "updated": "2026-11-18T10:56:00+09:00",
+  "viewsAsOf": "2026-11-25 06:00",
   "tips":  [ ...AI 치트키 카드... ],
   "deals": [ ...핫딜 카드... ]
 }
@@ -44,9 +45,14 @@ GitHub Pages로 서빙됩니다: **https://phappyj.github.io/cheatkey/**
   "prompt": "복사 버튼으로 넘길 프롬프트 전문",
   "link": "https://www.instagram.com/p/XXXX/",
   "linkLabel": "인스타 원문 보기",
-  "published": "2026-11-18T12:30:00+09:00"
+  "published": "2026-11-18T12:30:00+09:00",
+  "views": 1300,
+  "tool": "Decktopus"
 }
 ```
+
+- `views`(유튜브 쇼츠 누적 조회수)가 **300 이상이면 '🔥 인기 프롬프트' 배지**가 붙고 카드가 최상단으로 올라갑니다(인기끼리는 최신순, 나머지는 최신순).
+- `tool`이 있으면 링크 버튼이 `affiliate_click`(`data-aff`)으로 집계되고 `rel="sponsored"`가 붙습니다(인스타 링크는 제외).
 
 ### deals 배열 (핫딜)
 
@@ -77,7 +83,8 @@ GitHub Pages로 서빙됩니다: **https://phappyj.github.io/cheatkey/**
       "best": true
     }
   ],
-  "published": "2026-11-18T16:00:00+09:00"
+  "published": "2026-11-18T16:00:00+09:00",
+  "views": 1162
 }
 ```
 
@@ -88,8 +95,10 @@ GitHub Pages로 서빙됩니다: **https://phappyj.github.io/cheatkey/**
 
 - `price` / `wasPrice`는 **숫자만** (원 단위, 쉼표 없이). 화면에서 `39,900원`으로 자동 포맷.
 - `discount`는 문자열(`"33%"`).
-- `deals`의 **첫 항목(`deals[0]`)만** 화면에 나옵니다 — 히어로(사진·가격·CTA) + 3종 비교표. 목록형 핫딜 섹션은 11-19 제거했습니다(시안 단순화).
-- 카드 순서는 배열 순서 그대로입니다. **최신 항목을 배열 맨 앞에 넣으세요.**
+- `deals`의 **첫 항목(`deals[0]`)은 히어로**(사진·가격·CTA + 3종 비교표)로 나오고, 아래 `02 인기 핫딜 모아보기`에는 **히어로를 뺀 나머지를 `views` 내림차순으로 정렬해 상위 4개만** 보여줍니다(2×2 그리드). 나머지는 `이전 핫딜 N개 더보기` 버튼 뒤로 접힙니다.
+- **`views` = 해당 상품 쇼츠의 유튜브 누적 조회수**(06:00 스캔 값). 없으면 0으로 보고 맨 뒤(접힘 영역)로 가며, 최신 발행 순으로 정렬됩니다. **새 핫딜은 `deals` 맨 앞에 넣기만 하면 히어로로 올라가고 나머지 정렬은 자동**입니다.
+- 조회수를 갱신할 때는 `deals[i].views`와 루트 `viewsAsOf`(예: `"2026-11-25 06:00"`)를 함께 고쳐 주세요(페이지 하단에 기준 시각이 표시됩니다).
+- 카드 순서는 `views` 정렬이 우선입니다. 배열 순서는 히어로(최신 원픽) 결정에만 쓰입니다. **최신 항목을 배열 맨 앞에 넣으세요.**
 - 핫딜 링크는 쿠팡 파트너스, Make.com 링크는 Make 제휴 링크. 페이지 하단에 제휴 고지 문구가 고정 포함돼 있습니다.
 
 ## 영문 허브 (/en)
@@ -110,7 +119,7 @@ GitHub Pages로 서빙됩니다: **https://phappyj.github.io/cheatkey/**
 
 - 속성: **Work Cheatkey** (phappyj@gmail.com GA 계정 `a398168083`), 데이터 스트림 `https://phappyj.github.io/cheatkey/` (스트림 ID 16371466781)
 - **측정 ID `G-E23M7R0R8N`** — `index.html`, `en/index.html` `<head>`에 gtag.js로 직접 설치(2026-11-19)
-- 커스텀 이벤트: `affiliate_click`(tool_name, category, location, link_url), `filter_tools`(category, results), `prompt_copy`(prompt_name), `open_all_tools` / `close_all_tools`(영문 허브 접힘 목록)
+- 커스텀 이벤트: `affiliate_click`(tool_name, category, location, link_url), `filter_tools`(category, results), `prompt_copy`(prompt_name), `open_all_tools` / `close_all_tools`(영문 허브 접힘 목록), `tips_jump`(location — 한국어 허브 인기 프롬프트 퀵 점프), `deals_more`(expanded, total — 핫딜 더보기/접기)
 - 영문 툴 카드 CTA에는 `data-aff` / `data-cat` / `data-loc` 속성을 달아야 집계됩니다. `data-loc` 값: `hero_pick` · `stack` · `tools` · `workflows` · `make_card`
 - 정책 변경 시 `privacy.html` 03·05절의 GA4 고지도 같이 갱신합니다.
 
