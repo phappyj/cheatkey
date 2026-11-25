@@ -14,6 +14,9 @@ GitHub Pages로 서빙됩니다: **https://phappyj.github.io/cheatkey/**
 |---|---|
 | `index.html` | 페이지 전체(디자인·렌더링). **평소엔 건드릴 일 없음** |
 | `deals.json` | 카드 데이터. 08:30·12:30 AI 치트키 / 16:00·19:30 핫딜 자동화가 **여기만 추가**하면 됨 |
+| `scripts/build_tip_pages.py` | `deals.json`의 `tips`를 읽어 `/tips/` SEO 페이지·목록·`sitemap.xml` 자동 생성 (**팁 추가 후 반드시 실행**) |
+| `tips/` | 팁별 정적 SEO 페이지(`tip-001.html`~`tip-009.html`) + 목록(`index.html`) — 스크립트가 생성 |
+| `sitemap.xml` | 허브·`/en/`·`/tips/`·팁 URL 전체 — 스크립트가 함께 갱신 |
 | `og.png` | 링크 공유 미리보기 이미지(1200×630). 바꿀 때는 `index.html`의 `og:image` 태그와 함께 교체 |
 | `README.md` | 이 문서 |
 
@@ -53,9 +56,27 @@ GitHub Pages로 서빙됩니다: **https://phappyj.github.io/cheatkey/**
 
 - `views`(유튜브 쇼츠 누적 조회수)가 **300 이상이면 '🔥 인기 프롬프트' 배지**가 붙고 카드가 최상단으로 올라갑니다(인기끼리는 최신순, 나머지는 최신순).
 - `tool`이 있으면 링크 버튼이 `affiliate_click`(`data-aff`)으로 집계되고 `rel="sponsored"`가 붙습니다(인스타 링크는 제외).
+- 카드 제목·`3단계 가이드 · 프롬프트 전문 보기` 링크는 `/tips/{id}.html`로 갑니다. **팁을 추가하면 반드시 아래 SEO 페이지 생성 스크립트를 돌려야 링크가 깨지지 않습니다.**
+
+## AI 치트키 개별 SEO 페이지 (`/tips/`)
+
+검색 유입용 정적 페이지입니다. 목록: **https://phappyj.github.io/cheatkey/tips/**
+
+```bash
+cd cheatkey-site
+python3 scripts/build_tip_pages.py        # tips/*.html + tips/index.html + sitemap.xml 생성
+# 팁 추가/수정 후
+python3 scripts/build_tip_pages.py && git add deals.json tips sitemap.xml \
+  && git commit -m "tip: 업데이트" && git push
+```
+
+- `deals.json`의 `tips[]`만 고치고 스크립트를 돌리면 팁마다 페이지가 자동으로 생깁니다(`tip-001`~`tip-00N`, 새 팁 자동 포함).
+- 각 페이지 구성: 고유 `<title>`·`<meta name="description">`·`canonical`·OG/Twitter 카드, JSON-LD(`Article` + `HowTo` + `BreadcrumbList`), 3단계 가이드, 복사 버튼이 달린 프롬프트 전문, `note`(솔직한 무료/유료 조건), 제휴 CTA(`rel="sponsored"`·`data-aff`), GA4(`G-E23M7R0R8N`), 상·하단 '전체 허브로' 링크, 다른 팁 3개 내부링크.
+- 검색용 `<title>`·`description`을 직접 다듬으려면 `scripts/build_tip_pages.py`의 `SEO_OVERRIDES`에 `id`를 키로 넣으세요. 없으면 `title`/`sub`에서 자동 생성합니다.
+- GA4 이벤트: 페이지뷰(`/tips/...`) + `affiliate_click`(`data-loc="tip_page"`) + `prompt_copy`(`tip_id`).
+- `sitemap.xml`은 스크립트가 허브·`/en/`·`/tips/`·팁 전체·`privacy.html`을 한 번에 다시 씁니다. Search Console 사이트맵(`sitemap.xml`)은 그대로 두면 재수집됩니다.
 
 ### deals 배열 (핫딜)
-
 ```json
 {
   "id": "deal-001",
