@@ -43,8 +43,9 @@
    "status": "active — link issued; Black Friday kit received 2026-11-21 04:49 (yearly 50% off, renewals keep 50%)",
    "placed_on": [
     "en/tools/quso-ai.html — tool test page, affiliate CTA data-loc=en_tool_page (2026-11-25)",
-    "en/index.html (hero pick, 2026-11-21 11:30 global short - replaced by LoopCV at 17:00, kept in collapsed list)",
-    "en/index.html (collapsed 'View all tested tools' list, 2026-11-19)"
+    "en/index.html (Hero Pick, 2026-11-25 22:30 global short — replaced LoopCV; LoopCV moved into the collapsed list)",
+    "en/index.html (section 03 'Try today's pick, free' card, 2026-11-25 22:30)",
+    "en/index.html (hero pick 2026-11-21 11:30, and collapsed list 2026-11-19 — both replaced)"
    ],
    "black_friday": {
     "offer": "50% off yearly plans, discount kept at every renewal while subscribed",
@@ -58,7 +59,17 @@
     },
     "free_plan": "75 credits/month (~75 min processed), 720p with quso.ai watermark, 7-day data retention, CutMagic on first 3 videos",
     "note": "KR pricing shown to Korean IPs is credit packs only (100 credits ₩3,290); the subscription plans above are the US/global page."
-   }
+   },
+   "pricing_checked": "2026-11-25 22:34-22:40 KST on quso.ai/pricing (US plan cards) + quso.ai home/FAQ",
+   "free_plan": "$0/mo: 75 credits/month (about 75 min of video), 720p exports with a quso.ai watermark, chapters & short videos, 16:9/9:16/1:1 clips, TikTok publishing, CutMagic on the first 3 videos, 7 days data retention, 'Get started free'",
+   "paid_plans": {
+    "lite": "$174/year (list $348) or $29/month billed monthly — 100 credits/month, unlimited 1080p clips, desktop editor, 10GB",
+    "essential": "$234/year (list $468) or $39/month — 300 credits/month, schedule to 7 platforms, AI filler & silence removal, 25GB",
+    "growth": "$294/year (list $588) or $49/month — 600 credits/month, custom brand kit, Vidyo AI assistant"
+   },
+   "honest_limit": "free is 720p with a quso.ai watermark and clips are kept 7 days; 1 credit is about 1 minute of processed video",
+   "note": "Black Friday: the 11-21 affiliate kit (vedant@news.quso.ai) said yearly 50% off until 2026-12-01 23:59 IST with the 50% kept at renewal. On 2026-11-25 the pricing page shows the same $174/year vs $348 list without a dated BF banner, and it re-served Korean visitors a credit-pack page (100 credits KRW 3,290) whose FAQ says 'there is no free plan' — so free-plan and $174 claims are US/global plan cards only. KR pricing shown to Korean IPs is credit packs only.",
+   "video": "downloads/cheatkey-global-short-2026-11-25-2230-quso.mp4 — https://youtube.com/shorts/Mj42L8Y791w (2026-11-25 22:30, 13.38s)"
   },
   {
    "id": "decktopus",
@@ -388,10 +399,10 @@
    "status": "active — email confirmed, link issued; en hub Hero Pick 2026-11-25 07:30 (replaced Klap; Klap moved into the collapsed list)",
    "placed_on": [
     "en/tools/loopcv.html — tool test page, affiliate CTA data-loc=en_tool_page (2026-11-25)",
-    "en/index.html (Hero Pick, 2026-11-25 07:30 global short — replaced Klap; Klap moved into the collapsed list)",
-    "en/index.html (verified stack #1 'Automate', 2026-11-23 07:30 — left the stack 2026-11-25 07:30 when LoopCV took the hero; Make.com returned to that slot)",
-    "en/index.html (hero pick, 2026-11-21 17:00-22:30 global short)",
-    "en/index.html (collapsed 'View all tested tools' list, 2026-11-20 07:30)"
+    "en/index.html (collapsed 'View all tested tools' list — badge 'Last night's pick · 10 apps free', 2026-11-25 22:30, after quso.ai took the hero)",
+    "en/index.html (Hero Pick, 2026-11-25 07:30 global short — replaced by quso.ai at 22:30)",
+    "en/index.html (verified stack #1 'Automate', 2026-11-23 07:30 — left the stack 2026-11-25 07:30; Make.com returned to that slot)",
+    "en/index.html (hero pick, 2026-11-21 17:00-22:30 global short)"
    ],
    "free_plan": {
     "plan": "Basic Looper (free forever, no card, 'no time limit' per the pricing FAQ)",
@@ -499,9 +510,8 @@
    "placed_on": [
     "en/tools/klap.html — tool test page, affiliate CTA data-loc=en_tool_page (2026-11-25)",
     "kr hub index.html #tips-section card tip-009 'AI · 영상·마케팅 · 09' (2026-11-25 08:30 short + deals.json tips front)",
-    "en/index.html (collapsed 'View all tested tools' list — badge 'Last night's pick - 1 video free', 2026-11-25 07:30)",
-    "en/index.html (Hero Pick, 2026-11-24 22:30 global short — replaced Submagic)",
-    "en/index.html (section 03 'Try today's pick, free' card, 2026-11-24 22:30 — replaced by LoopCV 2026-11-25 07:30)"
+    "en/index.html (collapsed 'View all tested tools' list — badge now '1 video free · no card', stale 'Last night's pick' badge cleared 2026-11-25 22:30)",
+    "en/index.html (Hero Pick, 2026-11-24 22:30 global short — replaced Submagic)"
    ],
    "pricing_checked": "2026-11-24 22:31 KST — klap.app/pricing read in the browser (Monthly toggle) and the 'Is Klap free?' FAQ expanded at 125% zoom",
    "pricing": {
@@ -523,5 +533,5 @@
    }
   }
  ],
- "_updated": "2026-11-25 07:30 KST — LoopCV hero pick for the 07:30 global short (free Basic Looper = 1 job-title loop, 10 applications/emails and 3 job boards a month, no card; Standard EUR 8.99/mo = 100 applications, 3 months EUR 7.33/mo; FAQ still quotes 'from EUR 9.99'; BF 2026 code BLACKFRIDAY2026 = 15% off read 25 Nov), Klap to the collapsed list, Make.com back into verified stack #1 'Automate', stale '07:30 pick' badge cleared from Submagic | 2026-11-25 11:30 KST — /en/tools/ 영문 툴 테스트 페이지 10개 배포: each of those tools' placed_on now records the tool page (affiliate CTA data-loc=en_tool_page)"
+ "_updated": "2026-11-25 22:30 KST — quso.ai to Hero Pick (global short), LoopCV into the collapsed list"
 }
