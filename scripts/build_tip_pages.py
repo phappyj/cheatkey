@@ -229,8 +229,8 @@ def esc(s: str) -> str:
             .replace('"', "&quot;"))
 
 
-def clip(text: str, n: int) -> str:
-    """문장 경계를 살려 n자 안으로 자른다."""
+def clip(text: str, n: int, word: bool = False) -> str:
+    """문장 경계(또는 단어 경계)를 살려 n자 안으로 자른다."""
     text = re.sub(r"\s+", " ", text or "").strip()
     if len(text) <= n:
         return text
@@ -239,6 +239,10 @@ def clip(text: str, n: int) -> str:
         i = cut.rfind(mark)
         if i > n * 0.55:
             return cut[: i + 1].strip()
+    if word:
+        i = cut.rfind(" ")
+        if i > n * 0.55:
+            cut = cut[:i]
     return cut.rstrip(" ,·-—") + "…"
 
 
@@ -512,7 +516,7 @@ def build_tip_page(tip: dict, tips: list[dict]) -> str:
     rel_html = "".join(
         f'<a href="{esc(t["id"])}.html">'
         f'<span class="t">{t.get("title", "")}</span>'
-        f'<span class="s">{esc(clip(plain(t.get("sub", "")), 46))}</span></a>'
+        f'<span class="s">{esc(plain(t.get("tag", "")))} · 3단계 + 복사용 프롬프트</span></a>'
         for t in rel
     )
 
@@ -639,7 +643,7 @@ def build_index_page(tips: list[dict]) -> str:
         rows.append(f"""      <a href="{esc(t['id'])}.html">
         <span class="no">{esc(t.get('no', ''))} · {esc(tag)}</span>
         <span class="t">{t.get('title', '')}</span>
-        <span class="s">{esc(clip(plain(t.get('sub', '')), 78))}</span>
+        <span class="s">{esc(clip(plain(t.get('sub', '')), 90, word=True))}</span>
         <span class="g">{ko_date(t.get('published', ''))} · 3단계 + 프롬프트</span>
       </a>""")
     rows_html = "\n".join(rows)
