@@ -604,6 +604,10 @@ CSS = """
   .meta{display:flex;align-items:center;gap:7px;flex-wrap:wrap;font-size:11.5px;font-weight:600;
     color:var(--ink-3);padding-bottom:15px;border-bottom:1px solid var(--line-2)}
   .meta .dot{color:#D1D5DB}
+  @media (max-width:519px){
+    .meta .dot-wrap{display:none}
+    .meta .m-price{flex:0 0 100%}
+  }
   h2{font-size:16.5px;font-weight:800;letter-spacing:-0.028em;margin:26px 0 11px;line-height:1.35;
     display:flex;align-items:baseline;gap:8px}
   h2 .k{font-size:10px;font-weight:800;color:var(--mint);letter-spacing:.08em;flex:0 0 auto}
@@ -1004,8 +1008,8 @@ def build_page(t: dict, aff: dict) -> str:
         <span>Updated 25 Nov 2026</span>
         <span class="dot">·</span>
         <span>{read_minutes(t)} min read</span>
-        <span class="dot">·</span>
-        <span>Prices read {esc(t['checked'])}</span>
+        <span class="dot dot-wrap">·</span>
+        <span class="m-price">Prices read {esc(t['checked'])}</span>
       </div>
 
       <div class="score">
