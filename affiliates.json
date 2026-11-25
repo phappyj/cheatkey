@@ -45,7 +45,8 @@
     "en/tools/quso-ai.html — tool test page, affiliate CTA data-loc=en_tool_page (2026-11-25)",
     "en/index.html (Hero Pick, 2026-11-25 22:30 global short — replaced LoopCV; LoopCV moved into the collapsed list)",
     "en/index.html (section 03 'Try today's pick, free' card, 2026-11-25 22:30)",
-    "en/index.html (hero pick 2026-11-21 11:30, and collapsed list 2026-11-19 — both replaced)"
+    "en/index.html (hero pick 2026-11-21 11:30, and collapsed list 2026-11-19 — both replaced)",
+    "en/index.html (collapsed 'View all tested tools' list — badge 'Last night's pick · 75 credits free', 2026-11-26 07:30, after Decktopus took the hero)"
    ],
    "black_friday": {
     "offer": "50% off yearly plans, discount kept at every renewal while subscribed",
@@ -80,14 +81,31 @@
    "cookie_days": 60,
    "payout": "PayPal, payout email phappyj@gmail.com; verification form after first commission",
    "dashboard": "https://affiliate.decktopus.com",
-   "status": "active — link issued; live pages read 2026-11-23 11:31 KST (Pro $9.99/mo yearly, Business $19.99/seat, no free plan, 3-slide signup credits, 5 credits/slide, BF26 66% off annual to 12-11); en hub verified stack #3 from 2026-11-23 22:30",
+   "status": "active — link issued; live pages re-read 2026-11-26 07:32-07:36 KST (Pro $9.99/mo billed yearly = $119.88/yr, $24.99 monthly, $19.99 3-month, 750 credits/mo ≈150 slides; Business $19.99/seat = $239.88/seat/yr; no free plan, 3-slide signup credits, 5 credits/slide; BF26 66% off annual to 11 Dec 2026)",
    "placed_on": [
-    "en/tools/decktopus.html — tool test page, affiliate CTA data-loc=en_tool_page (2026-11-25)",
-    "en/index.html (verified stack #3 'Slides' — 2026-11-23 22:30, replaced Taja AI when Taja took the hero; removed from collapsed list)",
+    "en/index.html (Hero Pick, 2026-11-26 07:30 global short — replaced quso.ai)",
+    "en/index.html (section 03 'Try today's pick, free' card, 2026-11-26 07:30)",
+    "en/tools/decktopus.html — tool test page, affiliate CTA data-loc=en_tool_page (prices re-checked 2026-11-26)",
+    "en/index.html (verified stack #3 'Slides' — 2026-11-23 22:30 → left the stack 2026-11-26 07:30 when it took the hero; Originality.ai took stack #3)",
     "en/index.html (hero pick, 2026-11-23 11:30 global short)",
     "en/index.html (verified stack #3, 2026-11-20 11:30 -> hero again 2026-11-23)",
     "en/index.html (collapsed 'View all tested tools' list, 2026-11-23 17:00, after Pictory took the hero)"
-   ]
+   ],
+   "pricing_checked": "2026-11-26 07:33-07:36 KST on decktopus.com (hero + FAQ) and decktopus.com/pricing (Pro and Business tabs)",
+   "free_plan": "No free plan. FAQ: 'Decktopus AI doesn't offer a free plan, but new users get free credits at signup to create a 3 slide presentation'. Each slide costs 5 credits after the signup allowance; credits can be topped up without a subscription.",
+   "paid_plans": {
+    "pro_yearly": "$9.99/mo billed yearly = $119.88/year (card strikes $24.99/mo, 'Save $180/yr') — 750 AI credits/month (~150 slides), 1080p, PPT/PDF/PNG export",
+    "pro_3month": "$19.99/mo billed $59.97 for 3 months",
+    "pro_monthly": "$24.99/mo",
+    "business_yearly": "$19.99/seat/mo billed yearly = $239.88/seat/year — 1,000 AI credits/seat/month",
+    "business_3month": "$39.99/seat/mo",
+    "business_monthly": "$44.99/seat/mo",
+    "enterprise": "Let's Talk",
+    "black_friday": "Banner on every page: 66% off annual plans, code BF26 at checkout, ends 11 Dec 2026. The Pro card itself shows $9.99/mo yearly vs $24.99 monthly, so the checkout price with BF26 should be checked at payment — do not quote a combined number."
+   },
+   "honest_limit": "no free plan at all: signup credits cover a 3-slide deck only, and every further slide (including regenerations) costs 5 credits; the signup allowance is one-time, not a monthly free tier",
+   "note": "Output is a starting draft — outline and structure carry the value, the layout still needs a human pass before a client sees it. Their site marks the deck images used in the 07:30 short as 'AI Generated' and counted 2,267 decks generated that morning.",
+   "video": "downloads/cheatkey-global-short-2026-11-26-0730-decktopus.mp4 — https://youtube.com/shorts/qmnR-7moLLQ + https://www.tiktok.com/@workcheatkeyai/video/7712245380297067797 (2026-11-26 07:30, 13.09s)"
   },
   {
    "id": "submagic",
@@ -533,5 +551,5 @@
    }
   }
  ],
- "_updated": "2026-11-25 22:30 KST — quso.ai to Hero Pick (global short), LoopCV into the collapsed list"
+ "_updated": "2026-11-26 07:30 KST — Decktopus to Hero Pick (global short), quso.ai into the collapsed list, stack #3 → Originality.ai"
 }
