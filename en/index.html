@@ -268,8 +268,16 @@
   .scard .ds{
     font-size:12px;line-height:1.5;color:var(--ink-2);font-weight:500;margin:0;
   }
+  .scard-open{
+    display:flex;flex-direction:column;gap:7px;min-width:0;
+    text-decoration:none;color:inherit;
+  }
+  .scard .rd{
+    display:block;margin-top:1px;font-size:10.4px;font-weight:800;
+    color:var(--mint-deep);letter-spacing:-0.01em;
+  }
   .scard-link{
-    display:inline-flex;align-items:center;gap:5px;
+    display:inline-flex;text-decoration:none;align-items:center;gap:5px;
     font-size:12px;font-weight:800;color:var(--navy);letter-spacing:-0.01em;
     margin-top:1px;
   }
@@ -435,6 +443,14 @@
     font-size:11.8px;line-height:1.45;color:var(--ink-2);font-weight:500;margin:0;
     display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;
   }
+  .tool-open{
+    display:flex;align-items:center;gap:10px;flex:1 1 auto;min-width:0;
+    text-decoration:none;color:inherit;
+  }
+  .tool .rd{
+    display:block;margin-top:4px;font-size:10.4px;font-weight:800;
+    color:var(--mint-deep);letter-spacing:-0.01em;line-height:1.35;
+  }
   .tool .go{
     flex:0 0 26px;width:26px;height:26px;border-radius:50%;
     background:var(--navy);color:#fff;display:grid;place-items:center;
@@ -443,6 +459,11 @@
   }
   .tool:hover .go{background:var(--mint-deep);transform:translateX(1px)}
   .tool[data-cat="auto"] .go{background:var(--mint-deep)}
+  .pick-more{
+    display:inline-flex;align-items:center;gap:4px;margin:10px 2px 0;
+    font-size:11.6px;font-weight:800;color:var(--mint-deep);text-decoration:none;
+    border-bottom:1px solid var(--mint-line);padding-bottom:1px;
+  }
   .tools-note{
     margin:13px 1px 0;font-size:11.2px;line-height:1.6;color:var(--ink-3);font-weight:500;
   }
@@ -603,6 +624,7 @@
       <a class="chip" href="#stack">Stack</a>
       <a class="chip c-prompts" href="#prompts">Prompts</a>
       <a class="chip" href="#alltools" data-open-tools>All tools</a>
+      <a class="chip" href="tools/">Tests</a>
     </nav>
   </div>
 </div>
@@ -639,6 +661,7 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17L17 7M9 7h8v8"/></svg>
           </a>
         </div>
+        <a class="pick-more" href="tools/loopcv.html">Full test: free cap, coarse priority queue and the €8.99 vs €9.99 FAQ mismatch →</a>
         <p class="pick-foot">Affiliate link · free plan: 1 job-title search, 10 applications or emails, 3 job boards a month — no credit card · Standard €8.99/mo (100 applications), €7.33/mo on 3-month billing, Premium €29.99/mo, Done For You €87.99/mo · note: their pricing FAQ still says "from €9.99/month" while the plan card reads €8.99 — you pay the same price either way</p>
       </div>
     </section>
@@ -654,35 +677,44 @@
 
       <div class="stack-grid">
 
-        <a class="scard" href="https://www.make.com/en/register?pc=cheatkey" target="_blank" rel="noopener sponsored" data-cat="auto" data-aff="Make.com" data-loc="stack">
-          <span class="scard-top">
-            <span class="ic" aria-hidden="true">⚙️</span>
-            <span class="nm">Make.com<span class="role">Automate</span></span>
-            <span class="bh">1,000 free credits</span>
-          </span>
-          <span class="ds">Sheet row in, Slack message out, no code — the glue behind most workflows on this page. Free is 1,000 credits a month with 2 active scenarios and a 15-minute floor; Core $9/mo yearly lifts all three.</span>
-          <span class="scard-link">Try Make.com <span class="arw" aria-hidden="true">↗</span></span>
-        </a>
+        <div class="scard" data-cat="auto">
+          <a class="scard-open" href="tools/make-com.html">
+            <span class="scard-top">
+              <span class="ic" aria-hidden="true">⚙️</span>
+              <span class="nm">Make.com<span class="role">Automate</span></span>
+              <span class="bh">1,000 free credits</span>
+            </span>
+            <span class="ds">Sheet row in, Slack message out, no code — the glue behind most workflows on this page. Free is 1,000 credits a month with 2 active scenarios and a 15-minute floor; Core $9/mo yearly lifts all three.</span>
+            <span class="rd">Full test: free limit, price and the catch →</span>
+          </a>
+          <a class="scard-link" href="https://www.make.com/en/register?pc=cheatkey" target="_blank" rel="noopener sponsored" data-cat="auto" data-aff="Make.com" data-loc="stack">Try Make.com <span class="arw" aria-hidden="true">↗</span></a>
+        </div>
 
-        <a class="scard" href="https://speakai.co/?via=heejae" target="_blank" rel="noopener sponsored" data-cat="meetings" data-aff="Speak AI" data-loc="stack">
-          <span class="scard-top">
-            <span class="ic" aria-hidden="true">🎧</span>
-            <span class="nm">Speak AI<span class="role">Meetings</span></span>
-            <span class="bh">7-day trial · no card</span>
-          </span>
-          <span class="ds">It joins the Zoom, Teams or Meet call, transcribes at 95%+ in 100+ languages, then fills the fields that matter — tone, the pain point, what was on screen. Pro is $20/user/month annual, 25 credits ≈ 25 hours per seat.</span>
-          <span class="scard-link">Try Speak AI <span class="arw" aria-hidden="true">↗</span></span>
-        </a>
+        <div class="scard" data-cat="meetings">
+          <a class="scard-open" href="tools/speak-ai.html">
+            <span class="scard-top">
+              <span class="ic" aria-hidden="true">🎧</span>
+              <span class="nm">Speak AI<span class="role">Meetings</span></span>
+              <span class="bh">7-day trial · no card</span>
+            </span>
+            <span class="ds">It joins the Zoom, Teams or Meet call, transcribes at 95%+ in 100+ languages, then fills the fields that matter — tone, the pain point, what was on screen. Pro is $20/user/month annual, 25 credits ≈ 25 hours per seat.</span>
+            <span class="rd">Full test: free limit, price and the catch →</span>
+          </a>
+          <a class="scard-link" href="https://speakai.co/?via=heejae" target="_blank" rel="noopener sponsored" data-cat="meetings" data-aff="Speak AI" data-loc="stack">Try Speak AI <span class="arw" aria-hidden="true">↗</span></a>
+        </div>
 
-        <a class="scard" href="https://www.decktopus.com?via=heejae" target="_blank" rel="noopener sponsored" data-cat="slides" data-aff="Decktopus" data-loc="stack">
-          <span class="scard-top">
-            <span class="ic" aria-hidden="true">🖼️</span>
-            <span class="nm">Decktopus<span class="role">Slides</span></span>
-            <span class="bh">3 slides free at signup</span>
-          </span>
-          <span class="ds">Describe the deck and it comes back built — outline, content and design, exportable to PPT and PDF. No free plan: 3 slides at signup, then 5 credits a slide; Pro $9.99/mo yearly.</span>
-          <span class="scard-link">Try Decktopus <span class="arw" aria-hidden="true">↗</span></span>
-        </a>
+        <div class="scard" data-cat="slides">
+          <a class="scard-open" href="tools/decktopus.html">
+            <span class="scard-top">
+              <span class="ic" aria-hidden="true">🖼️</span>
+              <span class="nm">Decktopus<span class="role">Slides</span></span>
+              <span class="bh">3 slides free at signup</span>
+            </span>
+            <span class="ds">Describe the deck and it comes back built — outline, content and design, exportable to PPT and PDF. No free plan: 3 slides at signup, then 5 credits a slide; Pro $9.99/mo yearly.</span>
+            <span class="rd">Full test: free limit, price and the catch →</span>
+          </a>
+          <a class="scard-link" href="https://www.decktopus.com?via=heejae" target="_blank" rel="noopener sponsored" data-cat="slides" data-aff="Decktopus" data-loc="stack">Try Decktopus <span class="arw" aria-hidden="true">↗</span></a>
+        </div>
 
       </div>
       <p class="stack-note">Every link on this page is an affiliate link — you pay the same price, I may earn a commission. I only recommend tools I would use in my own work.</p>
@@ -707,41 +739,53 @@
 
         <div class="tool-grid" id="tool-grid">
 
-        <a class="tool" href="https://klap.app?via=heejae" target="_blank" rel="noopener sponsored" data-cat="video" data-aff="Klap" data-loc="tools">
+        <div class="tool" data-cat="video">
+          <a class="tool-open" href="tools/klap.html">
           <span class="ic" aria-hidden="true">✂️</span>
           <span class="td">
             <span class="nm">Klap<span class="bh">Last night's pick · 1 video free</span></span>
             <span class="ds">One long video in, short vertical clips out — cuts inside the clip, captions burned in, reframe follows the speaker, virality score on each pick. Free covers one video for preview and editing; downloads and posting need Basic $29/mo (100 clips), yearly ~50% off.</span>
+            <span class="rd">Full test: free limit, price and the catch →</span>
           </span>
-          <span class="go" aria-hidden="true">↗</span>
-        </a>
+          </a>
+          <a class="go" href="https://klap.app?via=heejae" target="_blank" rel="noopener sponsored" data-cat="video" data-aff="Klap" data-loc="tools" aria-label="Try Klap (affiliate link)">↗</a>
+        </div>
 
-        <a class="tool" href="https://submagic.co/?via=heejae-e35f5b" target="_blank" rel="noopener sponsored" data-cat="video" data-aff="Submagic" data-loc="tools">
+        <div class="tool" data-cat="video">
+          <a class="tool-open" href="tools/submagic.html">
           <span class="ic" aria-hidden="true">💬</span>
           <span class="td">
             <span class="nm">Submagic<span class="bh">15 free credits</span></span>
             <span class="ds">A 40-second clip in, a captioned vertical with cuts, b-roll and zooms out — 123+ languages, 30+ caption styles. Free: 15 credits a month ≈ 5 captioned videos, no card, but every export is watermarked; Starter $19/mo ($12 yearly) caps each video at 2 minutes.</span>
+            <span class="rd">Full test: free limit, price and the catch →</span>
           </span>
-          <span class="go" aria-hidden="true">↗</span>
-        </a>
+          </a>
+          <a class="go" href="https://submagic.co/?via=heejae-e35f5b" target="_blank" rel="noopener sponsored" data-cat="video" data-aff="Submagic" data-loc="tools" aria-label="Try Submagic (affiliate link)">↗</a>
+        </div>
 
-        <a class="tool" href="https://pictory.ai?fpr=heejae-b015a9" target="_blank" rel="noopener sponsored" data-cat="video" data-aff="Pictory" data-loc="tools">
+        <div class="tool" data-cat="video">
+          <a class="tool-open" href="tools/pictory.html">
           <span class="ic" aria-hidden="true">🎥</span>
           <span class="td">
             <span class="nm">Pictory<span class="bh">14-day trial · 300 credits</span></span>
             <span class="ds">A link, a script or a deck in, a voiced video out — 9:16 included. Trial: 14 days, 300 credits, 3 videos, 720p + watermark; Black Friday annual from $12.50/mo.</span>
+            <span class="rd">Full test: free limit, price and the catch →</span>
           </span>
-          <span class="go" aria-hidden="true">↗</span>
-        </a>
+          </a>
+          <a class="go" href="https://pictory.ai?fpr=heejae-b015a9" target="_blank" rel="noopener sponsored" data-cat="video" data-aff="Pictory" data-loc="tools" aria-label="Try Pictory (affiliate link)">↗</a>
+        </div>
 
-        <a class="tool" href="https://quso.ai?via=2xv5cz" target="_blank" rel="noopener sponsored" data-cat="video" data-aff="quso.ai" data-loc="tools">
+        <div class="tool" data-cat="video">
+          <a class="tool-open" href="tools/quso-ai.html">
           <span class="ic" aria-hidden="true">🎬</span>
           <span class="td">
             <span class="nm">quso.ai<span class="bh">BF 50% off yearly</span></span>
             <span class="ds">Drop in a webinar or meeting recording and get captioned vertical clips you can post.</span>
+            <span class="rd">Full test: free limit, price and the catch →</span>
           </span>
-          <span class="go" aria-hidden="true">↗</span>
-        </a>
+          </a>
+          <a class="go" href="https://quso.ai?via=2xv5cz" target="_blank" rel="noopener sponsored" data-cat="video" data-aff="quso.ai" data-loc="tools" aria-label="Try quso.ai (affiliate link)">↗</a>
+        </div>
 
         <a class="tool" href="https://getpixa.link/park-hee-jae" target="_blank" rel="noopener sponsored" data-cat="video" data-aff="Pixa" data-loc="tools">
           <span class="ic" aria-hidden="true">🎨</span>
@@ -761,14 +805,17 @@
           <span class="go" aria-hidden="true">↗</span>
         </a>
 
-        <a class="tool" href="https://www.taja.ai/?via=heejae" target="_blank" rel="noopener sponsored" data-cat="video" data-aff="Taja AI" data-loc="tools">
+        <div class="tool" data-cat="video">
+          <a class="tool-open" href="tools/taja-ai.html">
           <span class="ic" aria-hidden="true">📱</span>
           <span class="td">
             <span class="nm">Taja AI<span class="bh">7-day trial · 4 videos</span></span>
             <span class="ds">One long video in, shorts, titles, tags and thumbnails out. Trial: 7 days, 4 videos, up to 5 shorts each, no card — but no downloads or watermark removal until you pay. Starter $19/mo ($15.99 yearly).</span>
+            <span class="rd">Full test: free limit, price and the catch →</span>
           </span>
-          <span class="go" aria-hidden="true">↗</span>
-        </a>
+          </a>
+          <a class="go" href="https://www.taja.ai/?via=heejae" target="_blank" rel="noopener sponsored" data-cat="video" data-aff="Taja AI" data-loc="tools" aria-label="Try Taja AI (affiliate link)">↗</a>
+        </div>
 
         <a class="tool" href="https://rytr.me?via=heejae" target="_blank" rel="noopener sponsored" data-cat="writing" data-aff="Rytr" data-loc="tools">
           <span class="ic" aria-hidden="true">✍️</span>
@@ -779,14 +826,17 @@
           <span class="go" aria-hidden="true">↗</span>
         </a>
 
-        <a class="tool" href="https://originality.ai/?via=heejae" target="_blank" rel="noopener sponsored" data-cat="writing" data-aff="Originality.ai" data-loc="tools">
+        <div class="tool" data-cat="writing">
+          <a class="tool-open" href="tools/originality-ai.html">
           <span class="ic" aria-hidden="true">🛡️</span>
           <span class="td">
             <span class="nm">Originality.ai<span class="bh">100 credits free</span></span>
             <span class="ds">Scans text for AI-generated content and plagiarism, then shows which sentences tripped it — free is 100 credits once (10,000 words), Pro $14.95/month for 200,000.</span>
+            <span class="rd">Full test: free limit, price and the catch →</span>
           </span>
-          <span class="go" aria-hidden="true">↗</span>
-        </a>
+          </a>
+          <a class="go" href="https://originality.ai/?via=heejae" target="_blank" rel="noopener sponsored" data-cat="writing" data-aff="Originality.ai" data-loc="tools" aria-label="Try Originality.ai (affiliate link)">↗</a>
+        </div>
 
         <a class="tool" href="https://www.revid.ai/?via=workcheatkey" target="_blank" rel="noopener sponsored" data-cat="video" data-aff="Revid" data-loc="tools">
           <span class="ic" aria-hidden="true">🎬</span>
@@ -809,7 +859,7 @@
         </div>
         <p class="empty" id="tools-empty">No tools in this category yet — try another filter.</p>
 
-        <p class="tools-note"><b>These are affiliate links</b> — I may earn a commission if you subscribe, at no extra cost to you. Plans and prices are set by each provider; check their page before paying.</p>
+        <p class="tools-note"><b>Tap the tool name for the full test</b> (free limit, pricing, the catch); the <b>↗</b> arrow is the affiliate link. <b>Affiliate links</b> — I may earn a commission if you subscribe, at no extra cost to you. Plans and prices are set by each provider; check their page before paying.</p>
       </div>
     </section>
 
@@ -929,6 +979,7 @@ Rules: polite but firm, three sentences maximum. Apologise once, never twice. No
     <div class="foot-links">
       <a href="/cheatkey/privacy.html">Privacy Policy</a>
       <a href="/cheatkey/terms.html">Terms</a>
+      <a href="tools/">Tool tests</a>
       <a href="/cheatkey/en/media-kit.html">Media kit</a>
       <a href="https://www.youtube.com/@workcheatkeyai" target="_blank" rel="noopener">YouTube</a>
       <a href="../">한국어 페이지</a>

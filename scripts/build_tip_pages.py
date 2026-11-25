@@ -6,7 +6,7 @@
 deals.json 의 tips[] 를 읽어 다음을 만든다.
   tips/index.html          팁 전체 목록
   tips/tip-001.html ~ tip-00N.html   팁별 정적 페이지
-  sitemap.xml              허브·/en/·/tips/·팁 전체 URL 갱신
+  sitemap.xml              허브·/en/·/tips/·팁·/en/tools/ 전체 URL 갱신
 
 사용:
     python3 scripts/build_tip_pages.py            # 페이지 + 사이트맵 생성
@@ -738,6 +738,13 @@ def build_sitemap(tips: list[dict]) -> str:
     ]
     for t in sorted_tips(tips):
         parts.append(url(tip_url(t["id"]), "0.7", "monthly"))
+    # build_en_seo_pages.py 가 만든 영문 툴 테스트 페이지도 같은 사이트맵에 남긴다
+    tools_dir = ROOT / "en" / "tools"
+    if tools_dir.is_dir():
+        parts.append(url(SITE + "/en/tools/", "0.8", "weekly"))
+        for p in sorted(tools_dir.glob("*.html")):
+            if p.name != "index.html":
+                parts.append(url(f"{SITE}/en/tools/{p.name}", "0.7", "monthly"))
     parts.append(url(SITE + "/privacy.html", "0.3", "yearly"))
     return ('<?xml version="1.0" encoding="UTF-8"?>\n'
             '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
@@ -773,7 +780,8 @@ def main() -> None:
     for p in written:
         print(f"{p.relative_to(ROOT)}  ({p.stat().st_size:,} bytes)")
     if not args.no_sitemap:
-        print(f"sitemap.xml  ({SITEMAP.stat().st_size:,} bytes, URL {len(tips) + 4}개)")
+        print(f"sitemap.xml  ({SITEMAP.stat().st_size:,} bytes, "
+              f"URL {SITEMAP.read_text(encoding='utf-8').count('<url>')}개)")
 
 
 if __name__ == "__main__":

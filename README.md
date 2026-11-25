@@ -15,8 +15,10 @@ GitHub Pages로 서빙됩니다: **https://phappyj.github.io/cheatkey/**
 | `index.html` | 페이지 전체(디자인·렌더링). **평소엔 건드릴 일 없음** |
 | `deals.json` | 카드 데이터. 08:30·12:30 AI 치트키 / 16:00·19:30 핫딜 자동화가 **여기만 추가**하면 됨 |
 | `scripts/build_tip_pages.py` | `deals.json`의 `tips`를 읽어 `/tips/` SEO 페이지·목록·`sitemap.xml` 자동 생성 (**팁 추가 후 반드시 실행**) |
+| `scripts/build_en_seo_pages.py` | `en/tools/` 영문 툴 테스트 페이지 10개·목록·`sitemap.xml` 생성 (**툴 추가·가격 변경 후 실행**) |
 | `tips/` | 팁별 정적 SEO 페이지(`tip-001.html`~`tip-009.html`) + 목록(`index.html`) — 스크립트가 생성 |
-| `sitemap.xml` | 허브·`/en/`·`/tips/`·팁 URL 전체 — 스크립트가 함께 갱신 |
+| `en/tools/` | 영문 툴 테스트 SEO 페이지(`klap.html`~`decktopus.html`) + 목록(`index.html`) — 스크립트가 생성 |
+| `sitemap.xml` | 허브·`/en/`·`/tips/`·팁·`/en/tools/` URL 전체 — 두 스크립트가 같은 결과로 갱신 |
 | `og.png` | 링크 공유 미리보기 이미지(1200×630). 바꿀 때는 `index.html`의 `og:image` 태그와 함께 교체 |
 | `README.md` | 이 문서 |
 
@@ -76,6 +78,26 @@ python3 scripts/build_tip_pages.py && git add deals.json tips sitemap.xml \
 - GA4 이벤트: 페이지뷰(`/tips/...`) + `affiliate_click`(`data-loc="tip_page"`) + `prompt_copy`(`tip_id`).
 - `sitemap.xml`은 스크립트가 허브·`/en/`·`/tips/`·팁 전체·`privacy.html`을 한 번에 다시 씁니다. Search Console 사이트맵(`sitemap.xml`)은 그대로 두면 재수집됩니다.
 
+## 영문 툴 테스트 개별 SEO 페이지 (`/en/tools/`)
+
+글로벌 검색 유입용 영문 정적 페이지입니다. 목록: **https://phappyj.github.io/cheatkey/en/tools/**
+
+```bash
+cd cheatkey-site
+python3 scripts/build_en_seo_pages.py        # en/tools/*.html + en/tools/index.html + sitemap.xml
+# 툴·가격·실측치 수정 후
+python3 scripts/build_en_seo_pages.py && git add en sitemap.xml README.md \
+  && git commit -m "en tools: 업데이트" && git push
+```
+
+- 현재 10개: `klap` · `loopcv` · `submagic` · `quso-ai` · `speak-ai` · `taja-ai` · `make-com` · `originality-ai` · `pictory` · `decktopus`. 링크(제휴 URL·프로모 코드)는 `affiliates.json`의 `url`/`promo_code`에서 읽어 오고, 본문 수치는 스크립트의 `TOOLS` 항목에 적힌 값입니다.
+- **숫자 규칙**: `affiliates.json`의 실측 필드(`pricing`·`free_plan`·`honest_limit`·`pricing_checked`)와 우리가 직접 돌린 테스트 결과만 적습니다. 벤더 자체 주장(“99% accuracy” 등)은 `vendor claims`로 표시하고, 계정을 만들어 쓰지 않은 툴은 `evidence` 문단에 "no account was used for this page"로 명시합니다.
+- 각 페이지 구성: 고유 `<title>`·`<meta name="description">`·`canonical`·OG/Twitter, JSON-LD(`Review` + `SoftwareApplication` + `FAQPage` + `BreadcrumbList`), Work Cheatkey 점수(5점), 무료/유료/함정 3줄 요약, `What we checked`(검증 방법·실측 수치), 가격표 + 가격 메모, 3단계 워크플로, 제휴 CTA(`rel="sponsored"`·`data-aff`·`data-loc="en_tool_page"`), 적합/비적합, FAQ(`<details>`), 다른 툴 3개 내부링크, 상·하단 `← Back to Work Cheatkey`.
+- **툴 추가**는 `TOOLS`에 항목 하나 추가 + `affiliates.json`에 해당 `id` 링크가 있으면 끝입니다. `alts`·`slug`·`score`도 함께 채우세요. `index.html`의 비교표와 목록은 `TOOLS`에서 자동 생성됩니다.
+- 영문 허브 `en/index.html` 연결: 툴 목록 카드는 **이름 영역 → `/en/tools/{slug}.html`, `↗` 화살표 → 제휴 링크**, Verified Stack 카드는 **본문 → 테스트 페이지, `Try X ↗` 버튼 → 제휴 링크**, 히어로 픽에는 `Full test →` 링크가 붙습니다. 허브에는 `Tests` 칩과 푸터 `Tool tests` 링크도 있습니다.
+- GA4: 페이지뷰 + `affiliate_click`(`data-loc="en_tool_page"`). 허브의 `hero_pick`·`stack`·`tools` 집계와 구분됩니다.
+- `sitemap.xml`은 `build_tip_pages.py`를 돌려도 `/en/tools/` URL이 빠지지 않습니다(두 스크립트가 같은 24개 URL을 씁니다).
+
 ### deals 배열 (핫딜)
 ```json
 {
@@ -129,9 +151,10 @@ python3 scripts/build_tip_pages.py && git add deals.json tips sitemap.xml \
 - 쿠팡·핫딜 섹션은 넣지 않고, 영문 프롬프트 2종(회의록·거절 메일) + 제휴 툴 섹션을 둡니다.
 - `en/index.html`은 `deals.json`을 읽지 않는 **독립 정적 페이지**입니다(수동 편집).
 - 구조(2026-11-19 개편): **히어로 픽 1개 → Verified Stack 3개 → `View all tested tools (N)` 접힘 목록**
-  - 히어로 픽: 그 주 쇼츠에서 소개한 툴(현재 Decktopus). 데스크톱에서는 히어로 카드가 2단(좌: 카피 / 우: 픽 카드)입니다.
-  - Verified Stack: 잡 하나당 하나 — 현재 Make.com(자동화) · Speak AI(회의) · LoopCV(구직). `#stack` 안의 `.scard` 3개를 고치면 됩니다. Granola는 Dub 파트너 심사가 끝나면 Speak AI 자리를 대체할 후보(링크 발급 전).
+  - 히어로 픽: 그 주 쇼츠에서 소개한 툴(2026-11-25 현재 LoopCV). 데스크톱에서는 히어로 카드가 2단(좌: 카피 / 우: 픽 카드)입니다.
+  - Verified Stack: 잡 하나당 하나 — 현재 Make.com(자동화) · Speak AI(회의) · Decktopus(슬라이드). `#stack` 안의 `.scard` 3개를 고치면 됩니다. Granola는 Dub 파트너 심사가 끝나면 Speak AI 자리를 대체할 후보(링크 발급 전).
   - 접힘 목록: 나머지 툴 전체. `.allbody`는 기본 `hidden`, `#alltoggle` 클릭으로 펼칩니다. 툴을 추가·삭제하면 `#allcount`와 카테고리 칩 개수는 **스크립트가 DOM에서 자동 계산**하므로 손대지 않아도 됩니다(칩도 실제로 툴이 있는 카테고리만 표시).
+  - 테스트 페이지가 있는 툴은 카드 이름이 `/en/tools/{slug}.html`로 가고 `↗`만 제휴 링크입니다. 테스트 페이지가 없는 툴(Pixa·Fliki·Rytr·Revid·Lunacal)은 카드 전체가 제휴 링크입니다.
   - 스택으로 툴을 올리면 접힘 목록에서는 빼고, 반대도 마찬가지로 맞춰 주세요.
 - 제휴 링크·수수료·정산 상태는 `affiliates.json`에 툴별로 기록합니다(`status`, `placed_on`).
 - 개인정보처리방침: **https://phappyj.github.io/cheatkey/privacy.html** (국·영문). 제휴 링크 추가 시 이 문서의 "제휴 링크" 표도 갱신하세요.
@@ -141,7 +164,7 @@ python3 scripts/build_tip_pages.py && git add deals.json tips sitemap.xml \
 - 속성: **Work Cheatkey** (phappyj@gmail.com GA 계정 `a398168083`), 데이터 스트림 `https://phappyj.github.io/cheatkey/` (스트림 ID 16371466781)
 - **측정 ID `G-E23M7R0R8N`** — `index.html`, `en/index.html` `<head>`에 gtag.js로 직접 설치(2026-11-19)
 - 커스텀 이벤트: `affiliate_click`(tool_name, category, location, link_url), `filter_tools`(category, results), `prompt_copy`(prompt_name), `open_all_tools` / `close_all_tools`(영문 허브 접힘 목록), `tips_jump`(location — 한국어 허브 인기 프롬프트 퀵 점프), `deals_more`(expanded, total — 핫딜 더보기/접기)
-- 영문 툴 카드 CTA에는 `data-aff` / `data-cat` / `data-loc` 속성을 달아야 집계됩니다. `data-loc` 값: `hero_pick` · `stack` · `tools` · `workflows` · `make_card`
+- 영문 툴 카드 CTA에는 `data-aff` / `data-cat` / `data-loc` 속성을 달아야 집계됩니다. `data-loc` 값: `hero_pick` · `stack` · `tools` · `workflows` · `make_card` · `hero_card` · `en_tool_page`
 - 정책 변경 시 `privacy.html` 03·05절의 GA4 고지도 같이 갱신합니다.
 
 ## 수동 업데이트 방법
