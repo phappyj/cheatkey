@@ -14,6 +14,7 @@
    "status": "active (link live; back in the en hub verified stack #1 'Automate' 2026-11-25 07:30 when LoopCV took the hero; PartnerStack dashboard inaccessible after network decline until 2026-12-02)",
    "source": "PartnerStack (approved before network decline; dash.partnerstack.com shows '참여 중인 프로그램 없음' until 2026-12-02 reapply)",
    "placed_on": [
+    "en/tools/make-com.html — tool test page, affiliate CTA data-loc=en_tool_page (2026-11-25)",
     "en/index.html (verified stack #1 'Automate', 2026-11-25 07:30 — returned when LoopCV moved up to the hero)",
     "en/index.html (collapsed list, 2026-11-23 11:30 — moved down from hero pick)",
     "en/index.html (hero pick, 2026-11-23 07:30 global short)"
@@ -41,6 +42,7 @@
    "dashboard": "https://quso.firstpromoter.com/home",
    "status": "active — link issued; Black Friday kit received 2026-11-21 04:49 (yearly 50% off, renewals keep 50%)",
    "placed_on": [
+    "en/tools/quso-ai.html — tool test page, affiliate CTA data-loc=en_tool_page (2026-11-25)",
     "en/index.html (hero pick, 2026-11-21 11:30 global short - replaced by LoopCV at 17:00, kept in collapsed list)",
     "en/index.html (collapsed 'View all tested tools' list, 2026-11-19)"
    ],
@@ -69,6 +71,7 @@
    "dashboard": "https://affiliate.decktopus.com",
    "status": "active — link issued; live pages read 2026-11-23 11:31 KST (Pro $9.99/mo yearly, Business $19.99/seat, no free plan, 3-slide signup credits, 5 credits/slide, BF26 66% off annual to 12-11); en hub verified stack #3 from 2026-11-23 22:30",
    "placed_on": [
+    "en/tools/decktopus.html — tool test page, affiliate CTA data-loc=en_tool_page (2026-11-25)",
     "en/index.html (verified stack #3 'Slides' — 2026-11-23 22:30, replaced Taja AI when Taja took the hero; removed from collapsed list)",
     "en/index.html (hero pick, 2026-11-23 11:30 global short)",
     "en/index.html (verified stack #3, 2026-11-20 11:30 -> hero again 2026-11-23)",
@@ -89,6 +92,7 @@
    "dashboard": "https://affiliate.submagic.co/home",
    "status": "active — link issued; demoted from en-hub hero to the collapsed 'View all tested tools' list 2026-11-24 22:30 (Klap took the hero)",
    "placed_on": [
+    "en/tools/submagic.html — tool test page, affiliate CTA data-loc=en_tool_page (2026-11-25)",
     "en/index.html (collapsed 'View all tested tools' list — badge '07:30 pick · 15 free credits', 2026-11-24 22:30)",
     "en/index.html (Hero Pick — 2026-11-20 17:00 global short)"
    ],
@@ -203,6 +207,7 @@
    "partner_since": "2026-11-19",
    "status": "active — link issued; live scan run 2026-11-22 11:36 KST; moved from en hub Hero to collapsed list 2026-11-22 17:00",
    "placed_on": [
+    "en/tools/originality-ai.html — tool test page, affiliate CTA data-loc=en_tool_page (2026-11-25)",
     "kr/index.html (phappyj.github.io/cheatkey) — tip-008 card, 2026-11-24 08:30",
     "en/index.html (collapsed 'View all tested tools' list — badge 'Yesterday's pick · 98% AI found'; demoted from hero 2026-11-22 17:00 when Lunacal took the hero)",
     "en/index.html (hero pick, 2026-11-22 11:30 global short — replaced Rytr; Rytr kept in collapsed list)",
@@ -245,6 +250,7 @@
    "status": "active — link issued",
    "rules": "No brand-term bidding, no self-referral, no coupon sites without written agreement",
    "placed_on": [
+    "en/tools/speak-ai.html — tool test page, affiliate CTA data-loc=en_tool_page (2026-11-25)",
     "en/index.html (hero pick, 2026-11-21 07:30 global short)",
     "en/index.html (verified stack #2, 2026-11-19 → moved to hero 2026-11-21)",
     "en/index.html (verified stack #2 — meetings, 2026-11-21 11:30, after quso.ai took the hero)"
@@ -263,6 +269,7 @@
    "partner_since": "2026-11-19",
    "status": "active — link issued; real pages read 2026-11-23 22:31-22:35 KST; en hub Hero Pick 2026-11-23 22:30, moved to collapsed list 2026-11-24 07:30",
    "placed_on": [
+    "en/tools/taja-ai.html — tool test page, affiliate CTA data-loc=en_tool_page (2026-11-25)",
     "en/index.html (collapsed 'View all tested tools' list — badge '7-day trial · 4 videos'; the stale '22:30 pick' badge cleared 2026-11-24 22:30 when Klap took the hero)",
     "en/index.html (hero pick, 2026-11-23 22:30 global short — replaced Pictory; Pictory kept in collapsed list)",
     "en/index.html (verified stack #3, 2026-11-23 11:30 — moved up to the hero 2026-11-23 22:30)"
@@ -380,6 +387,7 @@
    "partner_since": "2026-11-19",
    "status": "active — email confirmed, link issued; en hub Hero Pick 2026-11-25 07:30 (replaced Klap; Klap moved into the collapsed list)",
    "placed_on": [
+    "en/tools/loopcv.html — tool test page, affiliate CTA data-loc=en_tool_page (2026-11-25)",
     "en/index.html (Hero Pick, 2026-11-25 07:30 global short — replaced Klap; Klap moved into the collapsed list)",
     "en/index.html (verified stack #1 'Automate', 2026-11-23 07:30 — left the stack 2026-11-25 07:30 when LoopCV took the hero; Make.com returned to that slot)",
     "en/index.html (hero pick, 2026-11-21 17:00-22:30 global short)",
@@ -448,6 +456,7 @@
    "status": "active — approved 2026-11-20 17:09 after appeal reply, link issued; promo code CHEATKEY issued 2026-11-20 20:23 KST; moved to en hub collapsed list 2026-11-23 22:30",
    "rules": "No PPC or paid ads targeting Pictory brand name/misspellings",
    "placed_on": [
+    "en/tools/pictory.html — tool test page, affiliate CTA data-loc=en_tool_page (2026-11-25)",
     "en/index.html (collapsed 'View all tested tools' list — badge '14-day trial · 300 credits'; the stale '17:00 pick' badge cleared 2026-11-24 22:30, the 17:00 slot was retired that day)",
     "en/index.html (hero pick, 2026-11-23 17:00 global short — 14-day trial + Black Friday annual pricing)",
     "en/index.html (verified stack #2 — video, 2026-11-21 07:30, after Speak AI took the hero)"
@@ -488,6 +497,7 @@
     "followup_sent_at": "2026-11-24 14:00 KST"
    },
    "placed_on": [
+    "en/tools/klap.html — tool test page, affiliate CTA data-loc=en_tool_page (2026-11-25)",
     "kr hub index.html #tips-section card tip-009 'AI · 영상·마케팅 · 09' (2026-11-25 08:30 short + deals.json tips front)",
     "en/index.html (collapsed 'View all tested tools' list — badge 'Last night's pick - 1 video free', 2026-11-25 07:30)",
     "en/index.html (Hero Pick, 2026-11-24 22:30 global short — replaced Submagic)",
@@ -513,5 +523,5 @@
    }
   }
  ],
- "_updated": "2026-11-25 07:30 KST — LoopCV hero pick for the 07:30 global short (free Basic Looper = 1 job-title loop, 10 applications/emails and 3 job boards a month, no card; Standard EUR 8.99/mo = 100 applications, 3 months EUR 7.33/mo; FAQ still quotes 'from EUR 9.99'; BF 2026 code BLACKFRIDAY2026 = 15% off read 25 Nov), Klap to the collapsed list, Make.com back into verified stack #1 'Automate', stale '07:30 pick' badge cleared from Submagic"
+ "_updated": "2026-11-25 07:30 KST — LoopCV hero pick for the 07:30 global short (free Basic Looper = 1 job-title loop, 10 applications/emails and 3 job boards a month, no card; Standard EUR 8.99/mo = 100 applications, 3 months EUR 7.33/mo; FAQ still quotes 'from EUR 9.99'; BF 2026 code BLACKFRIDAY2026 = 15% off read 25 Nov), Klap to the collapsed list, Make.com back into verified stack #1 'Automate', stale '07:30 pick' badge cleared from Submagic | 2026-11-25 11:30 KST — /en/tools/ 영문 툴 테스트 페이지 10개 배포: each of those tools' placed_on now records the tool page (affiliate CTA data-loc=en_tool_page)"
 }
