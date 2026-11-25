@@ -93,7 +93,7 @@ TOOLS: list[dict] = [
         "best_for": ["Interviews, podcasts and webinars where you would rather post 6 clips today than sort 18."],
         "skip_if": ["You need one free export to try it properly — nothing downloads on the free account.", "The recording is short or quiet (a 1:42 seminar gave one clip)."],
         "cta_label": "Try Klap free — 1 video, no card",
-        "cta_sub": "Exports need a paid plan · code HEEJAE takes 30% off the first payment",
+        "cta_sub": "Exports need a paid plan — free is preview and edit only",
         "faq": [
             ("Is Klap free?", "Only for looking. A free account turns one video into clips you can preview and edit, no card required; downloading or posting them needs a paid plan, from $29/month for 100 clips."),
             ("Klap or OpusClip?", "On our single test, Klap produced fewer and cleaner clips, OpusClip more with duplicates. If you want volume to hand-pick from, OpusClip; if you want to post what comes out, Klap."),
@@ -653,6 +653,24 @@ CSS = """
   ol.steps .k{display:block;font-size:10px;font-weight:800;color:var(--mint);letter-spacing:.05em;
     text-transform:uppercase;margin-bottom:3px}
   ol.steps .v{font-size:13.2px;font-weight:600;color:#374151;line-height:1.55}
+  .herocta{margin:0 0 14px}
+  .herocta-btn{display:flex;align-items:center;justify-content:center;gap:9px;
+    width:100%;min-height:54px;padding:14px 16px;border-radius:15px;text-decoration:none;
+    background:var(--mint-deep);color:#fff;font-size:16.5px;font-weight:800;
+    letter-spacing:-0.025em;line-height:1.25;text-align:center;
+    box-shadow:0 16px 30px -18px rgba(11,122,85,.95);
+    transition:transform .12s ease, background .15s ease}
+  .herocta-btn:active{transform:scale(.988);background:#086646}
+  .herocta-btn svg{flex:0 0 auto;width:17px;height:17px;color:#A7F3D0}
+  .herocta-code{margin:8px 0 0;text-align:center;font-size:11.8px;line-height:1.5;
+    color:var(--ink-2);font-weight:700}
+  .herocta-sub{margin:8px 0 0;text-align:center;font-size:10.8px;line-height:1.55;
+    color:var(--ink-3);font-weight:600}
+  .code{display:inline-block;margin-top:2px;font-size:11.2px;font-weight:700;color:var(--mint-deep)}
+  .code b{display:inline-block;font-size:11px;font-weight:800;letter-spacing:.08em;
+    background:var(--mint-soft);border:1px dashed var(--mint-line);border-radius:6px;padding:1px 6px}
+  .cta .sub .code{display:block;margin-top:6px;color:#A7F3D0}
+  .cta .sub .code b{background:rgba(110,231,183,.14);border-color:#2F8F6D;color:#D1FAE5}
   .cta{display:block;margin-top:18px;text-decoration:none;background:var(--navy);color:#fff;
     border-radius:16px;padding:16px 16px 15px;box-shadow:0 16px 32px -24px rgba(15,23,42,.9)}
   .cta .lbl{display:block;font-size:9.5px;font-weight:800;letter-spacing:.09em;color:#6EE7B7;margin-bottom:6px;text-transform:uppercase}
@@ -857,12 +875,55 @@ ARROW = ('<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-widt
          '<path d="M5 12h14M13 6l6 6-6 6"/></svg>')
 
 
+# Short button label for the above-the-fold hero CTA. Only where "Free" is
+# literally true (a real free plan or free trial) — Decktopus has no free plan,
+# so it says what you actually get.
+HERO_LABEL = {
+    "klap": "Try Klap Free",
+    "loopcv": "Try LoopCV Free",
+    "submagic": "Try Submagic Free",
+    "quso": "Try quso.ai Free",
+    "speakai": "Start Speak AI Free",
+    "taja": "Try Taja AI Free",
+    "make": "Open Make.com Free",
+    "originality": "Try Originality.ai Free",
+    "pictory": "Start Pictory Free",
+    "decktopus": "Open Decktopus — 3 slides free",
+}
+# Our own discount codes only (Pictory's CHEATKEY does not stack with the
+# Black Friday price, so it is deliberately not surfaced here).
+HERO_CODE = {
+    "klap": ("HEEJAE", "30% off your first payment"),
+}
+
+
+def code_line(t: dict) -> str:
+    code = HERO_CODE.get(t["id"])
+    if not code:
+        return ""
+    return (f'<span class="code">Code <b>{esc(code[0])}</b> — {esc(code[1])}</span>')
+
+
+def hero_cta(t: dict, url: str) -> str:
+    label = HERO_LABEL.get(t["id"]) or f"Try {t['name']} Free"
+    code = HERO_CODE.get(t["id"])
+    code_html = (f'\n        <p class="herocta-code">Code <b>{esc(code[0])}</b> — {esc(code[1])}</p>'
+                 if code else "")
+    return f"""      <div class="herocta">
+        <a class="herocta-btn" href="{esc(url)}" target="_blank" rel="noopener sponsored"
+           data-aff="{esc(t['name'])}" data-cat="{esc(t['cat'])}" data-loc="en_tool_page_hero">
+          {esc(label)} {ARROW}
+        </a>{code_html}
+        <p class="herocta-sub">{esc(t['cta_sub'])}</p>
+      </div>"""
+
+
 def cta_block(t: dict, url: str) -> str:
     return f"""    <a class="cta" href="{esc(url)}" target="_blank" rel="noopener sponsored"
        data-aff="{esc(t['name'])}" data-cat="{esc(t['cat'])}" data-loc="en_tool_page">
       <span class="lbl">Affiliate link · {esc(t['name'])}</span>
       <span class="txt">{esc(t['cta_label'])} {ARROW}</span>
-      <span class="sub">{esc(t['cta_sub'])}</span>
+      <span class="sub">{esc(t['cta_sub'])} {code_line(t)}</span>
     </a>
     <p class="fine">You pay the provider's price; I may earn a commission. Terms and free limits are theirs and can
     change — the numbers here are what their pricing page said on the date listed at the top.</p>"""
@@ -1004,6 +1065,9 @@ def build_page(t: dict, aff: dict) -> str:
       <span class="tag">{esc(t['cat'])} · checked {esc(t['checked'])}</span>
       <h1>{esc(t['h1'])}</h1>
       <p class="lede">{esc(t['lede'])}</p>
+
+{hero_cta(t, url)}
+
       <div class="meta">
         <span>Updated 25 Nov 2026</span>
         <span class="dot">·</span>
