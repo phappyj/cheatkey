@@ -94,8 +94,9 @@ python3 scripts/build_en_seo_pages.py && git add en sitemap.xml README.md \
 - **숫자 규칙**: `affiliates.json`의 실측 필드(`pricing`·`free_plan`·`honest_limit`·`pricing_checked`)와 우리가 직접 돌린 테스트 결과만 적습니다. 벤더 자체 주장(“99% accuracy” 등)은 `vendor claims`로 표시하고, 계정을 만들어 쓰지 않은 툴은 `evidence` 문단에 "no account was used for this page"로 명시합니다.
 - 각 페이지 구성: 고유 `<title>`·`<meta name="description">`·`canonical`·OG/Twitter, JSON-LD(`Review` + `SoftwareApplication` + `FAQPage` + `BreadcrumbList`), Work Cheatkey 점수(5점), 무료/유료/함정 3줄 요약, `What we checked`(검증 방법·실측 수치), 가격표 + 가격 메모, 3단계 워크플로, 제휴 CTA(`rel="sponsored"`·`data-aff`·`data-loc="en_tool_page"`), 적합/비적합, FAQ(`<details>`), 다른 툴 3개 내부링크, 상·하단 `← Back to Work Cheatkey`.
 - **툴 추가**는 `TOOLS`에 항목 하나 추가 + `affiliates.json`에 해당 `id` 링크가 있으면 끝입니다. `alts`·`slug`·`score`도 함께 채우세요. `index.html`의 비교표와 목록은 `TOOLS`에서 자동 생성됩니다.
-- 영문 허브 `en/index.html` 연결: 툴 목록 카드는 **이름 영역 → `/en/tools/{slug}.html`, `↗` 화살표 → 제휴 링크**, Verified Stack 카드는 **본문 → 테스트 페이지, `Try X ↗` 버튼 → 제휴 링크**, 히어로 픽에는 `Full test →` 링크가 붙습니다. 허브에는 `Tests` 칩과 푸터 `Tool tests` 링크도 있습니다.
-- GA4: 페이지뷰 + `affiliate_click`(`data-loc="en_tool_page"`). 허브의 `hero_pick`·`stack`·`tools` 집계와 구분됩니다.
+- 영문 허브 `en/index.html` 연결(2026-11-25 CRO 개편): 툴 카드·Verified Stack 카드 모두 **카드 본문 전체가 제휴 링크**로 직행하고, 테스트 페이지는 카드 하단 작은 `Test notes →` 링크로만 분리합니다(중첩 앵커 금지 — 래퍼 `div.tool`/`div.scard` 안에 메인 앵커 `.tool-main`/`.scard-main` + 보조 링크 `.tool-rd`/`.scard-rd`). 히어로 픽 메인 CTA(`.f-cta`)도 제휴 직행, 그 아래 `Full test:` 텍스트 링크가 테스트 페이지입니다. 허브에는 `Tests` 칩과 푸터 `Tool tests` 링크가 있어 SEO 내부링크는 유지됩니다.
+- **첫 화면 히어로 CTA**: 모든 툴 페이지가 제목·요약 바로 아래에 풀와이드 민트 버튼(`.herocta-btn`, `Try {Tool} Free →`, 최소 높이 54px)을 두고, 그 아래 할인 코드(`HERO_CODE` — 현재 Klap `HEEJAE`만)와 무료 한도 주의 한 줄을 표시합니다. 버튼 문구는 `HERO_LABEL`에서 툴별로 정합니다(무료 플랜이 없는 Decktopus는 `Open Decktopus — 3 slides free`). 기존 하단 CTA는 그대로 둡니다.
+- GA4: 페이지뷰 + `affiliate_click`(`data-loc="en_tool_page"` 하단 CTA / `en_tool_page_hero` 첫 화면 버튼). 허브의 `hero_pick`·`stack`·`tools` 집계와 구분됩니다.
 - `sitemap.xml`은 `build_tip_pages.py`를 돌려도 `/en/tools/` URL이 빠지지 않습니다(두 스크립트가 같은 24개 URL을 씁니다).
 
 ### deals 배열 (핫딜)
@@ -154,7 +155,7 @@ python3 scripts/build_en_seo_pages.py && git add en sitemap.xml README.md \
   - 히어로 픽: 그 주 쇼츠에서 소개한 툴(2026-11-25 현재 LoopCV). 데스크톱에서는 히어로 카드가 2단(좌: 카피 / 우: 픽 카드)입니다.
   - Verified Stack: 잡 하나당 하나 — 현재 Make.com(자동화) · Speak AI(회의) · Decktopus(슬라이드). `#stack` 안의 `.scard` 3개를 고치면 됩니다. Granola는 Dub 파트너 심사가 끝나면 Speak AI 자리를 대체할 후보(링크 발급 전).
   - 접힘 목록: 나머지 툴 전체. `.allbody`는 기본 `hidden`, `#alltoggle` 클릭으로 펼칩니다. 툴을 추가·삭제하면 `#allcount`와 카테고리 칩 개수는 **스크립트가 DOM에서 자동 계산**하므로 손대지 않아도 됩니다(칩도 실제로 툴이 있는 카테고리만 표시).
-  - 테스트 페이지가 있는 툴은 카드 이름이 `/en/tools/{slug}.html`로 가고 `↗`만 제휴 링크입니다. 테스트 페이지가 없는 툴(Pixa·Fliki·Rytr·Revid·Lunacal)은 카드 전체가 제휴 링크입니다.
+  - 카드 본문(아이콘·이름·설명·`↗`)은 **전부 제휴 링크**이고, 테스트 페이지는 카드 오른쪽 아래 작은 `Test notes →`로만 갑니다(2026-11-25 11:31 희재 님 지시 — 유튜브·틱톡 유입 1클릭 직행). 테스트 페이지가 없는 툴(Pixa·Fliki·Rytr·Revid·Lunacal)은 `Test notes` 링크 없이 카드 전체가 제휴 링크입니다.
   - 스택으로 툴을 올리면 접힘 목록에서는 빼고, 반대도 마찬가지로 맞춰 주세요.
 - 제휴 링크·수수료·정산 상태는 `affiliates.json`에 툴별로 기록합니다(`status`, `placed_on`).
 - 개인정보처리방침: **https://phappyj.github.io/cheatkey/privacy.html** (국·영문). 제휴 링크 추가 시 이 문서의 "제휴 링크" 표도 갱신하세요.
@@ -164,7 +165,7 @@ python3 scripts/build_en_seo_pages.py && git add en sitemap.xml README.md \
 - 속성: **Work Cheatkey** (phappyj@gmail.com GA 계정 `a398168083`), 데이터 스트림 `https://phappyj.github.io/cheatkey/` (스트림 ID 16371466781)
 - **측정 ID `G-E23M7R0R8N`** — `index.html`, `en/index.html` `<head>`에 gtag.js로 직접 설치(2026-11-19)
 - 커스텀 이벤트: `affiliate_click`(tool_name, category, location, link_url), `filter_tools`(category, results), `prompt_copy`(prompt_name), `open_all_tools` / `close_all_tools`(영문 허브 접힘 목록), `tips_jump`(location — 한국어 허브 인기 프롬프트 퀵 점프), `deals_more`(expanded, total — 핫딜 더보기/접기)
-- 영문 툴 카드 CTA에는 `data-aff` / `data-cat` / `data-loc` 속성을 달아야 집계됩니다. `data-loc` 값: `hero_pick` · `stack` · `tools` · `workflows` · `make_card` · `hero_card` · `en_tool_page`
+- 영문 툴 카드 CTA에는 `data-aff` / `data-cat` / `data-loc` 속성을 달아야 집계됩니다. `data-loc` 값: `hero_pick` · `stack` · `tools` · `workflows` · `make_card` · `hero_card` · `en_tool_page` · `en_tool_page_hero`
 - 정책 변경 시 `privacy.html` 03·05절의 GA4 고지도 같이 갱신합니다.
 
 ## 수동 업데이트 방법
