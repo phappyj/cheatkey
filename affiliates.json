@@ -47,7 +47,8 @@
         "en/index.html (Hero Pick, 2026-11-25 22:30 global short — replaced LoopCV; LoopCV moved into the collapsed list)",
         "en/index.html (section 03 'Try today's pick, free' card, 2026-11-25 22:30)",
         "en/index.html (hero pick 2026-11-21 11:30, and collapsed list 2026-11-19 — both replaced)",
-        "en/index.html (collapsed 'View all tested tools' list — badge 'Last night's pick · 75 credits free', 2026-11-26 07:30, after Decktopus took the hero)"
+        "en/index.html (collapsed 'View all tested tools' list — badge 'Last night's pick · 75 credits free', 2026-11-26 07:30, after Decktopus took the hero)",
+        "dev.to/workcheatkeyai + medium.com/@workcheatkeyai — same 2026-11-26 article, quso.ai priced in the comparison and linked in the closing list: https://dev.to/workcheatkeyai/i-ran-the-same-11-minute-interview-through-klap-qusoai-and-opusclip-db8 · https://medium.com/@workcheatkeyai/i-ran-the-same-11-minute-interview-through-klap-quso-ai-and-opusclip-e5607b09781f"
       ],
       "black_friday": {
         "offer": "50% off yearly plans, discount kept at every renewal while subscribed",
@@ -530,7 +531,8 @@
         "en/tools/klap.html — tool test page, affiliate CTA data-loc=en_tool_page (2026-11-25)",
         "kr hub index.html #tips-section card tip-009 'AI · 영상·마케팅 · 09' (2026-11-25 08:30 short + deals.json tips front)",
         "en/index.html (collapsed 'View all tested tools' list — badge now '1 video free · no card', stale 'Last night's pick' badge cleared 2026-11-25 22:30)",
-        "en/index.html (Hero Pick, 2026-11-24 22:30 global short — replaced Submagic)"
+        "en/index.html (Hero Pick, 2026-11-24 22:30 global short — replaced Submagic)",
+        "dev.to/workcheatkeyai + medium.com/@workcheatkeyai — 'I ran the same 11-minute interview through Klap, quso.ai and OpusClip' (2026-11-26, affiliate CTA in the closing list + code HEEJAE named in the disclosure): https://dev.to/workcheatkeyai/i-ran-the-same-11-minute-interview-through-klap-qusoai-and-opusclip-db8 · https://medium.com/@workcheatkeyai/i-ran-the-same-11-minute-interview-through-klap-quso-ai-and-opusclip-e5607b09781f"
       ],
       "pricing_checked": "2026-11-24 22:31 KST — klap.app/pricing read in the browser (Monthly toggle) and the 'Is Klap free?' FAQ expanded at 125% zoom",
       "pricing": {
@@ -552,5 +554,15 @@
       }
     }
   ],
-  "_updated": "2026-11-26 08:30 KST — Make.com tip-010 KR short + tips/tip-010.html, pricing re-read 26 Nov"
+  "_updated": "2026-11-26 18:02 KST — dev.to AI disclosure label changed Fully Autonomous -> Some AI (AI-assisted); medium drafts cleaned up (2 broken drafts deleted, 1 published post untouched)",
+  "_published_articles": [
+    {
+      "date": "2026-11-26 KST",
+      "title": "I ran the same 11-minute interview through Klap, quso.ai and OpusClip",
+      "devto": "https://dev.to/workcheatkeyai/i-ran-the-same-11-minute-interview-through-klap-qusoai-and-opusclip-db8",
+      "medium": "https://medium.com/@workcheatkeyai/i-ran-the-same-11-minute-interview-through-klap-quso-ai-and-opusclip-e5607b09781f",
+      "accounts": "dev.to/@workcheatkeyai (new, created 2026-11-26 via GitHub @phappyj) · medium.com/@workcheatkeyai (new, created 2026-11-26 via Google phappyj@gmail.com)",
+      "notes": "Same body on both; 3 comparison figures from the 2026-11-24 Klap vs OpusClip test; affiliate disclosure + Klap/quso links. OpusClip is not an affiliate (competitor) and is priced from opus.pro/pricing read 2026-11-26. Dev.to AI disclosure label: 'Some AI (AI-assisted)' (public page shows 'AI-assisted'); changed from 'Fully Autonomous' 2026-11-26 18:00 KST."
+    }
+  ]
 }
