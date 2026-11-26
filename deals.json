@@ -342,7 +342,8 @@
           "cons": "화소 5분의 1 · 초점 손으로 맞춤",
           "best": false
         }
-      ]
+      ],
+      "views": 113
     },
     {
       "id": "deal-015",
@@ -411,7 +412,7 @@
           "best": false
         }
       ],
-      "views": 188
+      "views": 187
     },
     {
       "id": "deal-014",
@@ -480,7 +481,7 @@
           "best": false
         }
       ],
-      "views": 43
+      "views": 48
     },
     {
       "id": "deal-013",
@@ -549,7 +550,7 @@
           "best": false
         }
       ],
-      "views": 118
+      "views": 121
     },
     {
       "id": "deal-012",
@@ -618,7 +619,7 @@
           "best": false
         }
       ],
-      "views": 10
+      "views": 11
     },
     {
       "id": "deal-011",
@@ -694,7 +695,7 @@
           "best": false
         }
       ],
-      "views": 570
+      "views": 571
     },
     {
       "id": "deal-010",
@@ -998,7 +999,7 @@
           "best": false
         }
       ],
-      "views": 483
+      "views": 488
     },
     {
       "id": "deal-006",
@@ -1074,7 +1075,7 @@
           "best": false
         }
       ],
-      "views": 1162
+      "views": 1168
     },
     {
       "id": "deal-005",
@@ -1301,7 +1302,7 @@
           "best": false
         }
       ],
-      "views": 677
+      "views": 678
     },
     {
       "id": "deal-002",
@@ -1376,7 +1377,7 @@
           "best": false
         }
       ],
-      "views": 522
+      "views": 524
     },
     {
       "id": "deal-001",
@@ -1434,5 +1435,5 @@
       "views": 182
     }
   ],
-  "viewsAsOf": "2026-11-26 06:00"
+  "viewsAsOf": "2026-11-27"
 }
