@@ -717,7 +717,7 @@
   <div class="in">
     <span class="pr"><b id="sticky-price"></b><small id="sticky-name"></small></span>
     <a class="go" id="sticky-go" href="#" target="_blank" rel="noopener sponsored">
-      쿠팡 바로가기
+      최저가 바로 보기
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
     </a>
   </div>
@@ -991,6 +991,13 @@
       priceHtml += '<span class="off">' + esc(String(d.discount).replace(/\s*할인$/, "")) + '</span>';
     }
 
+    /* CTA 문구: 혜택(할인율·가격)이 버튼에서 바로 보이게 */
+    var heroWon = formatWon(d.price);
+    var heroOff = d.discount ? String(d.discount).replace(/\s*할인$/, "") + " 할인" : "";
+    var heroCtaText = (heroOff && heroWon) ? heroOff + " · " + heroWon + " 최저가 확인"
+      : heroWon ? heroWon + " · 쿠팡 최저가 확인"
+      : "쿠팡 최저가 바로 보기";
+
     host.innerHTML =
       '<div class="hero-eyebrow">' +
         '<span class="badge-best"><span class="spark">✦</span>' + esc(badge) + (isPast ? ' · 지난 핫딜' : ' · 오늘의 원픽') + '</span>' +
@@ -1003,8 +1010,8 @@
       '<h1 class="hero-title" id="hero-title">' + esc(d.title || "오늘의 원픽") + '</h1>' +
       (priceHtml ? '<div class="hero-price">' + priceHtml + '</div>' : "") +
       (meta ? '<p class="hero-meta">' + CHECK + '<span>' + esc(meta) + '</span></p>' : "") +
-      '<a class="cta" id="hero-cta" href="' + esc(d.link || "#") + '" target="_blank" rel="noopener sponsored" aria-label="쿠팡 최저가 바로 보기">' +
-        '쿠팡 최저가 바로 보기' + ARROW +
+      '<a class="cta" id="hero-cta" href="' + esc(d.link || "#") + '" target="_blank" rel="noopener sponsored" aria-label="' + esc(heroCtaText) + '">' +
+        esc(heroCtaText) + ARROW +
       '</a>' +
       '<div class="hero-foot">' +
         '<span>' + esc(d.seller || "쿠팡") + '</span>' +
@@ -1095,8 +1102,13 @@
       countEl.textContent = "검증 리포트";
     }
 
+    /* 비교표 하단 CTA: 할인율·가격을 앞세운 문구 */
+    var repWon = formatWon(d.price);
+    var repOff = d.discount ? String(d.discount).replace(/\s*할인$/, "") + " 할인 · " : "";
+    var repCtaText = repOff + "쿠팡에서 " + (repWon || "최저가") + " 바로 보기";
+
     body += '<div class="btn-row" style="margin-top:12px">' +
-      '<a class="btn primary" href="' + esc(d.link || "#") + '" target="_blank" rel="noopener sponsored">쿠팡에서 최저가 보기 ' + ARROW + '</a>' +
+      '<a class="btn primary" href="' + esc(d.link || "#") + '" target="_blank" rel="noopener sponsored">' + esc(repCtaText) + ' ' + ARROW + '</a>' +
       '</div>';
 
     el.innerHTML = body;
