@@ -91,7 +91,8 @@
         "en/index.html (verified stack #3 'Slides' — 2026-11-23 22:30 → left the stack 2026-11-26 07:30 when it took the hero; Originality.ai took stack #3)",
         "en/index.html (hero pick, 2026-11-23 11:30 global short)",
         "en/index.html (verified stack #3, 2026-11-20 11:30 -> hero again 2026-11-23)",
-        "en/index.html (collapsed 'View all tested tools' list, 2026-11-23 17:00, after Pictory took the hero)"
+        "en/index.html (collapsed 'View all tested tools' list, 2026-11-23 17:00, after Pictory took the hero)",
+        "en/index.html (collapsed 'View all tested tools' list — badge 'Today 07:30 pick · 3 slides free', 2026-11-26 22:30, after Speak AI took the hero)"
       ],
       "pricing_checked": "2026-11-26 07:33-07:36 KST on decktopus.com (hero + FAQ) and decktopus.com/pricing (Pro and Business tabs)",
       "free_plan": "No free plan. FAQ: 'Decktopus AI doesn't offer a free plan, but new users get free credits at signup to create a 3 slide presentation'. Each slide costs 5 credits after the signup allowance; credits can be topped up without a subscription.",
@@ -278,15 +279,43 @@
       "dashboard": "https://speak-ai-inc.getrewardful.com",
       "platform": "Rewardful (instant approval)",
       "partner_since": "2026-11-19",
-      "status": "active — link issued",
+      "status": "active — link issued; en hub Hero Pick 2026-11-26 22:30 (site repositioned to conversation intelligence / custom AI applications; pages re-read 2026-11-26 22:33-22:36 KST)",
       "rules": "No brand-term bidding, no self-referral, no coupon sites without written agreement",
       "placed_on": [
+        "en/index.html (Hero Pick, 2026-11-26 22:30 global short — replaced Decktopus; moved out of verified stack #2, LoopCV took that slot)",
+        "en/index.html (section 03 'Try today's pick, free' card, 2026-11-26 22:30)",
         "en/tools/speak-ai.html — tool test page, affiliate CTA data-loc=en_tool_page (2026-11-25)",
-        "en/index.html (hero pick, 2026-11-21 07:30 global short)",
         "en/index.html (verified stack #2, 2026-11-19 → moved to hero 2026-11-21)",
         "en/index.html (verified stack #2 — meetings, 2026-11-21 11:30, after quso.ai took the hero)"
       ],
-      "note": "Verified stack #2 (meetings) from 2026-11-21 11:30. Hero 2026-11-21 07:30 → moved down 2026-11-21 11:30. Granola's Dub application was declined on 2026-11-20."
+      "note": "Verified stack #2 (meetings) from 2026-11-21 11:30. Hero 2026-11-21 07:30 → moved down 2026-11-21 11:30. Granola's Dub application was declined on 2026-11-20.",
+      "pricing_checked": "2026-11-26 22:33-22:36 KST on speakai.co (home hero + unified capture) and speakai.co/pricing (last updated 25 Nov 2026): 7-day trial · no credit card required · cancel anytime; PAYG $0/mo + credits (1 credit = US$1, card needed after the trial, top up from 10 credits); Pro $20/user/mo billed annually ($240/user/yr, annual saves $60/user/yr) with 25 credits ≈ 25 hours standard transcription and 10GB",
+      "credit_rates": {
+        "meeting_transcription": "4 credits/hr (= US$4 per meeting hour)",
+        "standard_transcription": "2 credits/hr",
+        "premium_languages": "3 credits/hr",
+        "translation": "12 credits/100K characters",
+        "ai_chat": "from about 0.08 credits/chat"
+      },
+      "free_plan": {
+        "plan": "7-day free trial, no credit card required (pricing FAQ: 'No card is required to sign up. Every new account starts with a free 7-day trial.')",
+        "limits": "After 7 days: PAYG needs a card and a top-up (from 10 credits, 1 credit = US$1) or a Pro plan. Credit rates: 2/hr standard transcription, 3/hr premium languages, 4/hr meeting transcription, 12/100K characters translation.",
+        "checked_on": "2026-11-26 22:34 KST on speakai.co/pricing"
+      },
+      "paid_plans": {
+        "payg": "$0/mo base — credits at US$1 each; meeting transcription 4 credits per hour",
+        "pro": "$20/user/mo billed annually ($240/user/yr, 'annual saves $60/user/yr'; monthly toggle not read) — up to 5 users, 25 credits/user/mo ≈ 25 hours standard transcription, 10GB storage, unlimited retention, shared team library, automations, priority email support",
+        "enterprise": "custom builds / white-label, demo-led"
+      },
+      "honest_limit": "The free part is a 7-day trial, not a free tier: after it you add a card, and on pay-as-you-go an hour of meeting transcription costs 4 credits (about US$4). Pro ($20/user/mo annual) includes 25 credits a seat, so heavy meeting weeks burn through it. Call scoring against your own scorecard starts with a demo rather than a self-serve plan.",
+      "claims_seen": [
+        "95%+ transcription accuracy · 100+ supported languages (home stat strip)",
+        "4.9 on G2 · 300,000+ individuals and teams · since 2018",
+        "Meeting Assistant: 'Auto-joins Zoom, Microsoft Teams, Google Meet, and Webex.'",
+        "Every plan includes: Meeting Assistant (transcribes in real time, generates summaries with action items, searchable archive), multi-model AI chat, NLP analytics, speaker identification",
+        "Case-study numbers on their site: 33,000+ calls transcribed, 20,000+ recordings processed, healthcare firm '8 hours to 0.3'"
+      ],
+      "video": "downloads/cheatkey-global-short-2026-11-26-2230-speakai.mp4 (26 Nov 2026 22:30, 13.98s)"
     },
     {
       "id": "taja",
@@ -416,8 +445,9 @@
       "dashboard": "https://loopcv.getrewardful.com",
       "platform": "Rewardful (instant, no manual review)",
       "partner_since": "2026-11-19",
-      "status": "active — email confirmed, link issued; en hub Hero Pick 2026-11-25 07:30 (replaced Klap; Klap moved into the collapsed list)",
+      "status": "active — email confirmed, link issued; en hub verified stack #2 'Job hunt' from 2026-11-26 22:30 (was hero 2026-11-25 07:30)",
       "placed_on": [
+        "en/index.html (verified stack #2 'Job hunt', 2026-11-26 22:30 — moved up from the collapsed list when Speak AI took the hero)",
         "en/tools/loopcv.html — tool test page, affiliate CTA data-loc=en_tool_page (2026-11-25)",
         "en/index.html (collapsed 'View all tested tools' list — badge 'Last night's pick · 10 apps free', 2026-11-25 22:30, after quso.ai took the hero)",
         "en/index.html (Hero Pick, 2026-11-25 07:30 global short — replaced by quso.ai at 22:30)",
