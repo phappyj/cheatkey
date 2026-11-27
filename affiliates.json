@@ -170,34 +170,45 @@
    "id": "fliki",
    "name": "Fliki",
    "url": "https://fliki.ai?via=heejae",
-   "what": "Text, script or blog post to AI video with AI voiceover",
+   "what": "Text, script, blog post or PPT to a finished video: AI script split into scenes, stock/AI visuals, 2,000+ AI voices in 80+ languages, burned-in captions",
    "commission": "30% on all payments, for the life of the subscription",
    "cookie_days": 30,
    "payout": "$50 minimum, Wise on the 1st (payout email phappyj@gmail.com registered); PayPal on request above $50",
    "dashboard": "https://affiliates.fliki.ai",
    "partner_since": "2026-11-18",
-   "status": "active — email confirmed 2026-11-19; en hub Hero Pick 2026-11-21 22:30, moved to collapsed list 2026-11-22 07:30",
+   "status": "active — email confirmed 2026-11-19; en hub Hero Pick 2026-11-27 22:30 (global short, new Before/After format), moved out of the collapsed list; site rebuilt since 11-21 as 'Turn idea into videos with AI voices' (100M+ videos, 14M+ users)",
    "rules": "No ads or promo/discount sites",
    "placed_on_2026_11_27": "dev.to/workcheatkeyai + medium.com/@workcheatkeyai — 'Same Script, Two AI Video Tools: Fliki Exported While Pictory Was Still Rendering' (2026-11-27, free-plan test + Standard pricing; Fliki's BF code deliberately NOT used): https://dev.to/workcheatkeyai/same-script-two-ai-video-tools-fliki-exported-while-pictory-was-still-rendering-4c4f · https://medium.com/@workcheatkeyai/same-script-two-ai-video-tools-fliki-exported-while-pictory-was-still-rendering-bf90a01ef033",
    "test_2026_11_27": "Free plan, 792-char English script -> 11 scenes, 48.5 s, 'Jonah' multilingual English voice, auto headlines + burned-in subtitles; export 720p 1280x720 MP4 5.9 MB (downloads/uk-four-day-workweek-trial-results-revenue-stable-quit-rates-halved.mp4), watermark on free. Default voice was 'auto voice · Korean' from the KR account locale; longest sentence was split mid-clause across scenes 6-7. New free account created 2026-11-27 via Google phappyj@gmail.com (no card).",
    "pricing_checked_2026_11_27": "2026-11-27 14:12-14:14 KST on fliki.ai/pricing + the in-app plan picker: Free $0 3 credits/mo, 300 voices, 80+ languages, 720p, watermark, no card; Standard $28/user/mo (1,000 voices incl. 500 ultra-realistic, 1080p, videos to 15 min, no watermark, commercial rights); Premium $88/user/mo (600 credits, 2,000+ voices, 40-min videos, AI video clips, API); yearly billing halves the monthly rate and the in-app picker quoted Standard $14/mo = $168 first year then $336/yr; FAQ says 5 minutes of free audio/video per month while the calculator prices stock video at 0.5 credits/min",
    "placed_on": [
-    "en/index.html (collapsed 'View all tested tools' list — demoted from hero 2026-11-22 07:30 when Rytr took the hero; kept with 'Yesterday's pick' badge)",
-    "en/index.html (hero pick, 2026-11-21 22:30 global short — replaced LoopCV; LoopCV kept in collapsed list)",
-    "en/index.html (collapsed 'View all tested tools' list, 2026-11-19)"
+    "en/index.html (Hero Pick, 2026-11-27 22:30 global short — replaced Pictory; Pictory moved into the collapsed list)",
+    "en/index.html (section 03 'Try today's pick, free' card, 2026-11-27 22:30)",
+    "en/index.html (collapsed 'View all tested tools' list — badge '3 credits free', 2026-11-21 22:30 hero, demoted 2026-11-22 07:30)",
+    "dev.to/workcheatkeyai + medium.com/@workcheatkeyai — 2026-11-27 article 'I Ran Fliki and Pictory on the Same 700-Word Script'"
    ],
    "free_plan": {
-    "plan": "Free forever, no credit card",
-    "limits": "3 credits per month; 720p export with Fliki watermark; 5-minute max export length; 100 scenes; workflows marked 'Limited'; email-only support",
-    "faq_note": "Pricing FAQ also says '5 minutes of free audio and video content per month'; credits are consumed per minute generated/exported, so the 3-credit card is the number to quote.",
-    "checked_on": "2026-11-21 22:31 KST on fliki.ai/pricing (plan cards + compare table + pricing FAQ)"
+    "plan": "Free forever, $0, no credit card required",
+    "limits": "3 credits per month (credits are charged per minute of audio generated or video exported, so about 3 minutes of finished video), 300 voices across 80+ languages, 720p export with Fliki watermark, export length 5 minutes, 100 scenes, workflows marked 'Limited', email-only support",
+    "faq_note": "The pricing FAQ still answers 'You can generate 5 minutes of free audio and video content per month', which does not match the 3-credit plan card; copy quotes the card (3 credits) and the credit rule (per minute).",
+    "checked_on": "2026-11-27 22:41 KST on fliki.ai/pricing (plan card + compare table + FAQ)"
    },
    "paid_plans": {
-    "standard": "USD 28/user/month (monthly billing) — 180 credits, 1080p, 15-minute videos, 1000 voices, no watermark, commercial rights",
-    "premium": "USD 88/user/month — 600 credits, 40-minute videos, 2000+ voices, AI video clips, brand kits",
-    "yearly": "Yearly toggle advertises 50% off Standard & Premium; a Black Friday banner (code FLIKIBFCM50) was showing on 2026-11-21 — deliberately NOT used in copy or the hub, per Fliki's no-promo/discount-site affiliate rule",
-    "checked_on": "2026-11-21 22:31 KST on fliki.ai/pricing (monthly prices shown)"
-   }
+    "standard": "USD 28/user/month billed monthly — 180 credits, 1,000 voices (500 ultra-realistic), 1080p, videos up to 15 minutes, 1 voice clone, 1 brand kit, 50 publications/month, 1 series, no watermark, commercial rights",
+    "premium": "USD 88/user/month — 600 credits, 2,000+ voices (1,000+ ultra-realistic), 40-minute videos, AI video clips, photo avatars, 3 voice clones, 3 brand kits, API access",
+    "enterprise": "custom pricing, billed yearly, dedicated account manager",
+    "yearly_note": "The yearly toggle advertises 50% off Standard & Premium and a Black Friday bar ('code FLIKIBFCM50, applied at checkout') was on the page on 2026-11-27 — deliberately NOT used in the video, the hub or the caption, per Fliki's no-discount-promotion affiliate rule.",
+    "checked_on": "2026-11-27 22:41 KST on fliki.ai/pricing"
+   },
+   "pricing_checked": "2026-11-27 22:41-22:43 KST on fliki.ai/pricing (Monthly toggle: plan cards + compare table + pricing FAQ) and fliki.ai home",
+   "honest_limit": "Free is 3 credits a month, which is about 3 minutes of finished video, exported at 720p with a Fliki watermark and capped at 5 minutes; credits are re-charged whenever you edit the text and re-generate, so a first pass you rewrite twice can eat the month. Said on camera in the 2026-11-27 22:30 short ('free = 3 credits a month, 720p, and their watermark on it').",
+   "real_assets": {
+    "demo": "assets/demo_6.0.png — their own script->video demo card (cdn 10bb0ee2-de29-4b76-a68e-7dcf8250bd5b/play_720p.mp4, 720x720), script panel left, rendered video right",
+    "shorts": "assets/short1.jpg 'ROME'S STRANGEST EMPEROR', assets/short2.jpg 'YOU'VE NEVER SEEN THIS', assets/short3.jpg 'OUTFIT OF THE DAY · Episode 10' — the vertical outputs in their TikTok & Shorts showcase",
+    "captured": "2026-11-27 22:38-22:43 KST on fliki.ai"
+   },
+   "video": "downloads/cheatkey-global-short-2026-11-27-2230-fliki.mp4 (22:30 global short, 13.44s, new Before/After format)",
+   "bundle": {}
   },
   {
    "id": "rytr",
@@ -524,13 +535,13 @@
    "platform": "FirstPromoter",
    "applied": "2026-11-19",
    "partner_since": "2026-11-20",
-   "status": "active — approved 2026-11-20 17:09 after appeal reply, link issued; promo code CHEATKEY issued 2026-11-20 20:23 KST; en hub Hero Pick 2026-11-27 07:30 (global short), live pages re-read 2026-11-27 07:35-07:41 KST",
+   "status": "active — approved 2026-11-20 17:09; en hub Hero Pick 2026-11-27 07:30, moved into the collapsed list 2026-11-27 22:30 (Fliki took the hero)",
    "rules": "No PPC or paid ads targeting Pictory brand name/misspellings",
    "placed_on": [
-    "en/index.html — hero pick, 2026-11-27 07:30 global short (MCP + 14-day trial, 720p watermark, BF ends 28 Nov)",
     "en/tools/pictory.html — tool test page, affiliate CTA data-loc=en_tool_page (2026-11-25)",
-    "en/index.html — \"Try today's pick, free\" card, data-loc=hero_card (2026-11-27)",
-    "dev.to/workcheatkeyai + medium.com/@workcheatkeyai — 'Same Script, Two AI Video Tools: Fliki Exported While Pictory Was Still Rendering' (2026-11-27, trial export measured): https://dev.to/workcheatkeyai/same-script-two-ai-video-tools-fliki-exported-while-pictory-was-still-rendering-4c4f · https://medium.com/@workcheatkeyai/same-script-two-ai-video-tools-fliki-exported-while-pictory-was-still-rendering-bf90a01ef033"
+    "en/index.html (collapsed 'View all tested tools' list — badge 'MCP on every plan', 2026-11-27 22:30, after Fliki took the hero)",
+    "en/index.html (Hero Pick, 2026-11-27 07:30 global short — replaced by Fliki at 22:30)",
+    "en/index.html (collapsed list, 2026-11-23 11:30 — moved up to the hero 2026-11-27 07:30)"
    ],
    "test_2026_11_27": "Existing account (trial had expired); the app offered a one-click '14-day extension', signed back in with Google phappyj@gmail.com, no card. Same 792-char script, default AI voice 'Tom', 11 scenes, 50.6 s timeline; export via 'Generate with watermark (Free)'. Actual file: 1920x1080, 10.6 MB, 56.8 s (downloads/the_four-day_workweek_started_as_a_headline_not_a_.mp4) with a 'Created with PICTORY' mark — the pricing page says the trial caps at 720p, so that cap was not enforced. It also inserted a title card ('A bold workplace experiment that changed how the world thinks about time') and an end card that pushed 50.6 s to 56.8 s. Crafting the scenes took ~5 min plus render; Fliki's MP4 was already downloaded by then. MCP server listed as included on every plan (Claude, ChatGPT, Perplexity, Cursor, VS Code) — not exercised.",
    "promo_code": "CHEATKEY",
@@ -558,11 +569,9 @@
    },
    "honest_limit": "Trial export is 720p with Pictory branding on it; 1080p starts on Starter; trial videos are capped at 5 minutes and 3 videos",
    "video": {
-    "youtube": "pending upload 2026-11-27 07:30 short (Pictory MCP angle)",
+    "youtube": "https://youtube.com/shorts/NxynFHDWW2M",
     "file": "downloads/cheatkey-global-short-2026-11-27-0730-pictory.mp4",
-    "length_s": 13.73,
-    "narration": "edge-tts en-US-AndrewMultilingualNeural +10%, BGM brain_dance 0.095",
-    "contact_sheet": "downloads/cheatkey-global-short-2026-11-27-0730-pictory-contact.png"
+    "length_s": 13.73
    }
   },
   {
@@ -612,7 +621,7 @@
    }
   }
  ],
- "_updated": "2026-11-27 14:55 KST — English comparison #2 (Fliki vs Pictory) published on Dev.to + Medium with Medium canonical to Dev.to; both tools' free-tier test results recorded in affiliates.json",
+ "_updated": "2026-11-27 22:55 KST — Fliki to Hero Pick (new Before/After global short), Pictory into the collapsed list",
  "_published_articles": [
   {
    "date": "2026-11-26 KST",
