@@ -370,35 +370,109 @@ def footer() -> str:
   </footer>"""
 
 
-TRACKER = f"""<script>
-(function () {{
+TRACKER = r"""<script>
+/* ── GA4: 제휴 CTA 클릭 추적 (affiliate_click) ──
+   허브·팁·영문 툴 페이지 공통. data-aff 가 있거나, 아래 제휴 도메인으로 나가는
+   링크 클릭이면 GA4 로 affiliate_click 을 보냅니다.
+   파라미터: link_url, link_text, link_domain, page_type, item_id, channel
+   (+ 기존 리포트 호환용 tool_name, category, location) */
+(function () {
   "use strict";
-  function track(event, params) {{
-    try {{ if (typeof gtag === "function") gtag("event", event, params || {{}}); }} catch (e) {{}}
-  }}
-  /* 제휴 CTA 클릭 — 허브와 같은 affiliate_click 이벤트로 집계 */
-  document.addEventListener("click", function (e) {{
+  var AFF_HOSTS = /(^|\.)(coupang\.com|klap\.app|pictory\.ai|make\.com|quso\.ai|speakai\.co|decktopus\.com|loopcv\.pro|submagic\.co|fliki\.ai|rytr\.me|lunacal\.ai|dub\.co|originality\.ai|revid\.ai|taja\.ai|pixa\.com|getpixa\.link)$/;
+  function track(event, params) {
+    try { if (typeof gtag === "function") gtag("event", event, params || {}); } catch (e) {}
+  }
+  function pageType() {
+    var p = location.pathname;
+    if (/\/en\/tools\/[^\/]+\.html$/.test(p)) return "tool_page";
+    if (/\/en\/tools\/?$/.test(p)) return "tools_index";
+    if (/\/en(\/index\.html)?$/.test(p)) return "hub_en";
+    if (/\/tips\/[^\/]+\.html$/.test(p)) return "tip_page";
+    if (/\/tips\/?$/.test(p)) return "tips_index";
+    return "hub_ko";
+  }
+  function up(el, name) {
+    var n = 0;
+    while (el && el.getAttribute && n < 6) {
+      var v = el.getAttribute(name);
+      if (v) return v;
+      el = el.parentElement; n++;
+    }
+    return "";
+  }
+  function itemId(a, host, url) {
+    var v = up(a, "data-id") || up(a, "data-deal") || up(a, "data-tip") || up(a, "data-tool");
+    if (v) return v;
+    var m = location.pathname.match(/\/(tip-\d+)\.html$/);
+    if (m) return m[1];
+    m = location.pathname.match(/\/tools\/([^\/]+)\.html$/);
+    if (m) return m[1];
+    m = location.search.match(/[?&]deal=([^&]+)/);
+    if (m) return decodeURIComponent(m[1]);
+    var slug = a.getAttribute("data-aff") || "";
+    if (!slug && /(^|\.)coupang\.com$/.test(host)) {
+      var seg = url.pathname.split("/").filter(Boolean).pop() || "";
+      slug = seg ? "coupang-" + seg : "coupang";
+    }
+    if (!slug) slug = host.replace(/^www\./, "").split(".").slice(-2).join("_");
+    return slug.toLowerCase().replace(/[^a-z0-9]+/g, "_").replace(/^_+|_+$/g, "");
+  }
+  function defaultTool(host) {
+    if (/(^|\.)coupang\.com$/.test(host)) return "Coupang";
+    if (/(^|\.)make\.com$/.test(host)) return "Make.com";
+    return "";
+  }
+  function defaultCat(host) {
+    if (/(^|\.)coupang\.com$/.test(host)) return "Deals";
+    if (/(^|\.)make\.com$/.test(host)) return "Automation";
+    return "";
+  }
+  function channel(host) {
+    if (/(^|\.)coupang\.com$/.test(host)) return "coupang_partners";
+    if (/(^|\.)klap\.app$/.test(host)) return "klap_referral";
+    if (/(^|\.)make\.com$/.test(host)) return "make_referral";
+    return "ai_tool_affiliate";
+  }
+  document.addEventListener("click", function (e) {
     var a = e.target.closest ? e.target.closest("a[href]") : null;
     if (!a) return;
-    var tool = a.getAttribute("data-aff");
-    if (!tool) return;
-    track("affiliate_click", {{
-      tool_name: tool,
-      category: a.getAttribute("data-cat") || "AI Tips",
-      location: a.getAttribute("data-loc") || "tip_page",
-      link_url: a.href
-    }});
-  }});
-  /* 프롬프트 복사 */
+    var url;
+    try { url = new URL(a.href, location.href); } catch (err) { return; }
+    if (url.protocol !== "http:" && url.protocol !== "https:") return;
+    var host = url.hostname.toLowerCase();
+    var aff = a.getAttribute("data-aff");
+    if (!aff && !AFF_HOSTS.test(host)) return;
+    var text = (a.textContent || "").replace(/\s+/g, " ").trim();
+    if (!text) text = a.getAttribute("aria-label") || "";
+    track("affiliate_click", {
+      link_url: url.href,
+      link_text: text.slice(0, 100),
+      link_domain: host,
+      page_type: pageType(),
+      item_id: itemId(a, host, url),
+      channel: channel(host),
+      tool_name: aff || defaultTool(host),
+      category: a.getAttribute("data-cat") || defaultCat(host),
+      location: a.getAttribute("data-loc") || pageType()
+    });
+  }, true);
+})();
+
+/* ── 프롬프트 복사 (prompt_copy) ── */
+(function () {
+  "use strict";
+  function track(event, params) {
+    try { if (typeof gtag === "function") gtag("event", event, params || {}); } catch (e) {}
+  }
   var toast = document.getElementById("toast");
-  function showToast(msg) {{
+  function showToast(msg) {
     if (!toast) return;
     toast.textContent = msg;
     toast.classList.add("on");
     clearTimeout(showToast._t);
-    showToast._t = setTimeout(function () {{ toast.classList.remove("on"); }}, 1800);
-  }}
-  function legacyCopy(text) {{
+    showToast._t = setTimeout(function () { toast.classList.remove("on"); }, 1800);
+  }
+  function legacyCopy(text) {
     var ta = document.createElement("textarea");
     ta.value = text;
     ta.setAttribute("readonly", "");
@@ -408,34 +482,35 @@ TRACKER = f"""<script>
     document.body.appendChild(ta);
     ta.select();
     var ok = false;
-    try {{ ok = document.execCommand("copy"); }} catch (err) {{ ok = false; }}
+    try { ok = document.execCommand("copy"); } catch (err) { ok = false; }
     document.body.removeChild(ta);
     return ok;
-  }}
-  document.addEventListener("click", function (e) {{
+  }
+  document.addEventListener("click", function (e) {
     var btn = e.target.closest ? e.target.closest("[data-copy]") : null;
     if (!btn) return;
     var text = btn.getAttribute("data-copy") || "";
-    function done(ok) {{
-      if (!ok) {{ showToast("복사가 안 되면 프롬프트를 길게 눌러 선택해 주세요"); return; }}
+    function done(ok) {
+      if (!ok) { showToast("복사가 안 되면 프롬프트를 길게 눌러 선택해 주세요"); return; }
       btn.classList.add("done");
       var label = btn.querySelector(".copy-label");
-      if (label) {{
+      if (label) {
         var prev = label.textContent;
         label.textContent = "복사됨";
-        setTimeout(function () {{ label.textContent = prev; btn.classList.remove("done"); }}, 1600);
-      }}
+        setTimeout(function () { label.textContent = prev; btn.classList.remove("done"); }, 1600);
+      }
       showToast("프롬프트를 복사했습니다");
-      track("prompt_copy", {{ tip_id: btn.getAttribute("data-tip") || "" }});
-    }}
-    if (navigator.clipboard && navigator.clipboard.writeText) {{
-      navigator.clipboard.writeText(text).then(function () {{ done(true); }}, function () {{ done(legacyCopy(text)); }});
-    }} else {{
+      track("prompt_copy", { tip_id: btn.getAttribute("data-tip") || "" });
+    }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(text).then(function () { done(true); }, function () { done(legacyCopy(text)); });
+    } else {
       done(legacyCopy(text));
-    }}
-  }});
-}})();
-</script>"""
+    }
+  });
+})();
+</script>
+"""
 
 
 def cta_block(tip: dict) -> str:

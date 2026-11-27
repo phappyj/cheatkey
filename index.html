@@ -666,7 +666,7 @@
           <li>고객 메일 → 내 톤으로 답장 초안 → 임시보관함 대기</li>
           <li>주간 보고서: 시트 취합 → 요약 → 슬랙 게시</li>
         </ul>
-        <a class="btn primary make-cta" href="https://www.make.com/en/register?pc=cheatkey" target="_blank" rel="noopener sponsored">
+        <a class="btn primary make-cta" href="https://www.make.com/en/register?pc=cheatkey" target="_blank" rel="noopener sponsored" data-loc="make_card">
           Make 1개월 Core 플랜 무료로 시작
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
         </a>
@@ -726,40 +726,91 @@
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
 <script>
-/* ── GA4: 제휴 CTA 클릭 추적 (affiliate_click) ── */
+/* ── GA4: 제휴 CTA 클릭 추적 (affiliate_click) ──
+   허브·팁·영문 툴 페이지 공통. data-aff 가 있거나, 아래 제휴 도메인으로 나가는
+   링크 클릭이면 GA4 로 affiliate_click 을 보냅니다.
+   파라미터: link_url, link_text, link_domain, page_type, item_id, channel
+   (+ 기존 리포트 호환용 tool_name, category, location) */
 (function () {
   "use strict";
+  var AFF_HOSTS = /(^|\.)(coupang\.com|klap\.app|pictory\.ai|make\.com|quso\.ai|speakai\.co|decktopus\.com|loopcv\.pro|submagic\.co|fliki\.ai|rytr\.me|lunacal\.ai|dub\.co|originality\.ai|revid\.ai|taja\.ai|pixa\.com|getpixa\.link)$/;
   function track(event, params) {
     try { if (typeof gtag === "function") gtag("event", event, params || {}); } catch (e) {}
+  }
+  function pageType() {
+    var p = location.pathname;
+    if (/\/en\/tools\/[^\/]+\.html$/.test(p)) return "tool_page";
+    if (/\/en\/tools\/?$/.test(p)) return "tools_index";
+    if (/\/en(\/index\.html)?$/.test(p)) return "hub_en";
+    if (/\/tips\/[^\/]+\.html$/.test(p)) return "tip_page";
+    if (/\/tips\/?$/.test(p)) return "tips_index";
+    return "hub_ko";
+  }
+  function up(el, name) {
+    var n = 0;
+    while (el && el.getAttribute && n < 6) {
+      var v = el.getAttribute(name);
+      if (v) return v;
+      el = el.parentElement; n++;
+    }
+    return "";
+  }
+  function itemId(a, host, url) {
+    var v = up(a, "data-id") || up(a, "data-deal") || up(a, "data-tip") || up(a, "data-tool");
+    if (v) return v;
+    var m = location.pathname.match(/\/(tip-\d+)\.html$/);
+    if (m) return m[1];
+    m = location.pathname.match(/\/tools\/([^\/]+)\.html$/);
+    if (m) return m[1];
+    m = location.search.match(/[?&]deal=([^&]+)/);
+    if (m) return decodeURIComponent(m[1]);
+    var slug = a.getAttribute("data-aff") || "";
+    if (!slug && /(^|\.)coupang\.com$/.test(host)) {
+      var seg = url.pathname.split("/").filter(Boolean).pop() || "";
+      slug = seg ? "coupang-" + seg : "coupang";
+    }
+    if (!slug) slug = host.replace(/^www\./, "").split(".").slice(-2).join("_");
+    return slug.toLowerCase().replace(/[^a-z0-9]+/g, "_").replace(/^_+|_+$/g, "");
+  }
+  function defaultTool(host) {
+    if (/(^|\.)coupang\.com$/.test(host)) return "Coupang";
+    if (/(^|\.)make\.com$/.test(host)) return "Make.com";
+    return "";
+  }
+  function defaultCat(host) {
+    if (/(^|\.)coupang\.com$/.test(host)) return "Deals";
+    if (/(^|\.)make\.com$/.test(host)) return "Automation";
+    return "";
+  }
+  function channel(host) {
+    if (/(^|\.)coupang\.com$/.test(host)) return "coupang_partners";
+    if (/(^|\.)klap\.app$/.test(host)) return "klap_referral";
+    if (/(^|\.)make\.com$/.test(host)) return "make_referral";
+    return "ai_tool_affiliate";
   }
   document.addEventListener("click", function (e) {
     var a = e.target.closest ? e.target.closest("a[href]") : null;
     if (!a) return;
-    var host = "";
-    try { host = new URL(a.href, location.href).hostname; } catch (err) { return; }
-    var tool = a.getAttribute("data-aff");
-    var cat = a.getAttribute("data-cat") || "";
-    if (!tool) {
-      if (/(^|\.)coupang\.com$/.test(host)) { tool = "Coupang"; cat = cat || "Deals"; }
-      else if (/(^|\.)make\.com$/.test(host)) { tool = "Make.com"; cat = cat || "Automation"; }
-      else return;
-    }
-    var loc = a.getAttribute("data-loc") || "";
-    if (!loc) {
-      if (a.id === "hero-cta") loc = "hero";
-      else if (a.id === "sticky-go") loc = "sticky_bar";
-      else if (a.classList.contains("make-cta")) loc = "make_card";
-      else if (a.closest("#report-section")) loc = "report";
-      else if (a.closest("#tips-section")) loc = "tips";
-      else loc = "other";
-    }
+    var url;
+    try { url = new URL(a.href, location.href); } catch (err) { return; }
+    if (url.protocol !== "http:" && url.protocol !== "https:") return;
+    var host = url.hostname.toLowerCase();
+    var aff = a.getAttribute("data-aff");
+    if (!aff && !AFF_HOSTS.test(host)) return;
+    var text = (a.textContent || "").replace(/\s+/g, " ").trim();
+    if (!text) text = a.getAttribute("aria-label") || "";
     track("affiliate_click", {
-      tool_name: tool,
-      category: cat,
-      location: loc,
-      link_url: a.href
+      link_url: url.href,
+      link_text: text.slice(0, 100),
+      link_domain: host,
+      page_type: pageType(),
+      item_id: itemId(a, host, url),
+      channel: channel(host),
+      tool_name: aff || defaultTool(host),
+      category: a.getAttribute("data-cat") || defaultCat(host),
+      location: a.getAttribute("data-loc") || pageType()
     });
-  });
+  }, true);
 })();
 </script>
 
@@ -1010,7 +1061,7 @@
       '<h1 class="hero-title" id="hero-title">' + esc(d.title || "오늘의 원픽") + '</h1>' +
       (priceHtml ? '<div class="hero-price">' + priceHtml + '</div>' : "") +
       (meta ? '<p class="hero-meta">' + CHECK + '<span>' + esc(meta) + '</span></p>' : "") +
-      '<a class="cta" id="hero-cta" href="' + esc(d.link || "#") + '" target="_blank" rel="noopener sponsored" aria-label="' + esc(heroCtaText) + '">' +
+      '<a class="cta" id="hero-cta" href="' + esc(d.link || "#") + '" target="_blank" rel="noopener sponsored" data-id="' + esc(d.id || "") + '" data-loc="hero" aria-label="' + esc(heroCtaText) + '">' +
         esc(heroCtaText) + ARROW +
       '</a>' +
       '<div class="hero-foot">' +
@@ -1108,7 +1159,7 @@
     var repCtaText = repOff + "쿠팡에서 " + (repWon || "최저가") + " 바로 보기";
 
     body += '<div class="btn-row" style="margin-top:12px">' +
-      '<a class="btn primary" href="' + esc(d.link || "#") + '" target="_blank" rel="noopener sponsored">' + esc(repCtaText) + ' ' + ARROW + '</a>' +
+      '<a class="btn primary" href="' + esc(d.link || "#") + '" target="_blank" rel="noopener sponsored" data-id="' + esc(d.id || "") + '" data-loc="report">' + esc(repCtaText) + ' ' + ARROW + '</a>' +
       '</div>';
 
     el.innerHTML = body;
@@ -1154,7 +1205,7 @@
       if (t.link) {
         var isAff = !!(t.tool && t.link && /^https?:\/\//.test(t.link) && !/instagram\.com/.test(t.link));
         buttons += '<a class="btn ghost" href="' + esc(t.link) + '" target="_blank" rel="noopener' + (isAff ? ' sponsored' : '') + '"' +
-                   (isAff ? ' data-aff="' + esc(t.tool) + '" data-cat="AI Tips" data-loc="tips"' : '') + '>' +
+                   (isAff ? ' data-aff="' + esc(t.tool) + '" data-id="' + esc(t.id || "") + '" data-cat="AI Tips" data-loc="tips"' : '') + '>' +
                    esc(t.linkLabel || "원문 보기") + ' ↗</a>';
       }
 
@@ -1188,6 +1239,8 @@
     document.getElementById("sticky-price").textContent = formatWon(d.price) || "최저가";
     document.getElementById("sticky-name").textContent = d.shortTitle || d.title || "";
     document.getElementById("sticky-go").href = d.link || "#";
+  document.getElementById("sticky-go").setAttribute("data-id", d.id || "");
+  document.getElementById("sticky-go").setAttribute("data-loc", "sticky_bar");
   }
   var heroIO = null;
   function observeHero() {
@@ -1319,7 +1372,7 @@
           (priceHtml ? '<div class="dc-price">' + priceHtml + '</div>' : "") +
           (summary ? '<p class="dc-note">' + esc(summary) + '</p>' : "") +
           '<div class="dc-actions">' +
-            '<a class="dc-buy" href="' + esc(d.link || "#") + '" target="_blank" rel="noopener noreferrer sponsored" data-cat="Deals" data-loc="prev_deals" aria-label="' + esc(name + " 쿠팡 최저가 바로 보기") + '">쿠팡 최저가' + ARROW + '</a>' +
+            '<a class="dc-buy" href="' + esc(d.link || "#") + '" target="_blank" rel="noopener noreferrer sponsored" data-id="' + esc(id) + '" data-cat="Deals" data-loc="prev_deals" aria-label="' + esc(name + " 쿠팡 최저가 바로 보기") + '">쿠팡 최저가' + ARROW + '</a>' +
             '<a class="dc-cmp" href="' + esc(href) + '" data-switch="' + esc(id) + '">비교표</a>' +
           '</div>' +
         '</div>';
