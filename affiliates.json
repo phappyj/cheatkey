@@ -122,25 +122,25 @@
    "cookie_days": 30,
    "payout": "$50 minimum, PayPal (FAQ says the 7th, dashboard says the 15th — confirm); dashboard currency shown as EUR",
    "dashboard": "https://affiliate.submagic.co/home",
-   "status": "active — link issued; demoted from en-hub hero to the collapsed 'View all tested tools' list 2026-11-24 22:30 (Klap took the hero)",
+   "status": "active — en hub Hero Pick 2026-11-28 07:30 (Before/After global short); moved up from the collapsed list",
    "placed_on": [
-    "en/tools/submagic.html — tool test page, affiliate CTA data-loc=en_tool_page (2026-11-25)",
-    "en/index.html (collapsed 'View all tested tools' list — badge '07:30 pick · 15 free credits', 2026-11-24 22:30)",
-    "en/index.html (Hero Pick — 2026-11-20 17:00 global short)"
+    "en/index.html (Hero Pick — 2026-11-28 07:30 global short, data-loc=hero_pick)",
+    "en/index.html (section 03 'Try today's pick, free' — data-loc=hero_card)",
+    "en/tools/submagic.html — tool test page, affiliate CTA data-loc=en_tool_page (2026-11-25)"
    ],
    "free_plan": {
     "plan": "Free plan — 15 credits a month",
     "limits": "15 credits/month = about 5 video uploads with captions (a captioned upload costs 3 credits; extras such as auto zooms or clean audio cost more, so fewer videos). Credits reset monthly; unused credits do not roll over. No credit card needed. Exports on the free plan carry a Submagic watermark.",
     "card_required": "no — pricing page 'No credit card required' and signup 'Free trial. No credit card required'",
     "faq_quote": "Help centre (updated 15/11/2026): 'Yes. Submagic has a free plan that gives you 15 credits a month, enough for 5 video uploads with captions. No credit card is needed to start. Videos exported on the free plan carry a Submagic watermark.'",
-    "checked_on": "2026-11-24 07:32-07:35 KST on submagic.co/pricing, app.submagic.co/signup and care.submagic.co/en/article/does-submagic-have-a-free-trial-7opyg3/"
+    "checked_on": "2026-11-28 07:44 KST on submagic.co/pricing and care.submagic.co/en/article/does-submagic-have-a-free-trial-7opyg3/ (help centre updated 15/11/2026)"
    },
    "paid_plans": {
     "starter": "USD 19/month, or $12/month billed yearly ($144 a year, save $84) — 45 credits/month: 15 captioned videos, 2 videos edited by Iris, 5 long videos clipped; 2-minute video duration; export 1080p & 30 FPS; no watermark; free b-rolls & audio; text-based trimming",
     "pro": "USD 39/month, or $23/month billed yearly ($276 a year) — 120 credits: 40 captioned videos, 6 Iris edits, 15 long videos clipped; 5-minute duration; 2K export; AI remove bad takes & silences, clean audio, publish & analytics, Storyblocks b-rolls, brand kit",
     "business": "USD 69/month, or $41/month billed yearly ($492 a year) — 300 credits: 100 captioned videos, 15 Iris edits, 37 long videos clipped; 30-minute duration; 4K 60fps; API 100 min/mo; 3 social accounts per platform",
     "annual_note": "Pricing page opens on the Yearly toggle (cards show $12 / $23 / $41 a month, billed $144 / $276 / $492 a year); the Monthly toggle shows $19 / $39 / $69 a month. Custom plan on request.",
-    "checked_on": "2026-11-24 07:32-07:33 KST on submagic.co/pricing (plan cards + compare table, both toggles)"
+    "checked_on": "2026-11-28 07:44 KST on submagic.co/pricing — Monthly toggle: Starter $19, Pro $39, Business $69; the Yearly tab was running a Black Friday −35/−50/−60% ($12/$19/$27) that is NOT used in any copy because it is time-limited"
    },
    "honest_limit": "The free plan's exports carry a Submagic watermark (removing it needs a paid plan), and 15 credits is only about 5 captioned videos a month — extras like auto zooms eat credits faster. Starter ($19/mo, $12/mo billed yearly) then caps each video at 2 minutes, so longer source clips need Pro.",
    "claims_seen": [
@@ -150,7 +150,9 @@
     "Homepage: 'Loved by 4M+ creators'; Trustpilot 4.5 (864 reviews) in the embedded widget",
     "Magic Clips tab: one long video with 3 markers -> 3 vertical shorts"
    ],
-   "video": "downloads/cheatkey-global-short-2026-11-24-0730-submagic.mp4 (07:30 global short, 12.77s)"
+   "video": "downloads/cheatkey-global-short-2026-11-28-0730-submagic.mp4 (07:30 global short, 13.35s, youtube.com/shorts/DDgf4iOvgfA · tiktok.com/@workcheatkeyai/video/7712618741640547605)",
+   "pricing_checked": "2026-11-28 07:44 KST — submagic.co/pricing, Monthly toggle: Starter $19/mo (45 credits, 15 captioned videos, 1080p, 2-min videos, no watermark), Pro $39 (120 credits, 5-min, 2K), Business $69 (300 credits, 30-min, 4K 60fps). Free plan no longer appears as a pricing card; its terms come from the help centre (15 credits/month, watermark, no rollover).",
+   "rules_note": "submagic.co/affiliate FAQ: paid ads on the affiliate link are prohibited and unpaid commissions follow a breach. No coupon-promotion ban stated, but the Black Friday discount was left out of all copy anyway."
   },
   {
    "id": "pixa",
@@ -176,15 +178,14 @@
    "payout": "$50 minimum, Wise on the 1st (payout email phappyj@gmail.com registered); PayPal on request above $50",
    "dashboard": "https://affiliates.fliki.ai",
    "partner_since": "2026-11-18",
-   "status": "active — email confirmed 2026-11-19; en hub Hero Pick 2026-11-27 22:30 (global short, new Before/After format), moved out of the collapsed list; site rebuilt since 11-21 as 'Turn idea into videos with AI voices' (100M+ videos, 14M+ users)",
+   "status": "active — en hub Hero Pick 2026-11-27 22:30 → demoted to the collapsed \"View all tested tools\" list 2026-11-28 07:30 (Submagic took the hero)",
    "rules": "No ads or promo/discount sites",
    "placed_on_2026_11_27": "dev.to/workcheatkeyai + medium.com/@workcheatkeyai — 'Same Script, Two AI Video Tools: Fliki Exported While Pictory Was Still Rendering' (2026-11-27, free-plan test + Standard pricing; Fliki's BF code deliberately NOT used): https://dev.to/workcheatkeyai/same-script-two-ai-video-tools-fliki-exported-while-pictory-was-still-rendering-4c4f · https://medium.com/@workcheatkeyai/same-script-two-ai-video-tools-fliki-exported-while-pictory-was-still-rendering-bf90a01ef033",
    "test_2026_11_27": "Free plan, 792-char English script -> 11 scenes, 48.5 s, 'Jonah' multilingual English voice, auto headlines + burned-in subtitles; export 720p 1280x720 MP4 5.9 MB (downloads/uk-four-day-workweek-trial-results-revenue-stable-quit-rates-halved.mp4), watermark on free. Default voice was 'auto voice · Korean' from the KR account locale; longest sentence was split mid-clause across scenes 6-7. New free account created 2026-11-27 via Google phappyj@gmail.com (no card).",
    "pricing_checked_2026_11_27": "2026-11-27 14:12-14:14 KST on fliki.ai/pricing + the in-app plan picker: Free $0 3 credits/mo, 300 voices, 80+ languages, 720p, watermark, no card; Standard $28/user/mo (1,000 voices incl. 500 ultra-realistic, 1080p, videos to 15 min, no watermark, commercial rights); Premium $88/user/mo (600 credits, 2,000+ voices, 40-min videos, AI video clips, API); yearly billing halves the monthly rate and the in-app picker quoted Standard $14/mo = $168 first year then $336/yr; FAQ says 5 minutes of free audio/video per month while the calculator prices stock video at 0.5 credits/min",
    "placed_on": [
-    "en/index.html (Hero Pick, 2026-11-27 22:30 global short — replaced Pictory; Pictory moved into the collapsed list)",
+    "en/index.html (collapsed 'View all tested tools' list — badge \"Yesterday's pick · 3 free credits\", 2026-11-28 07:30)",
     "en/index.html (section 03 'Try today's pick, free' card, 2026-11-27 22:30)",
-    "en/index.html (collapsed 'View all tested tools' list — badge '3 credits free', 2026-11-21 22:30 hero, demoted 2026-11-22 07:30)",
     "dev.to/workcheatkeyai + medium.com/@workcheatkeyai — 2026-11-27 article 'I Ran Fliki and Pictory on the Same 700-Word Script'"
    ],
    "free_plan": {
@@ -621,7 +622,7 @@
    }
   }
  ],
- "_updated": "2026-11-27 22:55 KST — Fliki to Hero Pick (new Before/After global short), Pictory into the collapsed list",
+ "_updated": "2026-11-28 07:30 — Submagic Hero Pick (Before/After short), Fliki to the collapsed list, Submagic re-measured 28 Nov",
  "_published_articles": [
   {
    "date": "2026-11-26 KST",
