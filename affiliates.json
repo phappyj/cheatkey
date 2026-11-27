@@ -369,9 +369,10 @@
    "dashboard": "https://lunacal.tolt.io",
    "platform": "tolt (instant approval)",
    "partner_since": "2026-11-19",
-   "status": "active — link issued; real pages read 2026-11-22 17:03 KST; moved from en hub Hero to collapsed list 2026-11-22 22:30",
+   "status": "active — link issued; KR hub tip-011 (2026-11-27 08:30 short + tips/tip-011.html) is its first placement in Korean content",
    "rules": "Coupon code must not be posted on coupon sites",
    "placed_on": [
+    "KR hub tips card #11 + tips/tip-011.html — tip-011 Korean short (2026-11-27 08:30, https://youtube.com/shorts/dx1HVNZdw70), data-loc tips",
     "en/index.html (collapsed 'View all tested tools' list — badge 'Yesterday's pick · 7-day trial'; demoted from hero 2026-11-22 22:30 when Revid took the hero)",
     "en/index.html (hero pick, 2026-11-22 17:00 global short — replaced Originality.ai)"
    ],
@@ -388,12 +389,18 @@
     "extras": "Own domain for booking pages is a paid add-on (comparison table). SMTP from your own domain is Enterprise-only.",
     "checked_on": "2026-11-22 17:03 KST on lunacal.ai/pricing"
    },
-   "honest_limit": "No free plan: the site offers a 7-day free trial only, then from $9/user/month, and a custom domain is a paid add-on — said plainly in the 17:00 short and hub copy.",
+   "honest_limit": "No free plan: the three plan cards all offer a 7-day free trial and then charge per user (from $9). The guest-facing booking page language list (12+ languages) has no Korean, so Korean invitees see an English booking page. We have not run a booking through an account of our own; the screens used in the video and posts are lunacal.ai's public booking-page captures.",
    "features_seen": [
     "Branded booking page: profile photo, services, open slots, testimonials, video, FAQ (founder/doctor/sales/coaching templates on lunacal.ai)",
     "Paid sessions: 'Charge for this event' toggle → guest pays before booking via Stripe or PayPal, price set in USD",
     "0% booking commission (site claim), 12+ languages for guests, GDPR compliant, Google/Outlook/Apple 2-way sync"
-   ]
+   ],
+   "pricing_checked": "2026-11-27 08:36-08:43 KST on lunacal.ai (home hero carousel booking pages) and lunacal.ai/pricing — Annual toggle on (Save 10%), Standard $9/user/month, Teams $15/user/month (list $20, 25% off), Enterprise $25/user/month; every plan button reads 'Start 7-Day Free Trial'; header badges 'Cancel Anytime' and 'Free 1:1 Support'; comparison row '12+ languages for guests (English, Spanish, French, German, Italian, Polish, Dutch, Portuguese, Russian, Arabic, Hebrew, Vietnamese, Swedish)' has no Korean; Stripe/PayPal payments, 0% booking commission, Google/Outlook/Apple two-way sync",
+   "video": "downloads/cheatkey-tip-reel-2026-11-27-0830.mp4 — https://youtube.com/shorts/dx1HVNZdw70 (2026-11-27 08:30, 12.80s, BGM only, no TTS) + TikTok KR https://www.tiktok.com/@cheatkeywork/video/7712636755630968084",
+   "posts": {
+    "naver": "https://blog.naver.com/yecheukpan/224494161593 (category 직장인 치트키, 2026-11-27 09:26)",
+    "tistory": "https://cheatkeywork.tistory.com/2 (category AI 업무 자동화, 2026-11-27 09:46, 공개)"
+   }
   },
   {
    "id": "revid",
@@ -600,7 +607,7 @@
    }
   }
  ],
- "_updated": "2026-11-27 07:30 KST — Pictory en hub Hero Pick for the 07:30 global short; pricing, MCP row and Black Friday countdown re-read live 07:35-07:41 KST",
+ "_updated": "2026-11-27 08:30 KST — tip-011 (Lunacal) published on KR hub, YouTube Shorts, TikTok KR, Naver blog, Tistory",
  "_published_articles": [
   {
    "date": "2026-11-26 KST",
