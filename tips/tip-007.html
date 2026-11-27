@@ -368,11 +368,11 @@
   }
   function pageType() {
     var p = location.pathname;
+    if (/\/en\/tools(\/index\.html)?\/?$/.test(p)) return "tools_index";
     if (/\/en\/tools\/[^\/]+\.html$/.test(p)) return "tool_page";
-    if (/\/en\/tools\/?$/.test(p)) return "tools_index";
-    if (/\/en(\/index\.html)?$/.test(p)) return "hub_en";
+    if (/\/en(\/index\.html)?\/?$/.test(p)) return "hub_en";
+    if (/\/tips(\/index\.html)?\/?$/.test(p)) return "tips_index";
     if (/\/tips\/[^\/]+\.html$/.test(p)) return "tip_page";
-    if (/\/tips\/?$/.test(p)) return "tips_index";
     return "hub_ko";
   }
   function up(el, name) {
