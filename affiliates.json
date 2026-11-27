@@ -178,6 +178,9 @@
    "partner_since": "2026-11-18",
    "status": "active — email confirmed 2026-11-19; en hub Hero Pick 2026-11-21 22:30, moved to collapsed list 2026-11-22 07:30",
    "rules": "No ads or promo/discount sites",
+   "placed_on_2026_11_27": "dev.to/workcheatkeyai + medium.com/@workcheatkeyai — 'Same Script, Two AI Video Tools: Fliki Exported While Pictory Was Still Rendering' (2026-11-27, free-plan test + Standard pricing; Fliki's BF code deliberately NOT used): https://dev.to/workcheatkeyai/same-script-two-ai-video-tools-fliki-exported-while-pictory-was-still-rendering-4c4f · https://medium.com/@workcheatkeyai/same-script-two-ai-video-tools-fliki-exported-while-pictory-was-still-rendering-bf90a01ef033",
+   "test_2026_11_27": "Free plan, 792-char English script -> 11 scenes, 48.5 s, 'Jonah' multilingual English voice, auto headlines + burned-in subtitles; export 720p 1280x720 MP4 5.9 MB (downloads/uk-four-day-workweek-trial-results-revenue-stable-quit-rates-halved.mp4), watermark on free. Default voice was 'auto voice · Korean' from the KR account locale; longest sentence was split mid-clause across scenes 6-7. New free account created 2026-11-27 via Google phappyj@gmail.com (no card).",
+   "pricing_checked_2026_11_27": "2026-11-27 14:12-14:14 KST on fliki.ai/pricing + the in-app plan picker: Free $0 3 credits/mo, 300 voices, 80+ languages, 720p, watermark, no card; Standard $28/user/mo (1,000 voices incl. 500 ultra-realistic, 1080p, videos to 15 min, no watermark, commercial rights); Premium $88/user/mo (600 credits, 2,000+ voices, 40-min videos, AI video clips, API); yearly billing halves the monthly rate and the in-app picker quoted Standard $14/mo = $168 first year then $336/yr; FAQ says 5 minutes of free audio/video per month while the calculator prices stock video at 0.5 credits/min",
    "placed_on": [
     "en/index.html (collapsed 'View all tested tools' list — demoted from hero 2026-11-22 07:30 when Rytr took the hero; kept with 'Yesterday's pick' badge)",
     "en/index.html (hero pick, 2026-11-21 22:30 global short — replaced LoopCV; LoopCV kept in collapsed list)",
@@ -526,8 +529,10 @@
    "placed_on": [
     "en/index.html — hero pick, 2026-11-27 07:30 global short (MCP + 14-day trial, 720p watermark, BF ends 28 Nov)",
     "en/tools/pictory.html — tool test page, affiliate CTA data-loc=en_tool_page (2026-11-25)",
-    "en/index.html — \"Try today's pick, free\" card, data-loc=hero_card (2026-11-27)"
+    "en/index.html — \"Try today's pick, free\" card, data-loc=hero_card (2026-11-27)",
+    "dev.to/workcheatkeyai + medium.com/@workcheatkeyai — 'Same Script, Two AI Video Tools: Fliki Exported While Pictory Was Still Rendering' (2026-11-27, trial export measured): https://dev.to/workcheatkeyai/same-script-two-ai-video-tools-fliki-exported-while-pictory-was-still-rendering-4c4f · https://medium.com/@workcheatkeyai/same-script-two-ai-video-tools-fliki-exported-while-pictory-was-still-rendering-bf90a01ef033"
    ],
+   "test_2026_11_27": "Existing account (trial had expired); the app offered a one-click '14-day extension', signed back in with Google phappyj@gmail.com, no card. Same 792-char script, default AI voice 'Tom', 11 scenes, 50.6 s timeline; export via 'Generate with watermark (Free)'. Actual file: 1920x1080, 10.6 MB, 56.8 s (downloads/the_four-day_workweek_started_as_a_headline_not_a_.mp4) with a 'Created with PICTORY' mark — the pricing page says the trial caps at 720p, so that cap was not enforced. It also inserted a title card ('A bold workplace experiment that changed how the world thinks about time') and an end card that pushed 50.6 s to 56.8 s. Crafting the scenes took ~5 min plus render; Fliki's MP4 was already downloaded by then. MCP server listed as included on every plan (Claude, ChatGPT, Perplexity, Cursor, VS Code) — not exercised.",
    "promo_code": "CHEATKEY",
    "promo_code_note": "Dedicated code active on the affiliate dashboard (Ash, 2026-11-20 16:53 IST). Does NOT stack with Black Friday offers — the Black Friday price needs no code, so use that instead until Dec 2.",
    "black_friday": {
@@ -607,7 +612,7 @@
    }
   }
  ],
- "_updated": "2026-11-27 08:30 KST — tip-011 (Lunacal) published on KR hub, YouTube Shorts, TikTok KR, Naver blog, Tistory",
+ "_updated": "2026-11-27 14:55 KST — English comparison #2 (Fliki vs Pictory) published on Dev.to + Medium with Medium canonical to Dev.to; both tools' free-tier test results recorded in affiliates.json",
  "_published_articles": [
   {
    "date": "2026-11-26 KST",
@@ -616,6 +621,22 @@
    "medium": "https://medium.com/@workcheatkeyai/i-ran-the-same-11-minute-interview-through-klap-quso-ai-and-opusclip-e5607b09781f",
    "accounts": "dev.to/@workcheatkeyai (new, created 2026-11-26 via GitHub @phappyj) · medium.com/@workcheatkeyai (new, created 2026-11-26 via Google phappyj@gmail.com)",
    "notes": "Same body on both; 3 comparison figures from the 2026-11-24 Klap vs OpusClip test; affiliate disclosure + Klap/quso links. OpusClip is not an affiliate (competitor) and is priced from opus.pro/pricing read 2026-11-26. Dev.to AI disclosure label: 'Some AI (AI-assisted)' (public page shows 'AI-assisted'); changed from 'Fully Autonomous' 2026-11-26 18:00 KST."
+  },
+  {
+   "date": "2026-11-27 KST",
+   "title": "Same Script, Two AI Video Tools: Fliki Exported While Pictory Was Still Rendering",
+   "devto": "https://dev.to/workcheatkeyai/same-script-two-ai-video-tools-fliki-exported-while-pictory-was-still-rendering-4c4f",
+   "medium": "https://medium.com/@workcheatkeyai/same-script-two-ai-video-tools-fliki-exported-while-pictory-was-still-rendering-bf90a01ef033",
+   "accounts": "dev.to/@workcheatkeyai · medium.com/@workcheatkeyai (both existing from 2026-11-26)",
+   "notes": "Same-day hands-on test of one 792-character script in both free tiers; measured exports (Fliki 1280x720 / 48.5 s / 5.9 MB, Pictory 1920x1080 / 56.8 s / 10.6 MB with auto title + end cards). Dev.to AI label: 'Some AI (AI-assisted)' (public page shows 'AI-assisted'). Medium topics Artificial Intelligence / Productivity / Video Marketing; canonical set to the Dev.to URL under Story settings > Advanced > Canonical link (verified saved); SEO description 132 chars. Medium body was imported from a temporary noindex page (phappyj.github.io/cheatkey/en/tmp/fliki-vs-pictory-2026-11-27.html) because Medium's editor drops markdown tables; that URL now meta-refreshes to the Dev.to article so Medium's auto 'Originally published at' footer still resolves. Checks: Dev.to curl 200; Medium 403 to curl (bot filter) but 200 through an anonymous text fetcher (r.jina.ai) and renders to a logged-out visitor.",
+   "screenshots": [
+    "downloads/devto-cheatkey-2026-11-27.png",
+    "downloads/medium-cheatkey-2026-11-27.png"
+   ],
+   "files": [
+    "downloads/uk-four-day-workweek-trial-results-revenue-stable-quit-rates-halved.mp4 (Fliki export)",
+    "downloads/the_four-day_workweek_started_as_a_headline_not_a_.mp4 (Pictory export)"
+   ]
   }
  ]
 }
