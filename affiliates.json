@@ -122,8 +122,9 @@
    "cookie_days": 30,
    "payout": "$50 minimum, PayPal (FAQ says the 7th, dashboard says the 15th — confirm); dashboard currency shown as EUR",
    "dashboard": "https://affiliate.submagic.co/home",
-   "status": "active — en hub Hero Pick 2026-11-28 07:30 (Before/After global short); moved up from the collapsed list",
+   "status": "active — en hub Hero Pick 2026-11-28 07:30 → demoted to the collapsed \"View all tested tools\" list 2026-11-28 22:30 when Revid took the hero",
    "placed_on": [
+    "en/index.html (collapsed 'View all tested tools' list, 2026-11-28 22:30, after Revid took the hero)",
     "en/index.html (Hero Pick — 2026-11-28 07:30 global short, data-loc=hero_pick)",
     "en/index.html (section 03 'Try today's pick, free' — data-loc=hero_card)",
     "en/tools/submagic.html — tool test page, affiliate CTA data-loc=en_tool_page (2026-11-25)"
@@ -432,17 +433,17 @@
    "dashboard": "https://www.revid.ai/affiliate",
    "platform": "In-app affiliate page (one-click join, no approval)",
    "partner_since": "2026-11-19",
-   "status": "active — link issued; real pages read 2026-11-22 22:32 KST; en hub Hero Pick 2026-11-22 22:30",
+   "status": "active — link issued; en hub Hero Pick 2026-11-28 22:30 (Before/After global short); pricing re-read live 2026-11-28 22:37-22:44 KST",
    "rules": "No coupon/deal sites, no brand-keyword ads, no self-referral, no ads-driven commissions",
    "placed_on": [
-    "en/index.html (hero pick, 2026-11-22 22:30 global short — replaced Lunacal; Lunacal kept in collapsed list with \"Yesterday's pick\" badge)",
-    "en/index.html (collapsed 'View all tested tools' list, 2026-11-19 — entry removed 2026-11-22 22:30 when Revid moved up to the hero)",
-    "en/index.html (collapsed 'View all tested tools' list — badge \"Yesterday's pick · 400 credits\", demoted from hero 2026-11-23 07:30)"
+    "en/index.html (Hero Pick, 2026-11-28 22:30 global short — replaced Submagic)",
+    "en/index.html (section 03 'Try today's pick, free' card, 2026-11-28 22:30)",
+    "en/index.html (hero pick, 2026-11-22 22:30 global short — replaced by Fliki later that night)"
    ],
    "free_plan": {
-    "plan": "No free plan — sign up without a credit card and start with 400 FREE credits (pricing banner). A free account can also search viral videos.",
-    "limits": "Regular creation needs the monthly credits of a paid plan. Pricing FAQ (22 Nov 2026): 'You can sign up without a credit card, and new accounts get free credits to try video generation. A free account can also search viral videos. Regular creation uses the monthly credits that come with a paid plan.'",
-    "checked_on": "2026-11-22 22:32 KST on revid.ai and revid.ai/pricing (Monthly toggle)"
+    "plan": "No free plan; sign-up without a card gives a few free credits",
+    "limits": "FAQ 28 Nov 2026: 'You can sign up without a credit card, and new accounts get free credits to try video generation. A free account can also search viral videos. Regular creation uses the monthly credits that come with a paid plan.'",
+    "checked_on": "2026-11-28 22:42 KST on revid.ai/pricing (FAQ expanded)"
    },
    "paid_plans": {
     "hobby": "USD 39 / month — create videos from text or links, 3M+ viral videos to remix, editable short-form videos, for occasional hands-on creation",
@@ -453,13 +454,21 @@
     "credits": "A typical 30-second video with Pro moving images + voiceover costs about 40-80 credits, so 2,000 credits cover roughly 25-50 a month; full AI video models cost more per second; the editor shows an estimate before every render. Credit Boost packs never expire (1,000/$49, 4,000/$99, 10,000/$199, 100,000/$1,900).",
     "checked_on": "2026-11-22 22:32 KST on revid.ai/pricing"
    },
-   "honest_limit": "Plan credits refill at renewal and do not stack, so unused credits are lost — said plainly in the 22:30 short and in the hub copy; a 30s video costs about 40-80 credits and regular creation needs a paid plan (from $39/mo).",
+   "honest_limit": "No free plan: a few free credits at sign-up only, regular creation needs a paid plan. Credits refill at renewal and do not stack (an idle month is still paid), a 30s video is 40-80 credits, and the editor only shows the estimated cost before each render.",
    "features_seen": [
     "Create your version screen (real UI): viral video on the left, 'Analysis - generated from the video' in the middle (visual hook gauge, scroll-stopper 0:04, structure with 0:00 Hook / 0:04 Payoff and why-it-works text), 'Your Version' phone on the right",
     "Viral search (real UI): search any topic across YouTube, TikTok and Instagram, sort by engagement rate instead of raw plays, platform + duration filters, cards with views/likes/comments",
     "Publishing to TikTok, IG, YouTube and X with post stats and one-click remix; Auto-Mode workers; API/MCP/CLI",
     "Showcase claims: 30,000+ videos published a month, 100,000+ rendered, 14,258+ creators, 32 languages in 68 countries"
-   ]
+   ],
+   "pricing_checked": "2026-11-28 22:37-22:44 KST on revid.ai/pricing — Monthly toggle: Hobby $39/mo, Growth $99 struck to $39/mo ('Discount locked in forever') with 2,000 AI credits/mo, Ultra $199/mo 12,000 credits; yearly tab was showing a Black Friday 30%-off-first-year banner (ends in 2d 9h) that is NOT used in the video or hub copy",
+   "pricing": {
+    "hobby_monthly": "$39/month — create videos from text or links, 3M+ viral videos to remix, editable short-form",
+    "growth_monthly": "$39/month (list $99, 'Discount locked in forever') — 2,000 AI credits/month, publish to TikTok/IG/YouTube/X, watch 5 channels, 100+ tools, 70+ language voiceovers, 3 Auto-Mode workers",
+    "ultra_monthly": "$199/month — 12,000 AI credits/month (scales 30k/50k/100k/200k at $459/$749/$1,459/$2,799)",
+    "credits": "a typical 30-second video with Pro moving images and a voiceover costs 40-80 credits, so 2,000 credits ≈ 25-50 videos; credits refill at renewal and do not stack"
+   },
+   "video": "downloads/cheatkey-global-short-2026-11-28-2230-revid.mp4 (22:30 global short, 13.07s, YouTube + TikTok)"
   },
   {
    "id": "loopcv",
