@@ -468,7 +468,8 @@
     "ultra_monthly": "$199/month — 12,000 AI credits/month (scales 30k/50k/100k/200k at $459/$749/$1,459/$2,799)",
     "credits": "a typical 30-second video with Pro moving images and a voiceover costs 40-80 credits, so 2,000 credits ≈ 25-50 videos; credits refill at renewal and do not stack"
    },
-   "video": "downloads/cheatkey-global-short-2026-11-28-2230-revid.mp4 (22:30 global short, 13.07s, YouTube + TikTok)"
+   "video": "downloads/cheatkey-global-short-2026-11-28-2230-revid.mp4 (22:30 global short, 13.07s) — https://youtube.com/shorts/4OzHqgS9DLs + https://www.tiktok.com/@workcheatkeyai/video/7713222101968129301",
+   "asr_note": "YouTube auto-captions (ASR) generated for the 28 Nov 22:30 short; the Studio 자막 page errored ('오류가 발생했습니다') and saving a cleared track failed ('자막 트랙을 업데이트할 수 없습니다'), so the track could not be deleted this round — retry on a later run."
   },
   {
    "id": "loopcv",
