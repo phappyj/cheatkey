@@ -223,6 +223,7 @@
    "status": "active — email confirmed 2026-11-19; en hub Hero Pick 2026-11-22 07:30, moved to collapsed list 2026-11-22 11:30",
    "rules": "No self-referrals; no Google/other platform ads that break their policy",
    "placed_on": [
+    "KR hub tips card #12 + tips/tip-012.html — tip-012 Korean short (2026-11-28 08:30, https://youtube.com/shorts/s4jfrejG37E), data-loc tips",
     "en/index.html (collapsed 'View all tested tools' list — demoted from hero 2026-11-22 11:30 when Originality.ai took the hero; kept with 'Yesterday's pick' badge)",
     "en/index.html (hero pick, 2026-11-22 07:30 global short — replaced Fliki; Fliki kept in collapsed list)",
     "en/index.html (collapsed 'View all tested tools' list, 2026-11-19)"
@@ -239,7 +240,10 @@
     "yearly_note": "Yearly billing is advertised as 'Save 20%'; the yearly toggle showed $7.50 / $15 / $39 per month, billed annually",
     "checked_on": "2026-11-22 07:32 KST on rytr.me/pricing (Monthly and Yearly toggles both read)"
    },
-   "positioning": "Pivoted from a pure writing tool: the site now leads with an AI relationship manager (Engage) and keeps Create (writing) — the video and hub copy point at the writing side plus the Gmail extension."
+   "positioning": "Pivoted from a pure writing tool: the site now leads with an AI relationship manager (Engage) and keeps Create (writing) — the video and hub copy point at the writing side plus the Gmail extension.",
+   "pricing_checked": "2026-11-28 08:37-08:41 KST — rytr.me home, /pricing, /use-cases/reply-response-generator read live: Free $0 (10,000 characters/mo, 1 connected source, 25 active relationships, 25 Engage actions/mo, 3 person-research runs, 40+ writing use cases, 30+ languages), Lite $9/mo (unlimited characters, 20% off yearly toggle), Personal $19, Pro $49. Help centre (updated 2025-08-28) says freemium users pick one language and can change it once a month.",
+   "honest_limit": "Free is 10,000 characters a month and one language (changeable once a month); UI is English-first and Korean drafts need a human pass; no auto-send. Product repositioned in Nov 2026 to an AI relationship manager (Engage) with Create for writing.",
+   "video": "KR @cheatkeywork tip-012 short https://youtube.com/shorts/s4jfrejG37E (2026-11-28 08:30, 10.70s, downloads/cheatkey-tip-reel-2026-11-28-0830.mp4) · KR TikTok https://www.tiktok.com/@cheatkeywork/video/7713003872083545364"
   },
   {
    "id": "originality",
